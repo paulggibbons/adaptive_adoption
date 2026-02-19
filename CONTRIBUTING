@@ -1,0 +1,16 @@
+# Contributing to Adaptive Adoption
+
+Thanks for your interest.
+
+## Principles
+- Operational over aspirational
+- Evidence-aware (cite primary sources when possible)
+- Fork-friendly (assume industry extensions)
+- Safety-first (prefer evaluation, guardrails, and review)
+
+## Where to contribute
+- `docs/pillars/` (pillar narratives)
+- `docs/theory/` (foundations + sources)
+- `diagnostics/` (assessment instruments)
+- `tools/` (playbooks + templates)
+- `industry-modules/` (domain extensions)
