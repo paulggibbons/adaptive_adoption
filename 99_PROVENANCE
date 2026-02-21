@@ -1,5 +1,101 @@
 # Provenance
 
+Adaptive Adoption synthesizes five intellectual traditions. Each contributes something essential to the problem of technology adoption. Each has a critical gap that prevented it from solving the problem alone. This document traces those roots, names the gaps, and establishes the timeline.
+
+Ideas should be auditable.
+
+---
+
+## The Five Traditions
+
+### Organizational Development
+**Inherits**: Humanistic values — organizations exist for people, not the reverse. Participation, voice, dignity during change.
+
+**Departs**: OD never operationalized its values for technology adoption. Its methods assume timescales AI adoption cannot afford. Adaptive Adoption inherits OD's ethics but not its pace.
+
+**Key thinkers**: Schein, McGregor, Pfeffer.
+
+### Design Thinking
+**Inherits**: Prototyping, iteration, designing with users rather than for them.
+
+**Departs**: Silent on trust, power dynamics, and the emotional reality of job displacement. Treats adoption as a design problem when it is also a human and political one.
+
+**Key thinkers**: Brown, Ries, Thomke.
+
+### Learning Organizations
+**Inherits**: Systems thinking, double-loop learning, generative organizational learning.
+
+**Departs**: Never solved the speed problem. You cannot afford years of organizational learning when the technology cycle is quarterly.
+
+**Key thinkers**: Senge, Argyris, Wenger, Dewey, Schön.
+
+### Complexity Theory
+**Inherits**: The right mental model — emergence, nonlinearity, the limits of prediction.
+
+**Departs**: Notoriously difficult to operationalize. Better at diagnosing complexity than telling a practitioner what to do on Monday morning.
+
+**Key thinkers**: Snowden (Cynefin), Stacey, Kauffman, Meadows, Taleb.
+
+### Applied Ethics
+**Inherits**: The recognition that technology adoption raises moral questions that governance alone cannot answer.
+
+**Departs**: Ethics in practice lives in legal and compliance. Every catastrophic corporate ethics failure of the last two decades — VW, Enron, Wells Fargo, Boeing — happened inside organizations with compliance frameworks. Ethics must be a practiced frontline capability, not a governance function.
+
+**Key thinkers**: Haidt, Rawls, Floridi, Gebru, Buolamwini.
+
+---
+
+## Cross-Cutting Influences
+
+| Thinker | Relevance |
+|---------|-----------|
+| Kurt Lewin | Grandfather of OD and change. AA inherits the action research orientation but rejects the linear unfreeze-change-refreeze model. |
+| John Kotter | The dominant change model AA challenges. Eight steps assume a known destination and linear execution. |
+| Karl Weick | Sensemaking under ambiguity — essential for understanding adoption resistance. |
+| W. Edwards Deming | Systems, not people, drive outcomes. |
+| Nassim Nicholas Taleb | Antifragility. Systems that gain from disorder. Adaptive Adoption is designed to be antifragile. |
+| Daniel Kahneman | Dual-process theory. The cognitive science foundation for Pillar 6. |
+| Prosci / ADKAR | **The target.** Awareness + desire + knowledge ≠ action. The intention-action gap is real, and ADKAR has no mechanism for it. |
+
+---
+
+## The Synthesis Claim
+
+Each tradition contributes something essential. Each has a critical gap. No previous methodology has woven them into a single operational framework for technology adoption.
+
+**Adaptive Adoption is not**: OD with AI vocabulary. Design thinking applied to change. Complexity theory repackaged. Behavioral science for tech adoption. An ethics framework.
+
+**Adaptive Adoption is**: the first methodology that integrates all five traditions into an operational framework designed for a world where the technology shifts monthly, skills cannot be predicted, and the biggest risk isn't the technology — it's the humans.
+
+That claim is defensible because it is true, and this repo exists so others can test it.
+
+---
+
+## Timeline of Key Ideas
+
+| Year | Idea | First Appearance |
+|------|------|-----------------|
+| 1999 | Integral Change Model (Wilber-informed) | Internal consulting work |
+| 2015 | Evidence-based change management | *The Science of Organizational Change*, 1st ed. |
+| 2015 | Taleb / complexity applied to org change | *The Science of Organizational Change*, 1st ed. |
+| 2015 | Behavioral science applied to change management | *The Science of Organizational Change*, 1st ed. |
+| 2015 | "You don't need change management in a change-agile organization" | *The Science of Organizational Change*, 1st ed. |
+| 2019 | Expanded evidence-based framework | *The Science of Organizational Change*, 2nd ed. |
+| 2021 | Adaptive Adoption methodology | Developed at Deloitte |
+| 2026 | Seven Pillars, open-sourced | This repo |
+
+---
+
+## Deeper Reading
+
+Full per-pillar canonical texts, specific thinkers, and detailed departure points are in [`docs/theory/canonical-texts.md`](docs/theory/canonical-texts.md).
+
+The broader intellectual project — critiques of legacy change models, ranked reading lists, and foundational scholarship — lives at [future-of-change](https://github.com/paulggibbons/future-of-change) *(forthcoming)*.
+
+---
+
+*This document is versioned. If you believe a priority claim is inaccurate, open an issue.*# Provenance
+
 Adaptive Adoption didn't emerge from a single insight. It synthesizes five intellectual traditions, each of which contributes something essential — and each of which has a critical gap that prevented it from solving the problem of technology adoption alone.
 
 This document traces those roots and names the gaps. It exists because ideas should be auditable.
