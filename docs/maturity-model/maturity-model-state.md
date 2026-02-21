@@ -336,6 +336,50 @@ research/
 
 ---
 
+## The People-First Flywheel — Core Theoretical Claim
+
+> **Hypothesis:** Organizations that develop people-first use cases — AI applications that demonstrably make working lives better (flourishing, not just productivity) — will generate faster, deeper, and more durable adoption than organizations that lead with efficiency or strategic mandates. Specifically, people-first use cases causally improve performance on Pillars 1, 3, and 6 beyond what structural readiness would predict.
+
+**The mechanism:**
+- **Trust (Pillar 3)** activates because the AI is visibly serving workers, not surveilling or replacing them — relational trust (layer 3 of the Three Trusts) is addressed directly
+- **Skill pull (Pillar 1)** activates because motivation to learn is intrinsic when the tool solves *your* problem — workers pull learning toward themselves rather than having training pushed at them
+- **Psychological safety (Pillar 6)** activates because experimentation feels safe when stakes are "this might make my work better" not "this might make me redundant"
+
+**What this means for the conventional adoption sequence:**
+Strategy → governance → tools → training → change management is backwards. People-first use cases first; the other pillars activate with less friction.
+
+**What this means for the model:**
+- Pillar 4 level descriptors assess *whose interests the use cases serve*, not just whether use cases exist
+- Level 0: No people-first use cases; AI deployed for org efficiency only
+- Level 5: Use cases co-designed with workers; flourishing measured alongside productivity
+- Cross-pillar interaction effect: orgs scoring high on Pillar 4 will tend to score higher on Pillars 1, 3, and 6 than structural readiness predicts
+
+**Why this is the philosophical core of AA:**
+Every other model treats adoption as an org-level capability problem. AA treats it as a human motivation problem. You don't get adoption by building capability and waiting. You get adoption by giving people a reason to want it — then capability follows.
+
+**Status:** Hypothesis — to be validated empirically across assessments. If the interaction effect is captured in assessment data, it's a publishable finding and a book chapter.
+
+**Named concept:** *The People-First Flywheel*
+
+---
+
+## Tech Debt
+
+### Trust Diagnostic — `diagnostics/trust-spectrum/`
+The trust session (2026-02-21) identified the need for a standalone diagnostic tool that maps organizations on the undertrust ↔ calibrated ↔ overtrust spectrum, per trust layer (Task / Institutional / Relational).
+
+This is distinct from the Pillar 3 rubric (which sits inside the full maturity assessment) — it's a lightweight, standalone instrument usable independently: a quick diagnostic for leaders who want to locate their trust problem before doing the full assessment.
+
+**Components needed:**
+- `diagnostics/trust-spectrum/README.md` — what the diagnostic measures and why
+- `diagnostics/trust-spectrum/instrument.md` — the questions per trust layer
+- `diagnostics/trust-spectrum/scoring.md` — undertrust/calibrated/overtrust anchors per layer
+- Integration note: links to `tools/trust-calibration-protocol/` for the intervention
+
+**Priority:** Build after Pillar 3 rubric is complete — the rubric generates the content; the diagnostic is the standalone extract.
+
+---
+
 ## What Comes Next (Build Order)
 
 1. [ ] Build Pillar 3 (Trust) rubric — full three-layer assessment instrument (draft in session 2026-02-21)
