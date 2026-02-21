@@ -1,0 +1,79 @@
+# Provenance
+
+Adaptive Adoption didn't emerge from a single insight. It synthesizes five intellectual traditions, each of which contributes something essential — and each of which has a critical gap that prevented it from solving the problem of technology adoption alone.
+
+This document traces those roots and names the gaps. It exists because ideas should be auditable.
+
+---
+
+## The Five Traditions
+
+### Organizational Development (OD)
+**What it contributes**: Humanistic values — the insistence that organizations exist for people, not the reverse. Respect for participation, voice, and dignity during change.
+
+**Where it falls short**: OD never operationalized its values for technology adoption. Its methods assume timescales and process depth that AI adoption cannot afford. Adaptive Adoption inherits OD's ethics but not its pace.
+
+### Design Thinking
+**What it contributes**: Prototyping, iteration, and the discipline of designing with users rather than for them.
+
+**Where it falls short**: Silent on trust, power dynamics, and the emotional reality of job displacement. Treats adoption as a design problem when it is also a human and political one. Adaptive Adoption uses design's methods (Pillar 5) but situates them inside the trust and behavioral realities design thinking ignores (Pillars 3, 6).
+
+### Learning Organizations (Senge, Argyris)
+**What it contributes**: Systems thinking, double-loop learning, the idea that organizations can learn generatively rather than just adaptively.
+
+**Where it falls short**: Never solved the speed problem. You cannot afford years of organizational learning when the technology cycle is quarterly. Adaptive Adoption takes systems thinking seriously (Pillar 2) but operationalizes it through sprints and experiments rather than slow cultural evolution.
+
+### Complexity Theory (Taleb, Snowden, Stacey)
+**What it contributes**: The right mental model — emergence, nonlinearity, the limits of prediction. The recognition that most organizational change operates in complex rather than complicated domains.
+
+**Where it falls short**: Notoriously difficult to operationalize. Complexity theorists are better at saying "it's complex" than at telling a practitioner what to do on Monday morning. Adaptive Adoption translates complexity into operational principles: prototype rather than plan (Pillar 5), build capability through doing rather than curriculum (Pillar 1), design for emergence rather than fixed end-states (Pillar 2).
+
+### Business Ethics (applied)
+**What it contributes**: Principles, governance frameworks, and the recognition that technology adoption raises moral questions.
+
+**Where it falls short**: Ethics in practice lives in legal and compliance — governance dashboards that tell you whether you followed the process, not whether the process was worth following. Every catastrophic ethics failure of the last two decades happened inside organizations with compliance frameworks. Adaptive Adoption treats ethics as a practiced frontline capability, not a governance function (Pillar 7).
+
+---
+
+## The Synthesis Claim
+
+Each tradition contributes something essential. Each has a critical gap. No previous methodology has woven them into a single operational framework for technology adoption.
+
+That claim is defensible because it is true, and this repo exists so others can test it.
+
+---
+
+## Adjacent Intellectual Debts
+
+These shaped the thinking without being direct ancestors of the framework:
+
+- **Behavioral science** (Kahneman, Thaler, Sunstein) → Pillar 6. The intention-action gap is the central critique of attitude-based change models.
+- **Nassim Nicholas Taleb** → Pillar 2. Antifragility, fat tails, and the limits of prediction applied to organizational change. First applied to change management in *The Science of Organizational Change* (2015).
+- **Ken Wilber / Integral Theory** → The earliest ancestor. The Integral Change Model (1999) attempted a four-quadrant approach to organizational transformation. Adaptive Adoption inherits the integrative instinct but not the specific architecture.
+- **Evidence-based management** (Pfeffer, Rousseau, Barends) → The methodological commitment that runs through all seven pillars: interventions should be grounded in the best available evidence, not tradition or vendor claims.
+- **Trust research** (Mayer, Davis & Schoorman; Edmondson) → Pillar 3. The undertrust/overtrust duality draws on the ABI framework (ability, benevolence, integrity) and psychological safety research.
+
+---
+
+## Timeline of Key Ideas
+
+| Year | Idea | First Appearance |
+|------|------|-----------------|
+| 1999 | Integral Change Model (Wilber-informed) | Internal consulting work |
+| 2015 | Evidence-based change management | *The Science of Organizational Change*, 1st ed. |
+| 2015 | Taleb / complexity applied to org change | *The Science of Organizational Change*, 1st ed. |
+| 2015 | Behavioral science applied to change | *The Science of Organizational Change*, 1st ed. |
+| 2015 | "You don't need change management in a change-agile organization" | *The Science of Organizational Change*, 1st ed. |
+| 2019 | Expanded evidence-based framework | *The Science of Organizational Change*, 2nd ed. |
+| 2021 | Adaptive Adoption (methodology) | Developed at Deloitte |
+| 2026 | Seven Pillars, open-sourced | This repo |
+
+---
+
+## Related Work
+
+The broader intellectual project — including critiques of legacy change models, reading lists, and foundational scholarship — lives at [future-of-change](https://github.com/paulggibbons/future-of-change) *(forthcoming)*.
+
+---
+
+*This document is versioned. If you believe a priority claim is inaccurate, open an issue.*
