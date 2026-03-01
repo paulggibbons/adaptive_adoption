@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pillar 6: Prioritize Behavior — Adaptive Adoption</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink: #0f0e0d;
+    --paper: #f5f0e8;
+    --accent: #c84b2f;
+    --gold: #b8922a;
+    --mid: #6b6560;
+    --light: #e8e2d8;
+    --rule: 1px solid #c8bfb0;
+  }
+
+  body {
+    background: #1a1713;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .card {
+    background: var(--paper);
+    width: 900px;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Grain texture overlay */
+  .card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.4;
+  }
+
+  /* Header */
+  .header {
+    padding: 48px 56px 0;
+    border-bottom: 3px solid var(--ink);
+    position: relative;
+  }
+
+  .pillar-label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+
+  .pillar-number {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 120px;
+    line-height: 0.85;
+    color: var(--light);
+    position: absolute;
+    right: 40px;
+    top: 24px;
+    z-index: 0;
+    user-select: none;
+  }
+
+  .pillar-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 52px;
+    line-height: 1.05;
+    color: var(--ink);
+    position: relative;
+    z-index: 2;
+    max-width: 560px;
+    padding-bottom: 32px;
+  }
+
+  .pillar-title em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  /* Claim bar */
+  .claim-bar {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 18px 56px;
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.5;
+    border-bottom: 3px solid var(--accent);
+  }
+
+  /* Body */
+  .body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+
+  .col {
+    padding: 36px 40px;
+  }
+
+  .col:first-child {
+    border-right: var(--rule);
+  }
+
+  /* Section */
+  .section {
+    margin-bottom: 32px;
+  }
+
+  .section:last-child {
+    margin-bottom: 0;
+  }
+
+  .section-head {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--gold);
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: var(--rule);
+  }
+
+  .claim-block {
+    background: var(--light);
+    border-left: 3px solid var(--accent);
+    padding: 12px 16px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--ink);
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+
+  p.body-text {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #3a3530;
+    margin-bottom: 10px;
+  }
+
+  /* Replace table */
+  .replace-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border: var(--rule);
+    font-size: 12px;
+  }
+
+  .replace-grid .rg-head {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 6px 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+    font-size: 10px;
+  }
+
+  .replace-grid .rg-cell {
+    padding: 7px 10px;
+    border-bottom: var(--rule);
+    color: #3a3530;
+    line-height: 1.4;
+  }
+
+  .replace-grid .rg-cell.old {
+    border-right: var(--rule);
+    color: var(--mid);
+    text-decoration: line-through;
+    text-decoration-color: var(--accent);
+    text-decoration-thickness: 1px;
+  }
+
+  /* Tool list */
+  .tool-item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 9px;
+    align-items: flex-start;
+    font-size: 13px;
+    line-height: 1.45;
+    color: #3a3530;
+  }
+
+  .tool-item .tool-dot {
+    width: 6px;
+    height: 6px;
+    background: var(--accent);
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 5px;
+  }
+
+  .tool-item strong {
+    color: var(--ink);
+    font-weight: 500;
+  }
+
+  /* SHIFT process */
+  .shift-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .shift-step {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  .shift-letter {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 26px;
+    line-height: 1;
+    color: var(--accent);
+    width: 18px;
+    flex-shrink: 0;
+  }
+
+  .shift-content {
+    font-size: 12.5px;
+    line-height: 1.5;
+    color: #3a3530;
+  }
+
+  .shift-content strong {
+    color: var(--ink);
+    font-weight: 500;
+    display: block;
+    font-size: 13px;
+  }
+
+  /* Four-quadrant diagnostic model */
+  .quad-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    margin-bottom: 8px;
+  }
+
+  .quad-box {
+    padding: 10px 12px;
+    border-left: 3px solid transparent;
+  }
+
+  .quad-cap  { background: #eef3f0; border-color: #4a8c6f; }
+  .quad-mot  { background: #f5ede8; border-color: var(--accent); }
+  .quad-trust { background: #edf0f5; border-color: #3a5fa0; }
+  .quad-opp  { background: #f5f0e0; border-color: var(--gold); }
+
+  .quad-q {
+    font-size: 10px;
+    font-style: italic;
+    color: var(--mid);
+    margin-bottom: 2px;
+  }
+
+  .quad-label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: var(--ink);
+    margin-bottom: 1px;
+  }
+
+  .quad-sub {
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--mid);
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+
+  .quad-bullets {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .quad-bullets span {
+    font-size: 10.5px;
+    color: #3a3530;
+    line-height: 1.4;
+    padding-left: 8px;
+    position: relative;
+  }
+
+  .quad-bullets span::before {
+    content: '·';
+    position: absolute;
+    left: 0;
+    color: var(--mid);
+  }
+
+  /* Leadership delta */
+  .delta-box {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 20px;
+    position: relative;
+  }
+
+  .delta-box::before {
+    content: 'Δ';
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 80px;
+    color: rgba(255,255,255,0.06);
+    position: absolute;
+    right: 16px;
+    top: 8px;
+    line-height: 1;
+  }
+
+  .delta-box .delta-head {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+
+  .delta-box p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: rgba(245,240,232,0.88);
+    margin-bottom: 8px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .delta-box p:last-child { margin-bottom: 0; }
+
+  .delta-box strong {
+    color: var(--paper);
+  }
+
+  /* Failure modes */
+  .fail-item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
+    font-size: 12.5px;
+    line-height: 1.45;
+    color: #3a3530;
+  }
+
+  .fail-item::before {
+    content: '—';
+    color: var(--accent);
+    flex-shrink: 0;
+    font-weight: 500;
+  }
+
+  /* Footer */
+  .footer {
+    border-top: 3px solid var(--ink);
+    padding: 18px 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--ink);
+  }
+
+  .footer-brand {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: var(--paper);
+  }
+
+  .footer-meta {
+    font-size: 11px;
+    color: var(--mid);
+    letter-spacing: 1px;
+  }
+
+  .footer-version {
+    font-size: 10px;
+    color: var(--mid);
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+  }
+
+  /* Full-width sections */
+  .full-row {
+    border-top: var(--rule);
+    padding: 32px 56px;
+  }
+
+  .full-row.dark {
+    background: #f0eae0;
+  }
+
+  .behaviors-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  .beh-pill {
+    border: var(--rule);
+    padding: 8px 12px;
+    font-size: 11.5px;
+    line-height: 1.4;
+    color: #3a3530;
+  }
+
+  .beh-pill strong {
+    display: block;
+    font-size: 12px;
+    color: var(--ink);
+    font-weight: 500;
+    margin-bottom: 2px;
+  }
+
+  @media print {
+    body { background: white; padding: 0; }
+    .card { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="pillar-label">Adaptive Adoption · Pillar 6 of 7</div>
+    <div class="pillar-number">6</div>
+    <div class="pillar-title">Prioritize<br><em>Behavior</em></div>
+  </div>
+
+  <!-- Claim bar -->
+  <div class="claim-bar">
+    "Awareness, desire, and knowledge do not add up to action — change the environment and the behavior; the mindset catches up."
+  </div>
+
+  <!-- Body: two columns -->
+  <div class="body">
+
+    <!-- Left col -->
+    <div class="col">
+
+      <div class="section">
+        <div class="section-head">Why This Pillar Exists</div>
+        <div class="claim-block">The dominant failure mode is "persuade then pray" — training, communication, inspiration — followed by waiting for behavior to follow. It doesn't.</div>
+        <p class="body-text">The intention-action gap is empirically documented. Ten percent of managerial training transfers back to the job. Antibias training does not reduce bias. ADKAR assumes the gap doesn't exist. Aristotle named it <em>akrasia</em> twenty-four centuries ago.</p>
+      </div>
+
+      <div class="section">
+        <div class="section-head">What It Replaces</div>
+        <div class="replace-grid">
+          <div class="rg-head">Old Model</div>
+          <div class="rg-head">Pillar 6</div>
+          <div class="rg-cell old">Awareness campaigns</div>
+          <div class="rg-cell">Behavioral diagnosis</div>
+          <div class="rg-cell old">Training as primary lever</div>
+          <div class="rg-cell">Environment design</div>
+          <div class="rg-cell old">Values statements</div>
+          <div class="rg-cell">Specific, observable behaviors</div>
+          <div class="rg-cell old">"Resistance" as diagnosis</div>
+          <div class="rg-cell">COM-B barrier analysis</div>
+          <div class="rg-cell old">Attitude change first</div>
+          <div class="rg-cell">Behavior first; attitude follows</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-head">Diagnostic Model — Four Drivers of Behavior</div>
+        <div class="quad-grid">
+          <div class="quad-box quad-cap">
+            <div class="quad-q">"Can I?"</div>
+            <div class="quad-label">CAPABILITY</div>
+            <div class="quad-sub">Internal Skill &amp; Judgment</div>
+            <div class="quad-bullets">
+              <span>AI literacy &amp; conceptual understanding</span>
+              <span>Prompting skill &amp; interaction fluency</span>
+              <span>Reliability judgment (critical thinking)</span>
+              <span>Learning agility</span>
+            </div>
+          </div>
+          <div class="quad-box quad-mot">
+            <div class="quad-q">"Why should I?"</div>
+            <div class="quad-label">MOTIVATION</div>
+            <div class="quad-sub">Desire, Identity &amp; Incentives</div>
+            <div class="quad-bullets">
+              <span>Perceived value &amp; hard incentives</span>
+              <span>Identity relevance ("My Work")</span>
+              <span>Meaning &amp; purpose</span>
+              <span>Future-self thinking</span>
+            </div>
+          </div>
+          <div class="quad-box quad-trust">
+            <div class="quad-q">"Should I?"</div>
+            <div class="quad-label">TRUST</div>
+            <div class="quad-sub">Confidence, Legitimacy &amp; Safety</div>
+            <div class="quad-bullets">
+              <span>Perceived legitimacy ("Allowed?")</span>
+              <span>Psychological safety</span>
+              <span>Competence &amp; identity threat</span>
+              <span>Risk perception &amp; error tolerance</span>
+            </div>
+          </div>
+          <div class="quad-box quad-opp">
+            <div class="quad-q">"Am I enabled?"</div>
+            <div class="quad-label">OPPORTUNITY</div>
+            <div class="quad-sub">Environment &amp; Systems</div>
+            <div class="quad-bullets">
+              <span>Time, workflow &amp; resources</span>
+              <span>Defaults (opt-in vs. automatic)</span>
+              <span>Sludge &amp; bureaucracy</span>
+              <span>Ambiguous policies &amp; support</span>
+            </div>
+          </div>
+        </div>
+        <p class="body-text" style="font-size:11px; margin-top:8px;">Diagnose which quadrant is the primary blocker before designing any intervention. Most change programs treat every problem as a Motivation problem.</p>
+      </div>
+
+    </div>
+
+    <!-- Right col -->
+    <div class="col">
+
+      <div class="section">
+        <div class="section-head">Process — SHIFT Method</div>
+        <div class="shift-steps">
+          <div class="shift-step">
+            <div class="shift-letter">S</div>
+            <div class="shift-content">
+              <strong>Specify the Behavior</strong>
+              Translate vague outcomes ("adoption") into observable actions: who does what, when, where.
+            </div>
+          </div>
+          <div class="shift-step">
+            <div class="shift-letter">H</div>
+            <div class="shift-content">
+              <strong>Hypothesize Barriers</strong>
+              Use COM-B and TDF to find what's blocking the behavior. Don't assume resistance.
+            </div>
+          </div>
+          <div class="shift-step">
+            <div class="shift-letter">I</div>
+            <div class="shift-content">
+              <strong>Intervene</strong>
+              Match the fix to the diagnosed barrier using evidence-based BCTs.
+            </div>
+          </div>
+          <div class="shift-step">
+            <div class="shift-letter">F</div>
+            <div class="shift-content">
+              <strong>Facilitate Stakeholders</strong>
+              Apply the same diagnostic lens to those who must approve, resource, or reinforce.
+            </div>
+          </div>
+          <div class="shift-step">
+            <div class="shift-letter">T</div>
+            <div class="shift-content">
+              <strong>Test and Iterate</strong>
+              Pilot → measure behavior (not sentiment) → adjust → scale what works.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-head">Key Tools</div>
+        <div class="tool-item"><div class="tool-dot"></div><div><strong>Behavioral Systems Map</strong> — identify highest-leverage points before intervening</div></div>
+        <div class="tool-item"><div class="tool-dot"></div><div><strong>If-Then Planners</strong> — "If [situation], then [specific behavior]" — closes intention-action gap</div></div>
+        <div class="tool-item"><div class="tool-dot"></div><div><strong>Sludge Audit</strong> — find environmental friction blocking the desired behavior</div></div>
+        <div class="tool-item"><div class="tool-dot"></div><div><strong>EAST Framework</strong> — make behavior Easy, Attractive, Social, Timely</div></div>
+        <div class="tool-item"><div class="tool-dot"></div><div><strong>APEASE</strong> — evaluate interventions: Acceptability, Practicability, Effectiveness, Affordability, Side effects, Equity</div></div>
+        <div class="tool-item"><div class="tool-dot"></div><div><strong>Nudge Dashboards</strong> — real-time behavioral feedback at point of action</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Behaviors full-width -->
+  <div class="full-row dark">
+    <div class="section-head" style="margin-bottom:16px;">Practitioner Behaviors</div>
+    <div class="behaviors-grid">
+      <div class="beh-pill"><strong>Behavioral Pinpointing</strong>Specifics over vagueness always</div>
+      <div class="beh-pill"><strong>Habit Stacking</strong>Anchor new to established routines</div>
+      <div class="beh-pill"><strong>ABC Analysis</strong>Antecedents → Behavior → Consequences</div>
+      <div class="beh-pill"><strong>Social Proofing</strong>"I saw leaders do it"</div>
+      <div class="beh-pill"><strong>Environmental Design</strong>Tweak defaults, reduce friction</div>
+      <div class="beh-pill"><strong>Identity Re-framing</strong>"I am an AI director"</div>
+      <div class="beh-pill"><strong>Public Commitment</strong>Leverage social pressure</div>
+      <div class="beh-pill"><strong>Detox Cards</strong>Flag toxic compliance</div>
+    </div>
+  </div>
+
+  <!-- Leadership delta full-width -->
+  <div class="full-row" style="padding-top:0; padding-bottom:0;">
+    <div class="delta-box">
+      <div class="delta-head">Leadership Delta</div>
+      <p><strong>Stop diagnosing resistance. Start diagnosing barriers.</strong> When adoption stalls, the default response is more messaging. SHIFT asks first: Is this a capability problem? Environmental? Motivational? The intervention depends entirely on the answer.</p>
+      <p>Role modeling is the highest-leverage environmental intervention available to a leader. If senior leaders are not visibly using AI tools, no communication campaign will move the organization.</p>
+    </div>
+  </div>
+
+  <!-- Common failures -->
+  <div class="full-row">
+    <div class="section-head" style="margin-bottom:14px;">Common Failure Modes</div>
+    <div style="columns: 2; gap: 40px;">
+      <div class="fail-item">Diagnosing resistance without barrier analysis — and responding with more communication</div>
+      <div class="fail-item">Designing training for a barrier that is actually environmental</div>
+      <div class="fail-item">Rolling out before piloting and measuring actual behavior change</div>
+      <div class="fail-item">Measuring sentiment instead of behavior</div>
+      <div class="fail-item">Treating COM-B as one-time diagnosis rather than iterative measurement</div>
+      <div class="fail-item">Values-first culture change that assumes attitude drives behavior</div>
+    </div>
+  </div>
+
+  <!-- Intellectual backdrop strip -->
+  <div style="border-top: var(--rule); padding: 16px 56px; background: #eee8dc;">
+    <div class="section-head" style="margin-bottom: 10px;">Intellectual Backdrop</div>
+    <div style="display: flex; gap: 40px; flex-wrap: wrap; font-size: 11.5px; color: #3a3530; line-height: 1.5;">
+      <span><strong>Aristotle</strong> — <em>akrasia</em>, NE Book VII</span>
+      <span><strong>Hume</strong> — reason as slave of passions</span>
+      <span><strong>Kahneman</strong> — System 1 / System 2</span>
+      <span><strong>Thaler & Sunstein</strong> — Nudge, choice architecture</span>
+      <span><strong>Gibbons</strong> — Four-driver model (Capability, Motivation, Trust, Opportunity)</span>
+      <span><strong>Michie et al.</strong> — Behaviour Change Wheel, 93 BCTs</span>
+      <span><strong>Meza & Gibbons</strong> — Future of Change Management, Vol. 1 (2024)</span>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-brand">Adaptive Adoption</div>
+    <div style="text-align:center;">
+      <div style="font-size:10px; color:#6b6560; letter-spacing:2px; font-family:'Bebas Neue',sans-serif;">github.com/paulggibbons/adaptive_adoption</div>
+    </div>
+    <div class="footer-version">v1.0-beta · Pillar 6/7</div>
+  </div>
+
+</div>
+
+</body>
+</html>
