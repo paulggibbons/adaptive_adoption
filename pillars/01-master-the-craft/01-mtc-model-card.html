@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pillar 1: Master the Craft — Adaptive Adoption</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink: #0f0e0d;
+    --paper: #f5f0e8;
+    --accent: #2a6b4a;
+    --gold: #b8922a;
+    --mid: #6b6560;
+    --light: #e8e2d8;
+    --rule: 1px solid #c8bfb0;
+  }
+
+  body {
+    background: #1a1713;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .card {
+    background: var(--paper);
+    width: 900px;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Header */
+  .header {
+    padding: 48px 56px 0;
+    border-bottom: 3px solid var(--ink);
+    position: relative;
+  }
+
+  .pillar-label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+
+  .pillar-number {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 120px;
+    line-height: 0.85;
+    color: var(--light);
+    position: absolute;
+    right: 40px;
+    top: 24px;
+    z-index: 0;
+    user-select: none;
+  }
+
+  .pillar-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 52px;
+    line-height: 1.05;
+    color: var(--ink);
+    position: relative;
+    z-index: 2;
+    max-width: 560px;
+    padding-bottom: 32px;
+  }
+
+  .pillar-title em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  /* Claim bar */
+  .claim-bar {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 18px 56px;
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.5;
+    border-bottom: 3px solid var(--accent);
+  }
+
+  /* Body */
+  .body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+
+  .col {
+    padding: 36px 40px;
+  }
+
+  .col:first-child {
+    border-right: var(--rule);
+  }
+
+  .section {
+    margin-bottom: 32px;
+  }
+
+  .section:last-child { margin-bottom: 0; }
+
+  .section-head {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--gold);
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: var(--rule);
+  }
+
+  .claim-block {
+    background: var(--light);
+    border-left: 3px solid var(--accent);
+    padding: 12px 16px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--ink);
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+
+  p.body-text {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #3a3530;
+    margin-bottom: 10px;
+  }
+
+  /* Replace table */
+  .replace-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border: var(--rule);
+    font-size: 12px;
+  }
+
+  .replace-grid .rg-head {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 6px 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+    font-size: 10px;
+  }
+
+  .replace-grid .rg-cell {
+    padding: 7px 10px;
+    border-bottom: var(--rule);
+    color: #3a3530;
+    line-height: 1.4;
+  }
+
+  .replace-grid .rg-cell.old {
+    border-right: var(--rule);
+    color: var(--mid);
+    text-decoration: line-through;
+    text-decoration-color: var(--accent);
+    text-decoration-thickness: 1px;
+  }
+
+  /* Four mastery levels */
+  .levels {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .level-row {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 8px 10px;
+    border-left: 3px solid transparent;
+    background: #f0eae0;
+  }
+
+  .level-row.l0 { border-color: #c8bfb0; }
+  .level-row.l1 { border-color: #b8922a; }
+  .level-row.l2 { border-color: #2a6b4a; }
+  .level-row.l3 { border-color: #0f0e0d; }
+
+  .level-badge {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    line-height: 1;
+    color: var(--mid);
+    width: 20px;
+    flex-shrink: 0;
+  }
+
+  .level-row.l1 .level-badge { color: var(--gold); }
+  .level-row.l2 .level-badge { color: var(--accent); }
+  .level-row.l3 .level-badge { color: var(--ink); }
+
+  .level-content strong {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 1px;
+  }
+
+  .level-content span {
+    font-size: 11px;
+    color: var(--mid);
+    line-height: 1.4;
+  }
+
+  /* Tool list */
+  .tool-item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 9px;
+    align-items: flex-start;
+    font-size: 13px;
+    line-height: 1.45;
+    color: #3a3530;
+  }
+
+  .tool-item .tool-dot {
+    width: 6px;
+    height: 6px;
+    background: var(--accent);
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 5px;
+  }
+
+  .tool-item strong {
+    color: var(--ink);
+    font-weight: 500;
+  }
+
+  /* Process steps (rituals) */
+  .ritual-steps { display: flex; flex-direction: column; gap: 8px; }
+
+  .ritual-step {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  .ritual-icon {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    color: var(--accent);
+    width: 20px;
+    flex-shrink: 0;
+    text-align: center;
+  }
+
+  .ritual-content {
+    font-size: 12.5px;
+    line-height: 1.5;
+    color: #3a3530;
+  }
+
+  .ritual-content strong {
+    color: var(--ink);
+    font-weight: 500;
+    display: block;
+    font-size: 13px;
+  }
+
+  /* Four-quadrant diagnostic */
+  .quad-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    margin-bottom: 8px;
+  }
+
+  .quad-box {
+    padding: 10px 12px;
+    border-left: 3px solid transparent;
+  }
+
+  .quad-cap   { background: #eef3f0; border-color: #4a8c6f; }
+  .quad-mot   { background: #f5ede8; border-color: #c84b2f; }
+  .quad-trust { background: #edf0f5; border-color: #3a5fa0; }
+  .quad-opp   { background: #f5f0e0; border-color: var(--gold); }
+
+  .quad-q {
+    font-size: 10px;
+    font-style: italic;
+    color: var(--mid);
+    margin-bottom: 2px;
+  }
+
+  .quad-label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: var(--ink);
+    margin-bottom: 1px;
+  }
+
+  .quad-sub {
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--mid);
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+
+  .quad-bullets { display: flex; flex-direction: column; gap: 2px; }
+
+  .quad-bullets span {
+    font-size: 10.5px;
+    color: #3a3530;
+    line-height: 1.4;
+    padding-left: 8px;
+    position: relative;
+  }
+
+  .quad-bullets span::before {
+    content: '·';
+    position: absolute;
+    left: 0;
+    color: var(--mid);
+  }
+
+  /* Leadership delta */
+  .delta-box {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 20px;
+    position: relative;
+  }
+
+  .delta-box::before {
+    content: 'Δ';
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 80px;
+    color: rgba(255,255,255,0.06);
+    position: absolute;
+    right: 16px;
+    top: 8px;
+    line-height: 1;
+  }
+
+  .delta-head {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: var(--gold);
+    margin-bottom: 12px;
+  }
+
+  .delta-rows { display: flex; flex-direction: column; gap: 8px; }
+
+  .delta-row {
+    display: flex;
+    gap: 12px;
+    align-items: baseline;
+    font-size: 12.5px;
+    line-height: 1.5;
+    position: relative;
+    z-index: 2;
+  }
+
+  .delta-from {
+    color: rgba(245,240,232,0.45);
+    text-decoration: line-through;
+    text-decoration-color: rgba(184,146,42,0.5);
+    white-space: nowrap;
+    min-width: 160px;
+  }
+
+  .delta-arrow { color: var(--gold); flex-shrink: 0; }
+
+  .delta-to {
+    color: var(--paper);
+    font-weight: 500;
+  }
+
+  .delta-note {
+    font-size: 10.5px;
+    color: rgba(245,240,232,0.5);
+    font-style: italic;
+    display: block;
+    padding-left: 0;
+    margin-top: 1px;
+  }
+
+  /* Behaviors grid */
+  .behaviors-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  .beh-pill {
+    border: var(--rule);
+    padding: 8px 12px;
+    font-size: 11.5px;
+    line-height: 1.4;
+    color: #3a3530;
+  }
+
+  .beh-pill strong {
+    display: block;
+    font-size: 12px;
+    color: var(--ink);
+    font-weight: 500;
+    margin-bottom: 2px;
+  }
+
+  /* Failure modes */
+  .fail-item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
+    font-size: 12.5px;
+    line-height: 1.45;
+    color: #3a3530;
+  }
+
+  .fail-item::before {
+    content: '—';
+    color: var(--accent);
+    flex-shrink: 0;
+    font-weight: 500;
+  }
+
+  /* Full-width rows */
+  .full-row {
+    border-top: var(--rule);
+    padding: 32px 56px;
+  }
+
+  .full-row.dark { background: #f0eae0; }
+
+  /* Footer */
+  .footer {
+    border-top: 3px solid var(--ink);
+    padding: 18px 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--ink);
+  }
+
+  .footer-brand {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: var(--paper);
+  }
+
+  .footer-version {
+    font-size: 10px;
+    color: var(--mid);
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="pillar-label">Adaptive Adoption · Pillar 1 of 7</div>
+    <div class="pillar-number">1</div>
+    <div class="pillar-title">Master<br>the <em>Craft</em></div>
+  </div>
+
+  <!-- Claim bar -->
+  <div class="claim-bar">
+    "Capability is built through doing, not curriculum — the unit of learning is the community of practice, not the training course."
+  </div>
+
+  <!-- Body: two columns -->
+  <div class="body">
+
+    <!-- Left col -->
+    <div class="col">
+
+      <div class="section">
+        <div class="section-head">Why This Pillar Exists</div>
+        <div class="claim-block">L&D's model — predict skills, design curriculum, deliver training — fails when the skill landscape shifts quarterly. AI doesn't give you years to learn.</div>
+        <p class="body-text">Literacy is the wrong frame. Fluency is just faster literacy spelled with an F. AI is not a language you learn — it is a system you architect. What's needed is craft: intimate knowledge of tools, understanding of limits, quality through skill not luck.</p>
+      </div>
+
+      <div class="section">
+        <div class="section-head">What It Replaces</div>
+        <div class="replace-grid">
+          <div class="rg-head">Old Model</div>
+          <div class="rg-head">Pillar 1</div>
+          <div class="rg-cell old">Predict skills → design curriculum</div>
+          <div class="rg-cell">Build through practice & iteration</div>
+          <div class="rg-cell old">Training course as unit of learning</div>
+          <div class="rg-cell">Community of practice</div>
+          <div class="rg-cell old">AI literacy / fluency</div>
+          <div class="rg-cell">AI mastery (craft)</div>
+          <div class="rg-cell old">Individual certification</div>
+          <div class="rg-cell">Peer learning + reverse mentoring</div>
+          <div class="rg-cell old">Training sponsor</div>
+          <div class="rg-cell">Practice architect</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-head">Mastery Levels — Where Are People?</div>
+        <div class="levels">
+          <div class="level-row l0">
+            <div class="level-badge">0</div>
+            <div class="level-content">
+              <strong>Atrophy / Avoidance</strong>
+              <span>Reads headlines, doesn't use tools. Uses AI for offloading not co-creation.</span>
+            </div>
+          </div>
+          <div class="level-row l1">
+            <div class="level-badge">1</div>
+            <div class="level-content">
+              <strong>Advice & Action</strong>
+              <span>Accelerates existing tasks. Better prompting, faster outputs. Same destination, faster route.</span>
+            </div>
+          </div>
+          <div class="level-row l2">
+            <div class="level-badge">2</div>
+            <div class="level-content">
+              <strong>Automate & Redesign</strong>
+              <span>Restructures work entirely. Does things previously impossible. Work changes shape.</span>
+            </div>
+          </div>
+          <div class="level-row l3">
+            <div class="level-badge">3</div>
+            <div class="level-content">
+              <strong>Architect & Transform</strong>
+              <span>Designs systems where AI is the operating agent. Multi-agent orchestration. New business models.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right col -->
+    <div class="col">
+
+      <div class="section">
+        <div class="section-head">Process — Practice Rituals</div>
+        <div class="ritual-steps">
+          <div class="ritual-step">
+            <div class="ritual-icon">◈</div>
+            <div class="ritual-content">
+              <strong>Hackathons / Datathons</strong>
+              Time-boxed builds. Safe place to break things and share what broke.
+            </div>
+          </div>
+          <div class="ritual-step">
+            <div class="ritual-icon">◈</div>
+            <div class="ritual-content">
+              <strong>Peer Learning Circles</strong>
+              Weekly show + tell. Work out loud — steps, not just outputs.
+            </div>
+          </div>
+          <div class="ritual-step">
+            <div class="ritual-icon">◈</div>
+            <div class="ritual-content">
+              <strong>Reverse Mentoring</strong>
+              Digital natives coach executives. Expertise flows both directions.
+            </div>
+          </div>
+          <div class="ritual-step">
+            <div class="ritual-icon">◈</div>
+            <div class="ritual-content">
+              <strong>Rapid Prototyping Sprints</strong>
+              Build → Measure → Learn. The change initiative uses the same logic as the AI products it deploys.
+            </div>
+          </div>
+          <div class="ritual-step">
+            <div class="ritual-icon">◈</div>
+            <div class="ritual-content">
+              <strong>Centaur → Cyborg Progression</strong>
+              Move from "assisted tasks" to "AI-native workflows" deliberately and measurably.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-head">Tools (Platforms)</div>
+        <div class="tool-item"><div class="tool-dot"></div><div><strong>Sandbox Environments</strong> — safe place to break things without production consequences</div></div>
+        <div class="tool-item"><div class="tool-dot"></div><div><strong>Prompt Library / Wiki</strong> — "GitHub for prompts"; shared, versioned, improvable</div></div>
+        <div class="tool-item"><div class="tool-dot"></div><div><strong>Micro-learning Clips</strong> — 1-3 min "how I did it" — practitioner-to-practitioner knowledge transfer</div></div>
+        <div class="tool-item"><div class="tool-dot"></div><div><strong>AI Assistants in Workflow</strong> — copilot embedded in actual work, not in a training room</div></div>
+        <div class="tool-item"><div class="tool-dot"></div><div><strong>Mastery Self-Diagnosis</strong> — craftsman knows their level; maturity curves for deliberate level-up</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Diagnostic model -->
+  <div class="full-row dark">
+    <div class="section-head" style="margin-bottom:14px;">Diagnostic Model — Four Barriers to Craft Development</div>
+    <div class="quad-grid">
+      <div class="quad-box quad-cap">
+        <div class="quad-q">"Can I?"</div>
+        <div class="quad-label">CAPABILITY</div>
+        <div class="quad-sub">Skill & Mastery Level</div>
+        <div class="quad-bullets">
+          <span>What Mastery level is this person actually at?</span>
+          <span>Prompting skill & interaction fluency</span>
+          <span>Critical verification & reliability judgment</span>
+          <span>Algorithmic auditing basics</span>
+        </div>
+      </div>
+      <div class="quad-box quad-mot">
+        <div class="quad-q">"Why should I?"</div>
+        <div class="quad-label">MOTIVATION</div>
+        <div class="quad-sub">Identity & Curiosity</div>
+        <div class="quad-bullets">
+          <span>Identity threat — expert whose expertise AI undercuts</span>
+          <span>Curiosity > Compliance norm established?</span>
+          <span>Future-self thinking ("I am an AI architect")</span>
+          <span>Role modeling from leaders visible?</span>
+        </div>
+      </div>
+      <div class="quad-box quad-trust">
+        <div class="quad-q">"Should I?"</div>
+        <div class="quad-label">TRUST</div>
+        <div class="quad-sub">Safety to Fail Loudly</div>
+        <div class="quad-bullets">
+          <span>Psychological safety to share misses publicly</span>
+          <span>Permission to experiment without penalty</span>
+          <span>Error tolerance in the learning environment</span>
+          <span>Sandbox legitimacy ("we are allowed to do this")</span>
+        </div>
+      </div>
+      <div class="quad-box quad-opp">
+        <div class="quad-q">"Am I enabled?"</div>
+        <div class="quad-label">OPPORTUNITY</div>
+        <div class="quad-sub">Time, Space & Tools</div>
+        <div class="quad-bullets">
+          <span>Protected time for deliberate practice</span>
+          <span>Sandbox environments available?</span>
+          <span>Every hour billable — no room for craft?</span>
+          <span>Prompt library / shared infrastructure exists?</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Behaviors full-width -->
+  <div class="full-row">
+    <div class="section-head" style="margin-bottom:16px;">Practitioner Behaviors (Norms)</div>
+    <div class="behaviors-grid">
+      <div class="beh-pill"><strong>Fail Loudly — Safely</strong>Share misses and fixes, not just wins</div>
+      <div class="beh-pill"><strong>Work Out Loud</strong>Show steps, not just outputs</div>
+      <div class="beh-pill"><strong>Curiosity > Compliance</strong>"What if?" culture over checkbox culture</div>
+      <div class="beh-pill"><strong>Collaborative Intelligence</strong>Human + AI + peer — not solo heroics</div>
+      <div class="beh-pill"><strong>Daily Sandbox</strong>Practice constant, safe, and social</div>
+      <div class="beh-pill"><strong>Model Curiosity First</strong>Leaders practice before they scale</div>
+      <div class="beh-pill"><strong>Self-Diagnosis</strong>Know your Mastery level; level up deliberately</div>
+      <div class="beh-pill"><strong>Teach to Learn</strong>Reward reusable artifacts and teaching others</div>
+    </div>
+  </div>
+
+  <!-- Leadership delta -->
+  <div class="full-row" style="padding: 0;">
+    <div class="delta-box">
+      <div class="delta-head">Leadership Delta — Four Shifts</div>
+      <div class="delta-rows">
+        <div class="delta-row">
+          <div class="delta-from">Training Sponsor</div>
+          <div class="delta-arrow">→</div>
+          <div class="delta-to">Practice Architect<span class="delta-note">Fund time, space, and rituals — not just courses</span></div>
+        </div>
+        <div class="delta-row">
+          <div class="delta-from">Permission Gate</div>
+          <div class="delta-arrow">→</div>
+          <div class="delta-to">Bounded Autonomy Designer<span class="delta-note">Set guardrails, then give freedom — not the reverse</span></div>
+        </div>
+        <div class="delta-row">
+          <div class="delta-from">Expertise Signaler</div>
+          <div class="delta-arrow">→</div>
+          <div class="delta-to">Learning Modeler<span class="delta-note">Leaders share their learning publicly, not their expertise</span></div>
+        </div>
+        <div class="delta-row">
+          <div class="delta-from">Hero Rewards</div>
+          <div class="delta-arrow">→</div>
+          <div class="delta-to">System Builder<span class="delta-note">Reward reusable artifacts and teaching — not individual heroics</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Common failures -->
+  <div class="full-row">
+    <div class="section-head" style="margin-bottom:14px;">Common Failure Modes</div>
+    <div style="columns: 2; gap: 40px;">
+      <div class="fail-item">Treating AI adoption as a training program rather than a craft development problem</div>
+      <div class="fail-item">Measuring completion rates instead of Mastery level progression</div>
+      <div class="fail-item">No sandbox — nowhere safe to break things means no real learning</div>
+      <div class="fail-item">Leaders signal expertise instead of modeling curiosity — community never forms</div>
+      <div class="fail-item">Designing curriculum before the tools have stabilized — the curriculum is obsolete on arrival</div>
+      <div class="fail-item">Confusing Level 1 (faster tasks) with genuine capability — the Ferrari on the same route</div>
+    </div>
+  </div>
+
+  <!-- Intellectual backdrop -->
+  <div style="border-top: var(--rule); padding: 16px 56px; background: #eee8dc;">
+    <div class="section-head" style="margin-bottom: 10px;">Intellectual Backdrop</div>
+    <div style="display: flex; gap: 32px; flex-wrap: wrap; font-size: 11.5px; color: #3a3530; line-height: 1.5;">
+      <span><strong>Dewey</strong> — learning by doing, <em>Experience and Education</em> (1938)</span>
+      <span><strong>Schön</strong> — knowing-in-action, <em>The Reflective Practitioner</em> (1983)</span>
+      <span><strong>Wenger</strong> — communities of practice (1998)</span>
+      <span><strong>Senge</strong> — generative learning, <em>The Fifth Discipline</em> (1990)</span>
+      <span><strong>Gibbons</strong> — AI Mastery Matrix: 6 dimensions × 4 levels (2026)</span>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-brand">Adaptive Adoption</div>
+    <div style="font-size:10px; color:#6b6560; letter-spacing:2px; font-family:'Bebas Neue',sans-serif;">github.com/paulggibbons/adaptive_adoption</div>
+    <div class="footer-version">v1.0-beta · Pillar 1/7</div>
+  </div>
+
+</div>
+</body>
+</html>
