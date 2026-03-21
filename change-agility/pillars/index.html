@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adaptive Adoption — Model Cards</title>
+
+<!-- SEO Meta -->
+<meta name="description" content="Adaptive Adoption: the first change framework built in code. Seven pillars for evidence-based AI adoption — open-source, behavioral-science-grounded, complexity-native. By Paul Gibbons.">
+<meta name="keywords" content="AI adoption, change management, behavioral science, organizational change, complexity theory, trust management, Paul Gibbons, Adaptive Adoption, open-source framework">
+<meta name="author" content="Paul Gibbons">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://paulggibbons.github.io/adaptive_adoption/pillars/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Adaptive Adoption — Seven Pillar Model Cards">
+<meta property="og:description" content="The first change framework built in code. Seven pillars for evidence-based AI adoption — open-source, behavioral-science-grounded, complexity-native.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://paulggibbons.github.io/adaptive_adoption/pillars/">
+<meta property="og:site_name" content="Adaptive Adoption">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWorkSeries",
+  "name": "Adaptive Adoption Model Cards",
+  "description": "Seven-pillar framework for evidence-based AI adoption in organizations.",
+  "author": {
+    "@type": "Person",
+    "name": "Paul Gibbons",
+    "url": "https://paulgibbonsadvisory.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Paul Gibbons Advisory"
+  },
+  "numberOfItems": 7,
+  "hasPart": [
+    {"@type": "Article", "name": "Master the Craft", "position": 1},
+    {"@type": "Article", "name": "Embrace Complexity", "position": 2},
+    {"@type": "Article", "name": "Consciously Manage Trust", "position": 3},
+    {"@type": "Article", "name": "Put People First", "position": 4},
+    {"@type": "Article", "name": "Design & Prototype", "position": 5},
+    {"@type": "Article", "name": "Prioritize Behavior", "position": 6},
+    {"@type": "Article", "name": "Manage Ethics Always", "position": 7}
+  ],
+  "license": "https://github.com/paulggibbons/adaptive_adoption/blob/main/LICENSE"
+}
+</script>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink: #0f0e0d;
+    --paper: #f5f0e8;
+    --gold: #b8922a;
+    --mid: #6b6560;
+    --light: #e8e2d8;
+    --rule: 1px solid #c8bfb0;
+  }
+
+  body {
+    background: #1a1713;
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .index-card {
+    background: var(--paper);
+    width: 960px;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .index-header {
+    padding: 56px 56px 32px;
+    border-bottom: 3px solid var(--ink);
+  }
+
+  .index-label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: var(--gold);
+    margin-bottom: 12px;
+  }
+
+  .index-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 52px;
+    line-height: 1.05;
+    color: var(--ink);
+    margin-bottom: 16px;
+  }
+
+  .index-title em { font-style: italic; color: var(--gold); }
+
+  .index-subtitle {
+    font-size: 18px;
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    color: var(--mid);
+    line-height: 1.5;
+    max-width: 640px;
+  }
+
+  /* Three-layer intro */
+  .layers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    border-bottom: 3px solid var(--ink);
+  }
+
+  .layer {
+    padding: 28px 32px;
+    border-right: var(--rule);
+  }
+
+  .layer:last-child { border-right: none; }
+
+  .layer-tag {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+  }
+
+  .layer-tag.torque { color: #b8922a; }
+  .layer-tag.flywheel { color: #2a6b4a; }
+  .layer-tag.guardrails { color: #8b2a2a; }
+
+  .layer-name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+
+  .layer-desc {
+    font-size: 12px;
+    font-style: italic;
+    color: var(--mid);
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+
+  .layer-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .layer-item {
+    font-size: 13px;
+    color: #3a3530;
+    padding: 10px 0;
+    border-bottom: var(--rule);
+    line-height: 1.4;
+  }
+
+  .layer-item:last-child { border-bottom: none; }
+
+  .layer-item a {
+    color: #3a3530;
+    text-decoration: none;
+    display: block;
+    transition: color 0.15s;
+  }
+
+  .layer-item a:hover { color: var(--ink); }
+
+  .layer-bottom {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--mid);
+    padding-top: 14px;
+    margin-top: auto;
+  }
+
+  /* Pillar grid */
+  .pillar-grid {
+    padding: 40px 56px;
+  }
+
+  .pillar-grid-head {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--gold);
+    margin-bottom: 24px;
+    padding-bottom: 8px;
+    border-bottom: var(--rule);
+  }
+
+  .pillars {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .pillar-link {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 20px 24px;
+    background: var(--light);
+    text-decoration: none;
+    transition: background 0.15s, border-color 0.15s;
+    border-left: 4px solid transparent;
+  }
+
+  .pillar-link:hover { background: #e0d9ce; }
+
+  .pillar-link.p1 { border-color: #2a6b4a; }
+  .pillar-link.p2 { border-color: #2a5a7b; }
+  .pillar-link.p3 { border-color: #3a5fa0; }
+  .pillar-link.p4 { border-color: #8b5a2b; }
+  .pillar-link.p5 { border-color: #7a5c8a; }
+  .pillar-link.p6 { border-color: #c84b2f; }
+  .pillar-link.p7 { border-color: #8b2a2a; }
+
+  .pillar-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    line-height: 1;
+    color: var(--light);
+    width: 32px;
+    flex-shrink: 0;
+  }
+
+  .pillar-link:hover .pillar-num { color: var(--mid); }
+
+  .pillar-info { flex: 1; }
+
+  .pillar-name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    color: var(--ink);
+    margin-bottom: 4px;
+  }
+
+  .pillar-claim {
+    font-size: 12px;
+    color: var(--mid);
+    line-height: 1.5;
+    font-style: italic;
+  }
+
+  /* Footer */
+  .index-footer {
+    border-top: 3px solid var(--ink);
+    padding: 18px 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--ink);
+  }
+
+  .index-footer span {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .index-footer .brand { color: var(--paper); font-size: 13px; letter-spacing: 3px; }
+  .index-footer .url { color: var(--mid); }
+  .index-footer .version { color: var(--mid); }
+  .index-footer a { color: var(--mid); text-decoration: none; }
+  .index-footer a:hover { color: var(--paper); }
+</style>
+</head>
+<body>
+
+<div class="index-card">
+
+  <div class="index-header">
+    <div class="index-label">Model Cards — The Practitioner Reference</div>
+    <div class="index-title">Adaptive <em>Adoption</em></div>
+    <div class="index-subtitle">The first change framework built in code. Seven pillars for evidence-based AI adoption — open-source, behavioral-science-grounded, complexity-native.</div>
+  </div>
+
+  <!-- Three-layer architecture -->
+  <div class="layers">
+
+    <div class="layer">
+      <div class="layer-tag torque">The Torque</div>
+      <div class="layer-name">AI Leadership Delta</div>
+      <div class="layer-desc">Seven dimensions. What leaders do differently.</div>
+      <div class="layer-items">
+        <div class="layer-item">The 10x Narrative</div>
+        <div class="layer-item">Active Modeling</div>
+        <div class="layer-item">Innovation Climate</div>
+        <div class="layer-item">Friction Courage</div>
+        <div class="layer-item">Trust Calibration</div>
+        <div class="layer-item">Ethical Leadership</div>
+        <div class="layer-item">Systems Orchestration</div>
+      </div>
+      <div class="layer-bottom">What Leaders Do Differently</div>
+    </div>
+
+    <div class="layer">
+      <div class="layer-tag flywheel">The Flywheel</div>
+      <div class="layer-name">Change Agility</div>
+      <div class="layer-desc">Seven pillars. The innovation engine.</div>
+      <div class="layer-items">
+        <div class="layer-item"><a href="01-master-the-craft/01-mtc-model-card.html">Master the Craft</a></div>
+        <div class="layer-item"><a href="02-embrace-complexity/pillar02_model_card.html">Embrace Complexity</a></div>
+        <div class="layer-item"><a href="03-consciously-manage-trust/pillar03_model_card.html">Consciously Manage Trust</a></div>
+        <div class="layer-item"><a href="04-put-people-first/pillar04_model_card.html">Put People First</a></div>
+        <div class="layer-item"><a href="05-design-and-prototype/pillar05_model_card.html">Design &amp; Prototype</a></div>
+        <div class="layer-item"><a href="06-prioritize-behavior/pillar06_model_card.html">Prioritize Behavior</a></div>
+        <div class="layer-item"><a href="07-manage-ethics-always/pillar07_model_card.html">Manage Ethics Always</a></div>
+      </div>
+      <div class="layer-bottom">What the Organization Does</div>
+    </div>
+
+    <div class="layer">
+      <div class="layer-tag guardrails">The Guardrails</div>
+      <div class="layer-name">Behavioral Governance</div>
+      <div class="layer-desc">Six dimensions. Governance lives in behavior, not documents.</div>
+      <div class="layer-items">
+        <div class="layer-item">Decision Rights</div>
+        <div class="layer-item">Executive Accountability</div>
+        <div class="layer-item">Risk &amp; Ethics</div>
+        <div class="layer-item">Data &amp; AI Stewardship</div>
+        <div class="layer-item">Governance Intelligence</div>
+        <div class="layer-item">1st-Derivative Talent</div>
+      </div>
+      <div class="layer-bottom">How It's Governed</div>
+    </div>
+
+  </div>
+
+  <!-- Change Agility cards grid -->
+  <div class="pillar-grid">
+    <div class="pillar-grid-head">Change Agility — Model Cards <span style="font-weight: 300; color: var(--mid); letter-spacing: 1px; font-size: 9px; margin-left: 8px;">/ paulggibbons/adaptive_adoption/model_cards</span></div>
+    <div class="pillars">
+
+      <a href="01-master-the-craft/01-mtc-model-card.html" class="pillar-link p1">
+        <div class="pillar-num">1</div>
+        <div class="pillar-info">
+          <div class="pillar-name">Master the Craft</div>
+          <div class="pillar-claim">Capability is built through doing, not curriculum.</div>
+        </div>
+      </a>
+
+      <a href="02-embrace-complexity/pillar02_model_card.html" class="pillar-link p2">
+        <div class="pillar-num">2</div>
+        <div class="pillar-info">
+          <div class="pillar-name">Embrace Complexity</div>
+          <div class="pillar-claim">You cannot plan your way through emergence.</div>
+        </div>
+      </a>
+
+      <a href="03-consciously-manage-trust/pillar03_model_card.html" class="pillar-link p3">
+        <div class="pillar-num">3</div>
+        <div class="pillar-info">
+          <div class="pillar-name">Consciously Manage Trust</div>
+          <div class="pillar-claim">Trust is the change resistance anti-venom.</div>
+        </div>
+      </a>
+
+      <a href="04-put-people-first/pillar04_model_card.html" class="pillar-link p4">
+        <div class="pillar-num">4</div>
+        <div class="pillar-info">
+          <div class="pillar-name">Put People First</div>
+          <div class="pillar-claim">You get to efficiency faster by not starting with it.</div>
+        </div>
+      </a>
+
+      <a href="05-design-and-prototype/pillar05_model_card.html" class="pillar-link p5">
+        <div class="pillar-num">5</div>
+        <div class="pillar-info">
+          <div class="pillar-name">Design &amp; Prototype</div>
+          <div class="pillar-claim">We prototype our way to the future.</div>
+        </div>
+      </a>
+
+      <a href="06-prioritize-behavior/pillar06_model_card.html" class="pillar-link p6">
+        <div class="pillar-num">6</div>
+        <div class="pillar-info">
+          <div class="pillar-name">Prioritize Behavior</div>
+          <div class="pillar-claim">Change the environment; the mindset catches up.</div>
+        </div>
+      </a>
+
+      <a href="07-manage-ethics-always/pillar07_model_card.html" class="pillar-link p7">
+        <div class="pillar-num">7</div>
+        <div class="pillar-info">
+          <div class="pillar-name">Manage Ethics Always</div>
+          <div class="pillar-claim">Ethics isn't a brake — it's the steering that allows speed.</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="index-footer">
+    <span class="brand">Adaptive Adoption</span>
+    <a href="https://github.com/paulggibbons/adaptive_adoption" class="url" style="font-size:10px; letter-spacing:2px; font-family:'Bebas Neue',sans-serif;">github.com/paulggibbons/adaptive_adoption</a>
+    <span class="version">v1.0-beta · Paul Gibbons Advisory · 2026</span>
+  </div>
+
+</div>
+
+</body>
+</html>
