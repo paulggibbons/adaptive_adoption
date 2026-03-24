@@ -62,6 +62,12 @@ Each tool should be runnable in **30–90 minutes** and produce a concrete artif
 
 ---
 
+## AI Mastery Diagnostic (v0.5 for comment)
+
+AI Mastery Diagnostic — a 12-question CLI self-assessment that places users on a 4-level AI mastery scale (User → Practitioner → Builder → Architect) across three dimensions (Know, Do, Build). Run with `python ai_mastery_diagnostic.py`. Generates an HTML report. Part of the Adaptive Adoption™ Framework.
+
+---
+
 ## Where tools live
 
 Tools should sit in dedicated subfolders, e.g.:
