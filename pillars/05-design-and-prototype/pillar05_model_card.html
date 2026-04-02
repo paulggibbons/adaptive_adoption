@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adaptive Adoption · Pillar 5: Design & Prototype</title>
+  <!-- SEO Meta -->
+  <meta name="description" content="Pillar 5 of the Adaptive Adoption framework: Design and Prototype. We don't plan our way to the future — we prototype our way there. Sprint-based experimentation replaces fixed future states. Open-source methodology by Paul Gibbons.">
+  <meta name="keywords" content="design thinking, prototyping, AI adoption, experimentation, sprint methodology, organizational change, Paul Gibbons, Adaptive Adoption">
+  <meta name="author" content="Paul Gibbons">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://paulggibbons.github.io/adaptive_adoption/05-design-and-prototype/pillar05_model_card.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Design & Prototype — Adaptive Adoption Pillar 5">
+  <meta property="og:description" content="We don't plan our way to the future — we prototype our way there. Sprint-based experimentation replaces fixed future states in AI adoption.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://paulggibbons.github.io/adaptive_adoption/05-design-and-prototype/pillar05_model_card.html">
+  <meta property="og:site_name" content="Adaptive Adoption">
+
+  <!-- Twitter/LinkedIn Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Design & Prototype — Adaptive Adoption Pillar 5">
+  <meta name="twitter:description" content="We don't plan our way to the future — we prototype our way there. Sprint-based experimentation for AI adoption.">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Design & Prototype — Adaptive Adoption Pillar 5 of 7",
+    "description": "We don't plan our way to the future — we prototype our way there. Sprint-based experimentation replaces fixed future states.",
+    "author": {
+      "@type": "Person",
+      "name": "Paul Gibbons",
+      "url": "https://paulgibbonsadvisory.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Paul Gibbons Advisory"
+    },
+    "isPartOf": {
+      "@type": "CreativeWorkSeries",
+      "name": "Adaptive Adoption Model Cards"
+    },
+    "position": 5,
+    "keywords": ["design thinking", "prototyping", "AI adoption", "experimentation", "sprint methodology"],
+    "license": "https://github.com/paulggibbons/adaptive_adoption/blob/main/LICENSE"
+  }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent: #7a5c8a;
+      --ink: #0f0e0d;
+      --paper: #f5f0e8;
+      --gold: #b8922a;
+      --mid: #6b6560;
+      --light: #e8e2d8;
+      --rule: 1px solid #c8bfb0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      background-color: #1a1713;
+      font-family: 'DM Sans', sans-serif;
+      color: var(--ink);
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 2rem;
+      min-height: 100vh;
+    }
+
+    .card {
+      width: 900px;
+      background-color: var(--paper);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Grain texture overlay */
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image:
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" result="noise"/><feColorMatrix in="noise" type="saturate" values="0"/><feBlend in="SourceGraphic" in2="noise" mode="overlay"/></filter><rect width="100" height="100" fill="%23f5f0e8" filter="url(%23noise)"/></svg>');
+      opacity: 0.02;
+      pointer-events: none;
+    }
+
+    .card > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Header */
+    .header {
+      background-color: var(--accent);
+      color: var(--paper);
+      padding: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: var(--rule);
+    }
+
+    .pillar-label {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 1rem;
+    }
+
+    .pillar-number {
+      font-family: 'DM Serif Display', serif;
+      font-size: 4rem;
+      font-weight: 400;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+      color: var(--paper);
+      opacity: 0.9;
+    }
+
+    .pillar-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.5rem;
+      font-weight: 400;
+      line-height: 1.2;
+      color: var(--paper);
+    }
+
+    .pillar-title em {
+      font-style: italic;
+    }
+
+    /* Claim bar */
+    .claim-bar {
+      background-color: var(--accent);
+      color: var(--paper);
+      padding: 1.5rem 3rem;
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.6;
+      border-bottom: var(--rule);
+    }
+
+    /* Body grid */
+    .body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      padding: 3rem;
+    }
+
+    .col {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .col:first-child {
+      border-right: var(--rule);
+      padding-right: 2rem;
+    }
+
+    .col:last-child {
+      padding-left: 2rem;
+    }
+
+    /* Sections */
+    .section {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .section-head {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--mid);
+      border-bottom: 1px solid var(--light);
+      padding-bottom: 0.5rem;
+    }
+
+    /* Claim block */
+    .claim-block {
+      background-color: var(--light);
+      padding: 1.5rem;
+      border-left: 4px solid var(--accent);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      font-weight: 500;
+    }
+
+    /* Body text */
+    .body-text {
+      font-size: 0.9rem;
+      line-height: 1.7;
+      color: var(--mid);
+    }
+
+    /* Replace grid */
+    .replace-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      padding: 0;
+    }
+
+    .replace-grid .tool-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    .replace-grid .tool-item strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .replace-grid .tool-item em {
+      color: var(--mid);
+      font-size: 0.85rem;
+    }
+
+    /* Quad grid */
+    .quad-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .quad-box {
+      padding: 1.5rem;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .quad-box .quad-cap {
+      font-weight: 600;
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    .quad-box .quad-mot {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      opacity: 0.8;
+    }
+
+    .quad-box .quad-trust {
+      font-size: 0.85rem;
+      line-height: 1.6;
+      list-style: none;
+    }
+
+    .quad-box .quad-trust li {
+      margin-bottom: 0.5rem;
+    }
+
+    .quad-box .quad-trust li::before {
+      content: '→ ';
+      margin-right: 0.5rem;
+      opacity: 0.6;
+    }
+
+    /* Color variants */
+    .quad-cap-green {
+      background-color: #4a8c6f;
+      color: white;
+    }
+
+    .quad-cap-green .quad-mot {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .quad-cap-green .quad-trust {
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .quad-cap-red {
+      background-color: #c84b2f;
+      color: white;
+    }
+
+    .quad-cap-red .quad-mot {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .quad-cap-red .quad-trust {
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .quad-cap-blue {
+      background-color: #3a5fa0;
+      color: white;
+    }
+
+    .quad-cap-blue .quad-mot {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .quad-cap-blue .quad-trust {
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .quad-cap-gold {
+      background-color: var(--gold);
+      color: white;
+    }
+
+    .quad-cap-gold .quad-mot {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .quad-cap-gold .quad-trust {
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    /* Delta box */
+    .delta-box {
+      background-color: var(--light);
+      padding: 1.5rem;
+      border-left: 4px solid var(--accent);
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+
+    .delta-box strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .delta-box p {
+      margin-bottom: 1rem;
+    }
+
+    .delta-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Fail item */
+    .fail-item {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--light);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    .fail-item:last-child {
+      border-bottom: none;
+    }
+
+    .fail-item strong {
+      color: var(--ink);
+    }
+
+    /* Footer */
+    .footer {
+      background-color: var(--light);
+      padding: 1.5rem 3rem;
+      border-top: var(--rule);
+      font-size: 0.8rem;
+      color: var(--mid);
+      text-align: right;
+    }
+
+    /* Full row for large sections */
+    .full-row {
+      grid-column: 1 / -1;
+    }
+
+    /* Behaviors grid */
+    .behaviors-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      padding: 0;
+    }
+
+    .beh-pill {
+      background-color: var(--light);
+      padding: 0.75rem 1rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      line-height: 1.5;
+      text-align: center;
+      border: 1px solid var(--rule);
+    }
+
+    /* Print styles */
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+      .card {
+        box-shadow: none;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <!-- Navigation -->
+    <nav style="padding: 10px 56px; background: var(--ink); display: flex; justify-content: space-between; align-items: center; font-family: 'Bebas Neue', sans-serif; font-size: 10px; letter-spacing: 2px;">
+      <a href="../04-put-people-first/pillar04_model_card.html" style="color: var(--mid); text-decoration: none;">← Pillar 4</a>
+      <a href="../index.html" style="color: var(--gold); text-decoration: none;">All Pillars</a>
+      <a href="../06-prioritize-behavior/pillar06_model_card.html" style="color: var(--mid); text-decoration: none;">Pillar 6 →</a>
+    </nav>
+    <!-- Header -->
+    <div class="header">
+      <div class="pillar-label">Adaptive Adoption · Pillar 5 of 7</div>
+      <div class="pillar-number">5</div>
+      <div class="pillar-title">Design &<br><em>Prototype</em></div>
+    </div>
+
+    <!-- Claim bar -->
+    <div class="claim-bar">
+      "We don't plan our way to the future; we prototype our way there."
+    </div>
+
+    <!-- Body -->
+    <div class="body">
+      <!-- Left column -->
+      <div class="col">
+        <!-- Why This Pillar Exists -->
+        <div class="section">
+          <div class="section-head">Why This Pillar Exists</div>
+          <div class="claim-block">
+            Traditional change assumes a known future state and builds a plan to get there. AI adoption has no known future state — the technology shifts faster than any plan can track.
+          </div>
+          <div class="body-text">
+            The future state fallacy is the most expensive assumption in enterprise change. When the target moves quarterly, investing months in a fixed plan produces an artifact that's obsolete on delivery. Pillar 5 replaces the plan with the sprint — fast, cheap experiments that let the organization learn its way to the future rather than predict it.
+          </div>
+        </div>
+
+        <!-- What It Replaces -->
+        <div class="section">
+          <div class="section-head">What It Replaces</div>
+          <div class="replace-grid">
+            <div class="tool-item">
+              <strong>Fixed future state</strong>
+              <em>→ Emergent direction through iteration</em>
+            </div>
+            <div class="tool-item">
+              <strong>Business case</strong>
+              <em>→ Hypothesis</em>
+            </div>
+            <div class="tool-item">
+              <strong>Pilot program</strong>
+              <em>→ Sprint experiment</em>
+            </div>
+            <div class="tool-item">
+              <strong>Annual planning</strong>
+              <em>→ Weekly build-measure-learn cycles</em>
+            </div>
+            <div class="tool-item">
+              <strong>Requirements gathering</strong>
+              <em>→ Rapid prototyping</em>
+            </div>
+            <div class="tool-item">
+              <strong>Change readiness</strong>
+              <em>→ Experiment readiness</em>
+            </div>
+          </div>
+        </div>
+
+        <!-- Diagnostic Model -->
+        <div class="section">
+          <div class="section-head">Diagnostic Model</div>
+          <div class="quad-grid">
+            <div class="quad-box quad-cap-green">
+              <div class="quad-cap">Can I?</div>
+              <div class="quad-mot">Capability</div>
+              <div class="quad-mot">Design & Build Skills</div>
+              <ul class="quad-trust">
+                <li>Hypothesis formulation</li>
+                <li>Rapid prototyping / no-code tooling</li>
+                <li>Measurement design</li>
+                <li>Context engineering & orchestration</li>
+              </ul>
+            </div>
+            <div class="quad-box quad-cap-red">
+              <div class="quad-cap">Why should I?</div>
+              <div class="quad-mot">Motivation</div>
+              <div class="quad-mot">Perfection Addiction</div>
+              <ul class="quad-trust">
+                <li>Fear of unfinished work</li>
+                <li>"Need more data" paralysis</li>
+                <li>Sunk cost attachment</li>
+                <li>Risk aversion rewarded</li>
+              </ul>
+            </div>
+            <div class="quad-box quad-cap-blue">
+              <div class="quad-cap">Should I?</div>
+              <div class="quad-mot">Trust</div>
+              <div class="quad-mot">Permission to Experiment</div>
+              <ul class="quad-trust">
+                <li>Safety to fail publicly</li>
+                <li>"Rough work" valued</li>
+                <li>Budget for experiments</li>
+                <li>Leadership tolerance</li>
+              </ul>
+            </div>
+            <div class="quad-box quad-cap-gold">
+              <div class="quad-cap">Am I enabled?</div>
+              <div class="quad-mot">Opportunity</div>
+              <div class="quad-mot">Experiment Infrastructure</div>
+              <ul class="quad-trust">
+                <li>No-code/low-code sandboxes</li>
+                <li>Protected tinkering time</li>
+                <li>Sprint cadence established</li>
+                <li>Gallery for sharing results</li>
+              </ul>
+            </div>
+          </div>
+          <div class="body-text" style="margin-top: 1rem; font-style: italic;">
+            Most organizations have the desire to experiment but lack the infrastructure. Pillar 5 diagnoses which barrier is primary — and it's usually Opportunity.
+          </div>
+        </div>
+      </div>
+
+      <!-- Right column -->
+      <div class="col">
+        <!-- BUILD Process -->
+        <div class="section">
+          <div class="section-head">The Build Process</div>
+          <div class="shift-steps">
+            <div class="shift-step">
+              <div class="shift-letter">B</div>
+              <div class="shift-content">
+                <strong>Bound the Experiment</strong><br>
+                Define the hypothesis, the minimum viable test, and the kill criteria. Not "let's try AI" but "we believe [X] will produce [Y], and we'll know in [Z] time."
+              </div>
+            </div>
+            <div class="shift-step">
+              <div class="shift-letter">U</div>
+              <div class="shift-content">
+                <strong>Unbundle the Problem</strong><br>
+                Break the initiative into independently testable components. Prototype the riskiest assumption first.
+              </div>
+            </div>
+            <div class="shift-step">
+              <div class="shift-letter">I</div>
+              <div class="shift-content">
+                <strong>Iterate in Sprints</strong><br>
+                1-2 week cycles. Build the smallest thing that tests the hypothesis. Measure. Adjust. Repeat.
+              </div>
+            </div>
+            <div class="shift-step">
+              <div class="shift-letter">L</div>
+              <div class="shift-content">
+                <strong>Learn Before Scaling</strong><br>
+                Extract the learning, not just the outcome. Why did it work? Under what conditions? What transfers?
+              </div>
+            </div>
+            <div class="shift-step">
+              <div class="shift-letter">D</div>
+              <div class="shift-content">
+                <strong>Decide: Scale, Pivot, or Kill</strong><br>
+                Every experiment ends with a decision. No zombie pilots that run forever without evaluation.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Key Tools -->
+        <div class="section">
+          <div class="section-head">Key Tools</div>
+          <ul style="list-style: none; font-size: 0.9rem; line-height: 1.7; color: var(--mid);">
+            <li><strong>No-Code / Low-Code Sandboxes</strong> — tools for non-technical builders to prototype AI workflows</li>
+            <li><strong>Experiment Canvas</strong> — hypothesis, test design, success criteria, kill criteria on one page</li>
+            <li><strong>Prototype Gallery</strong> — digital museum of experiments (successes AND failures)</li>
+            <li><strong>Sprint Templates</strong> — structured 1-2 week experiment cycles</li>
+            <li><strong>Value Capture Tracker</strong> — measuring what was learned, not just what was built</li>
+            <li><strong>Innovation Myths Deck</strong> — cards that challenge limiting beliefs about experimentation</li>
+          </ul>
+        </div>
+
+        <!-- Practitioner Behaviors -->
+        <div class="section">
+          <div class="section-head">Practitioner Behaviors</div>
+          <div class="behaviors-grid">
+            <div class="beh-pill">Bias for Action</div>
+            <div class="beh-pill">"Rough Work" Transparency</div>
+            <div class="beh-pill">Falling in Love with the Problem</div>
+            <div class="beh-pill">Context Engineering</div>
+            <div class="beh-pill">Orchestration</div>
+            <div class="beh-pill">Kill Discipline</div>
+            <div class="beh-pill">Hypothesis First</div>
+            <div class="beh-pill">Celebrate Dead Ends</div>
+          </div>
+        </div>
+
+        <!-- Leadership Delta -->
+        <div class="section">
+          <div class="section-head">Leadership Delta</div>
+          <div class="delta-box">
+            <p><strong>Stop funding plans. Start funding experiments.</strong> The ROI of a prototype is learning, not revenue. Leaders who demand business cases for experiments will get safe bets that teach nothing.</p>
+            <p>The design-and-prototype leader protects tinkering time, celebrates dead ends that generated learning, and asks 'what did we learn?' before 'did it work?'. Failure tolerance without learning extraction is just waste.</p>
+          </div>
+        </div>
+
+        <!-- Common Failure Modes -->
+        <div class="section">
+          <div class="section-head">Common Failure Modes</div>
+          <div style="font-size: 0.9rem; line-height: 1.7; color: var(--mid);">
+            <div class="fail-item"><strong>Zombie pilots</strong> — experiments that run forever without evaluation or kill criteria</div>
+            <div class="fail-item"><strong>Perfectionism disguised as thoroughness</strong> — "we need more data" as avoidance of action</div>
+            <div class="fail-item"><strong>Scaling before understanding</strong> — replicating a pilot's outputs without replicating its conditions</div>
+            <div class="fail-item"><strong>Prototyping without hypotheses</strong> — "let's try AI" is not an experiment, it's tourism</div>
+            <div class="fail-item"><strong>Innovation theater</strong> — hackathons and demo days that produce excitement but no sustained practice</div>
+            <div class="fail-item"><strong>Confusing prototype failure with initiative failure</strong> — killing the program because one experiment didn't work</div>
+          </div>
+        </div>
+
+        <!-- Intellectual Backdrop -->
+        <div class="section">
+          <div class="section-head">Intellectual Backdrop</div>
+          <ul style="list-style: none; font-size: 0.9rem; line-height: 1.7; color: var(--mid);">
+            <li><strong>Ries</strong> — Lean Startup, build-measure-learn (2011)</li>
+            <li><strong>Brown</strong> — Design thinking, IDEO (2009)</li>
+            <li><strong>Sarasvathy</strong> — Effectuation, entrepreneurial logic (2001)</li>
+            <li><strong>Snowden</strong> — Safe-to-fail probes, Cynefin (1999)</li>
+            <li><strong>Gibbons</strong> — Prototype-native change design (2026)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shift Steps styles (positioned after body for reference) -->
+    <style>
+      .shift-steps {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .shift-step {
+        display: grid;
+        grid-template-columns: 60px 1fr;
+        gap: 1.5rem;
+        align-items: flex-start;
+      }
+
+      .shift-letter {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--accent);
+        line-height: 1;
+      }
+
+      .shift-content {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        color: var(--mid);
+      }
+
+      .shift-content strong {
+        color: var(--ink);
+        font-weight: 600;
+      }
+    </style>
+
+    <!-- Footer -->
+    <div class="footer">
+      v1.0-beta · Pillar 5/7
+    </div>
+  </div>
+</body>
+</html>

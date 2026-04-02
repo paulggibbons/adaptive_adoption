@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pillar 3: Consciously Manage Trust</title>
+  <!-- SEO Meta -->
+  <meta name="description" content="Pillar 3 of the Adaptive Adoption framework: Consciously Manage Trust. Trust is the change resistance anti-venom — manage both undertrust and overtrust as dual failure modes. Open-source methodology by Paul Gibbons.">
+  <meta name="keywords" content="trust management, AI adoption, undertrust, overtrust, psychological safety, organizational change, Paul Gibbons, Adaptive Adoption">
+  <meta name="author" content="Paul Gibbons">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://paulggibbons.github.io/adaptive_adoption/03-consciously-manage-trust/pillar03_model_card.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Consciously Manage Trust — Adaptive Adoption Pillar 3">
+  <meta property="og:description" content="Trust is the change resistance anti-venom. Most frameworks address undertrust. None address overtrust. Both are failure modes in AI adoption.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://paulggibbons.github.io/adaptive_adoption/03-consciously-manage-trust/pillar03_model_card.html">
+  <meta property="og:site_name" content="Adaptive Adoption">
+
+  <!-- Twitter/LinkedIn Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Consciously Manage Trust — Adaptive Adoption Pillar 3">
+  <meta name="twitter:description" content="Trust is the change resistance anti-venom. Manage both undertrust and overtrust as dual failure modes in AI adoption.">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Consciously Manage Trust — Adaptive Adoption Pillar 3 of 7",
+    "description": "Trust is the change resistance anti-venom. Most frameworks address undertrust. None address overtrust. Both are failure modes.",
+    "author": {
+      "@type": "Person",
+      "name": "Paul Gibbons",
+      "url": "https://paulgibbonsadvisory.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Paul Gibbons Advisory"
+    },
+    "isPartOf": {
+      "@type": "CreativeWorkSeries",
+      "name": "Adaptive Adoption Model Cards"
+    },
+    "position": 3,
+    "keywords": ["trust management", "AI adoption", "undertrust", "overtrust", "psychological safety"],
+    "license": "https://github.com/paulggibbons/adaptive_adoption/blob/main/LICENSE"
+  }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #0f0e0d;
+      --paper: #f5f0e8;
+      --accent: #3a5fa0;
+      --gold: #b8922a;
+      --mid: #6b6560;
+      --light: #e8e2d8;
+      --rule: 1px solid #c8bfb0;
+    }
+
+    body {
+      background: #1a1713;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .card {
+      background: var(--paper);
+      width: 900px;
+      max-width: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.4;
+    }
+
+    .header {
+      padding: 48px 56px 0;
+      border-bottom: 3px solid var(--ink);
+      position: relative;
+    }
+
+    .pillar-label {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 11px;
+      letter-spacing: 4px;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    .pillar-number {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 120px;
+      line-height: 0.85;
+      color: var(--light);
+      position: absolute;
+      right: 40px;
+      top: 24px;
+      z-index: 0;
+      user-select: none;
+    }
+
+    .pillar-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 52px;
+      line-height: 1.05;
+      color: var(--ink);
+      position: relative;
+      z-index: 2;
+      max-width: 560px;
+      padding-bottom: 32px;
+    }
+
+    .pillar-title em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .claim-bar {
+      background: var(--ink);
+      color: var(--paper);
+      padding: 18px 56px;
+      font-family: 'DM Serif Display', serif;
+      font-style: italic;
+      font-size: 18px;
+      line-height: 1.5;
+      border-bottom: 3px solid var(--accent);
+    }
+
+    .body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+    }
+
+    .col {
+      padding: 36px 40px;
+    }
+
+    .col:first-child {
+      border-right: var(--rule);
+    }
+
+    .section {
+      margin-bottom: 32px;
+    }
+
+    .section:last-child {
+      margin-bottom: 0;
+    }
+
+    .section-head {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 11px;
+      letter-spacing: 3px;
+      color: var(--gold);
+      margin-bottom: 10px;
+      padding-bottom: 6px;
+      border-bottom: var(--rule);
+    }
+
+    .claim-block {
+      background: var(--light);
+      border-left: 3px solid var(--accent);
+      padding: 12px 16px;
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--ink);
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+
+    p.body-text {
+      font-size: 13px;
+      line-height: 1.7;
+      color: #3a3530;
+      margin-bottom: 10px;
+    }
+
+    .replace-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      border: var(--rule);
+      font-size: 12px;
+    }
+
+    .replace-grid .rg-head {
+      background: var(--ink);
+      color: var(--paper);
+      padding: 6px 10px;
+      font-family: 'Bebas Neue', sans-serif;
+      letter-spacing: 2px;
+      font-size: 10px;
+    }
+
+    .replace-grid .rg-cell {
+      padding: 7px 10px;
+      border-bottom: var(--rule);
+      color: #3a3530;
+      line-height: 1.4;
+    }
+
+    .replace-grid .rg-cell.old {
+      border-right: var(--rule);
+      color: var(--mid);
+      text-decoration: line-through;
+      text-decoration-color: var(--accent);
+      text-decoration-thickness: 1px;
+    }
+
+    .tool-item {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 9px;
+      align-items: flex-start;
+      font-size: 13px;
+      line-height: 1.45;
+      color: #3a3530;
+    }
+
+    .tool-item .tool-dot {
+      width: 6px;
+      height: 6px;
+      background: var(--accent);
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 5px;
+    }
+
+    .tool-item strong {
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    .shift-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .shift-step {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .shift-letter {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 26px;
+      line-height: 1;
+      color: var(--accent);
+      width: 18px;
+      flex-shrink: 0;
+    }
+
+    .shift-content {
+      font-size: 12.5px;
+      line-height: 1.5;
+      color: #3a3530;
+    }
+
+    .shift-content strong {
+      color: var(--ink);
+      font-weight: 500;
+      display: block;
+      font-size: 13px;
+    }
+
+    .quad-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+
+    .quad-box {
+      padding: 10px 12px;
+      border-left: 3px solid transparent;
+    }
+
+    .quad-cap  { background: #eef3f0; border-color: #4a8c6f; }
+    .quad-mot  { background: #f5ede8; border-color: #c84b2f; }
+    .quad-trust { background: #edf0f5; border-color: #3a5fa0; }
+    .quad-opp  { background: #f5f0e0; border-color: var(--gold); }
+
+    .quad-q {
+      font-size: 10px;
+      font-style: italic;
+      color: var(--mid);
+      margin-bottom: 2px;
+    }
+
+    .quad-label {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 15px;
+      letter-spacing: 2px;
+      color: var(--ink);
+      margin-bottom: 1px;
+    }
+
+    .quad-sub {
+      font-size: 10px;
+      font-weight: 500;
+      color: var(--mid);
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+
+    .quad-bullets {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .quad-bullets span {
+      font-size: 10.5px;
+      color: #3a3530;
+      line-height: 1.4;
+      padding-left: 8px;
+      position: relative;
+    }
+
+    .quad-bullets span::before {
+      content: '·';
+      position: absolute;
+      left: 0;
+      color: var(--mid);
+    }
+
+    .delta-box {
+      background: var(--ink);
+      color: var(--paper);
+      padding: 20px;
+      position: relative;
+    }
+
+    .delta-box::before {
+      content: 'Δ';
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 80px;
+      color: rgba(255,255,255,0.06);
+      position: absolute;
+      right: 16px;
+      top: 8px;
+      line-height: 1;
+    }
+
+    .delta-box .delta-head {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 10px;
+      letter-spacing: 3px;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+
+    .delta-box p {
+      font-size: 13px;
+      line-height: 1.6;
+      color: rgba(245,240,232,0.88);
+      margin-bottom: 8px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .delta-box p:last-child { margin-bottom: 0; }
+
+    .delta-box strong {
+      color: var(--paper);
+    }
+
+    .fail-item {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 8px;
+      font-size: 12.5px;
+      line-height: 1.45;
+      color: #3a3530;
+    }
+
+    .fail-item::before {
+      content: '—';
+      color: var(--accent);
+      flex-shrink: 0;
+      font-weight: 500;
+    }
+
+    .footer {
+      border-top: 3px solid var(--ink);
+      padding: 18px 56px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--ink);
+    }
+
+    .footer-brand {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 13px;
+      letter-spacing: 3px;
+      color: var(--paper);
+    }
+
+    .footer-version {
+      font-size: 10px;
+      color: var(--mid);
+      font-family: 'Bebas Neue', sans-serif;
+      letter-spacing: 2px;
+    }
+
+    .full-row {
+      border-top: var(--rule);
+      padding: 32px 56px;
+    }
+
+    .full-row.dark {
+      background: #f0eae0;
+    }
+
+    .behaviors-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .beh-pill {
+      border: var(--rule);
+      padding: 8px 12px;
+      font-size: 11.5px;
+      line-height: 1.4;
+      color: #3a3530;
+    }
+
+    .beh-pill strong {
+      display: block;
+      font-size: 12px;
+      color: var(--ink);
+      font-weight: 500;
+      margin-bottom: 2px;
+    }
+
+    @media print {
+      body { background: white; padding: 0; }
+      .card { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <!-- Navigation -->
+    <nav style="padding: 10px 56px; background: var(--ink); display: flex; justify-content: space-between; align-items: center; font-family: 'Bebas Neue', sans-serif; font-size: 10px; letter-spacing: 2px;">
+      <a href="../02-embrace-complexity/pillar02_model_card.html" style="color: var(--mid); text-decoration: none;">← Pillar 2</a>
+      <a href="../index.html" style="color: var(--gold); text-decoration: none;">All Pillars</a>
+      <a href="../04-put-people-first/pillar04_model_card.html" style="color: var(--mid); text-decoration: none;">Pillar 4 →</a>
+    </nav>
+
+    <!-- HEADER -->
+    <div class="header">
+      <div class="pillar-label">PILLAR</div>
+      <div class="pillar-number">3</div>
+      <h1 class="pillar-title">Consciously<br>Manage <em>Trust</em></h1>
+    </div>
+
+    <!-- CLAIM BAR -->
+    <div class="claim-bar">Trust is the change resistance anti-venom — but undertrust and overtrust are both failure modes.</div>
+
+    <!-- MAIN BODY: TWO-COLUMN LAYOUT -->
+    <div class="body">
+      <!-- LEFT COLUMN -->
+      <div class="col">
+        <!-- Why This Pillar Exists -->
+        <div class="section">
+          <div class="section-head">WHY THIS PILLAR EXISTS</div>
+          <div class="claim-block">Every change framework treats resistance as the enemy. Pillar 3 reframes: resistance is usually a trust signal. But blind trust in AI outputs is equally dangerous.</div>
+          <p class="body-text">The undertrust/overtrust duality is genuinely novel — no other change framework treats both as failure modes. Undertrust produces resistance and shadow rejection. Overtrust produces automation bias, unchecked hallucinations, and ethical blind spots. Trust must be calibrated, not maximized.</p>
+        </div>
+
+        <!-- What It Replaces -->
+        <div class="section">
+          <div class="section-head">WHAT IT REPLACES</div>
+          <div class="replace-grid">
+            <div class="rg-head">OLD</div>
+            <div class="rg-head">NEW</div>
+            <div class="rg-cell old">Overcome resistance</div>
+            <div class="rg-cell">Calibrate trust</div>
+            <div class="rg-cell old">Trust as binary (trust/distrust)</div>
+            <div class="rg-cell">Trust as spectrum (undertrust ↔ overtrust)</div>
+            <div class="rg-cell old">Resistance management</div>
+            <div class="rg-cell">Trust diagnosis</div>
+            <div class="rg-cell old">Persuasion campaigns</div>
+            <div class="rg-cell">Psychological safety infrastructure</div>
+            <div class="rg-cell old">One-time trust building</div>
+            <div class="rg-cell">Continuous trust calibration</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="col">
+        <!-- Diagnostic Model: Trust Calibration Matrix -->
+        <div class="section">
+          <div class="section-head">DIAGNOSTIC MODEL</div>
+          <p style="font-size: 11px; color: var(--mid); margin-bottom: 12px;">Trust Calibration Matrix</p>
+
+          <div class="quad-grid">
+            <!-- CAPABILITY -->
+            <div class="quad-box quad-cap">
+              <div class="quad-q">Can I trust my judgment?</div>
+              <div class="quad-label">CAPABILITY</div>
+              <div class="quad-sub">Verification Skill</div>
+              <div class="quad-bullets">
+                <span>AI output evaluation skill</span>
+                <span>Source verification habits</span>
+                <span>Hallucination detection</span>
+                <span>Confidence calibration</span>
+              </div>
+            </div>
+
+            <!-- MOTIVATION -->
+            <div class="quad-box quad-mot">
+              <div class="quad-q">Why should I trust?</div>
+              <div class="quad-label">MOTIVATION</div>
+              <div class="quad-sub">Trust Incentives</div>
+              <div class="quad-bullets">
+                <span>Technology betrayal history</span>
+                <span>Identity threat from AI</span>
+                <span>Org honesty about AI impact</span>
+                <span>Personal AI success/failure stakes</span>
+              </div>
+            </div>
+
+            <!-- TRUST -->
+            <div class="quad-box quad-trust">
+              <div class="quad-q">Is it safe to trust/distrust?</div>
+              <div class="quad-label">TRUST</div>
+              <div class="quad-sub">Psychological Safety</div>
+              <div class="quad-bullets">
+                <span>Permission to challenge outputs</span>
+                <span>Safety to report failures</span>
+                <span>Leadership skepticism modeling</span>
+                <span>Tolerance for "not ready yet"</span>
+              </div>
+            </div>
+
+            <!-- OPPORTUNITY -->
+            <div class="quad-box quad-opp">
+              <div class="quad-q">Am I enabled to calibrate?</div>
+              <div class="quad-label">OPPORTUNITY</div>
+              <div class="quad-sub">Trust Infrastructure</div>
+              <div class="quad-bullets">
+                <span>AI decision transparency</span>
+                <span>Nutrition labels available</span>
+                <span>Feedback loops when wrong</span>
+                <span>Escalation paths for concerns</span>
+              </div>
+            </div>
+          </div>
+
+          <p style="font-size: 11px; color: var(--mid); margin-top: 10px; line-height: 1.5;"><em>Diagnose where on the trust spectrum each stakeholder sits before designing any intervention. The intervention for undertrust is entirely different from the intervention for overtrust.</em></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROCESS: TRUST METHOD -->
+    <div class="full-row dark">
+      <div class="section-head">PROCESS: THE TRUST METHOD</div>
+      <div class="shift-steps">
+        <div class="shift-step">
+          <div class="shift-letter">T</div>
+          <div class="shift-content">
+            <strong>Test Assumptions</strong>
+            Surface implicit trust/distrust assumptions. What do people actually believe about this AI system's reliability?
+          </div>
+        </div>
+        <div class="shift-step">
+          <div class="shift-letter">R</div>
+          <div class="shift-content">
+            <strong>Read the Spectrum</strong>
+            Map where each stakeholder sits: undertrust (rejection), calibrated trust (healthy), or overtrust (automation bias).
+          </div>
+        </div>
+        <div class="shift-step">
+          <div class="shift-letter">U</div>
+          <div class="shift-content">
+            <strong>Understand the Source</strong>
+            Is this an ability concern? A benevolence concern? An integrity concern? (Mayer, Davis &amp; Schoorman ABI framework)
+          </div>
+        </div>
+        <div class="shift-step">
+          <div class="shift-letter">S</div>
+          <div class="shift-content">
+            <strong>Shape the Environment</strong>
+            Build trust infrastructure: transparency, feedback loops, escalation paths, psychological safety.
+          </div>
+        </div>
+        <div class="shift-step">
+          <div class="shift-letter">T</div>
+          <div class="shift-content">
+            <strong>Track and Recalibrate</strong>
+            Trust is not a one-time achievement. AI capabilities change monthly. Trust calibration must keep pace.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- KEY TOOLS -->
+    <div class="full-row">
+      <div class="section-head">KEY TOOLS</div>
+      <div class="tool-item">
+        <div class="tool-dot"></div>
+        <div><strong>Trust Barometer</strong> — pulse check: "Do you trust this output?" mapped across teams and use cases</div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-dot"></div>
+        <div><strong>Algorithm Nutrition Labels</strong> — data sources, known biases, intended use, confidence intervals</div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-dot"></div>
+        <div><strong>Skeptic Roundtables</strong> — dedicated sessions to vent concerns without judgment</div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-dot"></div>
+        <div><strong>"Open Kitchen" Demos</strong> — showing messy, unfinished AI work to build realistic expectations</div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-dot"></div>
+        <div><strong>Risk/Fear Register</strong> — structured log of "what keeps me up at night" concerns</div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-dot"></div>
+        <div><strong>Ethical "Stop" Cord</strong> — frontline veto power on AI deployment</div>
+      </div>
+    </div>
+
+    <!-- PRACTITIONER BEHAVIORS -->
+    <div class="full-row dark">
+      <div class="section-head">PRACTITIONER BEHAVIORS</div>
+      <div class="behaviors-grid">
+        <div class="beh-pill"><strong>Vulnerability First</strong> Leaders admitting ignorance</div>
+        <div class="beh-pill"><strong>Calling Out "The Killers"</strong> Flagging trust-destroying phrases</div>
+        <div class="beh-pill"><strong>Consistency</strong> Doing what you say you will</div>
+        <div class="beh-pill"><strong>Assume Positive Intent</strong> Charitable skepticism interpretation</div>
+        <div class="beh-pill"><strong>Trust Audit Habit</strong> Regularly checking own calibration</div>
+        <div class="beh-pill"><strong>Transparent Uncertainty</strong> "70% confident" over false certainty</div>
+        <div class="beh-pill"><strong>Escalation Without Blame</strong> Failures as learning signals</div>
+        <div class="beh-pill"><strong>Overtrust Vigilance</strong> Questioning "too easy" moments</div>
+      </div>
+    </div>
+
+    <!-- LEADERSHIP DELTA -->
+    <div class="full-row">
+      <div class="section-head">LEADERSHIP DELTA</div>
+      <div class="delta-box">
+        <div class="delta-head">THE TRUST DELTA</div>
+        <p><strong>Leaders must model calibrated trust</strong> — neither the AI evangelist who dismisses all skepticism, nor the fearful leader who blocks all experimentation. Both destroy trust.</p>
+        <p><strong>Psychological safety is the precondition</strong> for trust calibration. If people cannot safely say "I don't trust this output," they will comply without trusting — and the organization learns nothing about where AI is actually reliable.</p>
+      </div>
+    </div>
+
+    <!-- COMMON FAILURE MODES -->
+    <div class="full-row dark">
+      <div class="section-head">COMMON FAILURE MODES</div>
+      <div class="fail-item">Treating all skepticism as resistance — when some of it is accurate risk assessment</div>
+      <div class="fail-item">Overtrusting AI outputs because they "sound confident" — automation bias</div>
+      <div class="fail-item">Building trust through persuasion rather than transparency and track record</div>
+      <div class="fail-item">One-time trust-building events that don't account for shifting AI capabilities</div>
+      <div class="fail-item">Psychological safety as HR program rather than leadership behavior</div>
+      <div class="fail-item">Ignoring the undertrust/overtrust spectrum — treating trust as binary</div>
+    </div>
+
+    <!-- INTELLECTUAL BACKDROP -->
+    <div class="full-row">
+      <div class="section-head">INTELLECTUAL BACKDROP</div>
+      <div class="tool-item">
+        <div class="tool-dot"></div>
+        <div><strong>Mayer, Davis &amp; Schoorman</strong> — ABI trust model (1995)</div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-dot"></div>
+        <div><strong>Edmondson</strong> — Psychological safety (1999)</div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-dot"></div>
+        <div><strong>Parasuraman &amp; Riley</strong> — Automation bias (1997)</div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-dot"></div>
+        <div><strong>Lee &amp; See</strong> — Trust in automation (2004)</div>
+      </div>
+      <div class="tool-item">
+        <div class="tool-dot"></div>
+        <div><strong>Gibbons</strong> — Trust calibration spectrum (2026)</div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="footer-brand">ADAPTIVE ADOPTION</div>
+      <div class="footer-version">v1.0-beta · Pillar 3/7</div>
+    </div>
+  </div>
+</body>
+</html>

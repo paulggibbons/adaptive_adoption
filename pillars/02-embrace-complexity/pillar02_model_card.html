@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pillar 2: Embrace Complexity — Adaptive Adoption</title>
+
+<!-- SEO Meta -->
+<meta name="description" content="Pillar 2 of the Adaptive Adoption framework: Embrace Complexity. AI adoption is a complex adaptive system — design for emergence using probe-sense-respond cycles, not waterfall plans. Open-source methodology by Paul Gibbons.">
+<meta name="keywords" content="complexity theory, AI adoption, adaptive systems, Cynefin, probe-sense-respond, organizational change, Paul Gibbons, Adaptive Adoption">
+<meta name="author" content="Paul Gibbons">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://paulggibbons.github.io/adaptive_adoption/02-embrace-complexity/pillar02_model_card.html">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Embrace Complexity — Adaptive Adoption Pillar 2">
+<meta property="og:description" content="AI adoption is a complex adaptive system. You cannot plan your way through emergence, but you can design for it. PACE method: Probe, Attend, Calibrate, Evolve.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://paulggibbons.github.io/adaptive_adoption/02-embrace-complexity/pillar02_model_card.html">
+<meta property="og:site_name" content="Adaptive Adoption">
+
+<!-- Twitter/LinkedIn Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Embrace Complexity — Adaptive Adoption Pillar 2">
+<meta name="twitter:description" content="AI adoption is a complex adaptive system. Design for emergence using probe-sense-respond, not waterfall plans.">
+
+<!-- Schema.org Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Embrace Complexity — Adaptive Adoption Pillar 2 of 7",
+  "description": "AI adoption is a complex adaptive system — design for emergence using probe-sense-respond cycles, not waterfall plans.",
+  "author": {
+    "@type": "Person",
+    "name": "Paul Gibbons",
+    "url": "https://paulgibbonsadvisory.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Paul Gibbons Advisory"
+  },
+  "isPartOf": {
+    "@type": "CreativeWorkSeries",
+    "name": "Adaptive Adoption Model Cards"
+  },
+  "position": 2,
+  "keywords": ["complexity theory", "AI adoption", "Cynefin", "probe-sense-respond", "organizational change"],
+  "license": "https://github.com/paulggibbons/adaptive_adoption/blob/main/LICENSE"
+}
+</script>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap');
+
+  :root {
+    --accent: #2a5a7b;
+    --ink: #0f0e0d;
+    --paper: #f5f0e8;
+    --gold: #b8922a;
+    --mid: #6b6560;
+    --light: #e8e2d8;
+    --rule: 1px solid #c8bfb0;
+    --dark-bg: #1a1713;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--dark-bg);
+    padding: 2rem;
+    color: var(--ink);
+  }
+
+  .card {
+    max-width: 900px;
+    background-color: var(--paper);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Grain texture overlay */
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><filter id="noise"><feTurbulence baseFrequency="0.9" numOctaves="4" result="noise"/><feColorMatrix in="noise" type="saturate" values="0.3"/></filter><rect width="100" height="100" fill="%23f5f0e8" filter="url(%23noise)"/></svg>');
+    pointer-events: none;
+    opacity: 0.03;
+    z-index: 1;
+  }
+
+  .card > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Header Section */
+  .header {
+    padding: 3rem 3rem 2rem 3rem;
+    border-bottom: var(--rule);
+  }
+
+  .pillar-label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.15em;
+    color: var(--mid);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+
+  .header-main {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .pillar-number {
+    font-family: 'DM Serif Display', serif;
+    font-size: 5rem;
+    color: var(--accent);
+    line-height: 0.9;
+    flex-shrink: 0;
+  }
+
+  .pillar-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 3rem;
+    color: var(--ink);
+    line-height: 1.1;
+  }
+
+  .pillar-title em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  /* Claim Bar */
+  .claim-bar {
+    background-color: var(--light);
+    border-top: var(--rule);
+    border-bottom: var(--rule);
+    padding: 1.5rem 3rem;
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--ink);
+    line-height: 1.6;
+  }
+
+  /* Two-Column Body */
+  .body-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 3rem;
+    border-bottom: var(--rule);
+  }
+
+  .body-left, .body-right {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  /* Section Heading */
+  .section-heading {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border-bottom: var(--rule);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Claim Block */
+  .claim-block {
+    background-color: var(--light);
+    padding: 1.5rem;
+    border-left: 4px solid var(--accent);
+    margin-bottom: 1rem;
+  }
+
+  .claim-block p {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1rem;
+    color: var(--ink);
+    line-height: 1.6;
+  }
+
+  /* Body text */
+  .section-text {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--ink);
+  }
+
+  /* Replace Grid */
+  .replace-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .replace-item {
+    padding: 1rem;
+    background-color: var(--light);
+    border-left: 3px solid var(--accent);
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .replace-item strong {
+    color: var(--accent);
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  /* Quad Grid (Four Quadrants) */
+  .diagnostic-note {
+    font-size: 0.85rem;
+    color: var(--mid);
+    margin-top: 1rem;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .quad-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .quad-item {
+    padding: 1.5rem;
+    border-left: 5px solid;
+    background-color: var(--light);
+  }
+
+  .quad-item.capability {
+    border-left-color: #4a8c6f;
+  }
+
+  .quad-item.capability .quad-label {
+    color: #4a8c6f;
+  }
+
+  .quad-item.motivation {
+    border-left-color: #c84b2f;
+  }
+
+  .quad-item.motivation .quad-label {
+    color: #c84b2f;
+  }
+
+  .quad-item.trust {
+    border-left-color: #3a5fa0;
+  }
+
+  .quad-item.trust .quad-label {
+    color: #3a5fa0;
+  }
+
+  .quad-item.opportunity {
+    border-left-color: var(--gold);
+  }
+
+  .quad-item.opportunity .quad-label {
+    color: var(--gold);
+  }
+
+  .quad-label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .quad-question {
+    font-style: italic;
+    font-size: 0.9rem;
+    margin: 0.3rem 0 0.5rem 0;
+    color: var(--mid);
+  }
+
+  .quad-barrier {
+    font-family: 'DM Serif Display', serif;
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+  }
+
+  .quad-list {
+    list-style: none;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .quad-list li {
+    margin-bottom: 0.4rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+
+  .quad-list li::before {
+    content: '▪';
+    position: absolute;
+    left: 0;
+    color: var(--mid);
+  }
+
+  /* PACE Process (Shift-Step Style) */
+  .process-section {
+    margin-top: 0;
+  }
+
+  .pace-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .pace-step {
+    padding: 1.25rem;
+    background-color: var(--light);
+    border-left: 4px solid var(--accent);
+    position: relative;
+  }
+
+  .pace-letter {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: var(--accent);
+    position: absolute;
+    top: 0.75rem;
+    right: 1.5rem;
+    opacity: 0.3;
+    line-height: 1;
+  }
+
+  .pace-step strong {
+    display: block;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+  }
+
+  .pace-step p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--ink);
+    padding-right: 3rem;
+  }
+
+  /* Key Tools */
+  .tool-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .tool-item {
+    padding: 1rem 1.25rem;
+    background-color: var(--light);
+    border-left: 3px solid var(--accent);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--ink);
+    position: relative;
+    padding-left: 2rem;
+  }
+
+  .tool-item::before {
+    content: '●';
+    position: absolute;
+    left: 0.75rem;
+    color: var(--accent);
+    font-size: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  /* Full-Width Sections */
+  .section-full {
+    padding: 2.5rem 3rem;
+    border-bottom: var(--rule);
+  }
+
+  .section-full:last-of-type {
+    border-bottom: none;
+  }
+
+  /* Practitioner Behaviors Grid */
+  .behaviors-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .behavior-pill {
+    background-color: var(--light);
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    padding: 1.25rem;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--ink);
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Leadership Delta Box */
+  .delta-box {
+    background-color: var(--ink);
+    color: var(--paper);
+    padding: 2.5rem;
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .delta-box p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    font-family: 'DM Serif Display', serif;
+  }
+
+  .delta-box p:first-child::first-letter {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  /* Common Failure Modes */
+  .fail-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .fail-item {
+    padding: 1.5rem;
+    background-color: var(--light);
+    border-left: 4px solid #c84b2f;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--ink);
+  }
+
+  .fail-item::before {
+    content: '⚠';
+    margin-right: 0.5rem;
+    color: #c84b2f;
+  }
+
+  /* Intellectual Backdrop */
+  .backdrop-strip {
+    background-color: var(--light);
+    border-top: var(--rule);
+    border-bottom: var(--rule);
+    padding: 2rem 3rem;
+    margin-top: 0;
+  }
+
+  .backdrop-label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--mid);
+    margin-bottom: 1rem;
+  }
+
+  .backdrop-sources {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: var(--ink);
+  }
+
+  .backdrop-sources strong {
+    color: var(--accent);
+  }
+
+  /* Footer */
+  .footer {
+    padding: 2rem 3rem;
+    border-top: var(--rule);
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--mid);
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.1em;
+  }
+
+  .footer-divider {
+    color: var(--mid);
+    margin: 0 0.75rem;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .body-main {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .behaviors-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .delta-box {
+      grid-template-columns: 1fr;
+    }
+
+    .fail-items {
+      grid-template-columns: 1fr;
+    }
+
+    .replace-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .quad-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="card">
+
+  <!-- Navigation -->
+  <nav style="padding: 10px 56px; background: var(--ink); display: flex; justify-content: space-between; align-items: center; font-family: 'Bebas Neue', sans-serif; font-size: 10px; letter-spacing: 2px;">
+    <a href="../01-master-the-craft/01-mtc-model-card.html" style="color: var(--mid); text-decoration: none;">← Pillar 1</a>
+    <a href="../index.html" style="color: var(--gold); text-decoration: none;">All Pillars</a>
+    <a href="../03-consciously-manage-trust/pillar03_model_card.html" style="color: var(--mid); text-decoration: none;">Pillar 3 →</a>
+  </nav>
+
+  <!-- Header Section -->
+  <div class="header">
+    <div class="pillar-label">Adaptive Adoption · Pillar 2 of 7</div>
+    <div class="header-main">
+      <div class="pillar-number">2</div>
+      <h1 class="pillar-title">Embrace<br><em>Complexity</em></h1>
+    </div>
+  </div>
+
+  <!-- Claim Bar -->
+  <div class="claim-bar">
+    "AI adoption is a complex adaptive system — you cannot plan your way through emergence, but you can design for it."
+  </div>
+
+  <!-- Body: Two Columns -->
+  <div class="body-main">
+
+    <!-- Left Column -->
+    <div class="body-left">
+
+      <!-- Why This Pillar Exists -->
+      <section>
+        <h2 class="section-heading">Why This Pillar Exists</h2>
+        <div class="claim-block">
+          <p>Most organizations treat AI adoption as a complicated problem — solvable with enough planning. It's not. It's a complex one — where the system's behavior emerges from interactions no plan can predict.</p>
+        </div>
+        <div class="section-text">
+          <p>Traditional change management assumes a knowable future state. Complexity science shows that in tightly-coupled, nonlinear systems, the future state emerges from interaction patterns, not from plans. Cynefin's complex domain demands probe-sense-respond, not plan-execute-measure.</p>
+        </div>
+      </section>
+
+      <!-- What It Replaces -->
+      <section>
+        <h2 class="section-heading">What It Replaces</h2>
+        <div class="replace-grid">
+          <div class="replace-item">
+            <strong>Waterfall rollout plans</strong>
+            Probe-sense-respond cycles
+          </div>
+          <div class="replace-item">
+            <strong>Fixed future state</strong>
+            Emergent direction
+          </div>
+          <div class="replace-item">
+            <strong>Root cause analysis</strong>
+            Pattern recognition
+          </div>
+          <div class="replace-item">
+            <strong>Risk elimination</strong>
+            Risk navigation
+          </div>
+          <div class="replace-item">
+            <strong>Linear OKRs</strong>
+            Adaptive milestones
+          </div>
+        </div>
+      </section>
+
+      <!-- Diagnostic Model -->
+      <section>
+        <h2 class="section-heading">Diagnostic Model</h2>
+        <p class="section-text"><strong>Four Complexity Barriers</strong></p>
+        <div class="quad-grid">
+          <div class="quad-item capability">
+            <div class="quad-label">Capability</div>
+            <div class="quad-question">"Can I?"</div>
+            <div class="quad-barrier">Systems Thinking Deficit</div>
+            <ul class="quad-list">
+              <li>Pattern recognition across domains</li>
+              <li>Comfort with nonlinear causation</li>
+              <li>Second/third-order consequence thinking</li>
+              <li>Wardley mapping & futures literacy</li>
+            </ul>
+          </div>
+          <div class="quad-item motivation">
+            <div class="quad-label">Motivation</div>
+            <div class="quad-question">"Why should I?"</div>
+            <div class="quad-barrier">Certainty Addiction</div>
+            <ul class="quad-list">
+              <li>Discomfort with ambiguity and emergence</li>
+              <li>Demand for premature clarity</li>
+              <li>Planning as anxiety management</li>
+              <li>Oversimplification as status signal</li>
+            </ul>
+          </div>
+          <div class="quad-item trust">
+            <div class="quad-label">Trust</div>
+            <div class="quad-question">"Should I?"</div>
+            <div class="quad-barrier">Safety to Not Know</div>
+            <ul class="quad-list">
+              <li>Permission to say "I don't know"</li>
+              <li>Tolerance for directional (not destination) strategy</li>
+              <li>Leadership modeling uncertainty publicly</li>
+              <li>Error tolerance in complex experiments</li>
+            </ul>
+          </div>
+          <div class="quad-item opportunity">
+            <div class="quad-label">Opportunity</div>
+            <div class="quad-question">"Am I enabled?"</div>
+            <div class="quad-barrier">Structural Simplification</div>
+            <ul class="quad-list">
+              <li>Governance cadence too slow for emergence</li>
+              <li>KPIs that punish exploration</li>
+              <li>Budgets that require ROI certainty before experimentation</li>
+              <li>No safe-to-fail experiment infrastructure</li>
+            </ul>
+          </div>
+        </div>
+        <p class="diagnostic-note">Most organizations operate as if AI adoption is complicated (knowable, plannable). Pillar 2 starts by diagnosing whether this assumption is accurate.</p>
+      </section>
+
+    </div>
+
+    <!-- Right Column -->
+    <div class="body-right">
+
+      <!-- PACE Process -->
+      <section class="process-section">
+        <h2 class="section-heading">Process</h2>
+        <p class="section-text" style="margin-bottom: 1rem;"><strong>PACE Method</strong></p>
+        <div class="pace-steps">
+          <div class="pace-step">
+            <span class="pace-letter">P</span>
+            <strong>Probe</strong>
+            <p>Design safe-to-fail experiments. Small bets that test assumptions about how AI will interact with existing systems.</p>
+          </div>
+          <div class="pace-step">
+            <span class="pace-letter">A</span>
+            <strong>Attend</strong>
+            <p>Watch for emergent patterns. What's working, what's surprising, what's connecting in unexpected ways?</p>
+          </div>
+          <div class="pace-step">
+            <span class="pace-letter">C</span>
+            <strong>Calibrate</strong>
+            <p>Adjust direction based on pattern evidence, not sunk-cost logic. Dynamic steering, not annual planning.</p>
+          </div>
+          <div class="pace-step">
+            <span class="pace-letter">E</span>
+            <strong>Evolve</strong>
+            <p>Scale what emerges. Kill what doesn't. The system teaches you the strategy.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Key Tools -->
+      <section>
+        <h2 class="section-heading">Key Tools</h2>
+        <div class="tool-items">
+          <div class="tool-item">Polarity Maps — managing tensions (innovation vs. safety, speed vs. quality) rather than choosing sides</div>
+          <div class="tool-item">Wardley Mapping — visualizing value chain evolution and strategic positioning</div>
+          <div class="tool-item">Futures Wheel — mapping 2nd and 3rd order consequences before they arrive</div>
+          <div class="tool-item">Pre-Mortems — killing the project on paper before starting it</div>
+          <div class="tool-item">Red Teaming — stress-testing strategy and ethics with designated dissent</div>
+          <div class="tool-item">Dynamic Steering Cadence — monthly pulse adjustments replacing annual plans</div>
+        </div>
+      </section>
+
+    </div>
+
+  </div>
+
+  <!-- Practitioner Behaviors -->
+  <div class="section-full">
+    <h2 class="section-heading">Practitioner Behaviors</h2>
+    <div class="behaviors-grid">
+      <div class="behavior-pill">Silo-Busting</div>
+      <div class="behavior-pill">Holding the Tension</div>
+      <div class="behavior-pill">Constructive Dissent</div>
+      <div class="behavior-pill">Radical Transparency</div>
+      <div class="behavior-pill">Probe Before Plan</div>
+      <div class="behavior-pill">Pattern Journaling</div>
+      <div class="behavior-pill">Adapt the Narrative</div>
+      <div class="behavior-pill">Comfort with Ambiguity</div>
+    </div>
+  </div>
+
+  <!-- Leadership Delta -->
+  <div class="section-full">
+    <h2 class="section-heading">Leadership Delta</h2>
+    <div class="delta-box">
+      <p>The hardest leadership shift: replacing certainty with direction. Leaders who need to know the answer before they act will paralyze AI adoption in complex environments.</p>
+      <p>Complexity-literate leaders design for emergence: they set boundary conditions, resource experiments, attend to weak signals, and adjust direction based on what the system reveals — not what the plan promised.</p>
+    </div>
+  </div>
+
+  <!-- Common Failure Modes -->
+  <div class="section-full">
+    <h2 class="section-heading">Common Failure Modes</h2>
+    <div class="fail-items">
+      <div class="fail-item">Treating AI adoption as a complicated problem requiring better planning — when it's a complex one requiring better sensing</div>
+      <div class="fail-item">Demanding ROI certainty before experimentation — the ROI of a probe is learning, not revenue</div>
+      <div class="fail-item">Scaling a pilot before understanding why it worked — replicating outputs without replicating conditions</div>
+      <div class="fail-item">Annual planning cycles for a technology that shifts quarterly</div>
+      <div class="fail-item">Rewarding the confident answer over the honest "I don't know yet"</div>
+      <div class="fail-item">Siloed pilots that never connect — missing the emergent value in cross-team interaction</div>
+    </div>
+  </div>
+
+  <!-- Intellectual Backdrop -->
+  <div class="backdrop-strip">
+    <div class="backdrop-label">Intellectual Backdrop</div>
+    <div class="backdrop-sources">
+      <strong>Snowden</strong> — Cynefin, probe-sense-respond (1999)<br>
+      <strong>Stacey</strong> — Complex responsive processes (2001)<br>
+      <strong>Meadows</strong> — Thinking in Systems, leverage points (2008)<br>
+      <strong>Senge</strong> — Systems thinking, The Fifth Discipline (1990)<br>
+      <strong>Gibbons</strong> — Complexity-native adoption design (2026)<br>
+      <strong>Wardley</strong> — Situational awareness mapping (2016)
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    ADAPTIVE ADOPTION
+    <span class="footer-divider">|</span>
+    github.com/paulggibbons/adaptive_adoption
+    <span class="footer-divider">|</span>
+    v1.0-beta · Pillar 2/7
+  </div>
+
+</div>
+</body>
+</html>
