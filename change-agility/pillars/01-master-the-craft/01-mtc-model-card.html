@@ -471,6 +471,26 @@
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 2px;
   }
+  /* Print styles */
+  @media print {
+    body {
+      background: white;
+      padding: 0;
+      min-height: auto;
+    }
+    .card {
+      width: 100%;
+      box-shadow: none;
+    }
+    .header { break-inside: avoid; }
+    .claim-bar { break-inside: avoid; }
+    .body .col .section { break-inside: avoid; }
+    .full-row { break-inside: avoid; }
+    .delta-box { break-inside: avoid; }
+    .footer { break-inside: avoid; }
+    .quad-grid { break-inside: avoid; }
+    .behaviors-grid { break-inside: avoid; }
+  }
 </style>
 </head>
 <body>
@@ -607,6 +627,34 @@
         <div class="tool-item"><div class="tool-dot"></div><div><strong>Mastery Self-Diagnosis</strong> — craftsman knows their level; maturity curves for deliberate level-up</div></div>
       </div>
 
+      <div class="section" style="padding-bottom: 0;">
+        <div class="delta-box" style="margin: 0;">
+          <div class="delta-head">Leadership Delta — Four Shifts</div>
+          <div class="delta-rows">
+            <div class="delta-row">
+              <div class="delta-from">Training Sponsor</div>
+              <div class="delta-arrow">→</div>
+              <div class="delta-to">Practice Architect<span class="delta-note">Fund time, space, and rituals — not just courses</span></div>
+            </div>
+            <div class="delta-row">
+              <div class="delta-from">Permission Gate</div>
+              <div class="delta-arrow">→</div>
+              <div class="delta-to">Bounded Autonomy Designer<span class="delta-note">Set guardrails, then give freedom — not the reverse</span></div>
+            </div>
+            <div class="delta-row">
+              <div class="delta-from">Expertise Signaler</div>
+              <div class="delta-arrow">→</div>
+              <div class="delta-to">Learning Modeler<span class="delta-note">Leaders share their learning publicly, not their expertise</span></div>
+            </div>
+            <div class="delta-row">
+              <div class="delta-from">Hero Rewards</div>
+              <div class="delta-arrow">→</div>
+              <div class="delta-to">System Builder<span class="delta-note">Reward reusable artifacts and teaching — not individual heroics</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -676,34 +724,6 @@
     </div>
   </div>
 
-  <!-- Leadership delta -->
-  <div class="full-row" style="padding: 0;">
-    <div class="delta-box">
-      <div class="delta-head">Leadership Delta — Four Shifts</div>
-      <div class="delta-rows">
-        <div class="delta-row">
-          <div class="delta-from">Training Sponsor</div>
-          <div class="delta-arrow">→</div>
-          <div class="delta-to">Practice Architect<span class="delta-note">Fund time, space, and rituals — not just courses</span></div>
-        </div>
-        <div class="delta-row">
-          <div class="delta-from">Permission Gate</div>
-          <div class="delta-arrow">→</div>
-          <div class="delta-to">Bounded Autonomy Designer<span class="delta-note">Set guardrails, then give freedom — not the reverse</span></div>
-        </div>
-        <div class="delta-row">
-          <div class="delta-from">Expertise Signaler</div>
-          <div class="delta-arrow">→</div>
-          <div class="delta-to">Learning Modeler<span class="delta-note">Leaders share their learning publicly, not their expertise</span></div>
-        </div>
-        <div class="delta-row">
-          <div class="delta-from">Hero Rewards</div>
-          <div class="delta-arrow">→</div>
-          <div class="delta-to">System Builder<span class="delta-note">Reward reusable artifacts and teaching — not individual heroics</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- Common failures -->
   <div class="full-row">
@@ -726,7 +746,7 @@
       <span><strong>Schön</strong> — knowing-in-action, <em>The Reflective Practitioner</em> (1983)</span>
       <span><strong>Wenger</strong> — communities of practice (1998)</span>
       <span><strong>Senge</strong> — generative learning, <em>The Fifth Discipline</em> (1990)</span>
-      <span><strong>Gibbons</strong> — AI Mastery Matrix: 6 dimensions × 4 levels (2026)</span>
+      <span><strong>Gibbons</strong> — Accelerated Workforce, <em>Impact</em> (2019); Learning Agility, <em>The Science of Organizational Change</em> (2015)</span>
     </div>
   </div>
 
