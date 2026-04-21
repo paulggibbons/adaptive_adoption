@@ -1,0 +1,118 @@
+site_name: Adaptive Adoption™
+site_description: >-
+  A three-layer framework for human-centered AI adoption.
+  Change management was built for projects. AI is not a project.
+site_author: Paul Gibbons
+site_url: https://paulggibbons.github.io/adaptive_adoption/
+repo_url: https://github.com/paulggibbons/adaptive_adoption
+repo_name: paulggibbons/adaptive_adoption
+
+docs_dir: .
+
+theme:
+  name: material
+  custom_dir: overrides
+  palette:
+    scheme: slate
+    primary: custom
+    accent: custom
+  font:
+    text: DM Sans
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+  logo: assets/logo.svg
+  favicon: assets/favicon.ico
+
+extra_css:
+  - assets/extra.css
+
+nav:
+  - Home: README.md
+  - Foundations:
+    - Why This Framework: foundations/conditions-that-dont-hold.md
+    - Six Unprecedented Conditions: foundations/six-unprecedented-conditions.md
+  - Change Agility — The Flywheel:
+    - Overview: change-agility/readme.md
+    - Provenance: change-agility/99_PROVENANCE.md
+    - Theory:
+      - Philosophical Foundations: change-agility/theory/philosophical-foundations.md
+      - Intellectual Lineage: change-agility/theory/intellectual_lineage_texts.md
+      - Founding Session: change-agility/theory/founding_session_19Feb.md
+    - The 7 Pillars:
+      - Toolkit Overview: change-agility/pillars/00_toolkit_7x5.md
+      - P1 — Master the Craft: change-agility/pillars/01-master-the-craft/01-master-the-craft.md
+      - P6 — Prioritize Behavior: change-agility/pillars/06-prioritize-behavior/06-prioritize-behavior.md
+    - Diagnostics:
+      - Overview: change-agility/diagnostics/readme.md
+      - AAMI Structure: change-agility/diagnostics/AA_MI/AA_MI_structure.md
+      - AAMI Trust Calibration: change-agility/diagnostics/AA_MI/AA_MI_trust03_calibration.md
+      - Enacted Gap Evidence: change-agility/diagnostics/AA_MI/research/notebookLM_enacted_gap_evidence.md
+    - Tools:
+      - Tools Overview: change-agility/tools/README.md
+  - Leadership Delta — The Torque:
+    - Overview: leadership-delta/readme.md
+    - Provenance: leadership-delta/99_PROVENANCE.md
+    - Dimensions:
+      - "D1: The 10x Narrative": leadership-delta/dimensions/01-the-10x-narrative/.gitkeep
+    - Tools:
+      - Conditions Audit: leadership-delta/dimensions/01-the-10x-narrative/tools/conditions-audit.md
+  - Behavioral Governance — The Guardrails:
+    - Overview: behavioral-governance/readme.md
+    - Provenance: behavioral-governance/99_PROVENANCE.md
+    - Theory:
+      - Governance Framework: behavioral-governance/theory/Adaptive_adoption_governance_framework.md
+    - Tools:
+      - Governance Dashboard: behavioral-governance/dimensions/05-governance-intelligence/tools/governance-dashboard.md
+  - Maturity Model:
+    - Current State: maturity-model/maturity-model-state.md
+    - White Paper v0.1: maturity-model/white-paper-v0.1.md
+  - Industry Modules: industry-modules/readme.md
+  - Provenance: 99_PROVENANCE
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/paulggibbons/
+    - icon: fontawesome/brands/github
+      link: https://github.com/paulggibbons/adaptive_adoption
+    - icon: fontawesome/solid/globe
+      link: https://paulgibbonsadvisory.com
+    - icon: fontawesome/solid/envelope
+      link: https://thinkbiggerthinkbetter.substack.com
+  generator: false
+
+copyright: >-
+  © 2026 Paul Gibbons · Adaptive Adoption™ ·
+  <a href="https://paulgibbonsadvisory.com/diagnostics">Try the Diagnostics</a> ·
+  <a href="https://paulgibbonsadvisory.com/corpus">Query the Corpus</a>
