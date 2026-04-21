@@ -24,76 +24,90 @@ jobs:
           python-version: '3.12'
       - run: pip install mkdocs-material mkdocs-minify-plugin
 
-      # Build content/ directory from repo structure
       - name: Assemble content directory
         run: |
+          set -e
           mkdir -p content
 
-          # Home page
+          # ── Home ──
           cp README.md content/index.md
 
-          # Foundations
+          # ── Foundations (repo: why-change-must-change/) ──
           mkdir -p content/foundations
-          cp foundations/*.md content/foundations/
+          cp why-change-must-change/*.md content/foundations/ 2>/dev/null || true
 
-          # Change Agility
+          # ── Change Agility ──
           mkdir -p content/change-agility/theory
           mkdir -p content/change-agility/pillars
           mkdir -p content/change-agility/diagnostics
           mkdir -p content/change-agility/tools
+
           cp change-agility/readme.md content/change-agility/index.md
+
           # Theory
-          for f in change-agility/theory/*.md; do
-            [ -f "$f" ] && cp "$f" content/change-agility/theory/
-          done
-          # Pillars
+          cp change-agility/theory/*.md content/change-agility/theory/ 2>/dev/null || true
+
+          # Pillars – .md files inside pillar subdirectories
           for d in change-agility/pillars/*/; do
+            [ -d "$d" ] || continue
             for f in "$d"*.md; do
               [ -f "$f" ] && cp "$f" content/change-agility/pillars/
             done
           done
+          # Also root-level pillar .md files
           for f in change-agility/pillars/*.md; do
             [ -f "$f" ] && cp "$f" content/change-agility/pillars/
           done
-          # Diagnostics
-          for f in $(find change-agility/diagnostics -name '*.md'); do
-            cp "$f" content/change-agility/diagnostics/
-          done
-          # Tools
-          for f in change-agility/tools/*.md; do
-            [ -f "$f" ] && cp "$f" content/change-agility/tools/
-          done
-          [ ! -f content/change-agility/tools/index.md ] && cp content/change-agility/tools/README.md content/change-agility/tools/index.md 2>/dev/null || echo "# Tools" > content/change-agility/tools/index.md
 
-          # Leadership Delta
+          # Diagnostics – recursive copy
+          find change-agility/diagnostics -name '*.md' -exec cp {} content/change-agility/diagnostics/ \;
+
+          # Tools
+          cp change-agility/tools/*.md content/change-agility/tools/ 2>/dev/null || true
+
+          # ── Leadership Delta ──
           mkdir -p content/leadership-delta/tools
           cp leadership-delta/readme.md content/leadership-delta/index.md
-          for f in $(find leadership-delta -name '*.md' ! -name 'readme.md' ! -name '*.gitkeep'); do
-            cp "$f" content/leadership-delta/tools/ 2>/dev/null || true
-          done
+          # conditions-audit lives in pillars/01-strategic-imagination/
+          cp leadership-delta/pillars/01-strategic-imagination/conditions-audit.md content/leadership-delta/tools/ 2>/dev/null || true
 
-          # Behavioral Governance
+          # ── Behavioral Governance ──
           mkdir -p content/behavioral-governance/theory
           mkdir -p content/behavioral-governance/tools
           cp behavioral-governance/readme.md content/behavioral-governance/index.md
-          for f in $(find behavioral-governance/theory -name '*.md'); do
-            bn=$(basename "$f")
-            cp "$f" "content/behavioral-governance/theory/$bn"
-          done
-          [ -f content/behavioral-governance/theory/Adaptive_adoption_governance_framework.md ] && \
-            mv content/behavioral-governance/theory/Adaptive_adoption_governance_framework.md \
-               content/behavioral-governance/theory/governance-framework.md
-          for f in $(find behavioral-governance/dimensions -name '*.md' ! -name '.gitkeep'); do
-            bn=$(basename "$f")
-            cp "$f" "content/behavioral-governance/tools/$bn"
-          done
+          # governance-framework lives in pillars/
+          cp behavioral-governance/pillars/governance-framework.md content/behavioral-governance/theory/ 2>/dev/null || true
+          # governance-dashboard lives in dashboard/
+          cp behavioral-governance/dashboard/governance-dashboard.md content/behavioral-governance/tools/ 2>/dev/null || true
 
-          # Maturity Model
+          # ── Maturity Model ──
           mkdir -p content/maturity-model
-          cp maturity-model/*.md content/maturity-model/
+          cp maturity-model/*.md content/maturity-model/ 2>/dev/null || true
 
-          # Assets
-          cp assets/extra.css content/extra.css
+          # ── Assets ──
+          cp assets/extra.css content/extra.css 2>/dev/null || true
+
+          # ── Create stubs for any missing nav targets ──
+          for f in \
+            content/foundations/conditions-that-dont-hold.md \
+            content/foundations/six-unprecedented-conditions.md \
+            content/change-agility/theory/philosophical-foundations.md \
+            content/change-agility/pillars/01-master-the-craft.md \
+            content/change-agility/pillars/06-prioritize-behavior.md \
+            content/change-agility/diagnostics/AA_MI_structure.md \
+            content/change-agility/tools/index.md \
+            content/leadership-delta/tools/conditions-audit.md \
+            content/behavioral-governance/theory/governance-framework.md \
+            content/behavioral-governance/tools/governance-dashboard.md \
+            content/maturity-model/maturity-model-state.md \
+            content/maturity-model/white-paper-v0.1.md; do
+            if [ ! -f "$f" ]; then
+              bn=$(basename "$f" .md)
+              echo "# ${bn//-/ }" > "$f"
+              echo "" >> "$f"
+              echo "*This page is under construction.*" >> "$f"
+            fi
+          done
 
           echo "=== Content directory ==="
           find content -type f | sort
