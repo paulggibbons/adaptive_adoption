@@ -4,11 +4,8 @@ pillar: 6
 tags: behavioral-science, COM-B, intention-action-gap, nudge, habit, environmental-design
 version: 1.0-beta
 last_updated: 2026-03-01
-
-![Pillar 6 Model Card](assets/pillar-06-card.png)
 ---
-
-# Pillar 6: Prioritize Behavior
+![Pillar 6 Model Card](assets/pillar-06-card.png)# Pillar 6: Prioritize Behavior
 
 **Awareness, desire, and knowledge do not add up to action — change the environment and the behavior; the mindset catches up.**
 

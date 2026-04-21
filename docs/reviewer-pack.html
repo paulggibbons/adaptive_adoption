@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adaptive Adoption — Advanced Practitioner Review | Paul Gibbons Advisory</title>
+<meta name="description" content="Persistent challenges in change, emerging practitioner consensus, and how Adaptive Adoption addresses them. By Paul Gibbons.">
+<meta property="og:title" content="Adaptive Adoption — Reviewer Pack">
+<meta property="og:description" content="Change Leadership for the AI Age. By Paul Gibbons.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f8f5ef;
+    --bg-warm: #f0ebe3;
+    --bg-card: #ffffff;
+    --charcoal: #2e3034;
+    --dark: #1a1c1f;
+    --gold: #b8922a;
+    --gold-light: #d4af37;
+    --gold-muted: #c9a84c;
+    --cream: #f5f0e8;
+    --body: #2d2d2d;
+    --muted: #6b6b6b;
+    --border: #d0ccc4;
+    --green: #2a6b4a;
+    --brown: #8b5a2b;
+    --red: #8b2a2a;
+    --blue: #2a5a7b;
+    --serif: 'DM Serif Display', Georgia, serif;
+    --sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--body);
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ═══ HERO ═══ */
+  .hero {
+    background: var(--charcoal);
+    padding: 4rem 2rem 3.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold));
+  }
+  .hero-inner {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+  .hero-label {
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.3rem;
+  }
+  .hero-sublabel {
+    font-family: var(--sans);
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(245,240,232,0.4);
+    margin-bottom: 1.5rem;
+  }
+  .hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: var(--cream);
+    line-height: 1.15;
+    margin-bottom: 1.2rem;
+    font-weight: 400;
+  }
+  .hero-meta {
+    font-size: 0.85rem;
+    color: rgba(245,240,232,0.5);
+  }
+  .hero-meta a {
+    color: var(--gold-muted);
+    text-decoration: none;
+  }
+
+  /* ═══ CONTENT CONTAINER ═══ */
+  .container {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  /* ═══ INTRO ═══ */
+  .intro {
+    padding: 2.5rem 0 1rem;
+  }
+  .intro p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--body);
+    max-width: 720px;
+  }
+  .intro em {
+    color: var(--muted);
+  }
+
+  /* ═══ SECTION ═══ */
+  .section {
+    padding: 2.5rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .section-title {
+    font-family: var(--serif);
+    font-size: 1.6rem;
+    color: var(--dark);
+    margin-bottom: 1.2rem;
+    font-weight: 400;
+  }
+
+  /* ═══ TRIALS TABLE ═══ */
+  .trials-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 1.5rem;
+    font-size: 0.9rem;
+  }
+  .trials-table thead th {
+    background: var(--charcoal);
+    color: var(--cream);
+    padding: 0.7rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0.03em;
+    border-bottom: 3px solid var(--gold);
+  }
+  .trials-table tbody td {
+    padding: 0.75rem 1rem;
+    vertical-align: top;
+    border-bottom: 1px solid var(--border);
+  }
+  .trials-table tbody tr:nth-child(odd) {
+    background: var(--bg-warm);
+  }
+  .trials-table tbody tr:nth-child(even) {
+    background: var(--bg-card);
+  }
+  .trials-table .trial-name {
+    font-weight: 600;
+    color: var(--dark);
+    white-space: nowrap;
+  }
+  .trials-table tbody tr {
+    transition: background 0.15s;
+  }
+  .trials-table tbody tr:hover {
+    background: rgba(184,146,42,0.08);
+  }
+
+  /* ═══ NAV PILLS ═══ */
+  .pill-nav {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin: 1.5rem 0 0.5rem;
+  }
+  .pill {
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--cream);
+    text-decoration: none;
+    transition: all 0.2s;
+    letter-spacing: 0.02em;
+  }
+  .pill:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  .pill-green { background: var(--green); }
+  .pill-brown { background: var(--brown); }
+  .pill-red { background: var(--red); }
+
+  /* ═══ PILLAR SECTION ═══ */
+  .pillar {
+    padding: 3rem 0;
+    border-top: 1px solid var(--border);
+  }
+  .pillar-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 0.3rem;
+  }
+  .pillar-accent {
+    width: 5px;
+    height: 2.8rem;
+    border-radius: 3px;
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+  }
+  .pillar h2 {
+    font-family: var(--serif);
+    font-size: 1.8rem;
+    color: var(--dark);
+    font-weight: 400;
+    line-height: 1.2;
+  }
+  .pillar-tagline {
+    font-family: var(--sans);
+    font-style: italic;
+    color: var(--gold);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    padding-left: calc(5px + 1rem);
+  }
+
+  /* ═══ TWO-COL TABLE ═══ */
+  .two-col {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.5rem 0 1.8rem;
+    font-size: 0.9rem;
+  }
+  .two-col thead th {
+    padding: 0.65rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0.03em;
+    color: var(--cream);
+    border-bottom: 3px solid var(--gold);
+  }
+  .two-col tbody td {
+    padding: 0.7rem 1rem;
+    vertical-align: top;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg-warm);
+  }
+  .two-col tbody tr:nth-child(even) td {
+    background: var(--bg-card);
+  }
+  .two-col tbody tr {
+    transition: background 0.15s;
+  }
+  .two-col tbody tr:hover td {
+    background: rgba(184,146,42,0.08);
+  }
+
+  /* Sub-header */
+  .sub-header {
+    font-family: var(--serif);
+    font-size: 1.15rem;
+    color: var(--dark);
+    margin: 1.5rem 0 0.8rem;
+    font-weight: 400;
+  }
+
+  /* ═══ DIMENSIONS LIST ═══ */
+  .dimensions {
+    list-style: none;
+    margin: 0.5rem 0 1.5rem;
+  }
+  .dimensions li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(208,204,196,0.5);
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  .dimensions li:last-child {
+    border-bottom: none;
+  }
+  .dim-name {
+    font-weight: 600;
+    color: var(--dark);
+  }
+  .dim-archetype {
+    font-style: italic;
+    color: var(--gold);
+  }
+  .dim-desc {
+    color: var(--muted);
+  }
+
+  /* ═══ EXPLORE LINK ═══ */
+  .explore-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--gold);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    transition: color 0.15s;
+  }
+  .explore-link:hover {
+    color: var(--gold-light);
+  }
+  .explore-link::after {
+    content: '\2192';
+    font-size: 1.1rem;
+  }
+
+  /* ═══ COMPARISON TABLE ═══ */
+  .cmp-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+    margin: 1rem 0 1.5rem;
+  }
+  .cmp-table thead th {
+    background: var(--charcoal);
+    color: var(--cream);
+    padding: 0.65rem 0.8rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.78rem;
+    letter-spacing: 0.03em;
+    border-bottom: 3px solid var(--gold);
+  }
+  .cmp-table tbody td {
+    padding: 0.55rem 0.8rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  .cmp-table tbody tr:nth-child(odd) {
+    background: var(--bg-warm);
+  }
+  .cmp-table tbody tr:nth-child(even) {
+    background: var(--bg-card);
+  }
+  .cmp-table tbody tr:hover {
+    background: rgba(184,146,42,0.08);
+  }
+  .cmp-table .dim-col {
+    font-weight: 600;
+    color: var(--dark);
+    white-space: nowrap;
+  }
+  .cmp-table .aa-col {
+    color: var(--dark);
+    font-weight: 500;
+  }
+
+  /* ═══ QUOTE ═══ */
+  .pullquote {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 1.15rem;
+    color: var(--muted);
+    padding: 1.2rem 0 1.2rem 1.5rem;
+    border-left: 3px solid var(--gold);
+    margin: 1.5rem 0;
+    line-height: 1.5;
+  }
+
+  /* ═══ FOOTER ═══ */
+  .footer {
+    background: var(--charcoal);
+    padding: 2.5rem 2rem;
+    margin-top: 1rem;
+  }
+  .footer-inner {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+  .footer-name {
+    font-family: var(--serif);
+    font-size: 1.2rem;
+    color: var(--cream);
+    margin-bottom: 0.5rem;
+  }
+  .footer-role {
+    font-size: 0.85rem;
+    color: rgba(245,240,232,0.5);
+    margin-bottom: 1.2rem;
+  }
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 1.2rem;
+  }
+  .footer-links a {
+    color: var(--gold-muted);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.15s;
+  }
+  .footer-links a:hover {
+    color: var(--gold-light);
+  }
+  .footer-license {
+    font-size: 0.75rem;
+    color: rgba(245,240,232,0.3);
+    margin-top: 1rem;
+    line-height: 1.5;
+  }
+
+  /* ═══ RESPONSIVE ═══ */
+  @media (max-width: 640px) {
+    .hero { padding: 2.5rem 1.2rem 2rem; }
+    .container { padding: 0 1.2rem; }
+    .trials-table, .two-col, .cmp-table { font-size: 0.82rem; }
+    .trials-table thead th, .two-col thead th, .cmp-table thead th { font-size: 0.72rem; padding: 0.5rem 0.6rem; }
+    .trials-table tbody td, .two-col tbody td, .cmp-table tbody td { padding: 0.55rem 0.6rem; }
+    .trial-name { white-space: normal; }
+    .pill-nav { gap: 0.5rem; }
+    .pill { padding: 0.4rem 0.9rem; font-size: 0.8rem; }
+    .footer-links { flex-direction: column; gap: 0.6rem; }
+  }
+
+  /* ═══ PRINT ═══ */
+  @media print {
+    .hero { padding: 2rem 1rem; }
+    .pillar, .section { page-break-inside: avoid; }
+    .pill:hover { transform: none; box-shadow: none; }
+    body { font-size: 11pt; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════ HERO ═══════════════════════════════════════ -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-label">Adaptive Adoption</div>
+    <div class="hero-sublabel">Change Leadership for the AI Age</div>
+    <h1>Advanced Practitioner Review</h1>
+    <div class="hero-meta">Paul Gibbons &middot; April 2026 &middot; <a href="https://paulgibbonsadvisory.com">paulgibbonsadvisory.com</a></div>
+  </div>
+</header>
+
+<main>
+
+<!-- ═══════════════════════════════════════ INTRO ═══════════════════════════════════════ -->
+<div class="container">
+  <div class="intro">
+    <p>What follows is a guide to giving feedback on Adaptive Adoption for change experts. <strong>The entire framework is being open-sourced</strong> &mdash; it is forkable (you can modify from the main branch for, say, healthcare adoption or public sector change) and modifiable (through pull requests &mdash; more on how to do that another day). This isn't (yet) interactive, though it soon will be. Written feedback to <a href="mailto:paul@paulgibbonsadvisory.com" style="color:var(--gold); text-decoration:none; font-weight:500;">paul@paulgibbonsadvisory.com</a> &mdash; I would welcome the chance to discuss over a call.</p>
+    <p style="margin-top:0.8rem;">It covers four things:</p>
+    <ol style="margin:0.6rem 0 0.8rem 1.4rem; font-size:0.95rem; line-height:1.8; color:var(--body);">
+      <li><strong>Persistent challenges</strong> the field has faced &mdash; problems that predate AI but that AI has made urgent</li>
+      <li><strong>An emerging consensus</strong> among advanced practitioners on what has to change in change</li>
+      <li><strong>Adaptive Adoption</strong> &mdash; a framework designed to address those challenges, built on three interlocking systems</li>
+      <li><strong>A comparison table</strong> &mdash; orthodox change management versus Adaptive Adoption, dimension by dimension</li>
+    </ol>
+    <p style="margin-top:0.6rem;"><em>This is not an argument against change management. It is an argument for expanding its jurisdiction. What follows is not ingratitude &mdash; it is an honest accounting of what changed while the models didn't.</em></p>
+  </div>
+
+<!-- ═══════════════════════════════════════ SIX TRIALS ═══════════════════════════════════════ -->
+<section class="section">
+  <h2 class="section-title">1. Persistent challenges the field has faced</h2>
+
+  <table class="trials-table">
+    <thead>
+      <tr>
+        <th>The Challenge</th>
+        <th>The Underlying Problem</th>
+        <th>What's Needed</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="trial-name">Justifying value to executives</td>
+        <td>Since the birth of the field, change practitioners have fought to persuade executives that the people side of change is more complex than comms and training that a 23-year-old with a laptop could do.</td>
+        <td>Execs know AI adoption isn't going smoothly, and "know" that building people capability is critical, but haven't been shown an alternative that looks fit for AI adoption.</td>
+      </tr>
+      <tr>
+        <td class="trial-name">No seat at the AI&nbsp;table</td>
+        <td>Often the most important decisions on change are made behind closed doors, by PM teams, dev teams, execs &mdash; partly because change has had little to say about harder-edged topics such as governance, and sparse guides for leaders operating in the new era.</td>
+        <td>By focusing on human behaviour change, not policy document development &mdash; and by focusing on "governance as enablement" &mdash; the change expert's value becomes relevant again.</td>
+      </tr>
+      <tr>
+        <td class="trial-name">Professional relevance in the AI&nbsp;era</td>
+        <td>AI is rewriting the rules of knowledge work. Practitioners trained in episodic, planned change have no vocabulary for continuous, emergent, trust-dependent transformation.</td>
+        <td>A framework built for this problem class &mdash; one that positions change practitioners as essential to AI adoption, not ornamental.</td>
+      </tr>
+      <tr>
+        <td class="trial-name">Closed-source frameworks</td>
+        <td>Prosci, Kotter, and others are proprietary. You can't adapt them, combine elements, or publish derivative work. You rent the framework; you don't own your practice.</td>
+        <td>Open-source methodology that practitioners can adapt, extend, and build on. Value in application and authority, not in hiding the IP.</td>
+      </tr>
+      <tr>
+        <td class="trial-name">Commoditised positioning</td>
+        <td>If your competitors hold the same certification and use the same model, where is your distinctive value? ADKAR is a commodity.</td>
+        <td>A practice grounded in behavioural science, complexity theory, and trust architecture that most practitioners haven't touched. Intellectual edge through depth.</td>
+      </tr>
+      <tr>
+        <td class="trial-name">No community, no&nbsp;evolution</td>
+        <td>Orthodox frameworks land as finished products: use it or leave it. No mechanism for practitioners to contribute, pressure-test, or evolve the thinking.</td>
+        <td>Frameworks designed to evolve in public &mdash; practitioner experience improves the methodology, not just consumes it.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <nav class="pill-nav" style="margin-top:1rem;">
+    <a href="#consensus" class="pill" style="background:var(--muted);">Emerging consensus</a>
+    <a href="#change-agility" class="pill pill-green">Change Agility</a>
+    <a href="#leadership-delta" class="pill pill-brown">Leadership Delta</a>
+    <a href="#behavioral-governance" class="pill pill-red">Behavioral Governance</a>
+    <a href="#comparison" class="pill" style="background:var(--charcoal);">Comparison</a>
+    <a href="#toolkit" class="pill" style="background:var(--dark);">The Toolkit</a>
+  </nav>
+</section>
+
+<!-- ═══════════════════════════════════════ EMERGING CONSENSUS ═══════════════════════════════════════ -->
+<section class="section" id="consensus">
+  <h2 class="section-title">2. What advanced practitioners agree has to change in change</h2>
+  <p style="font-size:0.95rem; line-height:1.7; margin-bottom:1rem;">The standard critique of orthodox change management &mdash; that change isn't linear, that "resistance" is a patronising frame, that comms plans don't drive behaviour &mdash; has circulated for a decade. People nod along and then sign up for their next certification. The critique has failed because it offers diagnosis without prescription.</p>
+  <p style="font-size:0.95rem; line-height:1.7; margin-bottom:1.2rem;">Among advanced practitioners, a more substantive consensus is emerging. It is not about what's wrong with the old models. It is about what the new requirements actually are:</p>
+
+  <table class="cmp-table" style="margin-bottom:1.5rem;">
+    <thead>
+      <tr>
+        <th style="width:28%;">Emerging Requirement</th>
+        <th>The Shift</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="dim-col">Behavioural science integration</td>
+        <td>Fifty years of research on cognitive bias, loss aversion, defaults, and friction &mdash; from Kahneman, Thaler, Sunstein, Gigerenzer &mdash; has been ignored by every major change framework. A discipline dedicated to changing behaviour cannot continue to operate on a falsified model of rational actors, nor a "spray and pray" approach to behaviour change.</td>
+      </tr>
+      <tr>
+        <td class="dim-col">Continuous, not episodic</td>
+        <td>Change has always been continuous, not episodic &mdash; but most change frameworks have a beginning, middle, and an end. Inadvertently, in a rush to simplify change, we've trained executive buyers to think of change as a finite, sequential process.</td>
+      </tr>
+      <tr>
+        <td class="dim-col">Psychological safety</td>
+        <td>Agreed importance, but practitioners are rarely given permission to intervene where it matters most &mdash; leader behaviour. Why? Because if psychological safety isn't front and centre when discussing your approach, you won't get permission. And even when you do, behavioural tools for working with psychological safety are rarely specified.</td>
+      </tr>
+      <tr>
+        <td class="dim-col">"Resistance"</td>
+        <td>Advanced practitioners use the word apologetically, knowing that it is a misdescription of a complex phenomenon. Moreover, dealing with resistance is often framed as "tell them more stuff" &mdash; the information deficit hypothesis.</td>
+      </tr>
+      <tr>
+        <td class="dim-col">Leadership specified behaviourally</td>
+        <td>"Leaders should support the change" is not a specification. AI-era leadership requires named dimensions with observable behaviours, developmental progressions, and coaching frameworks &mdash; not generic sponsorship models.</td>
+      </tr>
+      <tr>
+        <td class="dim-col">Trust as architecture</td>
+        <td>Trust is not a feeling to be managed through town halls. It is a structural condition with multiple independent dimensions &mdash; relational, institutional, self-efficacy, task &mdash; each with distinct failure modes. Treating it as a single variable guarantees the wrong intervention.</td>
+      </tr>
+      <tr>
+        <td class="dim-col">Ethics embedded, not appended</td>
+        <td>AI raises ethical questions at the speed of a prompt, not at the cadence of a quarterly review board. Ethics must be a frontline practice &mdash; practical wisdom in the Aristotelian sense &mdash; not a compliance checkbox.</td>
+      </tr>
+      <tr>
+        <td class="dim-col">Frictions removed, not installed</td>
+        <td>Most governance frameworks add friction: approval gates, review committees, mandatory training. When governance is slower than bypass, shadow AI forms. The design question is not "how do we control this?" but "how do we make the right thing the easy thing?"</td>
+      </tr>
+      <tr>
+        <td class="dim-col">Capability building, not training delivery</td>
+        <td>Measuring "X% of employees using Copilot" measures utilisation, not capability. The goal is a workforce whose capability is expanding faster than the rate of disruption &mdash; the rate of change, not the current stock.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p style="font-size:0.95rem; line-height:1.7;">Adaptive Adoption is one framework designed to meet these requirements. It has three interlocking systems &mdash; twenty dimensions total &mdash; each addressing specific challenges from the table above.</p>
+</section>
+
+<!-- ═══════════════════════════════════════ CHANGE AGILITY ═══════════════════════════════════════ -->
+<section class="section" id="aa-overview" style="padding-bottom:0.5rem;">
+  <h2 class="section-title">3. Adaptive Adoption &mdash; how it addresses these challenges</h2>
+  <p style="font-size:0.95rem; line-height:1.7;">Three interlocking systems. Each page below: what problems it solves, and where to explore further.</p>
+</section>
+
+<section class="pillar" id="change-agility">
+  <div class="pillar-header">
+    <div class="pillar-accent" style="background:var(--green);"></div>
+    <h2>Change Agility</h2>
+  </div>
+  <div class="pillar-tagline">The Innovation Flywheel &mdash; seven pillars for continuous adaptation</div>
+
+  <h3 class="sub-header">Why am I reading this?</h3>
+  <table class="two-col">
+    <thead>
+      <tr>
+        <th style="background:var(--green);">The problems it solves</th>
+        <th style="background:var(--green);">What this system provides</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Many change frameworks assume a known end-state. AI adoption doesn't have one.</td>
+        <td>A seven-pillar operating system designed for emergent, continuous change &mdash; not bounded projects.</td>
+      </tr>
+      <tr>
+        <td>Many change approaches default to training and comms plans. Executives want behavioural outcomes.</td>
+        <td>Capability / Motivation / Trust / Opportunity diagnostic forces behavioural root-cause analysis before intervention design.</td>
+      </tr>
+      <tr>
+        <td>Many change toolkits handle complicated change well but break down with complexity and emergence.</td>
+        <td>Built on Cynefin and complexity theory: probe, sense, respond. Safe-to-fail experimentation is structural, not aspirational.</td>
+      </tr>
+      <tr>
+        <td>Few frameworks offer a structured approach to trust, ethics, or friction &mdash; the issues that actually block AI adoption.</td>
+        <td>Dedicated pillars for trust (Consciously Manage Trust), ethics (Manage Ethics Always), friction removal (Design and Prototype), and people-first capability building.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 class="sub-header">The dimensions</h3>
+  <ul class="dimensions">
+    <li><span class="dim-name">P1: Master the Craft</span> &mdash; <span class="dim-desc">Skill-based, craft-oriented learning. Contact knowledge, not briefings.</span></li>
+    <li><span class="dim-name">P2: Embrace Complexity</span> &mdash; <span class="dim-desc">Cynefin-informed. Probe, sense, respond. Distinguish complicated from complex.</span></li>
+    <li><span class="dim-name">P3: Consciously Manage Trust</span> &mdash; <span class="dim-desc">RIST Framework: Relational, Institutional, Self, Task trust diagnosed independently.</span></li>
+    <li><span class="dim-name">P4: Put People First</span> &mdash; <span class="dim-desc">Augmentation before automation. Build capability at the rate of disruption.</span></li>
+    <li><span class="dim-name">P5: Design and Prototype</span> &mdash; <span class="dim-desc">Safe-to-fail experimentation. Make the right thing the easy thing.</span></li>
+    <li><span class="dim-name">P6: Prioritize Behavior</span> &mdash; <span class="dim-desc">20+ behavioural interventions. Observable conduct, not self-reported attitudes.</span></li>
+    <li><span class="dim-name">P7: Manage Ethics Always</span> &mdash; <span class="dim-desc">Frontline ethical practice. Practical wisdom at the speed of a prompt.</span></li>
+  </ul>
+
+  <a href="https://paulgibbonsadvisory.com/change-agility" class="explore-link">Explore Change Agility</a>
+</section>
+
+<!-- ═══════════════════════════════════════ LEADERSHIP DELTA ═══════════════════════════════════════ -->
+<section class="pillar" id="leadership-delta">
+  <div class="pillar-header">
+    <div class="pillar-accent" style="background:var(--brown);"></div>
+    <h2>The AI Leadership Delta</h2>
+  </div>
+  <div class="pillar-tagline">The Torque &mdash; seven behavioural dimensions that turn strategy into observable conduct</div>
+
+  <h3 class="sub-header">Why am I reading this?</h3>
+  <table class="two-col">
+    <thead>
+      <tr>
+        <th style="background:var(--brown);">The problems it solves</th>
+        <th style="background:var(--brown);">What this system provides</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Leadership development programmes talk about "supporting change" without specifying what leaders should actually do differently.</td>
+        <td>Seven named dimensions, each with observable behaviours, developmental progressions, and a memorable archetype.</td>
+      </tr>
+      <tr>
+        <td>Executives sponsor AI initiatives but don't model AI use themselves. The gap between espoused and enacted is visible to everyone.</td>
+        <td>Active Modeling (The Carpenter) makes visible, honest AI use a leadership standard &mdash; including showing the messy drafts and failed prompts.</td>
+      </tr>
+      <tr>
+        <td>There is no leadership framework designed for AI adoption &mdash; the trust, friction, and ethical dimensions are unaddressed.</td>
+        <td>Dedicated dimensions for trust calibration, friction courage, ethical stewardship, and creative cultivation &mdash; the behaviours that differentiate AI-era leaders.</td>
+      </tr>
+      <tr>
+        <td>You can't coach what you can't name. Most AI leadership advice is generic ("be a champion") rather than behaviourally specific.</td>
+        <td>Each dimension has a Lead Self / Lead Others / Lead System structure with specific practices at each level. Coachable, assessable, developable.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 class="sub-header">The dimensions</h3>
+  <ul class="dimensions">
+    <li><span class="dim-name">D1: Strategic Imagination</span> <span class="dim-archetype">(The Prophet)</span> &mdash; <span class="dim-desc">Protected thinking time. Frontier inputs. The question: what does this make possible that we haven't imagined?</span></li>
+    <li><span class="dim-name">D2: Active Modeling</span> <span class="dim-archetype">(The Carpenter)</span> &mdash; <span class="dim-desc">Visible building with AI. Public learning. Earned opinion standard.</span></li>
+    <li><span class="dim-name">D3: Creative Cultivation</span> <span class="dim-archetype">(The Gardener)</span> &mdash; <span class="dim-desc">Ekvall-informed innovation climate. Psychological safety architecture. Immersion infrastructure.</span></li>
+    <li><span class="dim-name">D4: Friction Courage</span> <span class="dim-archetype">(The Liberator)</span> &mdash; <span class="dim-desc">Dismantle barriers. Every friction installed is a tax on adoption.</span></li>
+    <li><span class="dim-name">D5: Trust Calibration</span> <span class="dim-archetype">(The Empath)</span> &mdash; <span class="dim-desc">RIST diagnostics applied. Set floor and ceiling on trust simultaneously.</span></li>
+    <li><span class="dim-name">D6: Ethical Stewardship</span> <span class="dim-archetype">(The Helmsman)</span> &mdash; <span class="dim-desc">Frontline ethical practice. Navigate novel dilemmas at the speed of deployment.</span></li>
+    <li><span class="dim-name">D7: Risk Intelligence</span> <span class="dim-archetype">(The Cartographer)</span> &mdash; <span class="dim-desc">Map uncertainty across strategic, operational, and reputational dimensions.</span></li>
+  </ul>
+
+  <a href="https://paulgibbonsadvisory.com/leadership-delta" class="explore-link">Explore the Leadership Delta</a>
+</section>
+
+<!-- ═══════════════════════════════════════ BEHAVIORAL GOVERNANCE ═══════════════════════════════════════ -->
+<section class="pillar" id="behavioral-governance">
+  <div class="pillar-header">
+    <div class="pillar-accent" style="background:var(--red);"></div>
+    <h2>Behavioral Governance</h2>
+  </div>
+  <div class="pillar-tagline">The Channel &mdash; governance that enables adoption rather than preventing it</div>
+
+  <h3 class="sub-header">Why am I reading this?</h3>
+  <table class="two-col">
+    <thead>
+      <tr>
+        <th style="background:var(--red);">The problems it solves</th>
+        <th style="background:var(--red);">What this system provides</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Your AI governance framework's primary verb is "prevent." You've optimised for stasis, not adoption.</td>
+        <td>Governance reframed as behavioural enablement. The question: how do we make the right thing the easy thing?</td>
+      </tr>
+      <tr>
+        <td>Governance lives in policy documents that nobody reads. The gap between espoused and enacted governance is enormous.</td>
+        <td>Six dimensions that operate at the frictions layer &mdash; where governance actually shapes conduct, not where it sits in a PDF.</td>
+      </tr>
+      <tr>
+        <td>You measure compliance (training completion, policy sign-off) but have no visibility into actual decision-making behaviour.</td>
+        <td>Three evidence layers (individual, team, system) and Five Dials at board level: Utilization Depth, Capability Expansion Rate, Trust Stability, Iteration Velocity, Leadership Delta.</td>
+      </tr>
+      <tr>
+        <td>Shadow AI is forming because the formal system makes doing the right thing harder than doing the unofficial thing.</td>
+        <td>Friction analysis built into every governance decision. If governance installs more frictions than it removes, the design has failed.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 class="sub-header">The dimensions</h3>
+  <ul class="dimensions">
+    <li><span class="dim-name">G1: Decision Rights</span> &mdash; <span class="dim-desc">Clear, distributed authority for AI decisions. Enabler: who can act, and how fast.</span></li>
+    <li><span class="dim-name">G2: Strategic Coherence</span> &mdash; <span class="dim-desc">Executive ownership of AI outcomes, not delegation to "the AI team."</span></li>
+    <li><span class="dim-name">G3: Governance Intelligence</span> &mdash; <span class="dim-desc">The nervous system. Detect friction, drift, and decision failure before crisis.</span></li>
+    <li><span class="dim-name">G4: Risk and Ethics</span> &mdash; <span class="dim-desc">Integrated ethical reasoning. Not a review board &mdash; an embedded practice.</span></li>
+    <li><span class="dim-name">G5: First-Derivative Talent</span> &mdash; <span class="dim-desc">Measure the rate of capability change, not the current stock. Accelerated Workforce&trade;.</span></li>
+    <li><span class="dim-name">G6: Agent Authority</span> &mdash; <span class="dim-desc">Governance for autonomous AI systems. Decision boundaries for non-human agents.</span></li>
+  </ul>
+
+  <a href="https://paulgibbonsadvisory.com/behavioral-governance" class="explore-link">Explore Behavioral Governance</a>
+</section>
+
+<!-- ═══════════════════════════════════════ COMPARISON ═══════════════════════════════════════ -->
+<section class="section" id="comparison">
+  <h2 class="section-title">4. When to Use Which</h2>
+  <p style="font-style:italic; color:var(--gold); font-size:0.95rem; margin-bottom:1rem;">Orthodox change management still works for bounded, planned projects with known end-states. Adaptive Adoption is built for everything else.</p>
+
+  <table class="cmp-table">
+    <thead>
+      <tr>
+        <th>Dimension</th>
+        <th>Orthodox Change Management</th>
+        <th>Adaptive Adoption</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="dim-col">Change type</td><td>Planned, episodic</td><td class="aa-col">Emergent, continuous</td></tr>
+      <tr><td class="dim-col">End-state</td><td>Known and defined</td><td class="aa-col">Evolving and discovered</td></tr>
+      <tr><td class="dim-col">Primary challenge</td><td>Coordination and communication</td><td class="aa-col">Behaviour and capability</td></tr>
+      <tr><td class="dim-col">Leadership model</td><td>Sponsorship and champions</td><td class="aa-col">Developmental (Leadership Delta)</td></tr>
+      <tr><td class="dim-col">Governance model</td><td>Policy compliance and oversight</td><td class="aa-col">Behavioural enablement</td></tr>
+      <tr><td class="dim-col">Trust approach</td><td>Assumed or addressed through comms</td><td class="aa-col">Diagnosed across four dimensions (RIST)</td></tr>
+      <tr><td class="dim-col">Behavioural science</td><td>Absent</td><td class="aa-col">Central to methodology</td></tr>
+      <tr><td class="dim-col">Ethics</td><td>Out of scope</td><td class="aa-col">Frontline practice</td></tr>
+      <tr><td class="dim-col">Frictions</td><td>Installed for control</td><td class="aa-col">Removed for enablement</td></tr>
+      <tr><td class="dim-col">Measurement</td><td>Plans, training completion, self-report</td><td class="aa-col">Observable behaviour across three evidence layers</td></tr>
+      <tr><td class="dim-col">Capability model</td><td>Training delivery</td><td class="aa-col">Accelerated Workforce (1st-Derivative Talent)</td></tr>
+      <tr><td class="dim-col">Timeline</td><td>Project-bound with stabilisation</td><td class="aa-col">Ongoing, recursive</td></tr>
+      <tr><td class="dim-col">Adaptability</td><td>Plan, execute, embed</td><td class="aa-col">Probe, sense, respond &mdash; continuous adaptation</td></tr>
+    </tbody>
+  </table>
+
+  <div class="pullquote">
+    Orthodox change management is a project. Adaptive Adoption is an operating system.
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ REPO STRUCTURE ═══════════════════════════════════════ -->
+<section class="section" id="toolkit">
+  <h2 class="section-title">5. The toolkit &mdash; being built by community</h2>
+  <p style="font-size:0.95rem; line-height:1.7; margin-bottom:0.5rem;">Adaptive Adoption lives in a public GitHub repository. The structure below shows what's being built &mdash; not by one person, but by the practitioner community. Some areas are populated, others are scaffolded and waiting for contribution. <strong>This is the point.</strong> Orthodox frameworks are delivered finished. This one is designed to grow.</p>
+  <p style="font-size:0.9rem; line-height:1.7; margin-bottom:1.2rem; color:var(--muted);"><em>If you're reviewing this and thinking "I have something that belongs here" &mdash; that's the invitation.</em></p>
+
+  <div style="background:var(--charcoal); border-radius:6px; padding:1.5rem 1.8rem; font-family:'DM Sans', monospace; font-size:0.82rem; line-height:1.9; color:var(--cream); overflow-x:auto;">
+    <span style="color:var(--gold); font-weight:600;">adaptive-adoption/</span><br>
+    ├── <span style="color:rgba(245,240,232,0.5);">README.md</span><br>
+    ├── <span style="color:rgba(245,240,232,0.5);">LICENSE</span> <span style="color:var(--muted); font-size:0.75rem;">&nbsp;CC BY-SA 4.0</span><br>
+    ├── <span style="color:rgba(245,240,232,0.5);">CONTRIBUTING.md</span><br>
+    │<br>
+    ├── <span style="color:var(--green); font-weight:600;">change-agility/</span><br>
+    │&nbsp;&nbsp; ├── <span style="color:rgba(245,240,232,0.4);">provenance/</span> <span style="color:var(--muted); font-size:0.75rem;">&nbsp;research foundations, citations, intellectual lineage</span><br>
+    │&nbsp;&nbsp; ├── <span style="color:rgba(245,240,232,0.4);">model-cards/</span> <span style="color:var(--muted); font-size:0.75rem;">&nbsp;one card per pillar &mdash; definition, evidence, I-We-It practices</span><br>
+    │&nbsp;&nbsp; ├── <span style="color:rgba(245,240,232,0.4);">tools/</span> <span style="color:var(--muted); font-size:0.75rem;">&nbsp;worksheets, canvases, facilitation templates</span><br>
+    │&nbsp;&nbsp; ├── <span style="color:rgba(245,240,232,0.4);">diagnostics/</span> <span style="color:var(--muted); font-size:0.75rem;">&nbsp;assessments, scorecards, team health checks</span><br>
+    │&nbsp;&nbsp; └── <span style="color:rgba(245,240,232,0.4);">guides/</span> <span style="color:var(--muted); font-size:0.75rem;">&nbsp;implementation playbooks, case patterns</span><br>
+    │<br>
+    ├── <span style="color:var(--brown); font-weight:600;">leadership-delta/</span><br>
+    │&nbsp;&nbsp; ├── <span style="color:rgba(245,240,232,0.4);">provenance/</span> <span style="color:var(--muted); font-size:0.75rem;">&nbsp;Ekvall, Edmondson, Heifetz, Argyris &mdash; the research base</span><br>
+    │&nbsp;&nbsp; ├── <span style="color:rgba(245,240,232,0.4);">model-cards/</span> <span style="color:var(--muted); font-size:0.75rem;">&nbsp;seven dimensions with archetypes and Lead Self/Others/System</span><br>
+    │&nbsp;&nbsp; ├── <span style="color:rgba(245,240,232,0.4);">tools/</span> <span style="color:var(--muted); font-size:0.75rem;">&nbsp;360 instruments, coaching guides, development plans</span><br>
+    │&nbsp;&nbsp; ├── <span style="color:rgba(245,240,232,0.4);">diagnostics/</span> <span style="color:var(--muted); font-size:0.75rem;">&nbsp;leadership assessments, team delta scores</span><br>
+    │&nbsp;&nbsp; └── <span style="color:rgba(245,240,232,0.4);">guides/</span> <span style="color:var(--muted); font-size:0.75rem;">&nbsp;workshop designs, executive briefing packs</span><br>
+    │<br>
+    ├── <span style="color:var(--red); font-weight:600;">behavioral-governance/</span><br>
+    │&nbsp;&nbsp; ├── <span style="color:rgba(245,240,232,0.4);">provenance/</span> <span style="color:var(--muted); font-size:0.75rem;">&nbsp;Ostrom, Sunstein, behavioural public policy &mdash; the research base</span><br>
+    │&nbsp;&nbsp; ├── <span style="color:rgba(245,240,232,0.4);">model-cards/</span> <span style="color:var(--muted); font-size:0.75rem;">&nbsp;six dimensions with Five Dials and evidence layers</span><br>
+    │&nbsp;&nbsp; ├── <span style="color:rgba(245,240,232,0.4);">tools/</span> <span style="color:var(--muted); font-size:0.75rem;">&nbsp;friction audits, governance design canvases, policy templates</span><br>
+    │&nbsp;&nbsp; ├── <span style="color:rgba(245,240,232,0.4);">diagnostics/</span> <span style="color:var(--muted); font-size:0.75rem;">&nbsp;RIST trust diagnostic, Ekvall climate assessment, governance health</span><br>
+    │&nbsp;&nbsp; └── <span style="color:rgba(245,240,232,0.4);">guides/</span> <span style="color:var(--muted); font-size:0.75rem;">&nbsp;board-level briefings, CAIO implementation guides</span><br>
+    │<br>
+    └── <span style="color:var(--gold); font-weight:600;">corpus/</span> <span style="color:var(--muted); font-size:0.75rem;">&nbsp;knowledge engine &mdash; ~4,000 pages of research, synthesised and queryable</span>
+  </div>
+
+  <p style="font-size:0.9rem; line-height:1.7; margin-top:1.2rem; color:var(--muted);">The repo is open. Contributions welcome &mdash; from case examples and diagnostic refinements to entirely new tools. The framework improves when practitioners pressure-test it against real organisations.</p>
+
+  <a href="https://github.com/paulggibbons/adaptive-adoption" class="explore-link">View the repository</a>
+</section>
+
+</div><!-- .container -->
+</main>
+
+<!-- ═══════════════════════════════════════ FOOTER ═══════════════════════════════════════ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-name">Paul Gibbons</div>
+    <div class="footer-role">Author, Speaker, AI Adoption Advisor</div>
+    <div class="footer-links">
+      <a href="https://paulgibbonsadvisory.com">Website</a>
+      <a href="https://paulgibbonsadvisory.com/corpus">The Corpus</a>
+      <a href="https://thinkbiggerthinkbetter.substack.com">Substack</a>
+      <a href="https://github.com/paulggibbons/adaptive-adoption">GitHub Repo</a>
+      <a href="https://www.linkedin.com/in/paulggibbons/">LinkedIn</a>
+    </div>
+    <div class="footer-license">
+      The Adaptive Adoption Framework is open-source under CC BY-SA 4.0.<br>
+      You are free to use, adapt, and share with attribution. &copy; Paul Gibbons 2026.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
