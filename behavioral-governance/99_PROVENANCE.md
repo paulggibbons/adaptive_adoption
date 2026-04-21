@@ -9,11 +9,11 @@ Traditional governance is document-centric: policies, frameworks, dashboards. Be
 ## The Six Dimensions
 
 1. **Decision Rights** — dynamic, not static RACI. Human oversight calibrated to demonstrated AI reliability. Closer to holacracy's distributed authority than traditional hierarchy.
-2. **Executive Accountability** — not sponsorship theater but measurable executive behavioral change
-3. **Risk & Ethics** — frontline ethical practice integrated into governance cadence, not delegated to legal
-4. **Data & AI Stewardship** — data quality, model governance, and responsible AI as organizational capability
-5. **Governance Intelligence** — the metrics and measurement system. Three-layer assessment: self-report + evidence + behavioral observation. The Five Dials.
-6. **1st-Derivative Talent** — not what skills people have, but the rate at which they acquire new ones. Dynamic role architecture, not static competency models.
+2. **Agent Authority** — how autonomous AI agents are authorized, bounded, and supervised
+3. **Risk Intelligence** — dynamic risk sensing, not static risk registers. Frontline ethical practice integrated into governance cadence.
+4. **Governance Intelligence** — board-level readout on AI governance maturity. Three-layer assessment: self-report + evidence + behavioral observation. The Five Dials.
+5. **1st-Derivative Talent** — not what skills people have, but the rate at which they acquire new ones. Dynamic role architecture, not static competency models.
+6. **Strategic Coherence** — alignment between AI strategy, business strategy, and governance.
 
 ## Intellectual Lineage
 

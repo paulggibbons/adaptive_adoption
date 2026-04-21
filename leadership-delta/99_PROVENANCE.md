@@ -8,12 +8,12 @@ Implies measurable change — the gap between where leadership capability is and
 
 ## The Seven Dimensions
 
-1. **The 10x Narrative** — replacing fixed "future state" vision with adaptive, directional narrative
+1. **Strategic Imagination** — replacing fixed "future state" vision with adaptive, directional narrative
 2. **Active Modeling** — an AI sponsor who doesn't use AI is a contradiction
-3. **Innovation Climate** — creating the conditions for experimentation and learning
+3. **Creative Cultivation** — creating the conditions for experimentation and learning
 4. **Friction Courage** — removing structural obstacles rather than just "supporting" change
 5. **Trust Calibration** — modeling both appropriate trust and appropriate skepticism
-6. **Ethical Leadership** — practicing moral reasoning about AI, not delegating it to compliance
+6. **Ethical Stewardship** — practicing moral reasoning about AI, not delegating it to compliance
 7. **Systems Orchestration** — seeing and acting on the whole system, not just the parts
 
 ## Intellectual Lineage

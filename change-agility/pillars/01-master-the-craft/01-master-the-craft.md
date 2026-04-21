@@ -1,4 +1,18 @@
-# # Pillar 1: Master the Craft
+---
+tags:
+  - "#ai-adoption"
+  - "#learning"
+  - "#leadership"
+  - "#ai-strategy"
+  - "#change-management"
+  - "#craft-development"
+  - "#community-of-practice"
+  - "#ai-fluency"
+---
+# 
+
+
+# Pillar 1: Master the Craft
 *Build capability through doing, not curriculum.*
 
 **Parent traditions:** Learning Organizations · Communities of Practice · Progressive Pedagogy · Craft Epistemology

@@ -1,0 +1,321 @@
+In 2026, AI Literacy Isn’t Enough. Time for AI Mastery.
+
+
+It is very hard to admit you are wrong or that you have missed something. (And as a dude, we are almost allergic to it as a species.)
+But I was wrong, and I missed something. There, I said it.
+In 2023, James Healy and I developed an AI literacy framework (see below) based on the best available research from the OECD, the United Nations, and academic institutions as of 2025. Our framework combined those frameworks with our humanist stance on AI and was adopted as a standard by a number of practitioners in the field. Notably, we advanced the idea that Responsible AI was conceptually weak, and was the AI equivalent of sustainability greenwash from a decade ago.
+INSERT IMAGE HERE….
+But we've moved past 2025. Today, the leading edge isn't about having a conversation; it's about building new capabilities. AI is doing, not just discussing. It is executing transactions, managing operations at scale, and serving as an active agent in the value chain.
+Our literacy framework, perhaps as good as any in 2025, is inadequate for X reasons:
+What it means to be skilful has gone far beyond prompt and context engineering: those are entry-level skills, the “ante” for AI use.
+People aren’t using AI as individuals and in isolation; it is being built into workflows.  To have any hope of achieving that, users need to understand systems thinking, the way ideas and change interact with the real world.
+People are not creating and innovating more than ever, with little knowledge of creativity and innovation tools (beyond brainstorming) - AI Mastery demands understanding how ideas become real-world change.
+The word “literacy” is terrible because it connotes conceptual, book learning: knowing the names of things. AI is not a language you learn; it is a system you architect. Moreover, literacy is a minimum standard, nee
+A framework fit for today must cover all the bases, ethics, skills, and concepts, and must cover “the height.” 
+We need AI Mastery. We need to approach AI the way a master craftsman approaches their trade. A craftsman knows their tools intimately, understands their limits, applies them to solve real problems, and produces quality work through skill, not luck.
+
+—--
+
+The problem with "literacy" is that it implies a baseline minimum: knowing the names of things and being able to read and write about them. This was fine when researchers first adopted the term, but it misses the mark now. (A quick note on "Fluency": Some argue we should move from AI Literacy to AI Fluency. I reject that. Fluency means you can speak the language faster without checking a dictionary. It is faster literacy speclled with an F.  Being "fluent" in ChatGPT doesn't help you redesign a business model or orchestrate multi-agent workflows.)
+
+—-
+Where the v1.0 Framework Failed
+Before we look at the new framework, we have to understand why the old one, and its clones and competitors, broke down, 
+Here is what made one of the best literacy frameworks obsolete.
+It Was Fundamentally Defensive: The original framework taught risk mitigation and informed consumption. That matters, but it doesn't prepare you for a world where AI is an active agent.
+It Underestimated Organizational Paralysis: Teaching failed because organizations treated AI education like compliance training—a checkbox exercise divorced from actual strategy. Skilled employees clicked through modules and went back to their old habits because their organizations hadn't actually restructured around AI's capabilities.
+It Ignored Individual Agency at the Frontier: The people building actual businesses with AI weren't waiting for their organizations to certify them as "AI literate." They were learning by doing, failing, and iterating.
+It Missed the Economics of Speed and Scale: What happens when AI systems operate at machine speed, across thousands of transactions, with minimal human oversight? Traditional ethical reasoning and metacognitive pauses become impossibly slow.
+To solve this, v2.0 of the framework moves from a list of topics to a Mastery Matrix.
+It consists of Six Dimensions (the horizontal breadth of what a craftsman must know) and Four Levels (the vertical depth of their capability).
+The Six Dimensions of AI Mastery
+1. Civics
+The first dimension that was ignored by most 2025 frameworks was civics. We got pushback from businesses - “Why teach AI and society?”  This is why.
+AI affects parenting, education, art, therapy, medicine, creators, voting, and equality. To make informed decisions on those subjects in your communities, you need facts. You need to know what research says about AI in education—the outstanding results and the negative ones—if you care about how it is used in your kids’ schools.
+You need to know how to have the talk with your kids—not about sex or drugs, but about how they responsibly use AI to become super-learners and not super-stupid. You also need to know a little about AI law. What are the points of contention? What does the EU AI Act say, and why does Silicon Valley hate it?
+Without grounding in these topics, you're discussing AI in the dark.
+2. Metacognition and Critical Thinking
+These skills are underdeveloped across the population but are essential when working with AI. Since AI systems are often faster and more knowledgeable than you in specific domains, you need to maximize your ability to parse logical arguments to partner with them effectively. You need to raise your critical thinking game; your cortex needs to do metacognitive pushups.
+This requires understanding edge cases and failure modes, when AI is prone to hallucination, how to spot deepfakes or "slop," and how AI outputs interact with your own cognitive biases (otherwise you get a multiplicative effect of both). As the "price" of knowledge drops to near zero, human judgment has to become vastly superior in the Intelligence Age.
+3. Applied AI Ethics
+Beyond knowing the theoretical ethical dimensions troubling AI development (copyright, energy consumption, privacy), you need to know how to apply these concepts in your own work. What is "Fair Use" and how does it apply to what you are building? When does using AI as a co-creator turn into dysfunctional cognitive offloading? How do you check the veracity of AI outputs that you publish? The key distinction is applied ethics, not theoretical ethics. It's about doing the work, not just quoting Kant and Mill.
+4. AI Concepts and Mechanics
+Understanding the conceptual foundations—machine learning, how AI systems work, what generative AI actually does—is required to use it competently. You should know what a world model is, what Recursive Self-Improvement means, and the arguments for whether AGI is here, soon, or distant. 
+You should be able to define most of these: ML, DL, SFT, TTC, NLP, CNN, RNN, LSTM, GRU, GANs, VAE, GPT, BERT, Transformer, RL, DQN, PPO, RLHF, MoE, LoRA, RAG, CoT.  You should know what a world model is, what Recursive Self-Improvement is. You should know the arguments for whether AGI is here, soon, or distant.
+You don't need a PhD in computer science, but you need enough foundational knowledge to understand the tools you wield.
+5. Practical Skills
+AI is more like carpentry than calculus.  This is the mechanical application of the tools. It moves from basic prompting and context engineering to full-scale workflow orchestration and autonomous agent deployment. (We will cover exactly how this scales in the "Four Levels" section below.)
+6. Creativity and Innovation (The Missing Link)
+This newly added sixth dimension addresses how to create with AI, and crucially, how to prevent AI from stymying your own creativity.
+Stuff from AIDB on problem finding… mapping technology to real problems… spotting white space. (or blue ocean or whatever)
+Research from institutions like Cambridge and UPenn shows that merely implementing generative AI does not automatically enhance creativity. In fact, while AI can improve individual output, it often narrows the diversity of ideas across a team because people become anchored to the AI's initial suggestions. True paired creativity requires humans to drive the earliest stages of problem definition and ideation, using AI later for scaling, editing, or selection. You have to build "mindful friction" into your workflows to ensure you don't lose your creative muscle, much like a pilot losing manual flying skills from autopilot overuse.
+Innovation with AI is non-linear. Professional creators don't rely on basic brainstorming; they use constraint-based ideation, rapid prototyping, and continuous product-market fit (PMF) testing. A true AI craftsman understands when to let AI lead (exploration and pattern-finding) and when humans must lead (validation against real human needs).
+The Four Levels of Mastery
+If the six dimensions are what you need to know, the four levels are how deep your capability goes. The jump between each level isn't about speed; it is about a fundamental shift in capacity, structure, and scale.
+Level 0: Atrophy/ Avoidance (The Spectator)
+Knowing AI exists but doing nothing. You read the headlines, but don’t use the tools. You are skeptical of the benefits, yet your skepticism is grounded in ignorance. When you use it, it is for cognitive offloading rather than co-creation.
+Level 1: Advice & Action (The Assistant)
+This is where "literacy" stopped. At Level 1, you identify which routine, repetitive parts of your existing workflow, you can hand off to AI to do familiar tasks slightly faster. You know how to engineer context, write effective prompts, and summarize documents. You are using the AI as a sounding board or a junior co-creator.
+Harvard research shows consultants at this level finish tasks 25% faster with 40% higher quality. But that is the ceiling. You are accelerating existing work practices, not transforming them. You are using a Ferrari to drive a slightly faster route to the same destination.
+Level 2: Automate & Workflow Redesign (The System)
+This level allows you to restructure your work entirely, doing things that were previously impossible or prohibitively expensive. This isn't acceleration; it is expansion.
+You go beyond chat interfaces and master domain-specific power tools (NotebookLM, Obsidian, Cursor, Descript, Leonardo, Granola). You engage in "vibe coding," orchestrating multiple tools and chaining outputs to create frictionless workflows. Most importantly, you identify work you've never done before because it was too slow or technically difficult, and you do it now. For me, this meant building automated video generation pipelines and running second-brain systems that actually learn.
+When you reach Level 2, you aren't doing your old work better. Your work changes shape. You need systems literacy, a willingness to fail, and comfort with tools that don't have manuals yet. The payoff is a 5x to 10x expansion in capability.
+Level 3: Architect & Systemic Transformation (The Leader)
+Using AI to restructure an entire operating model, create new revenue streams, or build capabilities that become your competitive advantage. You are no longer using AI as a tool; you are architecting a system where AI is the operating agent.
+At this frontier, you design decision boundaries that dictate where AI decides autonomously and where human judgment intervenes. You build multi-agent systems that orchestrate across finance, strategy, and operations. This level demands entirely new skills: auditing and governing thousands of AI decisions at scale, exception handling for when models inevitably fail in unpredicted ways, and continuous model performance monitoring.
+The jump from Level 2 to Level 3 is about structure, risk, and scale—not speed, but survivability. If you jump here without intermediate skills, you build fragile, opaque systems that fail in production. But if you master this level, you are competing on fundamentally different business models.
+The goal for 2026 isn't to create another literacy program. The real question is whether you can design and govern systems where AI operates at scale with integrity, effectiveness, and accountability.
+That is the work of the craftsman with AI Mastery.
+
+
+In 2026, AI literacy isn’t enough. Time for AI Mastery
+
+Introduction: The Evolution of Thinking
+It is very hard to admit you are wrong or that you have missed something. (And I’m a dude, we are almost allergic as a species.)
+
+I was wrong, and I missed something. There, I said it.
+In 2023, James Healy and I developed an AI literacy framework for "Adopting AI" based on the best research available at the time—from the OECD, the United Nations, and academic institutions. I've since revised my thinking, including ditching the word literacy.
+A quick note on "Fluency": Some argue we should just move from AI Literacy to AI Fluency. I reject that. Fluency just means you can speak the language faster without checking a dictionary. It’s an incremental improvement. But AI is not a language you learn; it is a system you architect. Being "fluent" in ChatGPT doesn't help you redesign a business model or orchestrate multi-agent workflows. We don't need fluency; we need mastery.
+
+The Five Dimensions of AI Literacy (v1.0, March 2025)
+
+Civics
+The first dimension that is ignored is Civics. AI affects parenting, education, art, therapy, medicine, creators, voting, and equality. (To name just a few.)  To make informed decisions on those subjects in your communities, you need essential facts. You need to know, for example, what research says about AI in education, the outstanding results, and some of the negative ones, if you care about how it is used in your kids’ schools.  
+
+You need to know how to have THE TALK with your kids, not about sex or drugs, but about how they responsibly use AI to become super-learners and not super-stupid. 
+
+You need to know a little about AI law. What are the points of contention? What does the EU AI Act say (and why does Silicon Valley hate it?) What do my elected representatives think?
+
+In the courses I offer, this is sixty minutes of mostly small-group co-learning as participants grapple with these thorny issues.
+Without grounding in these topics and practice discussing them, you're discussing AI in the dark. 
+Metacognition and Critical Thinking
+These skills are underdeveloped across the population but are essential when working with AI. Since AI systems are often faster and more knowledgeable than you in specific domains, you need to maximize your brain power to partner with them effectively.
+You need to raise your critical thinking game. That big lump at the front of your brain, the cortex, needs to do metacognitive pushups.
+This requires understanding edge cases, and failure modes, when AI is prone to hallucination, how to spot deep fakes, how to recognize slop, how to prompt effectively to get better results, how to spot fake news, and how AI outputs interact with your own cognitive biases (otherwise you get a multiplicative effect of both biases)
+AI-specific education won’t make up for the massive shortfall in critical thinking education in the world. (The Foundation for Critical Thinking offers one-day domain-specific courses that are a good place to look.)
+However, as the “price” of knowledge and facts drops to near zero, these eternally-important skills take on new criticality: human judgment has to become MUCH better in the Intelligence Age.
+Applied AI Ethics
+Beyond knowing the theoretical ethical dimensions troubling AI development (copyright, energy/water consumption, privacy, cybersecurity, etc.), you need to know how to apply these concepts relevantly in your own work. (Note: I have a list of 40 ethical issues in AI tucked away in Obsidian; it is a wide field.)
+What is “Fair Use” and how does it apply to my work? 
+What additional privacy safeguards do I need to install? 
+What is the truth about energy and water use, and what are AI labs doing to avert crises? 
+Is AI an effective “synthetic confidant?” (You can find my book on the latter.) 
+When does using AI as a co-creator turn into dysfunctional cognitive offloading? 
+How do I check the veracity of AI outputs that I publish?
+The key distinction is applied ethics, not theoretical ethics, your boys Kant and Mill. It's about doing the work, not just knowing the names.
+ AI Concepts and Mechanics
+Understanding the conceptual foundations—machine learning, how AI systems work, what generative AI actually does—to use it competently.
+You should be able to define most of these: ML, DL, SFT, TTC, NLP, CNN, RNN, LSTM, GRU, GANs, VAE, GPT, BERT, Transformer, RL, DQN, PPO, RLHF, MoE, LoRA, RAG, CoT.  You should know what a world model is, what Recursive Self-Improvement is. You should know the arguments for whether AGI is here, soon, or distant.
+This isn't a one-day course, but you should expect to spend 90+ minutes discussing foundational concepts to develop a real understanding.
+AI Practical Skills
+This is where "literacy" falls short. The term implies reading and writing—knowing the names of things. But competence requires skillfulness in use. I have a seven-level framework that I’ve distilled down to three.
+Level One: AI Practical Skills: From Offloading (“centaur” AI) to Transformation
+What it is: Identifying which parts of your existing workflow you can hand off to AI and doing familiar tasks slightly faster. Routine, repetitive, well-defined tasks where you need output *faster*, not *better*. Email draft summarization. Copy editing. Converting formats. Generating routine analyses. Anything that currently takes you 20 minutes and you're happy if it takes 10.
+- Know how to ask better questions
+- Write effective prompts that get usable, trustable output
+- Engineer context—giving AI the information and framing it needs
+- Identify which specific, bounded tasks in your current work can be offloaded
+This is already competent, and many people are squarely at a level below this.
+Here is what research suggests. Performers on the lower half of the skill spectrum exhibit 43% performance gains when equipped with AI, compared to 17% gains for top performers. 
+Harvard research shows consultants using AI finished completed TASKS them 25.1% faster, and produced 40% higher quality results. But that's the ceiling for this level—you're accelerating existing work practices, not transforming them.
+The trap: 
+Thinking this is mastery. Level One achieves about 1% of what a skilled user can actually do with AI. You're using a Ferrari to drive a slightly faster route to the same destination.
+Confession time: 
+When I wrote Adopting AI with James Healy, this was as far as I got. I had written seven books before, and my workflow was grooved. I could not, as it were, see over the hill.
+But as anyone who has done any hiking knows, when you summit that big hill in the foreground, there is often a big-ass mountain the other side. Our conception of literacy was confined to what we could see.
+Why the v1.0 literacy framework isn’t a bad place to start in 2026
+The original framework would pass the Pepsi Challenge against other AI literacy models because it did what most others didn't:
+Covered dimensions many frameworks miss (Civics, metacognition, applied ethics)
+Integrated the practical alongside the theoretical
+Addressed cognitive and ethical dimensions sparsely covered in most AI training
+Made a critical distinction: knowing about AI differs fundamentally from being competent with AI
+That framework, written just one year ago, was solid. It identified real gaps in how organizations and individuals think about AI. For 2025, it was on pint.
+But, as you saw, there were whole levels of practical AI literacy I had yet to challenge myself to learn.
+The big changes I see in AI literacy are a) a rebrand, b) a much more exacting “practical” curriculum, and c) the addition of CREATIVITY AND INNOVATION.
+But we're not in 2025 anymore.
+First things first. The rebrand.
+The Rebranding: From AI Literacy to AI Craftsman
+The need for a new word and an upgraded framework dawned on me when I posted the original literacy framework on Substack, complete with a literacy quiz. The push back was varied:
+“I don’t think the technological (coding, I guess) stuff belongs in there.”
+“I’m in education. Literacy means something else.” (Fair point, that's why we need a new word.)
+“This is far too demanding.” (Err, I’m not sure that is about the framework.)
+“You just need to know what it is good and bad at.” (Yeah, right, but that is like 1 percent of it.)
+
+
+Corporate clients saw the civics part as “not our job.”  
+
+The ethics part got watered down into, “follow company policies, and you will be good.”
+The problem with "literacy": The term implies knowing the names of things, being able to read and write about them. This was fine when researchers first adopted the term, but it misses the mark now.
+The solution: AI Craftsman
+Note on terminology: I recognize the term "craftsman" may read as gendered in the 21st century. I invite feedback from readers on whether this needs adjustment, and I'm open to “craftspeople.”
+We've moved past 2023. The era when AI simply talked to you, made recommendations, drafted things, offered coaching and advice—those days are gone. Today, you need AI to do things for you. You need to use it as a tool, the way a skilled carpenter uses their tools.
+
+A craftsman:
+Knows their tools intimately
+Understands their capabilities and limitations
+Applies them skillfully to solve real problems
+Continues learning and refining technique
+Produces quality work through skill, not luck
+Management consulting,, a profession I’m in a 12-step recovery program from, is world-class at taking old ideas, putting a new skin on them, and calling them new. “Old wine in new bottles.”
+The huge deal for 2026 are two new, much more exacting, much more practical skills levels.
+We stopped at level one, there are two more.
+The two transformative levels of the Practical Skills dimension of AI Craftsmanship
+Level Two: Workflow Redesign (Capability Expansion)
+This level allows you to restructure your work entirely, doing things that were previously impossible or prohibitively expensive. Not acceleration—expansion.
+Go beyond chat interfaces—master AI power tools relevant to your domain (Notebook LLM, Obsidian, Granola, and 100+ others)
+Understand the architectural differences between tools and when to deploy each
+Do the "vibe coding" that lets you build capabilities on top of AI (orchestrating multiple tools, chaining outputs, creating workflows)
+Most importantly: Identify work you've never done before because it was too expensive, too slow, or too technically difficult—and do it now
+Examples of my Level Two work:
+Social media ads and analytics (something I couldn't be bothered with because it looks like a PITA)
+Automated video or image generation for content work (I sucked at slides and images, and had settled for sending my work to Argentina for production)
+Second-brain systems that work (knowledge management that learns, Obsidian with AI ftw)
+Generative Engine Optimization rather than old school SEO-keyword analysis
+Rapid prototyping of ideas that previously required weeks
+Building custom tools for domain-specific problems
+When you get to this level, you're not doing your old work better. You're doing things you've never done before. The work changes shape.
+Many large firms remain stuck in incremental territory, automating legacy tasks rather than imagining radically new workflows—like using electric light merely to extend working hours rather than rethinking the entire assembly line.
+Level Two is rethinking the assembly line.
+The skills needed:
+Enough technical thinking to orchestrate systems (not coding, but "systems literacy"). Experimentation mindset. Willingness to fail, iterate, and discover what's possible. Comfort with tools that don't have a manual yet.  The payoff: 10-100x on specific capabilities, not 1.2x. You're expanding what's in your capacity, not squeezing speed from what already exists.
+Confession: I constantly have to force myself out of old routines to do this. While my tool mastery (for this level) is robust enough, my habits are (very) old and ingrained.
+Level Three: Business Model and Capability Architecture (Systemic Transformation)
+
+Using AI to restructure your entire operating model, create new revenue streams, or build capabilities that become your competitive advantage. This is where you might architect entirely new business models around AI-enabled work:
+- Design systems where AI agents handle autonomous decisions within guardrails you set
+- Build workflows where AI handles the bulk of work and humans handle exception cases, strategy, and judgment calls
+- Create products or services that literally couldn't exist without AI (not "AI-enhanced products," but AI-native products)
+- Architect multi-agent systems that orchestrate across domains (customer service, operations, finance, strategy)
+- Develop the meta-skills: how to design for AI capabilities, how to test at scale, how to build human oversight into automated systems
+Examples:
+- Building a business where customer service is AI-first with human escalation
+- Creating content products that are AI-generated but human-directed and curated
+- Operating financial modeling at 10x speed because AI handles the mechanical work; humans set strategy
+- New business models where you sell AI-augmented services that were previously services you couldn't offer
+- Entirely new value propositions that emerge because AI changed the unit economics
+**The mindset shift:** You're not using AI as a tool anymore. You're architecting a system where AI is an operating agent. This requires thinking like a business architect, not a user.
+
+**New skills this demands:**
+- How to design decision boundaries (where does AI decide autonomously vs. where do you intervene?)
+- Audit and governance at scale (how do you know what thousands of AI decisions are doing?)
+- Exception handling (AI will fail in ways you haven't imagined; how do you catch them?)
+- Model performance monitoring (you need to know when AI's accuracy degrades)
+- Ethical architecture (building in checks for bias, overreach, misalignment with your values)
+- Change management (this breaks how people work; you need to redesign incentives and workflows)
+**The risk:** This level requires thinking in systems. Many people jump here without the intermediate skills and build fragile, opaque systems that fail in production.
+**The reward:** You're not competing on incremental improvements. You're competing on fundamentally different business models and capabilities.
+## The Distance Between Levels
+The jump from Level One to Level Two is about 10x in capability. The jump from Level Two to Level Three is about structure, risk, and scale—not speed but survivability.
+Most organizations and individuals are stuck at Level One, thinking they're being strategic. They're incrementally faster, which is fine, but they're not expanding their actual capacity to create value.
+The frontier is Level Three. And it requires fundamentally different thinking than "how do I make this task faster?"
+What the Framework Got Right—And Where It Went Wrong
+
+
+The Fundamental Shift: AI as Agent, Not Assistant
+AI in 2026 is not primarily about conversation, ideation support, or writing assistance. Those capabilities still exist, but they're table stakes now—the baseline, not the frontier.
+Today's leading edge is building differently. AI is:
+Doing, not just discussing
+Creating architectures, not generating copy
+Building systems, not drafting documents
+Strategizing and planning, not offering suggestions
+Executing transactions, not preparing analyses
+Managing operations at scale, not assisting individuals
+This isn't speculative. Creators at the leading edge are standing up entire businesses where AI agents manage finance, marketing, customer service, legal, HR, and operations. You may not desire this future for yourself—that's a legitimate choice—but it demonstrates what is now possible. More importantly, it shows what your competitors consider feasible.
+Where the v1.0 Framework Failed
+1. It Was Fundamentally Defensive
+The original framework taught literacy—how to read, understand, and safely use AI. It addressed risk mitigation and informed consumption. That matters, but it doesn't prepare you for a world where AI is an active agent in your value chain.
+2. It Underestimated Organizational Paralysis
+Here's what actually happened inside corporations: teaching failed. Not because the content was weak, but because organizations treated AI education the same way they've treated every other training initiative—as a checkbox exercise divorced from actual strategy and resource allocation.
+The result? Skilled employees clicked through compliance modules and went back to doing things the way they always had. Why? Because their organizations hadn't restructured around AI's capabilities. There was no mandate from leadership to actually do anything differently. The framework taught people to understand AI; it didn't teach organizations how to reorganize around it.
+3. It Ignored Individual Agency at the Leading Edge
+Individual users—even those highly skilled in AI—paid little attention to theoretical frameworks. They were too busy experimenting, failing, learning, and iterating. The people building actual businesses with AI weren't waiting for their organizations to certify them as "AI literate." They were learning by doing.
+The v1.0 framework was optimized for institutional adoption. It failed to acknowledge that real innovation was happening outside institutions.
+4. It Treated Dimensions as Parallel Rather Than Integrated
+The five dimensions functioned as discrete competencies. In reality, they're deeply interconnected. You can't practice AI ethics without understanding AI civics. You can't develop metacognition without experiencing AI's failure modes. The framework implied you could learn these separately, in sequence. You can't.
+5. It Missed the Economics of Speed and Scale
+The biggest gap: v1.0 didn't address what happens when AI systems operate at machine speed, across thousands of transactions, with minimal human oversight. Traditional ethical reasoning, careful deliberation, and metacognitive pause—all essential in the framework—become impossibly slow at AI scale.
+This creates a new problem: as AI systems handle more decisions and operations, human craftspeople need to understand not just how to use AI, but how to architect systems where humans can meaningfully intervene, audit, and correct at pace with machine operations.
+The Shape of v2.0
+The v2.0 framework needs to address:
+Systemic Thinking: Not just how to use AI, but how to architect socio-technical systems where AI and humans operate in genuine partnership. This includes designing decision boundaries—where AI decides autonomously, where humans decide, where they deliberate together.
+Organizational Architecture: How to restructure teams, incentives, and workflows around AI's capabilities. This isn't about training individuals; it's about redesigning the organization itself.
+Speed and Scale: How to maintain human judgment, ethical clarity, and accountability when systems operate at machine speed across thousands of simultaneous decisions.
+Economic Models: Understanding the unit economics of AI-augmented work. What actually gets cheaper? What becomes more expensive? What new value emerges?
+Failure Modes at Scale: Not just edge cases and hallucinations (v1.0 covered those). What happens when millions of small AI errors compound? When bias at scale becomes systemic? When an AI system's "knowledge" diverges from reality faster than humans can correct it?
+Design Patterns for Human-AI Collaboration: Not theory, but actual patterns that work—when to use AI as oracle, as executor, as advisor, as check. Recognizing that different domains need different patterns.
+The Craftsman's Responsibility: Moving beyond "know your tools" to "architect systems where your tools serve your values." This includes strategic decisions about which problems to solve with AI and which to leave to humans, even when AI could technically solve them faster.
+
+The Real Question v2.0 Must Answer
+You didn't click on this article to see how robust v1.0 was.
+You're here because the world changed faster than the framework. AI moved from a tool you consult to an agent you direct to a system you architect. The question isn't whether you're literate about AI anymore. The question is: Can you design and govern systems where AI operates at scale with integrity, effectiveness, and accountability?
+That's the real work of the AI Craftsman in 2026.
+Where was I wrong? What did I miss and what is in v2.0?
+
+The missing link in 2026: from calculus to carpentry
+
+Need a sixth dimension, creativity and innovation.
+Includes how to manage an AI that is incredible fast and fluent - how not to let it stymie your own creativity.  What paired-creativity looks like.  The elements of the creative process. Essential creativity tools (not just brainstorming, that is first-grade.)
+
+Includes - understanding the AI innovation process.  Essence of design thinking. Product-market fit. What does that woman Torres preach?
+
+
+DIMENSION 6: CREATIVITY AND INNOVATION
+The Missing Link: From Calculus to Carpentry
+Core Concept: AI is fundamentally different from calculus—it's not about abstract mathematical precision. It's like carpentry: a craft requiring skill, judgment, and intimate knowledge of your tools. This dimension addresses how to create with AI, not just use it, and crucially, how to prevent AI from stymying your own creativity.
+Three Sub-Components:
+A. Paired Creativity: How Human-AI Co-Creation Actually Works
+Research shows that merely implementing GenAI does not automatically enhance creativity—the effectiveness depends significantly on how well human users understand and interact with it. Human-AI pairs don't spontaneously improve their joint creativity over time, even after 10 rounds of creative tasks. Cambridge Judge Business School
+The Problem: While AI improves individual output, it narrows the range of ideas overall. When people start with an AI suggestion, they get anchored to it, leading to outputs that are more similar to each other. Upenn
+The Solution Structure:
+When humans generate initial ideas and AI supports evaluation or refinement, diversity is preserved. Leaders should structure workflows so that humans drive the earliest creative stages, while AI assists with scaling, editing, or selection. Upenn
+Human-AI dyads need targeted support and guidance on idea co-development to achieve augmented learning and sustained creativity. Cambridge Judge Business School
+The Cognitive Risk: Building "mindful friction" into workflows is essential—ensuring employees practice core creative thinking before turning to AI, much like pilots who lose manual skills when autopilot is overused. Upenn
+
+B. Elements of the Creative Process (Neuroscience-Based)
+Understanding how human creativity actually works informs how to partner with AI effectively.
+No single brain region houses creativity. Instead, the process relies on collaboration between various areas and networks. The classic four-stage model of creative thought includes: Preparation (building skills/knowledge, relying on the executive control network and prefrontal cortex), Incubation (mind-wandering, activating the default mode network), the "aha" moment (insight, associated with parietal cortex activity), and illumination. BrainFacts
+The Implication for AI Pairing:
+AI excels at preparation (research, context, pattern recognition)
+Humans need incubation (time away, mind-wandering—where AI can become a liability if overused)
+AI can support evaluation and iteration, but humans drive the breakthrough moments
+
+C. Understanding the AI Innovation Process
+Innovation with AI requires understanding how innovation actually unfolds—it's not linear.
+Design thinking involves five key phases—Empathize, Define, Ideate, Prototype, and Test—each serving as a step towards understanding and solving users' needs creatively and effectively. This is a non-linear, iterative process. 7 Fit Framework
+The Design Thinking Framework in AI Context:
+Empathize: Understand the real problem (AI can surface data; humans interpret meaning)
+Define: Articulate what you're actually solving (critical thinking; AI can confuse this stage)
+Ideate: Generate possibilities (this is where structured AI prompting matters)
+Prototype: Test assumptions (AI can generate prototypes; humans validate fit)
+Test: Learn from failure (humans interpret; AI can surface patterns)
+
+D. Product-Market Fit: The Test of Real Innovation
+Innovation that matters achieves product-market fit—the alignment between what you build and what the market needs.
+Linear achieved PMF by focusing on a well-defined niche, emphasizing craft and user empowerment (values that resonated with target users), and driving growth through product quality and user experience rather than marketing. From the beginning, they prioritized aesthetics and ease of use as core selling points. Eleken
+The AI Dimension: Continuously running PMF as an engine—measuring, learning, and iterating based on real user data to steadily improve product fit. The implication: if your business has strong network effects, the core benefit improves as you grow; if you're a SaaS company, you simply must keep improving the product as your user pool expands. Eleken
+Critical Success Factor: Focus on one customer, make them love your product, become obsessed with their success. Convince them to pay a meaningful amount. Don't undervalue your product. Then expand: get 3-10 companies to love and pay for it. Watch retention—if early customers leave, they don't count. Eleken
+
+E. Essential Creativity Tools (Beyond Brainstorming)
+First-grade brainstorming is insufficient. Professional creators use:
+Design Systems & Constraint-Based Ideation – AI can help generate within constraints; humans set the constraints
+Rapid Prototyping Tools – Physical or digital; AI can accelerate iteration
+User Research Frameworks – Ethnographic, behavioral analytics, predictive modeling
+The Double-Diamond Method – Research phase (diverge → converge), Design phase (diverge → converge)
+Iterative Testing Infrastructure – Version control for ideas, A/B testing, feedback loops
+Cross-Disciplinary Collaboration Structures – AI works best in heterogeneous teams
+
+Why This Matters for AI Craftspeople
+This dimension separates consumers of AI output from creators with AI as a tool. A true AI craftsperson understands:
+When to let AI lead (exploration, pattern-finding, rapid iteration)
+When humans must lead (problem definition, initial ideation, breakthrough insights, validation against real human needs)
+How to structure teams and workflows to prevent convergence and maintain authentic novelty
+How to validate that innovation actually resonates in market reality, not just in AI feedback loops
+The Craftsman's Edge: Unlike people treating AI as a shortcut, craftspeople use it as a real tool—understanding its grain, its limitations, when it serves your purpose and when it leads you astray. They protect their own creative muscle while leveraging AI's speed and pattern recognition.
+
+
+
+
+What This Means Going Forward
+The goal isn't to create another "literacy" program. It's to develop AI craftspeople—people who approach AI with the practical skill, intellectual rigor, and ethical grounding that any craft requires.
+

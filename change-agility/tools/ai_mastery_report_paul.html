@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Mastery Diagnostic — paul</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+  :root {
+    --bg: #0a0e17;
+    --surface: #131825;
+    --surface-2: #1a2030;
+    --border: #2a3040;
+    --text: #e2e8f0;
+    --text-muted: #8892a4;
+    --accent-user: #4A90D9;
+    --accent-practitioner: #50B86C;
+    --accent-builder: #E8913A;
+    --accent-architect: #D94A6E;
+    --accent-know: #7C6FE0;
+    --accent-do: #4ABFD9;
+    --accent-build: #D9A04A;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 40px 20px;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .header {
+    text-align: center;
+    padding: 48px 0 40px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 40px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+  }
+
+  .header .subtitle {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    font-weight: 300;
+  }
+
+  .header .date {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 16px;
+  }
+
+  .result-banner {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 40px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  .result-banner .level-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+  }
+
+  .result-banner .level-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #E8913A;
+    margin-bottom: 4px;
+  }
+
+  .result-banner .level-subtitle {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+  }
+
+  .result-banner .level-description {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    max-width: 640px;
+    margin: 0 auto;
+    color: var(--text);
+  }
+
+  .score-strip {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+  }
+
+  .score-strip .score-item {
+    text-align: center;
+  }
+
+  .score-strip .score-value {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .score-strip .score-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .level-breakdown {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 32px;
+  }
+
+  .level-breakdown h3 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+  }
+
+  .level-row {
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .level-row:last-child {
+    border-bottom: none;
+  }
+
+  .level-row .level-name {
+    width: 140px;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  .level-row .bar-container {
+    flex: 1;
+    height: 28px;
+    background: var(--surface-2);
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 0 16px;
+  }
+
+  .level-row .bar-fill {
+    height: 100%;
+    border-radius: 6px;
+    transition: width 0.6s ease;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: rgba(255,255,255,0.9);
+  }
+
+  .level-row .bar-score {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    width: 50px;
+    text-align: right;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 32px 0;
+    border-top: 1px solid var(--border);
+    margin-top: 16px;
+  }
+
+  .footer p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+
+  .footer a {
+    color: var(--accent-user);
+    text-decoration: none;
+  }
+
+  @media (max-width: 768px) {
+    .score-strip {
+      gap: 20px;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>AI Mastery Diagnostic</h1>
+    <div class="subtitle">Adaptive Adoption Framework — Paul Gibbons Advisory</div>
+    <div class="date">paul · March 23, 2026</div>
+  </div>
+
+  <div class="result-banner">
+    <div class="level-label">Your Current Level</div>
+    <div class="level-title">Level 3: The Builder</div>
+    <div class="level-subtitle">Agent Literacy & Shipped Applications</div>
+    <div class="level-description">You understand how different types of agents work and you've built things that run. You're not just using AI — you're engineering with it. Next: designing systems for teams, not just yourself.</div>
+    <div class="score-strip">
+      <div class="score-item">
+        <div class="score-value">38</div>
+        <div class="score-label">Total Score</div>
+      </div>
+      <div class="score-item">
+        <div class="score-value">79%</div>
+        <div class="score-label">Overall</div>
+      </div>
+      <div class="score-item">
+        <div class="score-value">16</div>
+        <div class="score-label">Know (of 16)</div>
+      </div>
+      <div class="score-item">
+        <div class="score-value">13</div>
+        <div class="score-label">Do (of 16)</div>
+      </div>
+      <div class="score-item">
+        <div class="score-value">9</div>
+        <div class="score-label">Build (of 16)</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="level-breakdown">
+    <h3>Level Breakdown</h3>
+    <div class="level-row">
+      <div class="level-name" style="color: var(--accent-user);">User</div>
+      <div class="bar-container">
+        <div class="bar-fill" style="width: 83.33333333333334%; background: var(--accent-user);">
+          10/12
+        </div>
+      </div>
+      <div class="bar-score">✓ Owned</div>
+    </div>
+    <div class="level-row">
+      <div class="level-name" style="color: var(--accent-practitioner);">Practitioner</div>
+      <div class="bar-container">
+        <div class="bar-fill" style="width: 100.0%; background: var(--accent-practitioner);">
+          12/12
+        </div>
+      </div>
+      <div class="bar-score">✓ Owned</div>
+    </div>
+    <div class="level-row">
+      <div class="level-name" style="color: var(--accent-builder);">Builder</div>
+      <div class="bar-container">
+        <div class="bar-fill" style="width: 75.0%; background: var(--accent-builder);">
+          9/12
+        </div>
+      </div>
+      <div class="bar-score">✓ Owned</div>
+    </div>
+    <div class="level-row">
+      <div class="level-name" style="color: var(--accent-architect);">Architect</div>
+      <div class="bar-container">
+        <div class="bar-fill" style="width: 58.333333333333336%; background: var(--accent-architect);">
+          7/12
+        </div>
+      </div>
+      <div class="bar-score">—</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>AI Mastery Diagnostic v0.5 · Adaptive Adoption™ Framework</p>
+    <p>(c) Paul Gibbons Advisory · <a href="https://github.com/paulggibbons/adaptive_adoption">github.com/paulggibbons/adaptive_adoption</a></p>
+  </div>
+
+</div>
+
+</body>
+</html>
