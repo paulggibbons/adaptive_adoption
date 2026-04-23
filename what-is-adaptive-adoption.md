@@ -17,9 +17,9 @@ Adaptive Adoption is the first organizational change framework designed from the
 
 | Discipline | Metaphor | Function | Pillars |
 |---|---|---|---|
-| **[Change Agility](change-agility/)** | The Flywheel | What the organization does — operational capability | 7 pillars |
-| **[Leadership Delta](leadership-delta/)** | The Torque | What leaders do differently — the measurable gap | 7 dimensions |
-| **[Behavioral Governance](behavioral-governance/)** | The Guardrails | How the organization governs AI use — enacted, not written | 6 dimensions |
+| **[Change Agility](change-agility/index.md)** | The Flywheel | What the organization does — operational capability | 7 pillars |
+| **[Leadership Delta](leadership-delta/index.md)** | The Torque | What leaders do differently — the measurable gap | 7 dimensions |
+| **[Behavioral Governance](behavioral-governance/index.md)** | The Guardrails | How the organization governs AI use — enacted, not written | 6 dimensions |
 
 ---
 
@@ -66,12 +66,12 @@ Each dimension assessed via three layers: **Self-Report → Evidence → Behavio
 
 ## Where to Start
 
-**If you're an executive:** Start with the [Model Cards](change-agility/model-cards/) — visual reference cards for each pillar.
+**If you're an executive:** Start with [Change Agility](change-agility/index.md) — the operational flywheel for AI adoption.
 
-**If you're a practitioner:** Start with the [Conditions Audit](leadership-delta/pillars/01-strategic-imagination/conditions-audit.md) — stress-test your current approach.
+**If you're a practitioner:** Start with the [Conditions Audit](leadership-delta/tools/conditions-audit.md) — stress-test your current approach.
 
-**If you're a researcher or skeptic:** Start with [Why Change Must Change](why-change-must-change/) — every claim mapped to its scholarly lineage.
+**If you're a researcher or skeptic:** Start with [Why Change Must Change](foundations/conditions-that-dont-hold.md) — every claim mapped to its scholarly lineage.
 
 ---
 
-*See also: [Why Adaptive Adoption Matters](why-adaptive-adoption-matters.md) · [How This Repo Works](how-this-repo-works.md) · [Visuals and Presentations](visuals-and-presentations/)*
+*See also: [Why Adaptive Adoption Matters](why-adaptive-adoption-matters.md) · [How This Repo Works](how-this-repo-works.md) · [Visuals and Presentations](visuals-and-presentations/index.md)*
