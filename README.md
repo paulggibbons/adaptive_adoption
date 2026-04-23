@@ -28,7 +28,7 @@
 
 ## Deep Context
 
-**[Why Change Must Change](why-change-must-change/)** — The scholarly case: conditions that broke, shifts in human sciences, work culture, and enterprise structure
+**[Why Change Must Change](foundations/)** — The scholarly case: conditions that broke, shifts in human sciences, work culture, and enterprise structure
 
 **[Provenance](provenance/)** — Intellectual lineage, philosophical foundations, acknowledgements
 

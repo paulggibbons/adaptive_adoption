@@ -87,6 +87,18 @@ jobs:
           # ── Assets ──
           cp assets/extra.css content/extra.css 2>/dev/null || true
 
+          # ── Root-level pages (linked from homepage) ──
+          cp what-is-adaptive-adoption.md content/ 2>/dev/null || true
+          cp why-adaptive-adoption-matters.md content/ 2>/dev/null || true
+          cp how-this-repo-works.md content/ 2>/dev/null || true
+
+          # ── Provenance ──
+          mkdir -p content/provenance
+          cp provenance/*.md content/provenance/ 2>/dev/null || true
+          if [ ! -f content/provenance/index.md ]; then
+            printf '# Provenance\n\nIntellectual lineage, philosophical foundations, and acknowledgements.\n' > content/provenance/index.md
+          fi
+
           # ── Google Search Console verification ──
           cp googleacea638aeb4140cf.html content/ 2>/dev/null || true
 
