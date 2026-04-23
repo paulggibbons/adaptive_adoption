@@ -87,6 +87,9 @@ jobs:
           # ── Assets ──
           cp assets/extra.css content/extra.css 2>/dev/null || true
 
+          # ── Google Search Console verification ──
+          cp googleacea638aeb4140cf.html content/ 2>/dev/null || true
+
           # ── Visual assets (hero images referenced as ../visuals-and-presentations/... from domain readmes) ──
           mkdir -p content/visuals-and-presentations
           cp -r visuals-and-presentations/* content/visuals-and-presentations/
@@ -117,6 +120,10 @@ jobs:
           find content -type f | sort
 
       - run: mkdocs build
+
+      - name: Copy Google Search Console verification
+        run: cp googleacea638aeb4140cf.html _site/ 2>/dev/null || true
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
