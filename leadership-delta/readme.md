@@ -1,5 +1,7 @@
 # Leadership Delta — The Torque
 
+![AI Leadership Delta — The Leadership Triangle](../visuals-and-presentations/leadership-delta/leadership-delta-framework.png)
+
 **Discipline 2 of 3 · Seven dimensions · What leaders do differently**
 
 The Leadership Delta is the measurable gap between current leadership capability and what AI-era leadership demands. Not a competency model (static) but a delta (dynamic, assessable, closable). Every dimension is defined by observable behaviors, not personality traits. The delta closes through practice, not training.

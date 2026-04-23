@@ -1,5 +1,7 @@
 # Change Agility — The Flywheel
 
+![Change Agility — The Innovation Flywheel](../visuals-and-presentations/change-agility/change-agility-framework.png)
+
 **Discipline 1 of 3 · Seven pillars · What the organization does**
 
 Change Agility is the operational layer of Adaptive Adoption. It replaces traditional change management's linear project model with a flywheel of organizational capability that accelerates through use.

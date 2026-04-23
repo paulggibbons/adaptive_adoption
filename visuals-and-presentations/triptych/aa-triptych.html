@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adaptive Adoption™ Framework — Triptych</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink: #0f0e0d;
+    --paper: #f5f0e8;
+    --accent: #2a6b4a;
+    --gold: #b8922a;
+    --rust: #c84b2f;
+    --mid: #6b6560;
+    --light: #e8e2d8;
+    --rule: 1px solid #c8bfb0;
+    --bg: #1a1713;
+  }
+
+  body {
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 24px;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .master-header {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .master-header .framework-label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #6b6560;
+  }
+
+  .master-header h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 32px;
+    color: var(--paper);
+    font-weight: 400;
+    margin-top: 6px;
+  }
+
+  .triptych {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    max-width: 1080px;
+    width: 100%;
+    align-items: start;
+  }
+
+  .panel {
+    background: var(--paper);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .panel::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.4;
+  }
+
+  .panel-header {
+    padding: 28px 28px 0;
+    border-bottom: 3px solid var(--ink);
+    min-height: 115px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 16px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .panel-label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+  }
+
+  .label-torque { color: var(--rust); }
+  .label-flywheel { color: var(--accent); }
+  .label-guardrails { color: var(--gold); }
+
+  .panel-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+    color: var(--ink);
+    line-height: 1.15;
+    margin-bottom: 4px;
+  }
+
+  .panel-strapline {
+    font-size: 11.5px;
+    font-weight: 300;
+    color: var(--mid);
+    font-style: italic;
+    line-height: 1.4;
+  }
+
+  .items {
+    list-style: none;
+    padding: 0 28px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .items li {
+    padding: 12px 0;
+    border-bottom: var(--rule);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--ink);
+    line-height: 1.3;
+  }
+
+  .items li:last-child {
+    border-bottom: none;
+  }
+
+  .panel-footer {
+    margin: 0 28px;
+    padding: 10px 0 20px;
+    border-top: var(--rule);
+    font-size: 10px;
+    color: var(--mid);
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .master-footer {
+    text-align: center;
+    margin-top: 28px;
+    font-size: 10px;
+    color: #6b6560;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+  }
+</style>
+</head>
+<body>
+
+<div class="master-header">
+  <div class="framework-label">The Framework</div>
+  <h1>Adaptive Adoption™</h1>
+</div>
+
+<div class="triptych">
+
+  <!-- COLUMN 1: AI LEADERSHIP DELTA -->
+  <div class="panel">
+    <div class="panel-header">
+      <div class="panel-label label-torque">The Torque</div>
+      <div class="panel-title">AI Leadership Delta™</div>
+      <div class="panel-strapline">Because calling someone a sponsor doesn't make them a leader.</div>
+    </div>
+    <ul class="items">
+      <li>Strategic Imagination</li>
+      <li>Active Modeling</li>
+      <li>Creative Cultivation</li>
+      <li>Friction Courage</li>
+      <li>Trust Calibration</li>
+      <li>Ethical Stewardship</li>
+      <li>Systems Orchestration</li>
+    </ul>
+    <div class="panel-footer">What leaders do differently</div>
+  </div>
+
+  <!-- COLUMN 2: CHANGE AGILITY -->
+  <div class="panel">
+    <div class="panel-header">
+      <div class="panel-label label-flywheel">The Flywheel</div>
+      <div class="panel-title">Change Agility™</div>
+      <div class="panel-strapline">Because trust, innovation, and human capability beat change management.</div>
+    </div>
+    <ul class="items">
+      <li>Master the Craft</li>
+      <li>Embrace Complexity</li>
+      <li>Consciously Manage Trust</li>
+      <li>Put People First</li>
+      <li>Design and Prototype</li>
+      <li>Prioritize Behavior</li>
+      <li>Manage Ethics Always</li>
+    </ul>
+    <div class="panel-footer">What the organization does</div>
+  </div>
+
+  <!-- COLUMN 3: BEHAVIORAL GOVERNANCE -->
+  <div class="panel">
+    <div class="panel-header">
+      <div class="panel-label label-guardrails">The Guardrails</div>
+      <div class="panel-title">Behavioral Governance™</div>
+      <div class="panel-strapline">Because governance is more than policies, policing, and PDFs.</div>
+    </div>
+    <ul class="items">
+      <li>Decision Rights</li>
+      <li>Agent Authority</li>
+      <li>Risk Intelligence</li>
+      <li>Strategic Coherence</li>
+      <li>Governance Intelligence</li>
+      <li>First-Derivative Talent</li>
+    </ul>
+    <div class="panel-footer">How it's governed</div>
+  </div>
+
+</div>
+
+<div class="master-footer">
+  Paul Gibbons · paulgibbonsadvisory.com · 2026
+</div>
+
+</body>
+</html>

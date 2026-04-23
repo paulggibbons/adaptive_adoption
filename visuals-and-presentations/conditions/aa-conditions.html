@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Leadership Delta™ — Six Conditions</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink: #0f0e0d;
+    --paper: #f5f0e8;
+    --accent: #2a6b4a;
+    --gold: #b8922a;
+    --rust: #c84b2f;
+    --mid: #6b6560;
+    --light: #e8e2d8;
+    --rule: 1px solid #c8bfb0;
+    --bg: #1a1713;
+  }
+
+  body {
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px 24px;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .card {
+    background: var(--paper);
+    max-width: 740px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.4;
+  }
+
+  .header {
+    padding: 40px 44px 0;
+    border-bottom: 3px solid var(--ink);
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .header .label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: var(--rust);
+    margin-bottom: 8px;
+  }
+
+  .header h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 32px;
+    color: var(--ink);
+    font-weight: 400;
+    line-height: 1.15;
+    margin-bottom: 6px;
+  }
+
+  .header h1 em {
+    font-style: italic;
+    color: var(--rust);
+  }
+
+  .header .strapline {
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--mid);
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .conditions {
+    padding: 0 44px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .condition {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 24px;
+    padding: 16px 0;
+    border-bottom: var(--rule);
+    align-items: baseline;
+  }
+
+  .condition:last-child {
+    border-bottom: none;
+  }
+
+  .condition-name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 15px;
+    color: var(--ink);
+    line-height: 1.3;
+  }
+
+  .condition-claim {
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--mid);
+    line-height: 1.6;
+  }
+
+  .footer {
+    margin: 0 44px;
+    padding: 14px 0 28px;
+    border-top: var(--rule);
+    position: relative;
+    z-index: 2;
+  }
+
+  .footer .context {
+    font-size: 12px;
+    color: var(--mid);
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+
+  .footer .credit {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 10px;
+    color: var(--mid);
+    letter-spacing: 2px;
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+
+  <div class="header">
+    <div class="label">Adaptive Adoption™ · AI Leadership Delta</div>
+    <h1>The <em>Six Conditions</em></h1>
+    <div class="strapline">What's genuinely different about leading in the AI era. Not pace of change — a different kind of change.</div>
+  </div>
+
+  <div class="conditions">
+
+    <div class="condition">
+      <div class="condition-name">Stack sprawl</div>
+      <div class="condition-claim">No single person holds the whole system. Chips to models to orchestration to applications to enterprise to physical — each layer expanding simultaneously, each incommensurable with the others.</div>
+    </div>
+
+    <div class="condition">
+      <div class="condition-name">Complexity<br>(three-body problem)</div>
+      <div class="condition-claim">The leader manages humans, organization, and a non-human agent with emergent behavior — simultaneously. No prior change model addresses leading alongside something that acts back.</div>
+    </div>
+
+    <div class="condition">
+      <div class="condition-name">The immersion condition</div>
+      <div class="condition-claim">Strategic judgment without direct experience is epistemologically compromised. Build Week, not Think Week. The well-read armchair analyst who has never touched the technology has not earned their strong opinions.</div>
+    </div>
+
+    <div class="condition">
+      <div class="condition-name">Temporal shear</div>
+      <div class="condition-claim">Five clocks running simultaneously. Model releases weekly. Agentic breakthroughs monthly. Budget cycles quarterly. Legacy systems annually. Human systems change over decades.</div>
+    </div>
+
+    <div class="condition">
+      <div class="condition-name">Ethical volatility</div>
+      <div class="condition-claim">Novel moral questions arise faster than governance can adjudicate. By the time the committee meets, the decision has been made. The leader is the default ethicist in the room.</div>
+    </div>
+
+    <div class="condition">
+      <div class="condition-name">Fear and dissent</div>
+      <div class="condition-claim">The first enterprise technology to generate organized intellectual and ethical counter-movement. Not just doubt about capability — principled rejection of the project itself.</div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="context">These conditions define the context. The seven dimensions of the AI Leadership Delta define the behavioral response.</div>
+    <div class="credit">Paul Gibbons · paulgibbonsadvisory.com · 2026</div>
+  </div>
+
+</div>
+
+</body>
+</html>

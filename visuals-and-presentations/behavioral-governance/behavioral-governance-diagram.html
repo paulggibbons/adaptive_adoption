@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@400;500;600&display=swap');
+  
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    width: 1200px;
+    height: 900px;
+    background: #F5F0E8;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+  }
+  
+  .header-bar {
+    padding: 20px 40px 12px;
+    border-bottom: 2px solid #8B7355;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #8B7355;
+  }
+  
+  .canvas {
+    position: relative;
+    width: 1200px;
+    height: 780px;
+  }
+  
+  /* Hexagon */
+  .hex-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .hexagon {
+    width: 420px;
+    height: 420px;
+    position: relative;
+  }
+  
+  .hex-bg {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+  }
+  
+  .hex-bg polygon {
+    fill: none;
+    stroke: #8B7355;
+    stroke-width: 3;
+  }
+  
+  .hex-bg .inner {
+    fill: url(#centerGrad);
+    stroke: #A0896C;
+    stroke-width: 2;
+  }
+  
+  .hex-bg .fill-poly {
+    fill: rgba(200, 185, 160, 0.15);
+    stroke: #8B7355;
+    stroke-width: 3;
+  }
+  
+  /* Center circle */
+  .center-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle at 40% 40%, #4A3F35, #2A2420);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #F5F0E8;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.4;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  }
+  
+  /* Dimension labels */
+  .dim-label {
+    position: absolute;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.2;
+    width: 180px;
+  }
+  
+  /* Vertex dots */
+  .vertex-dot {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #F5F0E8;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Colors for each dimension */
+  .dim-1 { color: #8B4513; }
+  .dot-1 { background: #8B4513; }
+  .dim-2 { color: #2E5E4E; }
+  .dot-2 { background: #2E5E4E; }
+  .dim-3 { color: #6B4C8A; }
+  .dot-3 { background: #6B4C8A; }
+  .dim-4 { color: #1E6091; }
+  .dot-4 { background: #1E6091; }
+  .dim-5 { color: #B8860B; }
+  .dot-5 { background: #B8860B; }
+  .dim-6 { color: #A0522D; }
+  .dot-6 { background: #A0522D; }
+  
+  /* Footer */
+  .footer {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+  .footer-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 42px;
+    font-weight: 400;
+    color: #2A2420;
+    letter-spacing: 1px;
+  }
+  
+  .footer-tm {
+    font-size: 18px;
+    vertical-align: super;
+  }
+  
+  .footer-sub {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #8B7355;
+    margin-top: 4px;
+  }
+</style>
+</head>
+<body>
+  <div class="header-bar">The Adaptive Adoption Framework™</div>
+  <div class="canvas">
+    <div class="hex-container">
+      <div class="hexagon">
+        <svg class="hex-bg" viewBox="0 0 420 420">
+          <defs>
+            <radialGradient id="centerGrad" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="rgba(200,185,160,0.3)"/>
+              <stop offset="100%" stop-color="rgba(200,185,160,0.05)"/>
+            </radialGradient>
+          </defs>
+          <!-- Outer hexagon - flat top -->
+          <polygon class="fill-poly" points="210,40 380,138 380,282 210,380 40,282 40,138"/>
+          <!-- Inner hexagon -->
+          <polygon class="inner" points="210,110 320,168 320,252 210,310 100,252 100,168"/>
+          <!-- Connecting lines from center to vertices -->
+          <line x1="210" y1="40" x2="210" y2="210" stroke="#A0896C" stroke-width="1" opacity="0.3"/>
+          <line x1="380" y1="138" x2="210" y2="210" stroke="#A0896C" stroke-width="1" opacity="0.3"/>
+          <line x1="380" y1="282" x2="210" y2="210" stroke="#A0896C" stroke-width="1" opacity="0.3"/>
+          <line x1="210" y1="380" x2="210" y2="210" stroke="#A0896C" stroke-width="1" opacity="0.3"/>
+          <line x1="40" y1="282" x2="210" y2="210" stroke="#A0896C" stroke-width="1" opacity="0.3"/>
+          <line x1="40" y1="138" x2="210" y2="210" stroke="#A0896C" stroke-width="1" opacity="0.3"/>
+        </svg>
+        
+        <div class="center-circle">
+          <span>Behavior —</span>
+          <span>Not PDFs</span>
+        </div>
+        
+        <!-- Vertex dots -->
+        <div class="vertex-dot dot-1" style="top: 9.5%; left: 50%;"></div>
+        <div class="vertex-dot dot-2" style="top: 32.8%; left: 90.5%;"></div>
+        <div class="vertex-dot dot-3" style="top: 67.1%; left: 90.5%;"></div>
+        <div class="vertex-dot dot-4" style="top: 90.5%; left: 50%;"></div>
+        <div class="vertex-dot dot-5" style="top: 67.1%; left: 9.5%;"></div>
+        <div class="vertex-dot dot-6" style="top: 32.8%; left: 9.5%;"></div>
+      </div>
+    </div>
+    
+    <!-- Dimension labels positioned around hexagon -->
+    <!-- Top: Governance Intelligence -->
+    <div class="dim-label dim-1" style="top: 50px; left: 50%; transform: translateX(-50%);">
+      Governance<br>Intelligence
+    </div>
+    
+    <!-- Top-right: First-Derivative Talent -->
+    <div class="dim-label dim-2" style="top: 160px; right: 80px; text-align: left;">
+      First-Derivative<br>Talent
+    </div>
+    
+    <!-- Bottom-right: Decision Rights -->
+    <div class="dim-label dim-3" style="top: 420px; right: 80px; text-align: left;">
+      Decision<br>Rights
+    </div>
+    
+    <!-- Bottom: Strategic Coherence -->
+    <div class="dim-label dim-4" style="bottom: 100px; left: 50%; transform: translateX(-50%);">
+      Strategic<br>Coherence
+    </div>
+    
+    <!-- Bottom-left: Risk Intelligence -->
+    <div class="dim-label dim-5" style="top: 420px; left: 80px; text-align: right;">
+      Risk<br>Intelligence
+    </div>
+    
+    <!-- Top-left: Agent Authority -->
+    <div class="dim-label dim-6" style="top: 160px; left: 80px; text-align: right;">
+      Agent<br>Authority
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+      <div class="footer-title">Behavioral Governance<span class="footer-tm">™</span></div>
+      <div class="footer-sub">The Enablers and Guardrails — Adaptive Adoption™ Framework</div>
+    </div>
+  </div>
+</body>
+</html>

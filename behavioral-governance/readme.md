@@ -1,5 +1,7 @@
 # Behavioral Governance — The Guardrails
 
+![Behavioral Governance Framework](../visuals-and-presentations/behavioral-governance/behavioral-governance-framework.png)
+
 **Discipline 3 of 3 · Six dimensions · How the organization governs AI use**
 
 Behavioral Governance replaces compliance-first governance with enacted governance — governance that lives in what people do, not what policies say. Every dimension is assessed via a three-layer protocol: **Self-Report → Evidence → Behavioral Observation**.
