@@ -87,6 +87,10 @@ jobs:
           # ── Assets ──
           cp assets/extra.css content/extra.css 2>/dev/null || true
 
+          # ── Visual assets (hero images referenced as ../visuals-and-presentations/... from domain readmes) ──
+          mkdir -p content/visuals-and-presentations
+          cp -r visuals-and-presentations/* content/visuals-and-presentations/
+
           # ── Create stubs for any missing nav targets ──
           for f in \
             content/foundations/conditions-that-dont-hold.md \
