@@ -1,15 +1,9 @@
 /* ═══════════════════════════════════════════
    ADAPTIVE ADOPTION — MkDocs Material Theme
-   Option B: Café Bright + Brand Discipline Colors
-
-   INSTRUCTIONS FOR CLAUDE CODE:
-   Replace the contents of assets/extra.css in the
-   paulggibbons/adaptive_adoption repo with this file.
-   Commit and push — GitHub Actions will rebuild.
+   Option B+: Café Bright + Full Discipline Color System
 ═══════════════════════════════════════════ */
 
 :root {
-  /* Core palette — Option B (brighter) */
   --aa-espresso:      #2a1e14;
   --aa-chocolate:     #352618;
   --aa-chocolate-mid: #4a3628;
@@ -19,38 +13,42 @@
   --aa-gold:          #e0b84a;
   --aa-gold-light:    #f0d060;
 
-  /* Brand discipline colors — from paulgibbonsadvisory.com */
-  --aa-green:         #3DCC80;   /* Change Agility */
-  --aa-blue:          #5BA3D9;   /* Leadership Delta */
-  --aa-purple:        #B07DD6;   /* Behavioral Governance */
-  --aa-orange:        #E8944A;   /* Challenge / Maturity / admonitions */
+  /* Brand discipline colors */
+  --aa-green:         #3DCC80;
+  --aa-blue:          #5BA3D9;
+  --aa-purple:        #B07DD6;
+  --aa-orange:        #E8944A;
 
-  /* CTA */
   --aa-green-cta:     #2A6B4A;
   --aa-rust:          #c84b2f;
 }
 
-/* Override Material slate scheme */
+/* ── Material slate overrides ── */
 [data-md-color-scheme="slate"] {
-  --md-default-bg-color:           var(--aa-espresso);
-  --md-default-fg-color:           var(--aa-cream);
-  --md-default-fg-color--light:    var(--aa-cream-dim);
-  --md-primary-fg-color:           var(--aa-gold);
-  --md-primary-bg-color:           var(--aa-chocolate);
-  --md-accent-fg-color:            var(--aa-gold);
-  --md-typeset-a-color:            var(--aa-gold);
-  --md-code-bg-color:              var(--aa-chocolate);
-  --md-footer-bg-color:            #1a120b;
-  --md-footer-bg-color--dark:      #0f0a06;
+  --md-default-bg-color:        var(--aa-espresso);
+  --md-default-fg-color:        var(--aa-cream);
+  --md-default-fg-color--light: var(--aa-cream-dim);
+  --md-primary-fg-color:        var(--aa-gold);
+  --md-primary-bg-color:        var(--aa-chocolate);
+  --md-accent-fg-color:         var(--aa-gold);
+  --md-typeset-a-color:         var(--aa-gold);
+  --md-code-bg-color:           var(--aa-chocolate);
+  --md-footer-bg-color:         #1a120b;
+  --md-footer-bg-color--dark:   #0f0a06;
 }
 
-/* Header bar */
+/* ── Header ── */
 .md-header {
   background: var(--aa-chocolate-mid) !important;
   border-bottom: 1px solid rgba(224, 184, 74, 0.2);
 }
 
-/* Navigation sidebar */
+/* Hide broken logo image, keep site title */
+.md-header__button.md-logo {
+  display: none;
+}
+
+/* ── Nav sidebar ── */
 .md-sidebar {
   background: var(--aa-espresso);
 }
@@ -66,7 +64,7 @@
   font-weight: 500;
 }
 
-/* Tabs — discipline colors */
+/* ── Tabs ── */
 .md-tabs {
   background: var(--aa-chocolate-mid) !important;
 }
@@ -74,66 +72,108 @@
   color: var(--aa-cream-dim) !important;
   font-family: 'DM Sans', sans-serif;
   letter-spacing: 0.5px;
+  opacity: 1 !important;
 }
 .md-tabs__link--active,
 .md-tabs__link:hover {
   color: var(--aa-cream) !important;
 }
 
-/* ───────────────────────────────────────
-   DISCIPLINE-SPECIFIC COLORS
-   Applied via nav section. MkDocs Material
-   adds data attributes we can target.
-   Fallback: use body classes or override
-   per-page with meta tags.
-─────────────────────────────────────── */
+/* ═══════════════════════════════════════════
+   DISCIPLINE COLOR SYSTEM
+   Applies to: nav sidebar, tab bar, content links
+═══════════════════════════════════════════ */
 
 /* Change Agility — Green */
 .md-nav__link[href*="change-agility"],
-.md-nav__item--active > .md-nav__link[href*="change-agility"] {
+.md-nav__item--active > .md-nav__link[href*="change-agility"],
+.md-tabs__link[href*="change-agility"],
+.md-typeset a[href*="change-agility"] {
   color: var(--aa-green) !important;
+  border-bottom-color: rgba(61, 204, 128, 0.3) !important;
+}
+.md-tabs__link[href*="change-agility"]:hover,
+.md-tabs__link--active[href*="change-agility"] {
+  color: var(--aa-green) !important;
+  opacity: 1 !important;
 }
 
 /* Leadership Delta — Blue */
 .md-nav__link[href*="leadership-delta"],
-.md-nav__item--active > .md-nav__link[href*="leadership-delta"] {
+.md-nav__item--active > .md-nav__link[href*="leadership-delta"],
+.md-tabs__link[href*="leadership-delta"],
+.md-typeset a[href*="leadership-delta"] {
   color: var(--aa-blue) !important;
+  border-bottom-color: rgba(91, 163, 217, 0.3) !important;
+}
+.md-tabs__link[href*="leadership-delta"]:hover,
+.md-tabs__link--active[href*="leadership-delta"] {
+  color: var(--aa-blue) !important;
+  opacity: 1 !important;
 }
 
 /* Behavioral Governance — Purple */
 .md-nav__link[href*="behavioral-governance"],
-.md-nav__item--active > .md-nav__link[href*="behavioral-governance"] {
+.md-nav__item--active > .md-nav__link[href*="behavioral-governance"],
+.md-tabs__link[href*="behavioral-governance"],
+.md-typeset a[href*="behavioral-governance"] {
   color: var(--aa-purple) !important;
+  border-bottom-color: rgba(176, 125, 214, 0.3) !important;
+}
+.md-tabs__link[href*="behavioral-governance"]:hover,
+.md-tabs__link--active[href*="behavioral-governance"] {
+  color: var(--aa-purple) !important;
+  opacity: 1 !important;
 }
 
 /* Maturity Model — Orange */
 .md-nav__link[href*="maturity-model"],
-.md-nav__item--active > .md-nav__link[href*="maturity-model"] {
+.md-nav__item--active > .md-nav__link[href*="maturity-model"],
+.md-tabs__link[href*="maturity-model"],
+.md-typeset a[href*="maturity-model"] {
   color: var(--aa-orange) !important;
+  border-bottom-color: rgba(232, 148, 74, 0.3) !important;
+}
+.md-tabs__link[href*="maturity-model"]:hover,
+.md-tabs__link--active[href*="maturity-model"] {
+  color: var(--aa-orange) !important;
+  opacity: 1 !important;
 }
 
-/* Content area */
+/* ── Content area ── */
 .md-typeset {
   color: var(--aa-cream);
   font-size: 0.85rem;
   line-height: 1.7;
 }
+
+/* H1 — gold gradient */
 .md-typeset h1 {
-  color: var(--aa-cream);
-  font-weight: 600;
-  border-bottom: 2px solid rgba(224, 184, 74, 0.3);
+  font-weight: 700;
   padding-bottom: 0.4em;
+  border-bottom: 2px solid rgba(224, 184, 74, 0.3);
+  background: linear-gradient(135deg, var(--aa-gold) 0%, var(--aa-gold-light) 60%, var(--aa-gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
+
+/* H2 — gold with left-border accent */
 .md-typeset h2 {
   color: var(--aa-gold);
-  font-weight: 500;
+  font-weight: 600;
+  border-left: 3px solid var(--aa-gold);
+  padding-left: 0.6em;
+  margin-left: -0.75em;
 }
+
+/* H3 */
 .md-typeset h3 {
   color: var(--aa-cream);
   font-weight: 500;
 }
 
-/* Links */
+/* Links (default gold; discipline overrides above take precedence) */
 .md-typeset a {
   color: var(--aa-gold);
   text-decoration: none;
@@ -144,7 +184,7 @@
   border-bottom-color: var(--aa-gold);
 }
 
-/* Code blocks */
+/* ── Code ── */
 .md-typeset code {
   background: var(--aa-chocolate);
   color: var(--aa-gold-light);
@@ -157,7 +197,7 @@
   border-left: 3px solid var(--aa-gold);
 }
 
-/* Tables */
+/* ── Tables ── */
 .md-typeset table:not([class]) {
   border: 1px solid rgba(245, 240, 232, 0.1);
 }
@@ -171,7 +211,7 @@
   border-color: rgba(245, 240, 232, 0.06);
 }
 
-/* Admonitions — orange accent */
+/* ── Admonitions ── */
 .md-typeset .admonition {
   border-left: 3px solid var(--aa-orange);
   background: var(--aa-chocolate);
@@ -179,8 +219,6 @@
 .md-typeset .admonition-title {
   color: var(--aa-orange);
 }
-
-/* Admonition variants using discipline colors */
 .md-typeset .admonition.tip,
 .md-typeset .admonition.hint {
   border-left-color: var(--aa-green);
@@ -206,53 +244,28 @@
   border-left-color: var(--aa-rust);
 }
 
-/* Search */
+/* ── Search ── */
 .md-search__input {
   background: var(--aa-chocolate-mid) !important;
   color: var(--aa-cream) !important;
 }
 
-/* Footer */
-.md-footer {
-  background: #1a120b;
-}
-.md-footer-meta {
-  background: #0f0a06;
-}
-.md-copyright {
-  color: var(--aa-cream-faint);
-}
-.md-copyright a {
-  color: var(--aa-gold) !important;
-}
+/* ── Footer ── */
+.md-footer        { background: #1a120b; }
+.md-footer-meta   { background: #0f0a06; }
+.md-copyright     { color: var(--aa-cream-faint); }
+.md-copyright a   { color: var(--aa-gold) !important; }
 
-/* Social links */
-.md-social__link svg {
-  fill: var(--aa-cream-dim);
-}
-.md-social__link:hover svg {
-  fill: var(--aa-gold);
-}
+/* ── Social icons ── */
+.md-social__link svg       { fill: var(--aa-cream-dim); }
+.md-social__link:hover svg { fill: var(--aa-gold); }
 
-/* Scrollbar */
-::-webkit-scrollbar {
-  width: 6px;
-}
-::-webkit-scrollbar-track {
-  background: var(--aa-espresso);
-}
-::-webkit-scrollbar-thumb {
-  background: var(--aa-chocolate-mid);
-  border-radius: 3px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(224, 184, 74, 0.4);
-}
+/* ── Scrollbar ── */
+::-webkit-scrollbar       { width: 6px; }
+::-webkit-scrollbar-track { background: var(--aa-espresso); }
+::-webkit-scrollbar-thumb { background: var(--aa-chocolate-mid); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(224, 184, 74, 0.4); }
 
-/* Banner */
-.md-banner {
-  background: var(--aa-chocolate) !important;
-}
-.md-banner a {
-  color: var(--aa-green) !important;
-}
+/* ── Banner ── */
+.md-banner   { background: var(--aa-chocolate) !important; }
+.md-banner a { color: var(--aa-green) !important; }
