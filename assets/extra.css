@@ -1,17 +1,31 @@
 /* ═══════════════════════════════════════════
    ADAPTIVE ADOPTION — MkDocs Material Theme
-   Espresso / Gold / Cream palette
+   Option B: Café Bright + Brand Discipline Colors
+
+   INSTRUCTIONS FOR CLAUDE CODE:
+   Replace the contents of assets/extra.css in the
+   paulggibbons/adaptive_adoption repo with this file.
+   Commit and push — GitHub Actions will rebuild.
 ═══════════════════════════════════════════ */
 
 :root {
-  /* Core palette */
-  --aa-espresso:      #1a120b;
-  --aa-chocolate:     #2c1e14;
-  --aa-chocolate-mid: #3d2b1e;
+  /* Core palette — Option B (brighter) */
+  --aa-espresso:      #2a1e14;
+  --aa-chocolate:     #352618;
+  --aa-chocolate-mid: #4a3628;
   --aa-cream:         #f5f0e8;
-  --aa-cream-dim:     rgba(245, 240, 232, 0.65);
-  --aa-gold:          #b8922a;
+  --aa-cream-dim:     rgba(245, 240, 232, 0.7);
+  --aa-cream-faint:   rgba(245, 240, 232, 0.4);
+  --aa-gold:          #e0b84a;
   --aa-gold-light:    #f0d060;
+
+  /* Brand discipline colors — from paulgibbonsadvisory.com */
+  --aa-green:         #3DCC80;   /* Change Agility */
+  --aa-blue:          #5BA3D9;   /* Leadership Delta */
+  --aa-purple:        #B07DD6;   /* Behavioral Governance */
+  --aa-orange:        #E8944A;   /* Challenge / Maturity / admonitions */
+
+  /* CTA */
   --aa-green-cta:     #2A6B4A;
   --aa-rust:          #c84b2f;
 }
@@ -26,14 +40,14 @@
   --md-accent-fg-color:            var(--aa-gold);
   --md-typeset-a-color:            var(--aa-gold);
   --md-code-bg-color:              var(--aa-chocolate);
-  --md-footer-bg-color:            #0f0a06;
-  --md-footer-bg-color--dark:      #0a0704;
+  --md-footer-bg-color:            #1a120b;
+  --md-footer-bg-color--dark:      #0f0a06;
 }
 
 /* Header bar */
 .md-header {
-  background: var(--aa-chocolate) !important;
-  border-bottom: 1px solid rgba(184, 146, 42, 0.15);
+  background: var(--aa-chocolate-mid) !important;
+  border-bottom: 1px solid rgba(224, 184, 74, 0.2);
 }
 
 /* Navigation sidebar */
@@ -52,9 +66,9 @@
   font-weight: 500;
 }
 
-/* Tabs */
+/* Tabs — discipline colors */
 .md-tabs {
-  background: var(--aa-chocolate) !important;
+  background: var(--aa-chocolate-mid) !important;
 }
 .md-tabs__link {
   color: var(--aa-cream-dim) !important;
@@ -63,7 +77,39 @@
 }
 .md-tabs__link--active,
 .md-tabs__link:hover {
-  color: var(--aa-gold) !important;
+  color: var(--aa-cream) !important;
+}
+
+/* ───────────────────────────────────────
+   DISCIPLINE-SPECIFIC COLORS
+   Applied via nav section. MkDocs Material
+   adds data attributes we can target.
+   Fallback: use body classes or override
+   per-page with meta tags.
+─────────────────────────────────────── */
+
+/* Change Agility — Green */
+.md-nav__link[href*="change-agility"],
+.md-nav__item--active > .md-nav__link[href*="change-agility"] {
+  color: var(--aa-green) !important;
+}
+
+/* Leadership Delta — Blue */
+.md-nav__link[href*="leadership-delta"],
+.md-nav__item--active > .md-nav__link[href*="leadership-delta"] {
+  color: var(--aa-blue) !important;
+}
+
+/* Behavioral Governance — Purple */
+.md-nav__link[href*="behavioral-governance"],
+.md-nav__item--active > .md-nav__link[href*="behavioral-governance"] {
+  color: var(--aa-purple) !important;
+}
+
+/* Maturity Model — Orange */
+.md-nav__link[href*="maturity-model"],
+.md-nav__item--active > .md-nav__link[href*="maturity-model"] {
+  color: var(--aa-orange) !important;
 }
 
 /* Content area */
@@ -75,7 +121,7 @@
 .md-typeset h1 {
   color: var(--aa-cream);
   font-weight: 600;
-  border-bottom: 2px solid rgba(184, 146, 42, 0.3);
+  border-bottom: 2px solid rgba(224, 184, 74, 0.3);
   padding-bottom: 0.4em;
 }
 .md-typeset h2 {
@@ -91,7 +137,7 @@
 .md-typeset a {
   color: var(--aa-gold);
   text-decoration: none;
-  border-bottom: 1px solid rgba(184, 146, 42, 0.3);
+  border-bottom: 1px solid rgba(224, 184, 74, 0.3);
 }
 .md-typeset a:hover {
   color: var(--aa-gold-light);
@@ -125,10 +171,39 @@
   border-color: rgba(245, 240, 232, 0.06);
 }
 
-/* Admonitions */
+/* Admonitions — orange accent */
 .md-typeset .admonition {
-  border-left: 3px solid var(--aa-gold);
+  border-left: 3px solid var(--aa-orange);
   background: var(--aa-chocolate);
+}
+.md-typeset .admonition-title {
+  color: var(--aa-orange);
+}
+
+/* Admonition variants using discipline colors */
+.md-typeset .admonition.tip,
+.md-typeset .admonition.hint {
+  border-left-color: var(--aa-green);
+}
+.md-typeset .admonition.tip .admonition-title,
+.md-typeset .admonition.hint .admonition-title {
+  color: var(--aa-green);
+}
+.md-typeset .admonition.info,
+.md-typeset .admonition.note {
+  border-left-color: var(--aa-blue);
+}
+.md-typeset .admonition.info .admonition-title,
+.md-typeset .admonition.note .admonition-title {
+  color: var(--aa-blue);
+}
+.md-typeset .admonition.warning,
+.md-typeset .admonition.caution {
+  border-left-color: var(--aa-orange);
+}
+.md-typeset .admonition.danger,
+.md-typeset .admonition.error {
+  border-left-color: var(--aa-rust);
 }
 
 /* Search */
@@ -139,13 +214,13 @@
 
 /* Footer */
 .md-footer {
-  background: #0f0a06;
+  background: #1a120b;
 }
 .md-footer-meta {
-  background: #0a0704;
+  background: #0f0a06;
 }
 .md-copyright {
-  color: var(--aa-cream-dim);
+  color: var(--aa-cream-faint);
 }
 .md-copyright a {
   color: var(--aa-gold) !important;
@@ -171,5 +246,13 @@
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(184, 146, 42, 0.4);
+  background: rgba(224, 184, 74, 0.4);
+}
+
+/* Banner */
+.md-banner {
+  background: var(--aa-chocolate) !important;
+}
+.md-banner a {
+  color: var(--aa-green) !important;
 }
