@@ -1,66 +1,50 @@
----
-title: Governance Intelligence Dashboard — Board-Facing AI Adoption Readout
-author: Paul Gibbons
-framework: Adaptive Adoption
-layer: Behavioral Governance → Dimension 5 (Governance Intelligence)
-type: practitioner tool (stub — to be developed)
-status: stub
-date: 2026-03-21
-license: CC BY-SA 4.0
-tags: [tool, governance, dashboard, board, maturity-model, five-dials]
----
+!!! warning "v0.8 — Working Draft"
+    This page is under active development. Content is directionally accurate but subject to revision.
+    [Suggest an edit →](https://github.com/paulggibbons/adaptive_adoption/issues)
 
-# Governance Intelligence Dashboard
+# Governance Dashboard
 
-**A board-level instrument that translates Maturity Model scores and the Five Dials into governance conversation.**
+The Governance Dashboard is a board-level readout that synthesizes the six Behavioral Governance dimensions into an actionable overview. It is designed for executive committees and boards of directors who need to assess AI governance maturity without wading through operational detail.
 
-> **Status:** Stub. This tool will be developed once the Maturity Model assessment instrument is finalized and the Five Dials governance framework is complete.
+## Purpose
 
----
+Most governance reporting fails at the executive level for one of two reasons: it is too granular (operational metrics that obscure the strategic picture) or too abstract (green-light dashboards that conceal real problems). The Governance Dashboard occupies the middle ground: structured enough to enable comparison and trend analysis, specific enough to surface issues that require executive attention.
 
-## Intent
+## What It Measures
 
-Boards and C-suites need a different view of AI adoption than practitioners. They need answers to questions like:
+The dashboard reports on all six Behavioral Governance dimensions:
 
-- "Why is this going so slowly?"
-- "Are we exposed — ethically, reputationally, competitively?"
-- "Is our workforce actually adopting, or are we measuring policy compliance?"
-- "What should we govern more tightly? What should we loosen?"
+| Dimension | What the Dashboard Shows |
+|---|---|
+| **Decision Rights** | Whether AI decision authority is clear, current, and enacted — not merely documented. |
+| **Agent Authority** | Whether autonomous AI agents are operating within defined, enforced, and recently reviewed boundaries. |
+| **Risk Intelligence** | Whether risk sensing is active and responsive, with evidence of detection and escalation events. |
+| **Governance Intelligence** | Whether the governance apparatus itself is functioning — the reflexive loop. |
+| **1st-Derivative Talent** | Whether workforce AI capability is improving at a rate commensurate with technology evolution. |
+| **Strategic Coherence** | Whether AI strategy, business strategy, and governance are aligned in resource allocation and prioritization. |
 
-The Governance Intelligence Dashboard consumes data from two sources:
+## Traffic-Light Protocol
 
-1. **The Maturity Model** (`/maturity-model/`) — behavioral assessment scores across the 7 pillars, using the three-layer assessment (self-report / evidence / behavioral indicators). The 72/6 gap (espoused vs. enacted maturity) is the headline metric.
+Each dimension receives a status indicator:
 
-2. **The Five Dials** (Behavioral Governance) — the governance control surfaces that boards can actually adjust.
+- **Green:** All three assessment layers (Self-Report, Evidence, Behavioral Observation) converge. Governance is enacted as designed.
+- **Amber:** Self-Report and Evidence align, but Behavioral Observation reveals gaps. Governance exists on paper and in artifacts but is inconsistently enacted.
+- **Red:** Significant gaps across layers. Governance is aspirational rather than operational.
 
-The dashboard translates these into a format that supports board-level decision-making: not "here is your score" but "here is what your score means for what you should do next."
+The protocol is deliberately conservative. Green requires convergence across all layers, not merely the presence of policies or favorable survey results.
 
----
+## Narrative Layer
 
-## Planned Components
+Traffic lights alone are insufficient. Each dimension includes a narrative summary (two to three sentences) explaining the rating: what is working, what is not, and what has changed since the last assessment period. The narrative is the interpretive layer that transforms data into insight.
 
-- **Espoused-Enacted Gap Summary** — the headline: where do you think you are vs. where behavioral evidence says you are?
-- **Pillar Radar Chart** — visual profile across all 7 pillars, with three-layer overlay
-- **Five Dials Status** — current governance posture with recommended adjustments
-- **Risk Heat Map** — which pillars show the largest espoused-enacted gap (highest organizational self-deception)
-- **Trend View** — quarter-over-quarter movement, distinguishing genuine behavioral change from measurement artifact
+## Trend Indicators
 
----
+Each dimension shows directional movement: improving, stable, or degrading. Trend data is more informative than point-in-time status for executive decision-making. A dimension rated amber-and-improving requires different attention than one rated amber-and-degrading.
 
-## Dependencies
+## Cadence
 
-- Maturity Model assessment instrument (finalized structure in `/maturity-model/maturity-model-state.md`)
-- Five Dials governance framework (in development under Behavioral Governance layer)
-- Pilot organization data (required for calibration)
+The dashboard is designed for quarterly reporting, aligned with board meeting cycles. However, the underlying data collection is continuous — the quarterly dashboard is a synthesis of ongoing assessment, not a periodic audit.
 
----
+## Intended Audience
 
-## Foundational Documents
-
-- [Maturity Model Working State](../../../maturity-model/maturity-model-state.md)
-- [Governance Five Dials Notes](../../../behavioral-governance/theory/Adaptive_adoption_governance_framework.md)
-
----
-
-*Part of the [Adaptive Adoption](https://github.com/paulggibbons/adaptive_adoption) framework. Licensed under CC BY-SA 4.0.*
-*Adaptive Adoption™, Behavioral Governance™ — Paul Gibbons.*
+The primary audience is the board or executive committee. The dashboard is not an operational management tool; it is a governance oversight tool. Operational teams use the detailed dimensional assessments; executives use the dashboard to determine whether governance requires their intervention.

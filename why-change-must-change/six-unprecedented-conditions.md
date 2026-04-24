@@ -1,92 +1,35 @@
----
-title: The Six Conditions — What's Genuinely Different About Leading in the AI Era
-author: Paul Gibbons
-framework: Adaptive Adoption
-layer: Leadership Delta (foundation)
-status: canonical
-date: 2026-02-21
-updated: 2026-03-21
-license: CC BY-SA 4.0
-tags: [leadership, conditions, adaptive-adoption, AI-adoption, organizational-change]
----
+!!! warning "v0.8 — Working Draft"
+    This page is under active development. Content is directionally accurate but subject to revision.
+    [Suggest an edit →](https://github.com/paulggibbons/adaptive_adoption/issues)
 
-# The Six Conditions
+# Six Unprecedented Conditions
 
-**What's genuinely different about leading in the AI era. Not pace of change — a different kind of change.**
+AI adoption is not another technology wave. It is categorically different from prior enterprise technology transitions — ERP, cloud, mobile, digital transformation. Six conditions distinguish it, and each demands capabilities that most organizations have not built.
 
-Every generation of leadership scholarship responds to conditions its predecessors could not have anticipated. Burns wrote for the post-industrial democratic transition. Heifetz wrote for the complexity of public-sector adaptive challenges. Kotter wrote for the urgency of competitive disruption. None wrote for a world in which the object of change is itself an agent, the technology stack is incommensurable across layers, and ethical questions arise faster than governance can adjudicate.
+## 1. Pace of Capability Change
 
-The Adaptive Adoption framework identifies six conditions that define the AI leadership context. These are empirical claims about the operating environment, not personality types or competency taxonomies. They are what 100,000 leadership models do not address.
+No prior technology improved this fast. Large language models have moved from research curiosities to production systems in under three years. Model capabilities double on benchmarks in cycles measured in months, not years (Epoch AI, 2024). Organizations cannot plan for a capability frontier that shifts faster than their planning cycles operate. The adoption challenge is not "how do we implement this technology?" but "how do we build the organizational capacity to continuously absorb capability change?"
 
-**These conditions define the context. The seven dimensions of the AI Leadership Delta define the behavioral response.**
+## 2. Agentic Systems
 
----
+For the first time, enterprise technology acts with agency. AI agents plan, execute, use tools, and make decisions with varying degrees of autonomy. This is not automation in the traditional sense — executing predefined workflows — but delegation to non-human actors that operate in partially unpredictable ways. The governance, trust, and oversight implications are without precedent in enterprise technology.
 
-## 1. Stack Sprawl
+## 3. Workforce Identity Disruption
 
-No single person holds the whole system. Chips to models to orchestration to applications to enterprise to physical — each layer expanding simultaneously, each incommensurable with the others.
+Prior technology waves changed what people *do*. AI changes what people *are* — or at least what they believe themselves to be. When a system can write, analyze, create, and reason, the cognitive work that formed the basis of professional identity is disrupted at the identity level, not merely the task level. The psychological and cultural dimensions of this disruption exceed anything addressed by traditional change management.
 
-**What this breaks:** The assumption that leaders can hold a mental model of the technology they govern. Previous technology adoptions (ERP, cloud, mobile) had comprehensible architectures. The AI stack is layered, expanding, and no individual — including technical specialists — commands the full picture. Leadership becomes navigation without a complete map.
+## 4. Regulatory Flux
 
----
+The regulatory environment for AI is simultaneously immature and hyperactive. The EU AI Act, executive orders, sector-specific guidance, and state-level legislation create a compliance landscape that is fragmented, evolving, and in many areas contradictory. Organizations must govern AI under regulatory uncertainty — building compliance capability for rules that have not yet been finalized.
 
-## 2. Complexity (Three-Body Problem)
+## 5. Dual-Use Risk
 
-The leader manages humans, organization, and a non-human agent with emergent behavior — simultaneously. No prior change model addresses leading alongside something that acts back.
+AI systems are inherently dual-use in ways that prior enterprise technologies were not. The same model that optimizes customer service can generate disinformation. The same capability that accelerates drug discovery can accelerate bioweapon design. Enterprise AI governance must contend with the reality that beneficial and harmful applications are often separated by prompt, not by architecture.
 
-**What this breaks:** Change management's subject-object distinction. Every previous framework treats technology as a passive tool adopted by humans. AI is a participant in the system it is being adopted into. The leader faces a genuinely novel coordination problem: a three-body system where one body has its own agency.
+## 6. Organizational Complexity
 
-**Scholarly lineage:** Extends Actor-Network Theory (Latour) into a domain where the non-human actant has genuine autonomy. Resonates with complexity science's treatment of emergent behavior in multi-agent systems.
+AI adoption is not a single initiative but a system of interdependent changes: data infrastructure, model governance, workforce capability, ethical frameworks, vendor management, regulatory compliance, and cultural adaptation. These interact in non-linear ways. Optimizing any single dimension without attention to the system produces dysfunction — technically excellent models deployed into organizationally unprepared environments, or governance frameworks that throttle value creation.
 
----
+## The Compound Effect
 
-## 3. The Immersion Condition
-
-Strategic judgment without direct experience is epistemologically compromised. Build Week, not Think Week. The well-read armchair analyst who has never touched the technology has not earned their strong opinions.
-
-**What this breaks:** Delegated expertise. The model where leaders set strategy from briefings. In every previous technology transition, a leader could govern effectively through proxies — reading reports, hearing from specialists, making resource allocation decisions. AI's capability surface changes so rapidly, and its affordances are so experience-dependent, that secondhand knowledge produces systematically poor judgment.
-
----
-
-## 4. Temporal Shear
-
-Five clocks running simultaneously. Model releases weekly. Agentic breakthroughs monthly. Budget cycles quarterly. Legacy systems annually. Human systems change over decades.
-
-**What this breaks:** Strategic planning horizons. The assumption that one timeline governs the work. Most leadership models pick one temporal register — operational or visionary. AI demands simultaneous competence across all five, and they pull in opposite directions.
-
-**Scholarly lineage:** Extends March's (1991) exploration-exploitation tension into a domain where the exploration cycle has compressed to weeks while the exploitation cycle (organizational capability building) remains measured in years.
-
----
-
-## 5. Ethical Volatility
-
-Novel moral questions arise faster than governance can adjudicate. By the time the committee meets, the decision has been made. The leader is the default ethicist in the room.
-
-**What this breaks:** Governance by committee. The separation between strategy and ethics. Other models treat ethics as a boundary condition — "lead boldly, but ethically." AI demands that ethical reasoning IS the leadership act, because the decisions are too novel and too fast for governance structures designed for annual policy review.
-
-**Scholarly lineage:** Extends Aristotelian phronesis (practical wisdom) into a context where the ethical landscape shifts faster than codified rules can follow.
-
----
-
-## 6. Fear and Dissent
-
-The first enterprise technology to generate organized intellectual and ethical counter-movement. Not just doubt about capability — principled rejection of the project itself.
-
-**What this breaks:** The assumption that resistance is irrational or temporary. This dissent has substance. AI adoption faces opposition that is philosophically grounded (existential risk, labor displacement, surveillance capitalism), emotionally intense (identity threat, creative destruction), and organizationally organized (unions, professional bodies, academic critics). No previous enterprise technology faced principled, intellectually serious opposition at this scale. Leaders who dismiss it as "resistance to change" are misreading the room.
-
----
-
-## The Collective Argument
-
-No single condition is wholly unprecedented in isolation — stack complexity has echoes in systems engineering, ethical speed in bioethics, temporal tension in March. The unprecedented nature is *simultaneous*: a leader facing all six at once, in a domain where the technology itself is a moving, acting participant. This simultaneity is what makes bolt-on leadership frameworks insufficient and what justifies a purpose-built leadership theory for AI adoption.
-
----
-
-## Citation
-
-Gibbons, P. (2026). *The Six Conditions: What's Genuinely Different About Leading in the AI Era.* Adaptive Adoption Framework. https://github.com/paulggibbons/adaptive_adoption/blob/main/why-change-must-change/six-unprecedented-conditions.md
-
----
-
-*Part of the [Adaptive Adoption](https://github.com/paulggibbons/adaptive_adoption) framework. Licensed under CC BY-SA 4.0.*
-*Adaptive Adoption™, Leadership Delta™ — Paul Gibbons.*
+Each condition alone would challenge traditional approaches. In combination, they create an adoption environment that is qualitatively different from any prior technology transition. The Adaptive Adoption framework is designed for this environment: not as a better change management methodology, but as an organizational capability model built for conditions that prior frameworks were never designed to address.

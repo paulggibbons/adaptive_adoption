@@ -1,96 +1,27 @@
----
-title: Conditions That Don't Hold — Why Change Management Breaks for AI
-author: Paul Gibbons
-framework: Adaptive Adoption
-layer: Cross-cutting (foundation)
-status: canonical
-date: 2026-02-21
-updated: 2026-03-21
-license: CC BY-SA 4.0
-tags: [change-management, conditions, adaptive-adoption, AI-adoption, category-break]
----
+!!! warning "v0.8 — Working Draft"
+    This page is under active development. Content is directionally accurate but subject to revision.
+    [Suggest an edit →](https://github.com/paulggibbons/adaptive_adoption/issues)
 
-# Conditions That Don't Hold
+# Why This Framework
 
-**The category break: why Adaptive Adoption exists instead of Prosci, Kotter, or any existing change management framework.**
+Traditional change management was built for a world that no longer exists. The dominant models — Kotter's 8-Step Process, Prosci's ADKAR, Lewin's Unfreeze-Change-Refreeze — share assumptions so deeply embedded that practitioners rarely examine them. AI adoption violates every one.
 
-Change management was built for projects. AI is not a project. It is a permanent capability shift.
+## The Conditions That Don't Hold
 
-Traditional change management — Kotter's 8 Steps, Prosci's ADKAR, Lewin's Unfreeze-Change-Refreeze, Bridges' Transitions — implicitly depends on a set of operating conditions. These frameworks were designed for environments where the change has a defined beginning, middle, and end; where the technology being adopted is stable; and where leadership can articulate a clear target state. These conditions served well for ERP rollouts, mergers, restructurings, and process re-engineering.
+**Knowable scope.** Classical change management assumes the change can be defined before implementation begins. AI adoption cannot. Models improve mid-deployment. Use cases emerge that were not in the business case. The "change" is not a bounded project but a continuously evolving capability with unpredictable implications.
 
-For enterprise AI adoption, these conditions do not hold. Not partially. Not "it's complicated." They do not hold, and the frameworks built on them produce predictable failure modes when applied to AI.
+**Linear phases.** Every major change framework assumes sequential phases: assess, plan, implement, sustain. AI adoption is non-linear. Organizations are simultaneously piloting, scaling, and decommissioning AI systems across different functions. The phase model imposes false order on genuine complexity.
 
----
+**Finite timelines.** Change management assumes a destination — a "future state" toward which the organization transitions. AI adoption has no terminal state. The capability frontier shifts faster than any organization can absorb, meaning the "future state" recedes as you approach it. There is no post-implementation steady state.
 
-## The Six Conditions
+**Stable roles.** Traditional models assume that roles exist before, during, and after the change, with the change affecting how roles are performed. AI adoption reshapes, creates, and eliminates roles concurrently. The workforce is not transitioning to new roles; it is navigating continuous role fluidity.
 
-### 1. Clear End State → Does Not Hold
+**Separable technology and culture.** Classical approaches treat technology implementation and cultural change as related but distinct workstreams. AI dissolves this separation. The technology shapes behavior in real time — prompting, recommending, automating — making the cultural impact inseparable from the technical deployment.
 
-Traditional change management assumes a target state: "We are moving from X to Y." AI capability keeps moving. The frontier shifts quarterly. There is no "Y" — only a permanently receding horizon.
+**Organizational boundaries.** Change management assumes the organization is the primary unit of analysis. AI adoption operates across organizational boundaries: shared models, third-party APIs, regulatory ecosystems, and supply chain dependencies mean that no organization's AI adoption is fully within its own control.
 
-**Failure mode when assumed:** Organizations define an AI "transformation program" with a fixed scope, declare victory when it ships, and miss that the technology has already moved past their target. Two-year roadmaps are obsolete before the first milestone.
+## The Implication
 
----
+These are not edge cases or minor exceptions. They are structural features of AI adoption that render the foundational assumptions of classical change management inapplicable. An approach designed for projects with knowable scope, linear phases, and finite timelines cannot govern adoption that is open-ended, non-linear, and perpetual.
 
-### 2. Clear Timeline → Does Not Hold
-
-Change frameworks assume a stabilization phase — the period after go-live where the organization absorbs the change and returns to steady state. AI adoption has no stabilization phase. Continuous iteration is the steady state.
-
-**Failure mode when assumed:** Organizations plan for "change fatigue" to end. It does not end. The workforce enters permanent adaptation, and frameworks designed for discrete episodes offer no guidance for chronic change.
-
----
-
-### 3. Clear Resourcing → Does Not Hold
-
-Traditional change management assumes a defined project team with budget, authority, and scope. AI adoption is diffuse: shadow AI, decentralized experimentation, grassroots prompt engineering, individual departments buying SaaS tools outside IT governance.
-
-**Failure mode when assumed:** Organizations create a centralized "AI transformation office" that controls 10% of actual AI activity. The other 90% — the most consequential experimentation — happens without governance, support, or learning infrastructure.
-
----
-
-### 4. Sufficient Trust in the Technology → Does Not Hold
-
-Change management assumes the technology works. Resistance is framed as a human problem — fear, inertia, skill gaps — not a rational response to an unreliable tool. AI hallucinates, produces biased outputs, exposes private data, and fails unpredictably. Distrust is often well-calibrated.
-
-**Failure mode when assumed:** Organizations treat hesitant adopters as resistors to be overcome rather than as rational actors responding to genuine reliability problems. "Change resistance" programs push adoption of tools that demonstrably fail, destroying institutional trust.
-
----
-
-### 5. Ethical Neutrality → Does Not Hold
-
-ERP systems and CRM platforms are ethically neutral instruments. AI is not. It makes decisions that affect hiring, performance evaluation, customer treatment, creative attribution, and knowledge work identity. Every deployment carries ethical weight.
-
-**Failure mode when assumed:** Organizations treat AI adoption as a technical capability question and discover the ethical questions when they become crises — biased hiring tools, surveillance-coded productivity monitoring, creative workers in existential distress.
-
----
-
-### 6. Turnkey Solutions → Does Not Hold
-
-Change management assumes "deploy and train" — install the system, train the users, manage the transition. AI value is co-created. A prompt is not a feature. An agent is not an application. The gap between "access to the tool" and "value from the tool" is larger than for any previous enterprise technology, and it is filled by human skill, judgment, and workflow redesign.
-
-**Failure mode when assumed:** Organizations provide ChatGPT Enterprise licenses, run a training day, and wonder why utilization plateaus at superficial use cases. Deploy + train rarely yields durable gains because the deployment *is not the intervention*. The intervention is the behavioral and workflow transformation that follows.
-
----
-
-## The Collective Argument
-
-These six conditions are not edge cases or qualifications. They are structural features of AI as a technology class. Any framework that assumes them will produce the patterns organizations are already experiencing: stalled adoption, trust erosion, shadow AI proliferation, ethical incidents, and transformation fatigue.
-
-Adaptive Adoption is built for the world where these conditions do not hold. Its seven pillars, leadership dimensions, and governance architecture assume permanent capability shift, not project completion. This is the category break.
-
----
-
-## Implications for Practitioners
-
-When evaluating any AI adoption approach — whether internal or from consultancies — test it against these six conditions. If the approach assumes any of them, it will break at the point of assumption. The **Conditions Audit** tool (see `leadership-delta/dimensions/01-the-10x-narrative/tools/conditions-audit.md`) operationalizes this test for organizational use.
-
----
-
-## Citation
-
-Gibbons, P. (2026). *Conditions That Don't Hold: Why Change Management Breaks for AI.* Adaptive Adoption Framework. https://github.com/paulggibbons/adaptive_adoption/blob/main/why-change-must-change/conditions-that-dont-hold.md
-
----
-
-*Part of the [Adaptive Adoption](https://github.com/paulggibbons/adaptive_adoption) framework. Licensed under CC BY-SA 4.0.*
-*Adaptive Adoption™ — Paul Gibbons.*
+The Adaptive Adoption framework exists because the old one doesn't hold. It is not an incremental improvement to change management; it is a re-foundation for organizational capability in an environment where the conditions that justified the original frameworks no longer obtain.

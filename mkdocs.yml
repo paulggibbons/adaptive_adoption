@@ -50,19 +50,39 @@ nav:
       - Philosophical Foundations: change-agility/theory/philosophical-foundations.md
     - Pillars:
       - P1 — Master the Craft: change-agility/pillars/01-master-the-craft.md
+      - P2 — Embrace Complexity: change-agility/pillars/02-embrace-complexity.md
+      - P3 — Consciously Manage Trust: change-agility/pillars/03-consciously-manage-trust.md
+      - P4 — Put People First: change-agility/pillars/04-put-people-first.md
+      - P5 — Design and Prototype: change-agility/pillars/05-design-and-prototype.md
       - P6 — Prioritize Behavior: change-agility/pillars/06-prioritize-behavior.md
+      - P7 — Manage Ethics Always: change-agility/pillars/07-manage-ethics-always.md
     - Diagnostics:
       - AAMI Structure: change-agility/diagnostics/AA_MI_structure.md
     - Tools:
       - Tools Overview: change-agility/tools/index.md
   - Leadership Delta — The Torque:
     - Overview: leadership-delta/index.md
+    - Dimensions:
+      - D1 — Strategic Imagination: leadership-delta/pillars/01-strategic-imagination.md
+      - D2 — Active Modeling: leadership-delta/pillars/02-active-modeling.md
+      - D3 — Creative Cultivation: leadership-delta/pillars/03-creative-cultivation.md
+      - D4 — Friction Courage: leadership-delta/pillars/04-friction-courage.md
+      - D5 — Trust Calibration: leadership-delta/pillars/05-trust-calibration.md
+      - D6 — Ethical Stewardship: leadership-delta/pillars/06-ethical-stewardship.md
+      - D7 — Systems Orchestration: leadership-delta/pillars/07-systems-orchestration.md
     - Tools:
       - Conditions Audit: leadership-delta/tools/conditions-audit.md
   - Behavioral Governance — The Guardrails:
     - Overview: behavioral-governance/index.md
     - Theory:
       - Governance Framework: behavioral-governance/theory/governance-framework.md
+    - Dimensions:
+      - D1 — Decision Rights: behavioral-governance/pillars/01-decision-rights.md
+      - D2 — Agent Authority: behavioral-governance/pillars/02-agent-authority.md
+      - D3 — Risk Intelligence: behavioral-governance/pillars/03-risk-intelligence.md
+      - D4 — Governance Intelligence: behavioral-governance/pillars/04-governance-intelligence.md
+      - D5 — 1st-Derivative Talent: behavioral-governance/pillars/05-first-derivative-talent.md
+      - D6 — Strategic Coherence: behavioral-governance/pillars/06-strategic-coherence.md
     - Tools:
       - Governance Dashboard: behavioral-governance/tools/governance-dashboard.md
   - Maturity Model:

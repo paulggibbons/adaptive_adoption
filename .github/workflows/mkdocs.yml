@@ -66,15 +66,21 @@ jobs:
           cp change-agility/tools/*.md content/change-agility/tools/ 2>/dev/null || true
 
           # ── Leadership Delta ──
+          mkdir -p content/leadership-delta/pillars
           mkdir -p content/leadership-delta/tools
           cp leadership-delta/readme.md content/leadership-delta/index.md
+          # Dimension pages (root-level .md files in pillars/)
+          cp leadership-delta/pillars/0*.md content/leadership-delta/pillars/ 2>/dev/null || true
           # conditions-audit lives in pillars/01-strategic-imagination/
           cp leadership-delta/pillars/01-strategic-imagination/conditions-audit.md content/leadership-delta/tools/ 2>/dev/null || true
 
           # ── Behavioral Governance ──
+          mkdir -p content/behavioral-governance/pillars
           mkdir -p content/behavioral-governance/theory
           mkdir -p content/behavioral-governance/tools
           cp behavioral-governance/readme.md content/behavioral-governance/index.md
+          # Dimension pages (root-level 0*.md files in pillars/)
+          cp behavioral-governance/pillars/0*.md content/behavioral-governance/pillars/ 2>/dev/null || true
           # governance-framework lives in pillars/
           cp behavioral-governance/pillars/governance-framework.md content/behavioral-governance/theory/ 2>/dev/null || true
           # governance-dashboard lives in dashboard/
@@ -112,10 +118,28 @@ jobs:
             content/foundations/six-unprecedented-conditions.md \
             content/change-agility/theory/philosophical-foundations.md \
             content/change-agility/pillars/01-master-the-craft.md \
+            content/change-agility/pillars/02-embrace-complexity.md \
+            content/change-agility/pillars/03-consciously-manage-trust.md \
+            content/change-agility/pillars/04-put-people-first.md \
+            content/change-agility/pillars/05-design-and-prototype.md \
             content/change-agility/pillars/06-prioritize-behavior.md \
+            content/change-agility/pillars/07-manage-ethics-always.md \
             content/change-agility/diagnostics/AA_MI_structure.md \
             content/change-agility/tools/index.md \
+            content/leadership-delta/pillars/01-strategic-imagination.md \
+            content/leadership-delta/pillars/02-active-modeling.md \
+            content/leadership-delta/pillars/03-creative-cultivation.md \
+            content/leadership-delta/pillars/04-friction-courage.md \
+            content/leadership-delta/pillars/05-trust-calibration.md \
+            content/leadership-delta/pillars/06-ethical-stewardship.md \
+            content/leadership-delta/pillars/07-systems-orchestration.md \
             content/leadership-delta/tools/conditions-audit.md \
+            content/behavioral-governance/pillars/01-decision-rights.md \
+            content/behavioral-governance/pillars/02-agent-authority.md \
+            content/behavioral-governance/pillars/03-risk-intelligence.md \
+            content/behavioral-governance/pillars/04-governance-intelligence.md \
+            content/behavioral-governance/pillars/05-first-derivative-talent.md \
+            content/behavioral-governance/pillars/06-strategic-coherence.md \
             content/behavioral-governance/theory/governance-framework.md \
             content/behavioral-governance/tools/governance-dashboard.md \
             content/maturity-model/maturity-model-state.md \

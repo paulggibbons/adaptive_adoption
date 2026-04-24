@@ -1,109 +1,37 @@
----
-title: The Conditions Audit — Assumption Stress-Test for AI Adoption Strategy
-author: Paul Gibbons
-framework: Adaptive Adoption
-layer: Leadership Delta → Dimension 1 (Strategic Imagination)
-type: practitioner tool
-status: canonical
-date: 2026-03-21
-license: CC BY-SA 4.0
-tags: [tool, scenario-planning, assumptions, leadership, strategy, conditions-audit]
----
+!!! warning "v0.8 — Working Draft"
+    This page is under active development. Content is directionally accurate but subject to revision.
+    [Suggest an edit →](https://github.com/paulggibbons/adaptive_adoption/issues)
 
-# The Conditions Audit
+# Conditions Audit
 
-**A structured tool for stress-testing whether your AI adoption strategy assumes conditions that no longer hold.**
+The Conditions Audit is a diagnostic tool that assesses whether the organizational conditions necessary for the Leadership Delta to close are present. The Leadership Delta — the gap between current leadership capability and the capability required for AI-era leadership — does not close through training alone. It closes when the organizational environment enables and reinforces new leadership behaviors.
 
-## Purpose
+## The Problem
 
-Most organizations approach AI adoption using frameworks designed for an earlier era of technology change. Those frameworks implicitly depend on operating conditions — clear end states, stable technology, ethical neutrality — that do not hold for AI. The Conditions Audit makes these hidden assumptions visible before they cause failure.
+Leadership development programs routinely fail to produce lasting behavior change. The research is consistent: the transfer rate from training to sustained practice is estimated at 10-20% (Beer, Finnstrom & Schrader, 2016). The dominant explanation — that leaders lack motivation or skill — is usually wrong. The more common cause is that the organizational environment punishes, ignores, or structurally prevents the behaviors the training promotes. Leaders return from development programs to environments that reward the old behaviors.
 
-This is the leader's tool for week one. Before committing to a strategy, before hiring consultants, before announcing a transformation program: *audit what your plan assumes*.
+The Conditions Audit addresses this by shifting the diagnostic focus from the leader to the environment.
 
----
+## What It Measures
 
-## How to Use
+The audit assesses six organizational conditions:
 
-### Step 1: Surface the Current Plan
+**Sponsorship Quality.** Not whether executive sponsorship exists, but whether it is active, visible, and consequential. Assessed by evidence of sponsor behavior: resource allocation decisions, public prioritization, and personal modeling of AI adoption behaviors.
 
-Document the organization's stated AI adoption approach in plain language. This might be a formal strategy, a consultant's recommendation, an executive mandate, or an informal consensus. Write it down as concretely as possible: timeline, milestones, governance structure, success metrics, training plan.
+**Psychological Safety.** Whether leaders can experiment with AI, fail visibly, and raise concerns without career risk. Assessed through behavioral indicators: frequency of publicly shared failures, willingness to challenge AI initiatives, and response to dissent in AI-related decisions (Edmondson, 1999).
 
-### Step 2: Test Against the Twelve Conditions
+**Time Allocation.** Whether leaders have protected time for AI learning and experimentation, or whether AI adoption competes with — and loses to — operational demands. Assessed by calendar analysis and self-report, cross-validated.
 
-The Adaptive Adoption framework identifies two sets of conditions (see `/foundations/`):
+**Incentive Alignment.** Whether performance management, promotion criteria, and reward structures reinforce AI leadership behaviors or remain anchored to pre-AI performance models. Assessed by reviewing actual promotion decisions and performance ratings against AI adoption criteria.
 
-**Set A — Conditions That Don't Hold** (change management assumptions)
+**Information Access.** Whether leaders have access to the information they need to make AI-related decisions: model performance data, risk assessments, use case outcomes, and competitive intelligence. Assessed by mapping information flows and identifying gaps between what leaders need and what they receive.
 
-| # | Condition | Your Plan Assumes This? | Evidence / Rationale |
-|---|-----------|:-----------------------:|----------------------|
-| A1 | Clear end state — a defined target you're moving toward | ☐ Yes ☐ No ☐ Partially | |
-| A2 | Clear timeline — a stabilization phase after go-live | ☐ Yes ☐ No ☐ Partially | |
-| A3 | Clear resourcing — centralized team with authority over AI activity | ☐ Yes ☐ No ☐ Partially | |
-| A4 | Sufficient trust — the technology works reliably enough that resistance is irrational | ☐ Yes ☐ No ☐ Partially | |
-| A5 | Ethical neutrality — AI deployment is an operational, not moral, question | ☐ Yes ☐ No ☐ Partially | |
-| A6 | Turnkey solutions — deploy + train = adoption | ☐ Yes ☐ No ☐ Partially | |
+**Structural Enablement.** Whether organizational structures — reporting lines, committee mandates, cross-functional forums — support the coordination that AI adoption demands. Assessed by mapping structural mechanisms against coordination requirements.
 
-**Set B — Six Unprecedented Conditions** (leadership assumptions)
+## Output
 
-| # | Condition | Your Plan Accounts for This? | Evidence / Rationale |
-|---|-----------|:----------------------------:|----------------------|
-| B1 | Permanent knowledge asymmetry — leaders will never catch up technically | ☐ Yes ☐ No ☐ Partially | |
-| B2 | Object of change is an agent — the AI acts, surprises, and evolves independently | ☐ Yes ☐ No ☐ Partially | |
-| B3 | Simultaneous undertrust and overtrust — both resistance and credulity are present | ☐ Yes ☐ No ☐ Partially | |
-| B4 | Contradictory time horizons — quarterly tech cycles vs. generational human transformation | ☐ Yes ☐ No ☐ Partially | |
-| B5 | Ethics as core competency — ethical decisions move faster than governance committees | ☐ Yes ☐ No ☐ Partially | |
-| B6 | Public incompetence as leadership act — leaders must model struggle, not confidence | ☐ Yes ☐ No ☐ Partially | |
+The Conditions Audit produces a condition-level assessment with traffic-light ratings and specific evidence for each. Conditions rated red or amber include a root-cause analysis identifying the structural, cultural, or political factors constraining the condition. The output is designed to inform organizational design interventions, not individual development plans.
 
-### Step 3: Score and Interpret
+## Usage
 
-**Set A scoring:**
-- Every "Yes" in Set A is a structural vulnerability. The plan assumes something that will not hold. Count the Yes responses.
-- 0–1: Plan is unusually realistic for AI adoption.
-- 2–3: Plan has significant blind spots. Revisit before committing resources.
-- 4–6: Plan is built on change management assumptions designed for a different technology class. Redesign before proceeding.
-
-**Set B scoring:**
-- Every "No" in Set B is a leadership gap. The plan does not account for a condition that will shape its execution. Count the No responses.
-- 0–1: Leadership approach is well-calibrated for AI.
-- 2–3: Leadership model needs augmentation. Consider which dimensions are most exposed.
-- 4–6: Leadership approach is imported from a pre-AI context. The six unprecedented conditions document provides the intellectual foundation for redesign.
-
-### Step 4: Map Vulnerabilities to Interventions
-
-For each identified vulnerability, the Adaptive Adoption framework provides a corresponding intervention layer:
-
-| Vulnerability Type | Intervention Layer | Starting Point |
-|---|---|---|
-| Set A assumptions (conditions don't hold) | Change Agility (7 Pillars) | Identify which pillars address the exposed assumption |
-| Set B gaps (unprecedented conditions) | Leadership Delta (7 Dimensions) | Identify which leadership dimensions are underdeveloped |
-| Both simultaneously | Behavioral Governance (6 Dimensions) | Governance architecture must account for permanent adaptation |
-
----
-
-## Facilitation Notes
-
-**Who runs this:** The CAIO, Chief Change Officer, Head of AI Strategy, or external advisor. This is a leadership team exercise, not a project management task.
-
-**Time required:** 90 minutes for initial audit. Schedule a follow-up session to map vulnerabilities to interventions.
-
-**Political dynamics:** This tool will surface uncomfortable truths. A plan that scores 4+ on Set A and 4+ "No" on Set B is, structurally, a plan designed for ERP adoption being applied to AI. Name this clearly. The purpose is not to criticize the plan's authors but to upgrade the plan's assumptions.
-
-**Frequency:** Re-run quarterly. The conditions themselves are stable (they reflect the nature of AI as a technology class), but the organization's strategy evolves, and new assumptions creep in.
-
----
-
-## Foundational Documents
-
-- [Six Unprecedented Conditions](../../../why-change-must-change/six-unprecedented-conditions.md) — the leadership argument
-- [Conditions That Don't Hold](../../../why-change-must-change/conditions-that-dont-hold.md) — the change management category break
-
----
-
-## Citation
-
-Gibbons, P. (2026). *The Conditions Audit: Assumption Stress-Test for AI Adoption Strategy.* Adaptive Adoption Framework. https://github.com/paulggibbons/adaptive_adoption/blob/main/leadership-delta/pillars/01-strategic-imagination/conditions-audit.md
-
----
-
-*Part of the [Adaptive Adoption](https://github.com/paulggibbons/adaptive_adoption) framework. Licensed under CC BY-SA 4.0.*
-*Adaptive Adoption™, Leadership Delta™ — Paul Gibbons.*
+Deploy the Conditions Audit before investing in leadership development for AI adoption. If the conditions do not support behavior change, development investment will produce awareness without action. Fix the conditions first, or design the development program to explicitly address condition gaps as part of the curriculum.
