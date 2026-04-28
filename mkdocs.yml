@@ -33,7 +33,7 @@ theme:
     - toc.follow
   icon:
     repo: fontawesome/brands/github
-  logo: assets/logo.svg
+    logo: material/book-open-variant
   favicon: assets/favicon.ico
 
 extra_css:
