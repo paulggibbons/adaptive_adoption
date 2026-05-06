@@ -71,6 +71,7 @@ nav:
       - D6 — Ethical Stewardship: leadership-delta/pillars/06-ethical-stewardship.md
       - D7 — Systems Orchestration: leadership-delta/pillars/07-systems-orchestration.md
     - Tools:
+      - Tools Overview: leadership-delta/tools/index.md
       - Conditions Audit: leadership-delta/tools/conditions-audit.md
   - Behavioral Governance — The Guardrails:
     - Overview: behavioral-governance/index.md
@@ -84,7 +85,12 @@ nav:
       - D5 — 1st-Derivative Talent: behavioral-governance/pillars/05-first-derivative-talent.md
       - D6 — Strategic Coherence: behavioral-governance/pillars/06-strategic-coherence.md
     - Tools:
+      - Tools Overview: behavioral-governance/tools/index.md
       - Governance Dashboard: behavioral-governance/tools/governance-dashboard.md
+  - Tools:
+    - All Tools: tools/index.md
+    - Long List: tools/long-list.md
+    - Archive: tools/archive.md
   - Maturity Model:
     - Current State: maturity-model/maturity-model-state.md
     - White Paper v0.1: maturity-model/white-paper-v0.1.md
