@@ -1,0 +1,3811 @@
+schema_version: 1.1.0
+last_updated: '2026-05-05'
+generator: scripts/seed_tools.py
+tools:
+- supabase_id: 1
+  slug: adaptive-adoption-behavioral-index
+  name: Adaptive Adoption Behavioral Index (AABI)
+  aliases: []
+  type: diagnostic
+  status: live
+  version: '0.1'
+  short_description: Flagship. 20 pillars, 6 maturity levels, 20-gon radar.
+  long_description: null
+  framework_mapping:
+    domain: cross-cutting
+    pillar: null
+    pillar_num: 0
+    pillar_name: All 20 Pillars
+  astro_url: /diagnostics/aabi
+  supabase:
+    table: diagnostic_responses
+    notes: ''
+  source: Original — Gibbons 2026
+  epistemic:
+    level: 2
+    label: Original framework © Paul Gibbons · Adaptive Adoption™ · Layer 1 self-report · v0.1
+  card_display:
+    pillar_label: null
+    time: 15–20 min
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: '2026-04-19'
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 1
+  tags:
+  - cross-cutting
+  - live
+  - diagnostic
+- supabase_id: 2
+  slug: ai-knowledge-quick-quiz
+  name: AI Knowledge Quick Quiz
+  aliases:
+  - AI Mastery Self-Assessment
+  type: diagnostic
+  status: live
+  version: '0.5'
+  short_description: 12 questions. Quick gateway diagnostic — Know/Do/Build × 4 levels. Lightweight introduction before the
+    full 7-dimension AI Mastery Self-Assessment.
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 01-master-the-craft
+    pillar_num: 1
+    pillar_name: Master the Craft
+  astro_url: /diagnostics/ai-mastery
+  supabase:
+    table: diagnostic_responses
+    notes: ''
+  source: Original — Gibbons 2026
+  epistemic:
+    level: 2
+    label: Quick gateway diagnostic · Original — Gibbons 2026 · v0.5
+  card_display:
+    pillar_label: PILLAR 1 · MASTER THE CRAFT
+    time: 5 min
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-05-06'
+    last_updated: '2026-05-05'
+    built: '2026-05-06'
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 10
+  tags:
+  - change-agility
+  - live
+  - diagnostic
+- supabase_id: 3
+  slug: team-capability-heatmap
+  name: Team Capability Heatmap
+  aliases: []
+  type: assessment
+  status: planned
+  version: null
+  short_description: Manager-facing. Map your team across User→Architect.
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 01-master-the-craft
+    pillar_num: 1
+    pillar_name: Master the Craft
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 11
+  tags:
+  - change-agility
+  - planned
+  - assessment
+- supabase_id: 4
+  slug: tool-stack-audit
+  name: Tool Stack Audit
+  aliases: []
+  type: canvas
+  status: speculative
+  version: null
+  short_description: What AI tools does your org actually use vs. sanctioned vs. shadow AI?
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 01-master-the-craft
+    pillar_num: 1
+    pillar_name: Master the Craft
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 12
+  tags:
+  - change-agility
+  - speculative
+  - canvas
+- supabase_id: 5
+  slug: prompt-engineering-maturity-quiz
+  name: Prompt Engineering Maturity Quiz
+  aliases: []
+  type: quick-diagnostic
+  status: speculative
+  version: null
+  short_description: 5-min quiz. Are you copy-pasting or system-prompting?
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 01-master-the-craft
+    pillar_num: 1
+    pillar_name: Master the Craft
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 13
+  tags:
+  - change-agility
+  - speculative
+  - quick-diagnostic
+- supabase_id: 69
+  slug: ai-learning-concierge
+  name: AI Learning Concierge
+  aliases: []
+  type: ai-tool
+  status: speculative
+  version: null
+  short_description: Personalized learning plan from vetted sources.
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 01-master-the-craft
+    pillar_num: 1
+    pillar_name: Master the Craft
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original — Gibbons 2026
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 14
+  tags:
+  - change-agility
+  - speculative
+  - ai-tool
+- supabase_id: 70
+  slug: pkm-maturity-diagnostic
+  name: PKM Maturity Diagnostic
+  aliases: []
+  type: diagnostic
+  status: planned
+  version: null
+  short_description: '6 levels: Chaos → One Box → Linked Thinking → Working Memory → Augmented Intelligence → Institutional
+    Brain.'
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 01-master-the-craft
+    pillar_num: 1
+    pillar_name: Master the Craft
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original — Gibbons 2026
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 15
+  tags:
+  - change-agility
+  - planned
+  - diagnostic
+- supabase_id: 6
+  slug: cynefin-domain-diagnostic
+  name: Cynefin Domain Diagnostic
+  aliases: []
+  type: diagnostic
+  status: live
+  version: '0.4'
+  short_description: 7 questions, live quadrant reading, turbulence dial.
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 02-embrace-complexity
+    pillar_num: 2
+    pillar_name: Embrace Complexity
+  astro_url: /diagnostics/cynefin
+  supabase:
+    table: diagnostic_responses
+    notes: ''
+  source: Snowden & Boone (2007)
+  epistemic:
+    level: 3
+    label: Established framework · Snowden & Boone (2007) · Items original · v0.4
+  card_display:
+    pillar_label: EMBRACE COMPLEXITY · CYNEFIN
+    time: 7 min
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: '2026-04-19'
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 20
+  tags:
+  - change-agility
+  - live
+  - diagnostic
+- supabase_id: 7
+  slug: wicked-problem-mapper
+  name: Wicked Problem Mapper
+  aliases: []
+  type: interactive-tool
+  status: in-development
+  version: null
+  short_description: Map interconnected problems, stakeholders, constraints for AI adoption.
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 02-embrace-complexity
+    pillar_num: 2
+    pillar_name: Embrace Complexity
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Rittel & Webber (1973)
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 21
+  tags:
+  - change-agility
+  - in-development
+  - interactive-tool
+- supabase_id: 8
+  slug: complexity-radar
+  name: Complexity Radar
+  aliases: []
+  type: canvas
+  status: speculative
+  version: null
+  short_description: Where are you pretending it's simple?
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 02-embrace-complexity
+    pillar_num: 2
+    pillar_name: Embrace Complexity
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Stacey Matrix + Snowden
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 22
+  tags:
+  - change-agility
+  - speculative
+  - canvas
+- supabase_id: 9
+  slug: dependency-network-visualizer
+  name: Dependency Network Visualizer
+  aliases: []
+  type: interactive-tool
+  status: speculative
+  version: null
+  short_description: Map technical + human dependencies.
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 02-embrace-complexity
+    pillar_num: 2
+    pillar_name: Embrace Complexity
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Systems dynamics
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 23
+  tags:
+  - change-agility
+  - speculative
+  - interactive-tool
+- supabase_id: 79
+  slug: sensemaking-diagnostic
+  name: Sensemaking Diagnostic
+  aliases: []
+  type: diagnostic
+  status: planned
+  version: null
+  short_description: Surfaces the narratives beneath stated objections.
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 02-embrace-complexity
+    pillar_num: 2
+    pillar_name: Embrace Complexity
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Weick (1995)
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 24
+  tags:
+  - change-agility
+  - planned
+  - diagnostic
+- supabase_id: 10
+  slug: trust-temperature-check
+  name: Trust Temperature Check
+  aliases: []
+  type: quick-diagnostic
+  status: build-next
+  version: '0.1'
+  short_description: 5-min team version of RIST. Quick pulse for workshops.
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 03-consciously-manage-trust
+    pillar_num: 3
+    pillar_name: Consciously Manage Trust
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: RIST (Gibbons) abbreviated
+  epistemic:
+    level: 2
+    label: RIST (Gibbons) abbreviated · Workshop format · v0.1
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: true
+    greyed_pillar_label: PILLAR 3 · CONSCIOUSLY MANAGE TRUST
+    greyed_time: 5 min
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 30
+  tags:
+  - change-agility
+  - build-next
+  - quick-diagnostic
+  - greyed
+- supabase_id: 11
+  slug: psychological-safety-index
+  name: Psychological Safety Index
+  aliases: []
+  type: diagnostic
+  status: in-development
+  version: null
+  short_description: 'Reframed for AI: do people feel safe admitting they don''t understand the AI?'
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 03-consciously-manage-trust
+    pillar_num: 3
+    pillar_name: Consciously Manage Trust
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Edmondson (1999)
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 31
+  tags:
+  - change-agility
+  - in-development
+  - diagnostic
+- supabase_id: 12
+  slug: ai-trust-calibration-quick-check
+  name: AI Trust Calibration Quick-Check
+  aliases: []
+  type: quick-diagnostic
+  status: planned
+  version: null
+  short_description: Over-trusting or under-trusting? 6 questions.
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 03-consciously-manage-trust
+    pillar_num: 3
+    pillar_name: Consciously Manage Trust
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original — maps to RIST
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 32
+  tags:
+  - change-agility
+  - planned
+  - quick-diagnostic
+- supabase_id: 13
+  slug: human-flourishing-at-work
+  name: Human Flourishing at Work (PERMA)
+  aliases: []
+  type: diagnostic
+  status: live
+  version: null
+  short_description: 15 statements across PERMA dimensions.
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 04-put-people-first
+    pillar_num: 4
+    pillar_name: Put People First
+  astro_url: /diagnostics/human-flourishing
+  supabase:
+    table: diagnostic_responses
+    notes: ''
+  source: Seligman (2011)
+  epistemic:
+    level: 3
+    label: Established framework · Seligman PERMA (2011) · Items © Gibbons · Educational use
+  card_display:
+    pillar_label: PEOPLE FIRST · HUMAN FLOURISHING
+    time: 4 min
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: '2026-04-19'
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 40
+  tags:
+  - change-agility
+  - live
+  - diagnostic
+- supabase_id: 14
+  slug: ikigai-diagnostic
+  name: Ikigai Diagnostic
+  aliases: []
+  type: diagnostic
+  status: live
+  version: null
+  short_description: 12 statements. Love/Good At/World Needs/Paid For.
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 04-put-people-first
+    pillar_num: 4
+    pillar_name: Put People First
+  astro_url: /diagnostics/ikigai
+  supabase:
+    table: diagnostic_responses
+    notes: ''
+  source: Japanese tradition — Gibbons
+  epistemic:
+    level: 2
+    label: Japanese ikigai tradition · Items © Paul Gibbons (Spirituality of Work and Leadership) · Reflective use
+  card_display:
+    pillar_label: PEOPLE FIRST · IKIGAI
+    time: 3 min
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: '2026-04-19'
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 41
+  tags:
+  - change-agility
+  - live
+  - diagnostic
+- supabase_id: 15
+  slug: change-impact-assessment
+  name: Change Impact Assessment
+  aliases: []
+  type: canvas
+  status: in-development
+  version: null
+  short_description: Who's affected, how, what support needed?
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 04-put-people-first
+    pillar_num: 4
+    pillar_name: Put People First
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Classic CIA → adapted
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 42
+  tags:
+  - change-agility
+  - in-development
+  - canvas
+- supabase_id: 16
+  slug: stakeholder-empathy-map
+  name: Stakeholder Empathy Map
+  aliases: []
+  type: canvas
+  status: in-development
+  version: null
+  short_description: What do stakeholders think, feel, say, do about AI?
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 04-put-people-first
+    pillar_num: 4
+    pillar_name: Put People First
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: XPLANE / Osterwalder → adapted
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 43
+  tags:
+  - change-agility
+  - in-development
+  - canvas
+- supabase_id: 17
+  slug: displacement-risk-calculator
+  name: Displacement Risk Calculator
+  aliases: []
+  type: assessment
+  status: speculative
+  version: null
+  short_description: Role-by-role task automation analysis.
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 04-put-people-first
+    pillar_num: 4
+    pillar_name: Put People First
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original + BLS/OECD data
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 44
+  tags:
+  - change-agility
+  - speculative
+  - assessment
+- supabase_id: 18
+  slug: ai-experiment-canvas
+  name: AI Experiment Canvas
+  aliases: []
+  type: canvas
+  status: build-next
+  version: null
+  short_description: Hypothesis → MVP → measure → learn for AI initiatives.
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 05-design-and-prototype
+    pillar_num: 5
+    pillar_name: Design and Prototype
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Lean Startup (Ries) → adapted
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 50
+  tags:
+  - change-agility
+  - build-next
+  - canvas
+- supabase_id: 19
+  slug: assumption-mapper
+  name: Assumption Mapper
+  aliases: []
+  type: canvas
+  status: planned
+  version: null
+  short_description: Surface and test assumptions about the AI tool, users, and process.
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 05-design-and-prototype
+    pillar_num: 5
+    pillar_name: Design and Prototype
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Lean + Strategyzer
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 51
+  tags:
+  - change-agility
+  - planned
+  - canvas
+- supabase_id: 20
+  slug: pilot-design-template
+  name: Pilot Design Template
+  aliases: []
+  type: template
+  status: planned
+  version: null
+  short_description: Scope, success criteria, timeline, kill criteria, scale-up triggers.
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 05-design-and-prototype
+    pillar_num: 5
+    pillar_name: Design and Prototype
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 52
+  tags:
+  - change-agility
+  - planned
+  - template
+- supabase_id: 21
+  slug: mvp-readiness-checklist
+  name: MVP Readiness Checklist
+  aliases: []
+  type: checklist
+  status: speculative
+  version: null
+  short_description: 'Before you pilot: data ready? Users identified? Rollback plan?'
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 05-design-and-prototype
+    pillar_num: 5
+    pillar_name: Design and Prototype
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 53
+  tags:
+  - change-agility
+  - speculative
+  - checklist
+- supabase_id: 22
+  slug: adoption-friction-diagnostic
+  name: Adoption Friction Diagnostic (CMTO)
+  aliases: []
+  type: diagnostic
+  status: build-next
+  version: '0.1'
+  short_description: 'Four-box model: Capability + Motivation + Trust + Opportunity/Friction.'
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 06-prioritize-behavior
+    pillar_num: 6
+    pillar_name: Prioritize Behavior
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Gibbons (2026) — extends Michie COM-B (2011)
+  epistemic:
+    level: 2
+    label: Extends Michie COM-B (2011) · Trust dimension original (Gibbons) · v0.1
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: true
+    greyed_pillar_label: PILLAR 6 · PRIORITIZE BEHAVIOR
+    greyed_time: 8 min
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 60
+  tags:
+  - change-agility
+  - build-next
+  - diagnostic
+  - greyed
+- supabase_id: 23
+  slug: nudge-audit
+  name: Nudge Audit
+  aliases: []
+  type: canvas
+  status: in-development
+  version: null
+  short_description: What choice architecture exists around AI adoption?
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 06-prioritize-behavior
+    pillar_num: 6
+    pillar_name: Prioritize Behavior
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Thaler & Sunstein (2008)
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 61
+  tags:
+  - change-agility
+  - in-development
+  - canvas
+- supabase_id: 24
+  slug: behavioral-intervention-selector
+  name: Behavioral Intervention Selector
+  aliases: []
+  type: interactive-tool
+  status: planned
+  version: null
+  short_description: Given CMTO diagnosis, which of 9 intervention types to use?
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 06-prioritize-behavior
+    pillar_num: 6
+    pillar_name: Prioritize Behavior
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: BCW / Michie taxonomy
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 62
+  tags:
+  - change-agility
+  - planned
+  - interactive-tool
+- supabase_id: 25
+  slug: habit-formation-tracker
+  name: Habit Formation Tracker
+  aliases: []
+  type: tracker
+  status: speculative
+  version: null
+  short_description: Track adoption behaviors over 30/60/90 days.
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 06-prioritize-behavior
+    pillar_num: 6
+    pillar_name: Prioritize Behavior
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Clear (2018) / Wood (2019)
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 63
+  tags:
+  - change-agility
+  - speculative
+  - tracker
+- supabase_id: 74
+  slug: loss-aversion-mapper
+  name: Loss Aversion Mapper
+  aliases: []
+  type: canvas
+  status: planned
+  version: null
+  short_description: Map perceived losses from AI adoption.
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 06-prioritize-behavior
+    pillar_num: 6
+    pillar_name: Prioritize Behavior
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Kahneman & Tversky (1979)
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 64
+  tags:
+  - change-agility
+  - planned
+  - canvas
+- supabase_id: 75
+  slug: defaults-audit
+  name: Defaults Audit
+  aliases: []
+  type: canvas
+  status: planned
+  version: null
+  short_description: Is AI opt-in or opt-out in your org?
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 06-prioritize-behavior
+    pillar_num: 6
+    pillar_name: Prioritize Behavior
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Thaler & Sunstein (2008)
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 65
+  tags:
+  - change-agility
+  - planned
+  - canvas
+- supabase_id: 76
+  slug: behavioral-design-sprint
+  name: Behavioral Design Sprint
+  aliases: []
+  type: template
+  status: planned
+  version: null
+  short_description: Define target behavior → barriers → intervention type → design → test → measure.
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 06-prioritize-behavior
+    pillar_num: 6
+    pillar_name: Prioritize Behavior
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Michie BCW (2011) + design thinking
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 66
+  tags:
+  - change-agility
+  - planned
+  - template
+- supabase_id: 77
+  slug: social-proof-dashboard
+  name: Social Proof Dashboard
+  aliases: []
+  type: template
+  status: speculative
+  version: null
+  short_description: Make AI use visible, celebrated, normal.
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 06-prioritize-behavior
+    pillar_num: 6
+    pillar_name: Prioritize Behavior
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Cialdini (2001)
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 67
+  tags:
+  - change-agility
+  - speculative
+  - template
+- supabase_id: 78
+  slug: ladder-of-inference-diagnostic
+  name: Ladder of Inference Diagnostic
+  aliases: []
+  type: diagnostic
+  status: planned
+  version: null
+  short_description: Most AI resistance lives at the assumption layer.
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 06-prioritize-behavior
+    pillar_num: 6
+    pillar_name: Prioritize Behavior
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Argyris (1990)
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 68
+  tags:
+  - change-agility
+  - planned
+  - diagnostic
+- supabase_id: 83
+  slug: mindspace-audit
+  name: MINDSPACE Audit
+  aliases: []
+  type: canvas
+  status: planned
+  version: null
+  short_description: 9 influences on behavior applied to AI adoption.
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 06-prioritize-behavior
+    pillar_num: 6
+    pillar_name: Prioritize Behavior
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Dolan et al. (2012) — UK BIT
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 69
+  tags:
+  - change-agility
+  - planned
+  - canvas
+- supabase_id: 26
+  slug: ethics-risk-scanner
+  name: Ethics Risk Scanner
+  aliases: []
+  type: diagnostic
+  status: build-next
+  version: '0.1'
+  short_description: Scan for ethical risks across 8 dimensions.
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 07-manage-ethics-always
+    pillar_num: 7
+    pillar_name: Manage Ethics Always
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original + IEEE / NIST
+  epistemic:
+    level: 2
+    label: Original + IEEE / NIST AI RMF · v0.1
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: true
+    greyed_pillar_label: PILLAR 7 · MANAGE ETHICS ALWAYS
+    greyed_time: 10 min
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 70
+  tags:
+  - change-agility
+  - build-next
+  - diagnostic
+  - greyed
+- supabase_id: 27
+  slug: ai-bias-audit-template
+  name: AI Bias Audit Template
+  aliases: []
+  type: template
+  status: planned
+  version: null
+  short_description: Identify where bias enters, who's harmed, what to test.
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 07-manage-ethics-always
+    pillar_num: 7
+    pillar_name: Manage Ethics Always
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Buolamwini / Gebru + NIST AI RMF
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 71
+  tags:
+  - change-agility
+  - planned
+  - template
+- supabase_id: 28
+  slug: ethical-dilemma-scenario-cards
+  name: Ethical Dilemma Scenario Cards
+  aliases: []
+  type: workshop-tool
+  status: in-development
+  version: null
+  short_description: 20 scenario cards for leadership workshops.
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 07-manage-ethics-always
+    pillar_num: 7
+    pillar_name: Manage Ethics Always
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Classic ethics pedagogy → AI cases
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 72
+  tags:
+  - change-agility
+  - in-development
+  - workshop-tool
+- supabase_id: 29
+  slug: responsible-ai-maturity-checklist
+  name: Responsible AI Maturity Checklist
+  aliases: []
+  type: checklist
+  status: speculative
+  version: null
+  short_description: Aspirational → embedded maturity curve.
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 07-manage-ethics-always
+    pillar_num: 7
+    pillar_name: Manage Ethics Always
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: MS RAI / Google PAIR
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 73
+  tags:
+  - change-agility
+  - speculative
+  - checklist
+- supabase_id: 80
+  slug: cognitive-bias-audit-for-ai
+  name: Cognitive Bias Audit for AI
+  aliases: []
+  type: diagnostic
+  status: planned
+  version: null
+  short_description: Automation bias, anchoring, confirmation bias in AI decision-making.
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 07-manage-ethics-always
+    pillar_num: 7
+    pillar_name: Manage Ethics Always
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Kahneman (2011) / Gigerenzer
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 74
+  tags:
+  - change-agility
+  - planned
+  - diagnostic
+- supabase_id: 87
+  slug: ai-mastery-assessment
+  name: AI Mastery Self-Assessment
+  aliases: []
+  type: ai-tool
+  status: live
+  version: '0.1'
+  short_description: A 21-question behavioral self-assessment across 7 dimensions — Civics, Metacognition, Ethics, Concepts,
+    Skills, Creativity, and Orchestration. Produces a scored mastery profile with radar chart and downloadable development
+    brief. Browser-only, no data stored.
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 01-master-the-craft
+    pillar_num: 1
+    pillar_name: Master the Craft
+  astro_url: /diagnostics/ai-mastery-assessment
+  supabase:
+    table: diagnostic_responses
+    notes: ''
+  source: Original — Gibbons 2026
+  epistemic:
+    level: 1
+    label: Structured self-assessment · AI Mastery Framework · Original — Gibbons 2026 · v0.1
+  card_display:
+    pillar_label: CHANGE AGILITY · MASTER THE CRAFT
+    time: 10–12 min
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-26'
+    last_updated: '2026-05-05'
+    built: '2026-04-26'
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 84
+  tags:
+  - change-agility
+  - live
+  - ai-tool
+- supabase_id: 30
+  slug: scenario-planning-canvas
+  name: Scenario Planning Canvas
+  aliases: []
+  type: canvas
+  status: in-development
+  version: null
+  short_description: 2×2 uncertainty matrix for AI futures.
+  long_description: null
+  framework_mapping:
+    domain: leadership-delta
+    pillar: 01-strategic-imagination
+    pillar_num: 1
+    pillar_name: Strategic Imagination
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Schwartz / Shell scenarios
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 100
+  tags:
+  - leadership-delta
+  - in-development
+  - canvas
+- supabase_id: 31
+  slug: future-back-strategy-template
+  name: Future-Back Strategy Template
+  aliases: []
+  type: template
+  status: planned
+  version: null
+  short_description: Start from 2028, work backward.
+  long_description: null
+  framework_mapping:
+    domain: leadership-delta
+    pillar: 01-strategic-imagination
+    pillar_num: 1
+    pillar_name: Strategic Imagination
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Hamel + Prahalad → adapted
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 101
+  tags:
+  - leadership-delta
+  - planned
+  - template
+- supabase_id: 32
+  slug: ai-opportunity-scanner
+  name: AI Opportunity Scanner
+  aliases: []
+  type: interactive-tool
+  status: speculative
+  version: null
+  short_description: 'Process-by-process: where could AI create value?'
+  long_description: null
+  framework_mapping:
+    domain: leadership-delta
+    pillar: 01-strategic-imagination
+    pillar_num: 1
+    pillar_name: Strategic Imagination
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 102
+  tags:
+  - leadership-delta
+  - speculative
+  - interactive-tool
+- supabase_id: 84
+  slug: personal-context-passport
+  name: Personal Context Passport
+  aliases: []
+  type: ai-tool
+  status: live
+  version: '0.1'
+  short_description: Portable, auditable AI context artifact. A guided interview produces downloadable Markdown, JSON, and
+    an agent brief. Browser-only, no data stored in v0.
+  long_description: null
+  framework_mapping:
+    domain: leadership-delta
+    pillar: 02-active-modeling
+    pillar_num: 2
+    pillar_name: Active Modeling
+  astro_url: /diagnostics/personal-context-passport
+  supabase:
+    table: diagnostic_responses
+    notes: ''
+  source: Original — Gibbons 2026
+  epistemic:
+    level: 1
+    label: Structured self-authored artifact · Not psychometric · v0.1
+  card_display:
+    pillar_label: LEADERSHIP DELTA · ACTIVE MODELING
+    time: 10–15 min
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-26'
+    last_updated: '2026-05-05'
+    built: '2026-04-26'
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 105
+  tags:
+  - leadership-delta
+  - live
+  - ai-tool
+- supabase_id: 33
+  slug: leader-ai-usage-audit
+  name: Leader AI Usage Audit
+  aliases: []
+  type: assessment
+  status: build-next
+  version: '0.1'
+  short_description: How visibly does the leader use AI? Walk-the-talk measure.
+  long_description: null
+  framework_mapping:
+    domain: leadership-delta
+    pillar: 02-active-modeling
+    pillar_num: 2
+    pillar_name: Active Modeling
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original
+  epistemic:
+    level: 1
+    label: Original — Gibbons 2026 · Conceptual · v0.1
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: true
+    greyed_pillar_label: ACTIVE MODELING · THE CARPENTER
+    greyed_time: 5 min
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 110
+  tags:
+  - leadership-delta
+  - build-next
+  - assessment
+  - greyed
+- supabase_id: 34
+  slug: modeling-behavior-gap-analysis
+  name: Modeling Behavior Gap Analysis
+  aliases: []
+  type: canvas
+  status: planned
+  version: null
+  short_description: Behaviors you want vs. behaviors you demonstrate.
+  long_description: null
+  framework_mapping:
+    domain: leadership-delta
+    pillar: 02-active-modeling
+    pillar_num: 2
+    pillar_name: Active Modeling
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Bandura (1977)
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 111
+  tags:
+  - leadership-delta
+  - planned
+  - canvas
+- supabase_id: 35
+  slug: leader-team-ai-alignment-check
+  name: Leader-Team AI Alignment Check
+  aliases: []
+  type: quick-diagnostic
+  status: speculative
+  version: null
+  short_description: 'Perception gap: does the team see the leader''s AI stance the way the leader does?'
+  long_description: null
+  framework_mapping:
+    domain: leadership-delta
+    pillar: 02-active-modeling
+    pillar_num: 2
+    pillar_name: Active Modeling
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 112
+  tags:
+  - leadership-delta
+  - speculative
+  - quick-diagnostic
+- supabase_id: 71
+  slug: from-gtd-to-gsd-the-ai-productivity-system
+  name: From GTD to GSD — The AI Productivity System
+  aliases: []
+  type: template
+  status: planned
+  version: null
+  short_description: GTD reimagined for humans managing AI agents.
+  long_description: null
+  framework_mapping:
+    domain: leadership-delta
+    pillar: 02-active-modeling
+    pillar_num: 2
+    pillar_name: Active Modeling
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original — Gibbons 2026 (extends Allen 2001)
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 113
+  tags:
+  - leadership-delta
+  - planned
+  - template
+- supabase_id: 72
+  slug: build-your-chief-of-staff-in-cowork
+  name: Build Your Chief of Staff in Cowork
+  aliases: []
+  type: ai-tool
+  status: planned
+  version: null
+  short_description: Step-by-step guide to creating a CoS agent.
+  long_description: null
+  framework_mapping:
+    domain: leadership-delta
+    pillar: 02-active-modeling
+    pillar_num: 2
+    pillar_name: Active Modeling
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original — Gibbons 2026
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 114
+  tags:
+  - leadership-delta
+  - planned
+  - ai-tool
+- supabase_id: 36
+  slug: creative-climate-diagnostic
+  name: Creative Climate Diagnostic (Ekvall)
+  aliases: []
+  type: diagnostic
+  status: live
+  version: '0.3'
+  short_description: 20 questions, 10 dimensions.
+  long_description: null
+  framework_mapping:
+    domain: leadership-delta
+    pillar: 03-creative-cultivation
+    pillar_num: 3
+    pillar_name: Creative Cultivation
+  astro_url: /diagnostics/creative-climate
+  supabase:
+    table: diagnostic_responses
+    notes: ''
+  source: Ekvall (1996)
+  epistemic:
+    level: 3
+    label: Research-grounded · Ekvall (1996) · Instrument validation pending · v0.3
+  card_display:
+    pillar_label: CREATIVE CULTIVATION · EKVALL
+    time: 8 min
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: '2026-04-19'
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 120
+  tags:
+  - leadership-delta
+  - live
+  - diagnostic
+- supabase_id: 37
+  slug: innovation-blockers-diagnostic
+  name: Innovation Blockers Diagnostic
+  aliases: []
+  type: diagnostic
+  status: planned
+  version: null
+  short_description: What's killing innovation?
+  long_description: null
+  framework_mapping:
+    domain: leadership-delta
+    pillar: 03-creative-cultivation
+    pillar_num: 3
+    pillar_name: Creative Cultivation
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original + Amabile (1998)
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 121
+  tags:
+  - leadership-delta
+  - planned
+  - diagnostic
+- supabase_id: 38
+  slug: experimentation-permission-audit
+  name: Experimentation Permission Audit
+  aliases: []
+  type: quick-diagnostic
+  status: speculative
+  version: null
+  short_description: Do people feel permission to experiment with AI?
+  long_description: null
+  framework_mapping:
+    domain: leadership-delta
+    pillar: 03-creative-cultivation
+    pillar_num: 3
+    pillar_name: Creative Cultivation
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 122
+  tags:
+  - leadership-delta
+  - speculative
+  - quick-diagnostic
+- supabase_id: 73
+  slug: scarf-threat-diagnostic
+  name: SCARF Threat Diagnostic
+  aliases: []
+  type: diagnostic
+  status: build-next
+  version: '0.1'
+  short_description: Which psychological threat drives resistance?
+  long_description: null
+  framework_mapping:
+    domain: leadership-delta
+    pillar: 03-creative-cultivation
+    pillar_num: 3
+    pillar_name: Creative Cultivation
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Rock (2008)
+  epistemic:
+    level: 2
+    label: Rock (2008) · Applied to AI adoption · v0.1
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: true
+    greyed_pillar_label: CREATIVE CULTIVATION · THE GARDENER
+    greyed_time: 7 min
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 123
+  tags:
+  - leadership-delta
+  - build-next
+  - diagnostic
+  - greyed
+- supabase_id: 39
+  slug: friction-audit
+  name: Friction Audit
+  aliases: []
+  type: canvas
+  status: build-next
+  version: '0.1'
+  short_description: Map every friction point. Which can you kill?
+  long_description: null
+  framework_mapping:
+    domain: leadership-delta
+    pillar: 04-friction-courage
+    pillar_num: 4
+    pillar_name: Friction Courage
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original + Sutherland / Sull
+  epistemic:
+    level: 1
+    label: Original + Sutherland / Sull · Conceptual · v0.1
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: true
+    greyed_pillar_label: FRICTION COURAGE · THE LIBERATOR
+    greyed_time: 10 min
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 130
+  tags:
+  - leadership-delta
+  - build-next
+  - canvas
+  - greyed
+- supabase_id: 40
+  slug: bureaucracy-buster-scorecard
+  name: Bureaucracy Buster Scorecard
+  aliases: []
+  type: assessment
+  status: in-development
+  version: null
+  short_description: How many approvals to pilot an AI tool?
+  long_description: null
+  framework_mapping:
+    domain: leadership-delta
+    pillar: 04-friction-courage
+    pillar_num: 4
+    pillar_name: Friction Courage
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Hamel Bureaucracy Index
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 131
+  tags:
+  - leadership-delta
+  - in-development
+  - assessment
+- supabase_id: 41
+  slug: permission-to-fail-assessment
+  name: Permission-to-Fail Assessment
+  aliases: []
+  type: quick-diagnostic
+  status: planned
+  version: null
+  short_description: 'How your org handles failure: punish, ignore, tolerate, or celebrate?'
+  long_description: null
+  framework_mapping:
+    domain: leadership-delta
+    pillar: 04-friction-courage
+    pillar_num: 4
+    pillar_name: Friction Courage
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 132
+  tags:
+  - leadership-delta
+  - planned
+  - quick-diagnostic
+- supabase_id: 42
+  slug: rist-trust-diagnostic
+  name: RIST Trust Diagnostic
+  aliases: []
+  type: diagnostic
+  status: live
+  version: '0.3'
+  short_description: 32 questions. Over/under-trust detection.
+  long_description: null
+  framework_mapping:
+    domain: leadership-delta
+    pillar: 05-trust-calibration
+    pillar_num: 5
+    pillar_name: Trust Calibration
+  astro_url: /diagnostics/rist-trust
+  supabase:
+    table: diagnostic_responses
+    notes: ''
+  source: Original — Gibbons (RIST)
+  epistemic:
+    level: 2
+    label: Research-grounded · Original operationalization · Construct validation planned · v0.3
+  card_display:
+    pillar_label: TRUST CALIBRATION · RIST
+    time: 12 min
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: '2026-04-19'
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 140
+  tags:
+  - leadership-delta
+  - live
+  - diagnostic
+- supabase_id: 43
+  slug: stakeholder-trust-map
+  name: Stakeholder Trust Map
+  aliases: []
+  type: interactive-tool
+  status: in-development
+  version: null
+  short_description: Who trusts the initiative? Heat-mapped.
+  long_description: null
+  framework_mapping:
+    domain: leadership-delta
+    pillar: 05-trust-calibration
+    pillar_num: 5
+    pillar_name: Trust Calibration
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Classic stakeholder mapping → trust overlay
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 141
+  tags:
+  - leadership-delta
+  - in-development
+  - interactive-tool
+- supabase_id: 44
+  slug: trust-repair-protocol
+  name: Trust Repair Protocol
+  aliases: []
+  type: template
+  status: planned
+  version: null
+  short_description: Step-by-step repair after a trust breach.
+  long_description: null
+  framework_mapping:
+    domain: leadership-delta
+    pillar: 05-trust-calibration
+    pillar_num: 5
+    pillar_name: Trust Calibration
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Lewicki & Bunker (1996)
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 142
+  tags:
+  - leadership-delta
+  - planned
+  - template
+- supabase_id: 45
+  slug: ethical-leadership-self-assessment
+  name: Ethical Leadership Self-Assessment
+  aliases: []
+  type: diagnostic
+  status: planned
+  version: null
+  short_description: Do you model ethical AI use?
+  long_description: null
+  framework_mapping:
+    domain: leadership-delta
+    pillar: 06-ethical-stewardship
+    pillar_num: 6
+    pillar_name: Ethical Stewardship
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Brown et al. (2005) ELS
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 150
+  tags:
+  - leadership-delta
+  - planned
+  - diagnostic
+- supabase_id: 46
+  slug: values-ai-alignment-audit
+  name: Values-AI Alignment Audit
+  aliases: []
+  type: canvas
+  status: speculative
+  version: null
+  short_description: Map stated values against AI practices.
+  long_description: null
+  framework_mapping:
+    domain: leadership-delta
+    pillar: 06-ethical-stewardship
+    pillar_num: 6
+    pillar_name: Ethical Stewardship
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 151
+  tags:
+  - leadership-delta
+  - speculative
+  - canvas
+- supabase_id: 47
+  slug: causal-loop-diagram-builder
+  name: Causal Loop Diagram Builder
+  aliases: []
+  type: interactive-tool
+  status: live
+  version: null
+  short_description: Map feedback loops. R and B loops auto-detected.
+  long_description: null
+  framework_mapping:
+    domain: leadership-delta
+    pillar: 07-systems-orchestration
+    pillar_num: 7
+    pillar_name: Systems Orchestration
+  astro_url: /diagnostics/causal-loop
+  supabase:
+    table: diagnostic_responses
+    notes: ''
+  source: Meadows (2008)
+  epistemic:
+    level: 2
+    label: Systems thinking tool · Meadows (2008) · Educational / exploratory
+  card_display:
+    pillar_label: SYSTEMS ORCHESTRATION · CLD
+    time: Interactive
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: '2026-04-19'
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 160
+  tags:
+  - leadership-delta
+  - live
+  - interactive-tool
+- supabase_id: 48
+  slug: influence-network-heatmap
+  name: Influence Network Heatmap
+  aliases: []
+  type: interactive-tool
+  status: in-development
+  version: null
+  short_description: Formal vs informal power. Heat-mapped.
+  long_description: null
+  framework_mapping:
+    domain: leadership-delta
+    pillar: 07-systems-orchestration
+    pillar_num: 7
+    pillar_name: Systems Orchestration
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: ONA / SNA → adapted
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 161
+  tags:
+  - leadership-delta
+  - in-development
+  - interactive-tool
+- supabase_id: 49
+  slug: feedback-loop-identifier
+  name: Feedback Loop Identifier
+  aliases: []
+  type: workshop-tool
+  status: planned
+  version: null
+  short_description: Find reinforcing and balancing loops in your adoption system.
+  long_description: null
+  framework_mapping:
+    domain: leadership-delta
+    pillar: 07-systems-orchestration
+    pillar_num: 7
+    pillar_name: Systems Orchestration
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Senge (1990) / Meadows
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 162
+  tags:
+  - leadership-delta
+  - planned
+  - workshop-tool
+- supabase_id: 50
+  slug: stakeholder-network-analyzer
+  name: Stakeholder Network Analyzer
+  aliases: []
+  type: interactive-tool
+  status: speculative
+  version: null
+  short_description: Identify brokers, bottlenecks, isolated clusters.
+  long_description: null
+  framework_mapping:
+    domain: leadership-delta
+    pillar: 07-systems-orchestration
+    pillar_num: 7
+    pillar_name: Systems Orchestration
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: ONA + network science
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 163
+  tags:
+  - leadership-delta
+  - speculative
+  - interactive-tool
+- supabase_id: 82
+  slug: polarity-map-for-ai-adoption
+  name: Polarity Map for AI Adoption
+  aliases: []
+  type: canvas
+  status: planned
+  version: null
+  short_description: Tensions that can't be solved, only managed.
+  long_description: null
+  framework_mapping:
+    domain: leadership-delta
+    pillar: 07-systems-orchestration
+    pillar_num: 7
+    pillar_name: Systems Orchestration
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Johnson (1992) — Polarity Management
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 164
+  tags:
+  - leadership-delta
+  - planned
+  - canvas
+- supabase_id: 88
+  slug: leadership-delta-scoresheet
+  name: Leadership Delta Scoresheet
+  aliases: []
+  type: ai-tool
+  status: live
+  version: '0.1'
+  short_description: Score one or up to 4 leadership teams across 7 Leadership Delta dimensions — 3 indicators each, 1-5 scale,
+    total 105. Produces radar chart overlay, dimension bar chart, heat map, and downloadable reports per team plus cross-team
+    comparison. Browser-only, no data stored.
+  long_description: null
+  framework_mapping:
+    domain: leadership-delta
+    pillar: null
+    pillar_num: 3
+    pillar_name: Adaptive Adoption
+  astro_url: /diagnostics/leadership-delta-scoresheet
+  supabase:
+    table: diagnostic_responses
+    notes: ''
+  source: Original — Gibbons 2026
+  epistemic:
+    level: 1
+    label: Consultant-grade diagnostic · AI Leadership Delta™ · Original — Gibbons 2026 · v0.1
+  card_display:
+    pillar_label: LEADERSHIP DELTA · ADAPTIVE ADOPTION
+    time: 12–15 min
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-27'
+    last_updated: '2026-05-05'
+    built: '2026-04-27'
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 174
+  tags:
+  - leadership-delta
+  - live
+  - ai-tool
+- supabase_id: 51
+  slug: ai-strategy-alignment-audit
+  name: AI-Strategy Alignment Audit
+  aliases: []
+  type: assessment
+  status: build-next
+  version: '0.1'
+  short_description: Is your AI portfolio aligned with strategy?
+  long_description: null
+  framework_mapping:
+    domain: behavioral-governance
+    pillar: 06-strategic-coherence
+    pillar_num: 1
+    pillar_name: Strategic Coherence
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original + Kaplan & Norton
+  epistemic:
+    level: 1
+    label: Original + Kaplan & Norton · Conceptual · v0.1
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: true
+    greyed_pillar_label: STRATEGIC COHERENCE
+    greyed_time: 12 min
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 200
+  tags:
+  - behavioral-governance
+  - build-next
+  - assessment
+  - greyed
+- supabase_id: 52
+  slug: portfolio-rationalization-matrix
+  name: Portfolio Rationalization Matrix
+  aliases: []
+  type: canvas
+  status: in-development
+  version: null
+  short_description: Map AI initiatives by value × feasibility. Kill the zombies.
+  long_description: null
+  framework_mapping:
+    domain: behavioral-governance
+    pillar: 06-strategic-coherence
+    pillar_num: 1
+    pillar_name: Strategic Coherence
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: BCG Growth-Share → adapted
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 201
+  tags:
+  - behavioral-governance
+  - in-development
+  - canvas
+- supabase_id: 53
+  slug: initiative-coherence-scorecard
+  name: Initiative Coherence Scorecard
+  aliases: []
+  type: scorecard
+  status: planned
+  version: null
+  short_description: Do your initiatives reinforce each other or compete?
+  long_description: null
+  framework_mapping:
+    domain: behavioral-governance
+    pillar: 06-strategic-coherence
+    pillar_num: 1
+    pillar_name: Strategic Coherence
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 202
+  tags:
+  - behavioral-governance
+  - planned
+  - scorecard
+- supabase_id: 54
+  slug: ai-decision-rights-mapper
+  name: AI Decision Rights Mapper (RACI+)
+  aliases: []
+  type: interactive-tool
+  status: build-next
+  version: '0.1'
+  short_description: Who approves model deployment, who owns data access?
+  long_description: null
+  framework_mapping:
+    domain: behavioral-governance
+    pillar: 01-decision-rights
+    pillar_num: 2
+    pillar_name: Decision Rights
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: RACI → extended for AI
+  epistemic:
+    level: 2
+    label: RACI → extended for AI · v0.1
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: true
+    greyed_pillar_label: DECISION RIGHTS
+    greyed_time: Interactive
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 210
+  tags:
+  - behavioral-governance
+  - build-next
+  - interactive-tool
+  - greyed
+- supabase_id: 55
+  slug: authority-escalation-matrix
+  name: Authority Escalation Matrix
+  aliases: []
+  type: template
+  status: planned
+  version: null
+  short_description: When does an AI decision need human sign-off?
+  long_description: null
+  framework_mapping:
+    domain: behavioral-governance
+    pillar: 01-decision-rights
+    pillar_num: 2
+    pillar_name: Decision Rights
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 211
+  tags:
+  - behavioral-governance
+  - planned
+  - template
+- supabase_id: 56
+  slug: decision-velocity-diagnostic
+  name: Decision Velocity Diagnostic
+  aliases: []
+  type: quick-diagnostic
+  status: speculative
+  version: null
+  short_description: How fast do AI decisions get made?
+  long_description: null
+  framework_mapping:
+    domain: behavioral-governance
+    pillar: 01-decision-rights
+    pillar_num: 2
+    pillar_name: Decision Rights
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 212
+  tags:
+  - behavioral-governance
+  - speculative
+  - quick-diagnostic
+- supabase_id: 57
+  slug: ai-risk-register-template
+  name: AI Risk Register Template
+  aliases: []
+  type: template
+  status: build-next
+  version: '0.1'
+  short_description: Model, data, operational, reputational, regulatory risk.
+  long_description: null
+  framework_mapping:
+    domain: behavioral-governance
+    pillar: 03-risk-intelligence
+    pillar_num: 3
+    pillar_name: Risk Intelligence
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: ISO 31000 → AI-adapted
+  epistemic:
+    level: 2
+    label: ISO 31000 → AI-adapted · v0.1
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: true
+    greyed_pillar_label: RISK INTELLIGENCE
+    greyed_time: Interactive
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 220
+  tags:
+  - behavioral-governance
+  - build-next
+  - template
+  - greyed
+- supabase_id: 58
+  slug: risk-appetite-calibrator
+  name: Risk Appetite Calibrator
+  aliases: []
+  type: diagnostic
+  status: planned
+  version: null
+  short_description: How much AI risk is your org willing to take?
+  long_description: null
+  framework_mapping:
+    domain: behavioral-governance
+    pillar: 03-risk-intelligence
+    pillar_num: 3
+    pillar_name: Risk Intelligence
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original + COSO
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 221
+  tags:
+  - behavioral-governance
+  - planned
+  - diagnostic
+- supabase_id: 59
+  slug: shadow-ai-audit
+  name: Shadow AI Audit
+  aliases: []
+  type: assessment
+  status: in-development
+  version: null
+  short_description: What AI tools are people using that IT doesn't know about?
+  long_description: null
+  framework_mapping:
+    domain: behavioral-governance
+    pillar: 03-risk-intelligence
+    pillar_num: 3
+    pillar_name: Risk Intelligence
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Shadow IT audits → adapted
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 222
+  tags:
+  - behavioral-governance
+  - in-development
+  - assessment
+- supabase_id: 60
+  slug: agentic-trust-level
+  name: Agentic Trust Level
+  aliases:
+  - Autonomy Map
+  - Trust Thermometer
+  type: interactive-tool
+  status: build-next
+  version: '0.1'
+  short_description: Green/amber/red zones for agent autonomy.
+  long_description: null
+  framework_mapping:
+    domain: behavioral-governance
+    pillar: 02-agent-authority
+    pillar_num: 4
+    pillar_name: Agent Authority
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original — Gibbons 2026; extends Nate Jones — five levels of agent autonomy
+  epistemic:
+    level: 1
+    label: Original — Gibbons 2026 · Conceptual · v0.1
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: true
+    greyed_pillar_label: AGENT AUTHORITY · NATE JONES 5
+    greyed_time: Interactive
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 230
+  tags:
+  - behavioral-governance
+  - build-next
+  - interactive-tool
+  - greyed
+- supabase_id: 61
+  slug: human-in-the-loop-decision-tree
+  name: Human-in-the-Loop Decision Tree
+  aliases: []
+  type: template
+  status: planned
+  version: null
+  short_description: When must a human review AI output?
+  long_description: null
+  framework_mapping:
+    domain: behavioral-governance
+    pillar: 02-agent-authority
+    pillar_num: 4
+    pillar_name: Agent Authority
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original + NIST AI RMF
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 231
+  tags:
+  - behavioral-governance
+  - planned
+  - template
+- supabase_id: 62
+  slug: agent-guardrails-template
+  name: Agent Guardrails Template
+  aliases: []
+  type: template
+  status: planned
+  version: null
+  short_description: 'Per agent: what can it access, modify, escalate?'
+  long_description: null
+  framework_mapping:
+    domain: behavioral-governance
+    pillar: 02-agent-authority
+    pillar_num: 4
+    pillar_name: Agent Authority
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 232
+  tags:
+  - behavioral-governance
+  - planned
+  - template
+- supabase_id: 63
+  slug: skills-gap-analyzer
+  name: Skills Gap Analyzer
+  aliases: []
+  type: assessment
+  status: in-development
+  version: null
+  short_description: Current vs needed skills for AI-augmented roles.
+  long_description: null
+  framework_mapping:
+    domain: behavioral-governance
+    pillar: 05-first-derivative-talent
+    pillar_num: 5
+    pillar_name: First-Derivative Talent
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Classic skills gap → AI-specific
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 240
+  tags:
+  - behavioral-governance
+  - in-development
+  - assessment
+- supabase_id: 64
+  slug: role-redesign-canvas
+  name: Role Redesign Canvas
+  aliases: []
+  type: canvas
+  status: build-next
+  version: null
+  short_description: Decompose role into tasks. Which can AI do?
+  long_description: null
+  framework_mapping:
+    domain: behavioral-governance
+    pillar: 05-first-derivative-talent
+    pillar_num: 5
+    pillar_name: First-Derivative Talent
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Jesuthasan & Boudreau (2022)
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 241
+  tags:
+  - behavioral-governance
+  - build-next
+  - canvas
+- supabase_id: 65
+  slug: workforce-transformation-roadmap
+  name: Workforce Transformation Roadmap
+  aliases: []
+  type: template
+  status: planned
+  version: null
+  short_description: '12-month roadmap: role analysis → skill mapping → training → measurement.'
+  long_description: null
+  framework_mapping:
+    domain: behavioral-governance
+    pillar: 05-first-derivative-talent
+    pillar_num: 5
+    pillar_name: First-Derivative Talent
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original + WEF Future of Jobs
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 242
+  tags:
+  - behavioral-governance
+  - planned
+  - template
+- supabase_id: 66
+  slug: governance-maturity-assessment
+  name: Governance Maturity Assessment
+  aliases: []
+  type: diagnostic
+  status: build-next
+  version: '0.1'
+  short_description: Ad hoc → Reactive → Defined → Managed → Optimizing.
+  long_description: null
+  framework_mapping:
+    domain: behavioral-governance
+    pillar: 04-governance-intelligence
+    pillar_num: 6
+    pillar_name: Governance Intelligence
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original — Gibbons
+  epistemic:
+    level: 1
+    label: Original — Gibbons 2026 · Conceptual · v0.1
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: true
+    greyed_pillar_label: GOVERNANCE INTELLIGENCE
+    greyed_time: 10 min
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 250
+  tags:
+  - behavioral-governance
+  - build-next
+  - diagnostic
+  - greyed
+- supabase_id: 67
+  slug: policy-effectiveness-tracker
+  name: Policy Effectiveness Tracker
+  aliases: []
+  type: tracker
+  status: planned
+  version: null
+  short_description: Are your AI policies changing behavior?
+  long_description: null
+  framework_mapping:
+    domain: behavioral-governance
+    pillar: 04-governance-intelligence
+    pillar_num: 6
+    pillar_name: Governance Intelligence
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 251
+  tags:
+  - behavioral-governance
+  - planned
+  - tracker
+- supabase_id: 68
+  slug: governance-learning-loop-audit
+  name: Governance Learning Loop Audit
+  aliases: []
+  type: canvas
+  status: speculative
+  version: null
+  short_description: Single vs double-loop governance learning.
+  long_description: null
+  framework_mapping:
+    domain: behavioral-governance
+    pillar: 04-governance-intelligence
+    pillar_num: 6
+    pillar_name: Governance Intelligence
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Argyris double-loop (1977)
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 252
+  tags:
+  - behavioral-governance
+  - speculative
+  - canvas
+- supabase_id: 81
+  slug: double-loop-learning-assessment
+  name: Double-Loop Learning Assessment
+  aliases: []
+  type: diagnostic
+  status: planned
+  version: null
+  short_description: Is governance reacting or evolving?
+  long_description: null
+  framework_mapping:
+    domain: behavioral-governance
+    pillar: 04-governance-intelligence
+    pillar_num: 6
+    pillar_name: Governance Intelligence
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Argyris & Schon (1978)
+  epistemic:
+    level: null
+    label: null
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-19'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 253
+  tags:
+  - behavioral-governance
+  - planned
+  - diagnostic
+- supabase_id: 85
+  slug: ai-governance-gap-finder
+  name: AI Governance Gap Finder
+  aliases: []
+  type: ai-tool
+  status: live
+  version: '0.1'
+  short_description: Six-dimension diagnostic measuring the gap between governance policy and governance practice. Traffic-light
+    scoring across Decision Rights, Agent Authority, Risk Intelligence, Governance Intelligence, 1st-Derivative Talent, and
+    Strategic Coherence. Outputs a board briefing, full report, and JSON.
+  long_description: null
+  framework_mapping:
+    domain: behavioral-governance
+    pillar: 04-governance-intelligence
+    pillar_num: 4
+    pillar_name: Governance Intelligence
+  astro_url: /diagnostics/governance-gap-finder
+  supabase:
+    table: diagnostic_responses
+    notes: ''
+  source: Original — Gibbons 2026
+  epistemic:
+    level: 1
+    label: Structured self-assessment artifact · Three-Layer Protocol · v0.1
+  card_display:
+    pillar_label: BEHAVIORAL GOVERNANCE · GOVERNANCE INTELLIGENCE
+    time: 5–7 min
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-26'
+    last_updated: '2026-05-05'
+    built: '2026-04-26'
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 263
+  tags:
+  - behavioral-governance
+  - live
+  - ai-tool
+- supabase_id: 86
+  slug: decision-rights-quick-map
+  name: Decision Rights Quick-Map
+  aliases: []
+  type: ai-tool
+  status: live
+  version: '0.1'
+  short_description: Eight-question diagnostic mapping AI decision authority. Outputs Decision Velocity score, Shadow AI Risk
+    rating, and Accountability Clarity. Browser-only, no data stored.
+  long_description: null
+  framework_mapping:
+    domain: behavioral-governance
+    pillar: 01-decision-rights
+    pillar_num: 1
+    pillar_name: Decision Rights
+  astro_url: /diagnostics/decision-rights-map
+  supabase:
+    table: diagnostic_responses
+    notes: ''
+  source: Original — Gibbons 2026
+  epistemic:
+    level: 1
+    label: Structured self-assessment artifact · Decision Rights dimension · v0.1
+  card_display:
+    pillar_label: BEHAVIORAL GOVERNANCE · DECISION RIGHTS
+    time: 5 min
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-04-26'
+    last_updated: '2026-05-05'
+    built: '2026-04-26'
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 273
+  tags:
+  - behavioral-governance
+  - live
+  - ai-tool
+- supabase_id: null
+  slug: adoption-friction-mapper
+  name: Adoption Friction Mapper
+  aliases: []
+  type: canvas
+  status: planned
+  version: null
+  short_description: Process-level tool that maps where users disengage in an AI adoption journey, where workarounds emerge,
+    and where value leaks. Combines user journey mapping with behavioural observation. Distinct from CMTO (id 22) which is
+    the four-factor diagnostic.
+  long_description: null
+  framework_mapping:
+    domain: change-agility
+    pillar: 06-prioritize-behavior
+    pillar_num: 6
+    pillar_name: Prioritize Behavior
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original — Gibbons 2026
+  epistemic:
+    level: 1
+    label: Original — Gibbons 2026 · Conceptual · v0.1
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-05-05'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 9001
+  tags:
+  - aspirational
+  - change-agility
+  - behaviour
+  - planned
+- supabase_id: null
+  slug: social-frictions-allies-assessment
+  name: Social Frictions-Allies Assessment
+  aliases:
+  - Stakeholder Influence Audit
+  type: assessment
+  status: planned
+  version: null
+  short_description: Behavioural mapping of stakeholder dynamics affecting AI adoption — who enables, who blocks, who is affected
+    but unheard. Pilot→prototype→scaling governance layer.
+  long_description: null
+  framework_mapping:
+    domain: behavioral-governance
+    pillar: null
+    pillar_num: null
+    pillar_name: null
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Adapted from canonical change-management stakeholder mapping; relocated to governance layer per Adaptive Adoption
+    synthesis
+  epistemic:
+    level: 1
+    label: Original synthesis — Gibbons 2026 · Conceptual · v0.1
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-05-05'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 9002
+  tags:
+  - aspirational
+  - behavioral-governance
+  - stakeholders
+  - planned
+- supabase_id: null
+  slug: conditions-audit
+  name: Conditions Audit
+  aliases: []
+  type: diagnostic
+  status: planned
+  version: null
+  short_description: Diagnostic assessing whether the six organisational conditions necessary for the Leadership Delta to
+    close are present. Sponsorship, reinforcement, structural enablers, peer norms, time/space, consequence alignment.
+  long_description: null
+  framework_mapping:
+    domain: leadership-delta
+    pillar: null
+    pillar_num: null
+    pillar_name: null
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Beer, Finnstrom & Schrader (2016); original Adaptive Adoption synthesis
+  epistemic:
+    level: 2
+    label: Research-grounded · Beer et al. 2016 · v0.1
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-05-05'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 9003
+  tags:
+  - aspirational
+  - leadership-delta
+  - organisational-conditions
+  - planned
+- supabase_id: null
+  slug: governance-dashboard
+  name: Governance Dashboard
+  aliases: []
+  type: scorecard
+  status: speculative
+  version: null
+  short_description: Board-level governance readout aggregating decision rights, agent authority, risk intelligence, and strategic
+    coherence into a single view.
+  long_description: null
+  framework_mapping:
+    domain: behavioral-governance
+    pillar: null
+    pillar_num: null
+    pillar_name: null
+  astro_url: null
+  supabase:
+    table: null
+    notes: ''
+  source: Original — Gibbons 2026
+  epistemic:
+    level: 1
+    label: Original — Gibbons 2026 · Conceptual · v0.1
+  card_display:
+    pillar_label: null
+    time: null
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools: []
+  dates:
+    created: '2026-05-05'
+    last_updated: '2026-05-05'
+    built: null
+    archived: null
+  archived_reason: null
+  aspirational_notes: Scope is broad — likely splits into 2-3 separate dashboards once defined. Speculative until decomposed.
+  sort_order: 9004
+  tags:
+  - speculative
+  - behavioral-governance
+  - dashboard
+  - board-level

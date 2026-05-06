@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://paulggibbons.github.io/adaptive_adoption/schemas/tools.schema.json",
+  "title": "Adaptive Adoption Tools Manifest Entry",
+  "description": "Validates a single entry in data/tools.yml (schema v1.1)",
+  "type": "object",
+  "required": ["slug", "name", "type", "status", "framework_mapping", "dates", "sort_order"],
+  "properties": {
+    "supabase_id": { "type": ["integer", "null"] },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "name": { "type": "string", "minLength": 1 },
+    "aliases": { "type": "array", "items": { "type": "string" } },
+    "type": {
+      "type": "string",
+      "enum": [
+        "diagnostic", "assessment", "canvas", "quick-diagnostic", "ai-tool",
+        "interactive-tool", "template", "checklist", "tracker", "workshop-tool", "scorecard"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["live", "build-next", "in-development", "planned", "speculative", "archived"]
+    },
+    "version": { "type": ["string", "null"] },
+    "short_description": { "type": ["string", "null"] },
+    "long_description": { "type": ["string", "null"] },
+    "framework_mapping": {
+      "type": "object",
+      "required": ["domain"],
+      "properties": {
+        "domain": {
+          "type": "string",
+          "enum": ["change-agility", "leadership-delta", "behavioral-governance", "cross-cutting"]
+        },
+        "pillar": {
+          "type": ["string", "null"],
+          "enum": [
+            null,
+            "01-master-the-craft", "02-embrace-complexity", "03-consciously-manage-trust",
+            "04-put-people-first", "05-design-and-prototype", "06-prioritize-behavior",
+            "07-manage-ethics-always",
+            "01-strategic-imagination", "02-active-modeling", "03-creative-cultivation",
+            "04-friction-courage", "05-trust-calibration", "06-ethical-stewardship",
+            "07-systems-orchestration",
+            "01-decision-rights", "02-agent-authority", "03-risk-intelligence",
+            "04-governance-intelligence", "05-first-derivative-talent", "06-strategic-coherence"
+          ]
+        },
+        "pillar_num": { "type": ["integer", "null"] },
+        "pillar_name": { "type": ["string", "null"] }
+      }
+    },
+    "astro_url": { "type": ["string", "null"] },
+    "supabase": {
+      "type": "object",
+      "properties": {
+        "table": { "type": ["string", "null"] },
+        "notes": { "type": "string" }
+      }
+    },
+    "source": { "type": ["string", "null"] },
+    "epistemic": {
+      "type": ["object", "null"],
+      "properties": {
+        "level": { "type": ["integer", "null"], "enum": [null, 1, 2, 3] },
+        "label": { "type": ["string", "null"] }
+      }
+    },
+    "card_display": {
+      "type": "object",
+      "properties": {
+        "pillar_label": { "type": ["string", "null"] },
+        "time": { "type": ["string", "null"] },
+        "is_greyed": { "type": "boolean" },
+        "greyed_pillar_label": { "type": ["string", "null"] },
+        "greyed_time": { "type": ["string", "null"] }
+      }
+    },
+    "related_tools": { "type": "array", "items": { "type": "string" } },
+    "dates": {
+      "type": "object",
+      "required": ["created", "last_updated"],
+      "properties": {
+        "created": { "type": "string" },
+        "last_updated": { "type": "string" },
+        "built": { "type": ["string", "null"] },
+        "archived": { "type": ["string", "null"] }
+      }
+    },
+    "archived_reason": { "type": ["string", "null"] },
+    "aspirational_notes": { "type": ["string", "null"] },
+    "sort_order": { "type": "integer" },
+    "tags": { "type": "array", "items": { "type": "string" } }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "status": { "const": "live" } }, "required": ["status"] },
+      "then": {
+        "required": ["astro_url"],
+        "properties": {
+          "astro_url": { "type": "string", "minLength": 1 },
+          "dates": {
+            "required": ["built"],
+            "properties": { "built": { "type": "string", "minLength": 1 } }
+          }
+        }
+      }
+    },
+    {
+      "if": { "properties": { "status": { "const": "archived" } }, "required": ["status"] },
+      "then": {
+        "required": ["archived_reason"],
+        "properties": {
+          "archived_reason": { "type": "string", "minLength": 1 },
+          "dates": {
+            "required": ["archived"],
+            "properties": { "archived": { "type": "string", "minLength": 1 } }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": { "enum": ["in-development", "planned", "speculative", "archived"] }
+        },
+        "required": ["status"]
+      },
+      "then": {
+        "properties": { "astro_url": { "type": "null" } }
+      }
+    }
+  ]
+}
