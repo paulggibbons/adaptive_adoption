@@ -3,6 +3,8 @@ name: Deploy MkDocs to GitHub Pages
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -15,7 +17,27 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  validate-manifests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r scripts/requirements.txt
+      - name: Validate tools.yml against schema
+        run: python scripts/validate_manifests.py
+      - name: Check live URLs resolve
+        id: url-check
+        continue-on-error: true
+        run: python scripts/check_live_urls.py
+      - name: Report URL failures
+        if: steps.url-check.outcome == 'failure'
+        run: echo "::warning::One or more live URLs failed health check. See log above."
+
   build:
+    needs: validate-manifests
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
