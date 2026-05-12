@@ -31,6 +31,57 @@ DATA_DIR = REPO_ROOT / "data"
 SCHEMAS_DIR = REPO_ROOT / "schemas"
 
 
+LIVE_REQUIRED_FIELDS = ("long_description", "hero_image", "hero_image_alt", "cta")
+RELATIONSHIP_ENUM = {"predecessor", "successor", "complementary", "see-also"}
+EMBED_TYPE_ENUM = {"iframe", "typeform", "google_form", "custom_html"}
+
+
+def check_v12_rules(entry: dict, all_slugs: set[str]) -> list[str]:
+    """v1.2 conditional checks not expressible in JSON Schema alone.
+
+    Lives here (not in the schema) so non-live entries can carry partial
+    data while live entries get the full strict treatment.
+    """
+    slug = entry.get("slug", "<no-slug>")
+    errs: list[str] = []
+
+    if entry.get("status") == "live":
+        for field in LIVE_REQUIRED_FIELDS:
+            if not entry.get(field):
+                errs.append(f"{slug}: status=live requires '{field}'")
+        cta = entry.get("cta") or {}
+        primary = cta.get("primary") if isinstance(cta, dict) else None
+        if not primary:
+            errs.append(f"{slug}: cta.primary is required for status=live")
+        elif not (primary.get("text") and primary.get("url")):
+            errs.append(f"{slug}: cta.primary needs both 'text' and 'url'")
+
+    for rel in entry.get("related_tools", []) or []:
+        ref = rel.get("slug") if isinstance(rel, dict) else None
+        if not ref:
+            errs.append(f"{slug}: related_tools entry missing 'slug'")
+            continue
+        if ref not in all_slugs:
+            errs.append(f"{slug}: related_tools references unknown slug {ref!r}")
+        relationship = rel.get("relationship")
+        if relationship not in RELATIONSHIP_ENUM:
+            errs.append(
+                f"{slug}: related_tools[{ref}] has invalid relationship {relationship!r}"
+            )
+
+    embed = entry.get("embed")
+    if isinstance(embed, dict):
+        etype = embed.get("type")
+        if etype not in EMBED_TYPE_ENUM:
+            errs.append(f"{slug}: invalid embed.type {etype!r}")
+        elif etype == "custom_html" and not embed.get("html"):
+            errs.append(f"{slug}: embed.type=custom_html requires 'html'")
+        elif etype in {"iframe", "typeform", "google_form"} and not embed.get("url"):
+            errs.append(f"{slug}: embed.type={etype} requires 'url'")
+
+    return errs
+
+
 def validate_manifest(manifest_path: Path, schema: dict) -> tuple[int, int]:
     """Validate one manifest. Returns (error_count, warning_count)."""
     with open(manifest_path, encoding="utf-8") as f:
@@ -44,17 +95,24 @@ def validate_manifest(manifest_path: Path, schema: dict) -> tuple[int, int]:
     validator = Draft202012Validator(schema)
     errors = []
     warnings = []
-    slugs = []
+    slugs = [
+        entry.get("slug", f"<no-slug id={entry.get('supabase_id', '?')}>")
+        for entry in tools
+    ]
+    all_slugs = set(slugs)
 
     for entry in tools:
         slug = entry.get("slug", f"<no-slug id={entry.get('supabase_id', '?')}>")
-        slugs.append(slug)
 
         for err in validator.iter_errors(entry):
             field = " → ".join(str(p) for p in err.absolute_path) or "(root)"
             msg = f"slug={slug!r} [{field}]: {err.message}"
             errors.append(msg)
             logger.error(f"FAIL {msg}")
+
+        for v12_err in check_v12_rules(entry, all_slugs):
+            errors.append(v12_err)
+            logger.error(f"FAIL {v12_err}")
 
         # Warn-only: PILLAR_UNMAPPED in aspirational_notes
         note = entry.get("aspirational_notes") or ""

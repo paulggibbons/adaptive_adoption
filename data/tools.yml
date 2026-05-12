@@ -10,13 +10,29 @@ tools:
   status: live
   version: '0.1'
   short_description: Flagship. 20 pillars, 6 maturity levels, 20-gon radar.
-  long_description: null
+  long_description: |-
+    Twenty pillars across three domains: Change Agility, Leadership Delta, and Behavioral Governance. For each pillar, select the description that best matches your organisation today — not aspirationally, but as enacted behaviour you can actually observe. Takes around 15–20 minutes. Results include a full radar profile, domain breakdown, and your highest-leverage intervention target.
   framework_mapping:
     domain: cross-cutting
     pillar: null
     pillar_num: 0
     pillar_name: All 20 Pillars
   astro_url: /diagnostics/aabi
+  hero_copy: How mature is your organisation's AI adoption — really?
+  hero_image: /images/aa-triptych.png
+  hero_image_alt: Adaptive Adoption triptych — Change Agility, Leadership Delta, and Behavioral Governance
+  cta:
+    primary:
+      text: Discuss your results with Paul
+      url: mailto:paul@paulgibbonsadvisory.com
+      style: primary
+    secondary:
+      text: All AI Tools
+      url: /diagnostics
+      style: secondary
+  attribution:
+  - Original framework © Paul Gibbons · Adaptive Adoption™
+  - Layer 1 self-report · Not a validated psychometric · v0.1
   supabase:
     table: diagnostic_responses
     notes: ''
@@ -53,13 +69,25 @@ tools:
   version: '0.5'
   short_description: 12 questions. Quick gateway diagnostic — Know/Do/Build × 4 levels. Lightweight introduction before the
     full 7-dimension AI Mastery Self-Assessment.
-  long_description: null
+  long_description: |-
+    12 questions across four mastery levels — User, Practitioner, Builder, Architect — each assessed on three dimensions: Know, Do, Build. Brutally honest answers only. Results appear after all 12 questions are answered.
   framework_mapping:
     domain: change-agility
     pillar: 01-master-the-craft
     pillar_num: 1
     pillar_name: Master the Craft
   astro_url: /diagnostics/ai-mastery
+  hero_copy: Where do you stand on AI adoption? 12 questions, four levels.
+  hero_image: /images/change-agility-diagram.png
+  hero_image_alt: Change Agility framework — seven pillars from Master the Craft through Manage Ethics Always
+  cta:
+    primary:
+      text: Want this for your team?
+      url: mailto:paul@paulgibbonsadvisory.com
+      style: primary
+  attribution:
+  - Original framework — Gibbons (2026)
+  - 'Adaptive Adoption™ — Pillar 1: Master the Craft · v0.5'
   supabase:
     table: diagnostic_responses
     notes: ''
@@ -300,13 +328,29 @@ tools:
   status: live
   version: '0.4'
   short_description: 7 questions, live quadrant reading, turbulence dial.
-  long_description: null
+  long_description: |-
+    Seven questions to diagnose which Cynefin domain your problem lives in — then a live reading that shifts with external turbulence. Based on Snowden & Boone's widely-cited framework for navigating complexity.
   framework_mapping:
     domain: change-agility
     pillar: 02-embrace-complexity
     pillar_num: 2
     pillar_name: Embrace Complexity
   astro_url: /diagnostics/cynefin
+  hero_copy: Is your system complex?
+  hero_image: /images/change-agility-diagram.png
+  hero_image_alt: Change Agility framework — seven pillars from Master the Craft through Manage Ethics Always
+  cta:
+    primary:
+      text: Discuss this with Paul
+      url: mailto:paul@paulgibbonsadvisory.com
+      style: primary
+    secondary:
+      text: All AI Tools
+      url: /diagnostics
+      style: secondary
+  attribution:
+  - Framework — Snowden & Boone (2007)
+  - Items original — Gibbons · v0.5
   supabase:
     table: diagnostic_responses
     notes: ''
@@ -629,13 +673,29 @@ tools:
   status: live
   version: null
   short_description: 15 statements across PERMA dimensions.
-  long_description: null
+  long_description: |-
+    Fifteen statements across five dimensions — Meaning, Engagement, Relationships, Excellence, and Positive Affect. Rate each 1–5. Takes about four minutes. Results are instant, private, and never stored.
   framework_mapping:
     domain: change-agility
     pillar: 04-put-people-first
     pillar_num: 4
     pillar_name: Put People First
   astro_url: /diagnostics/human-flourishing
+  hero_copy: Are you flourishing at work?
+  hero_image: /images/leadership-delta-diagram.png
+  hero_image_alt: Leadership Delta framework — seven dimensions of AI leadership posture
+  cta:
+    primary:
+      text: Discuss this with Paul
+      url: mailto:paul@paulgibbonsadvisory.com
+      style: primary
+    secondary:
+      text: All AI Tools
+      url: /diagnostics
+      style: secondary
+  attribution:
+  - Framework — Seligman PERMA (2011)
+  - Items © Paul Gibbons · Not a clinical instrument
   supabase:
     table: diagnostic_responses
     notes: ''
@@ -670,13 +730,29 @@ tools:
   status: live
   version: null
   short_description: 12 statements. Love/Good At/World Needs/Paid For.
-  long_description: null
+  long_description: |-
+    Twelve scored statements across four dimensions — what you Love, what you're Good At, what the World Needs, and what you can be Paid For. Where all four converge is your *ikigai*. Takes about three minutes.
   framework_mapping:
     domain: change-agility
     pillar: 04-put-people-first
     pillar_num: 4
     pillar_name: Put People First
   astro_url: /diagnostics/ikigai
+  hero_copy: What is your reason for being?
+  hero_image: /images/change-agility-diagram.png
+  hero_image_alt: Change Agility framework — seven pillars from Master the Craft through Manage Ethics Always
+  cta:
+    primary:
+      text: Discuss this with Paul
+      url: mailto:paul@paulgibbonsadvisory.com
+      style: primary
+    secondary:
+      text: All AI Tools
+      url: /diagnostics
+      style: secondary
+  attribution:
+  - Traditional framework — Japanese ikigai tradition
+  - Items © Paul Gibbons (Spirituality of Work and Leadership) · Reflective, not normative
   supabase:
     table: diagnostic_responses
     notes: ''
@@ -1617,13 +1693,29 @@ tools:
   short_description: A 21-question behavioral self-assessment across 7 dimensions — Civics, Metacognition, Ethics, Concepts,
     Skills, Creativity, and Orchestration. Produces a scored mastery profile with radar chart and downloadable development
     brief. Browser-only, no data stored.
-  long_description: null
+  long_description: |-
+    A 21-question behavioral self-assessment across 7 dimensions of AI mastery — from Civics and Ethics to Creativity and Orchestration. Each question describes four levels of practice. Choose the one that most honestly reflects how you actually work, not how you aspire to work. The output is a scored mastery profile with radar chart, dimension-by-dimension breakdown, and a downloadable development brief.
   framework_mapping:
     domain: change-agility
     pillar: 01-master-the-craft
     pillar_num: 1
     pillar_name: Master the Craft
   astro_url: /diagnostics/ai-mastery-assessment
+  hero_copy: AI literacy was 2025. Where are you on the path to AI Mastery?
+  hero_image: /images/change-agility-diagram.png
+  hero_image_alt: Change Agility framework — seven pillars from Master the Craft through Manage Ethics Always
+  cta:
+    primary:
+      text: Discuss your mastery profile with Paul
+      url: mailto:paul@paulgibbonsadvisory.com
+      style: primary
+    secondary:
+      text: All AI Tools
+      url: /diagnostics
+      style: secondary
+  attribution:
+  - Structured self-assessment · AI Mastery Framework
+  - Original — Gibbons (2026) · v0.1
   supabase:
     table: diagnostic_responses
     notes: ''
@@ -1782,13 +1874,29 @@ tools:
   version: '0.1'
   short_description: Portable, auditable AI context artifact. A guided interview produces downloadable Markdown, JSON, and
     an agent brief. Browser-only, no data stored in v0.
-  long_description: null
+  long_description: |-
+    A guided interview across 8 sections — identity, work, ideas, goals, voice, tools, agent instructions, and privacy. The output is a portable context artifact: a Markdown file, a JSON file, and a compact agent brief you can paste into any AI system. Nothing is stored. Everything downloads to you.
   framework_mapping:
     domain: leadership-delta
     pillar: 02-active-modeling
     pillar_num: 2
     pillar_name: Active Modeling
   astro_url: /diagnostics/personal-context-passport
+  hero_copy: Stop re-explaining yourself to every AI.
+  hero_image: /images/leadership-delta-diagram.png
+  hero_image_alt: Leadership Delta framework — seven dimensions of AI leadership posture
+  cta:
+    primary:
+      text: Discuss this with Paul
+      url: mailto:paul@paulgibbonsadvisory.com
+      style: primary
+    secondary:
+      text: All AI Tools
+      url: /diagnostics
+      style: secondary
+  attribution:
+  - Structured self-authored artifact · Not psychometric
+  - Original — Gibbons (2026) · v0.1
   supabase:
     table: diagnostic_responses
     notes: ''
@@ -2029,13 +2137,26 @@ tools:
   status: live
   version: '0.3'
   short_description: 20 questions, 10 dimensions.
-  long_description: null
+  long_description: |-
+    Ten dimensions of organizational climate that predict creative performance — nine positively correlated, one (Conflict) negatively. Rate each question on a 1–5 frequency scale. All questions are behavioral: they ask what you *do* or observe, not what you think or believe.
   framework_mapping:
     domain: leadership-delta
     pillar: 03-creative-cultivation
     pillar_num: 3
     pillar_name: Creative Cultivation
   astro_url: /diagnostics/creative-climate
+  hero_copy: Assess your organization's creative climate across 10 dimensions.
+  hero_image: /images/leadership-delta-diagram.png
+  hero_image_alt: Leadership Delta framework — seven dimensions of AI leadership posture
+  cta:
+    primary:
+      text: Want this for your team?
+      url: mailto:paul@paulgibbonsadvisory.com
+      style: primary
+  attribution:
+  - Based on Ekvall, G. (1996). Organizational climate for creativity and innovation. European Journal of Work and Organizational
+    Psychology, 5(1), 105–123.
+  - Questions adapted for behavioral framing · © Paul Gibbons Advisory · v0.3
   supabase:
     table: diagnostic_responses
     notes: ''
@@ -2318,13 +2439,25 @@ tools:
   status: live
   version: '0.3'
   short_description: 32 questions. Over/under-trust detection.
-  long_description: null
+  long_description: |-
+    Four dimensions of trust that predict successful AI adoption — all require calibration, not maximization. Trust exists on a spectrum: undertrust and overtrust are both failure modes. Rate each question on a 1–5 frequency scale. All questions are behavioral: they ask what you *do* or observe, not what you think or believe.
   framework_mapping:
     domain: leadership-delta
     pillar: 05-trust-calibration
     pillar_num: 5
     pillar_name: Trust Calibration
   astro_url: /diagnostics/rist-trust
+  hero_copy: Four dimensions of trust that predict successful AI adoption.
+  hero_image: /images/change-agility-diagram.png
+  hero_image_alt: Change Agility framework — seven pillars from Master the Craft through Manage Ethics Always
+  cta:
+    primary:
+      text: Want this for your team?
+      url: mailto:paul@paulgibbonsadvisory.com
+      style: primary
+  attribution:
+  - Gibbons, P. (2025). RIST Framework™, in Adopting AI.
+  - Original operationalization · Construct validation planned · v0.3
   supabase:
     table: diagnostic_responses
     notes: ''
@@ -2523,13 +2656,29 @@ tools:
   status: live
   version: null
   short_description: Map feedback loops. R and B loops auto-detected.
-  long_description: null
+  long_description: |-
+    Map feedback loops in your change system. Add variables, connect them, toggle polarity — Reinforcing (R) and Balancing (B) loops detected automatically.
   framework_mapping:
     domain: leadership-delta
     pillar: 07-systems-orchestration
     pillar_num: 7
     pillar_name: Systems Orchestration
   astro_url: /diagnostics/causal-loop
+  hero_copy: Map feedback loops. Reinforcing and Balancing loops detected automatically.
+  hero_image: /images/leadership-delta-diagram.png
+  hero_image_alt: Leadership Delta framework — seven dimensions of AI leadership posture
+  cta:
+    primary:
+      text: Discuss this with Paul
+      url: mailto:paul@paulgibbonsadvisory.com
+      style: primary
+    secondary:
+      text: All AI Tools
+      url: /diagnostics
+      style: secondary
+  attribution:
+  - Systems thinking tool — Meadows (2008)
+  - Educational / exploratory · Not a psychometric
   supabase:
     table: diagnostic_responses
     notes: ''
@@ -2730,13 +2879,29 @@ tools:
   short_description: Score one or up to 4 leadership teams across 7 Leadership Delta dimensions — 3 indicators each, 1-5 scale,
     total 105. Produces radar chart overlay, dimension bar chart, heat map, and downloadable reports per team plus cross-team
     comparison. Browser-only, no data stored.
-  long_description: null
+  long_description: |-
+    A consultant-grade diagnostic built on the Leadership Delta framework. Each of the 7 dimensions has 3 observable indicators scored 1–5. Total score out of 105. Designed for CAIOs, transformation leads, and advisors assessing one or multiple leadership teams side by side. Produces a radar chart comparison and downloadable reports per team and cross-team.
   framework_mapping:
     domain: leadership-delta
     pillar: null
     pillar_num: 3
     pillar_name: Adaptive Adoption
   astro_url: /diagnostics/leadership-delta-scoresheet
+  hero_copy: Score your leadership team's AI posture across 7 dimensions. Compare up to 4 teams.
+  hero_image: /images/leadership-delta-diagram.png
+  hero_image_alt: Leadership Delta framework — seven dimensions of AI leadership posture
+  cta:
+    primary:
+      text: Discuss this with Paul
+      url: mailto:paul@paulgibbonsadvisory.com
+      style: primary
+    secondary:
+      text: AI Mastery Assessment
+      url: /diagnostics/ai-mastery-assessment
+      style: secondary
+  attribution:
+  - Consultant-grade diagnostic · AI Leadership Delta™
+  - Original — Gibbons (2026) · v0.1
   supabase:
     table: diagnostic_responses
     notes: ''
@@ -3559,13 +3724,29 @@ tools:
   short_description: Six-dimension diagnostic measuring the gap between governance policy and governance practice. Traffic-light
     scoring across Decision Rights, Agent Authority, Risk Intelligence, Governance Intelligence, 1st-Derivative Talent, and
     Strategic Coherence. Outputs a board briefing, full report, and JSON.
-  long_description: null
+  long_description: |-
+    A 6-dimension diagnostic built on the Three-Layer Assessment Protocol — Self-Report, Evidence, and Behavioral Observation. The gap between layers 1 and 3 is the Enacted Gap: the governance maturity signal that lives in behavior, not in binders.
   framework_mapping:
     domain: behavioral-governance
     pillar: 04-governance-intelligence
     pillar_num: 4
     pillar_name: Governance Intelligence
   astro_url: /diagnostics/governance-gap-finder
+  hero_copy: Where are the gaps between your governance policies and practice?
+  hero_image: /images/behavioral-governance-diagram.png
+  hero_image_alt: Behavioral Governance framework — six dimensions including Decision Rights and Governance Intelligence
+  cta:
+    primary:
+      text: Discuss this with Paul
+      url: mailto:paul@paulgibbonsadvisory.com
+      style: primary
+    secondary:
+      text: All AI Tools
+      url: /diagnostics
+      style: secondary
+  attribution:
+  - Structured self-assessment artifact · Three-Layer Protocol
+  - Original — Gibbons (2026) · v0.1
   supabase:
     table: diagnostic_responses
     notes: ''
@@ -3601,13 +3782,29 @@ tools:
   version: '0.1'
   short_description: Eight-question diagnostic mapping AI decision authority. Outputs Decision Velocity score, Shadow AI Risk
     rating, and Accountability Clarity. Browser-only, no data stored.
-  long_description: null
+  long_description: |-
+    Eight questions about AI decision authority. The output is a structured Decision Rights Map — showing who has authority over what, your Decision Velocity score, and your Shadow AI Risk rating. If the approval path takes longer than a sprint cycle, people will build in the dark.
   framework_mapping:
     domain: behavioral-governance
     pillar: 01-decision-rights
     pillar_num: 1
     pillar_name: Decision Rights
   astro_url: /diagnostics/decision-rights-map
+  hero_copy: Who can say yes to AI in your organization? Map it in 5 minutes.
+  hero_image: /images/behavioral-governance-diagram.png
+  hero_image_alt: Behavioral Governance framework — six dimensions including Decision Rights and Governance Intelligence
+  cta:
+    primary:
+      text: Discuss this with Paul
+      url: mailto:paul@paulgibbonsadvisory.com
+      style: primary
+    secondary:
+      text: Full Gap Finder
+      url: /diagnostics/governance-gap-finder
+      style: secondary
+  attribution:
+  - Structured self-assessment artifact · Decision Rights dimension
+  - Original — Gibbons (2026) · v0.1
   supabase:
     table: diagnostic_responses
     notes: ''
