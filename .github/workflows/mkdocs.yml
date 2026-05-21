@@ -27,6 +27,8 @@ jobs:
       - run: pip install -r scripts/requirements.txt
       - name: Validate tools.yml against schema
         run: python scripts/validate_manifests.py
+      - name: Pressure-test the validator (29 stress tests)
+        run: python scripts/pressure_test_manifest.py
       - name: Check live URLs resolve
         id: url-check
         continue-on-error: true
