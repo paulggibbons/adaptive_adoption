@@ -76,7 +76,8 @@ PATCHES: dict[str, dict] = {
             "all 12 questions are answered."
         ),
         # NOTE: source page has placeholder href="#" primary; mailto from
-        # "Want this for your team?" used until GitBook URL is filled in.
+        # "Want this for your team?" used until MkDocs Master the Craft
+        # pillar URL is filled in.
         "cta": {
             "primary": {"text": "Want this for your team?", "url": MAILTO, "style": "primary"},
         },
@@ -196,7 +197,7 @@ PATCHES: dict[str, dict] = {
             "not what you think or believe."
         ),
         # NOTE: source page has placeholder href="#" primary; mailto used
-        # until GitBook Creative Cultivation pillar URL is filled in.
+        # until MkDocs Creative Cultivation pillar URL is filled in.
         "cta": {
             "primary": {"text": "Want this for your team?", "url": MAILTO, "style": "primary"},
         },
@@ -218,7 +219,7 @@ PATCHES: dict[str, dict] = {
             "think or believe."
         ),
         # NOTE: source page has placeholder href="#" primary; mailto used
-        # until GitBook Trust Calibration pillar URL is filled in.
+        # until MkDocs Trust Calibration pillar URL is filled in.
         "cta": {
             "primary": {"text": "Want this for your team?", "url": MAILTO, "style": "primary"},
         },
