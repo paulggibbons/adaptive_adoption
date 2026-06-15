@@ -4006,3 +4006,186 @@ tools:
   - behavioral-governance
   - dashboard
   - board-level
+- supabase_id: 89
+  slug: leadership-delta-self
+  name: Leadership Delta — Assess Yourself
+  aliases: []
+  type: diagnostic
+  status: in-development
+  version: '0.1'
+  short_description: Six brutally hard questions on leading AI — where the obvious answer is wrong.
+  long_description: |-
+    Six questions on the leadership of AI, written so the obvious answer is wrong and the distractors are the defensible-but-wrong picks a smart executive actually makes. It is not a knowledge quiz — it is a humility check. Answer honestly, hold the reveal to the end, and you will get a sharp read of where your own AI-leadership judgement actually stands, plus a tailored recommendation in Paul's voice. Takes about 5 minutes.
+  framework_mapping:
+    domain: leadership-delta
+    pillar: null
+    pillar_num: 0
+    pillar_name: Leadership Delta
+  astro_url: /diagnostics/leadership-delta-self
+  hero_copy: How sharp is your judgement about leading AI — really?
+  cta:
+    primary:
+      text: Discuss your result with Paul
+      url: mailto:paul@paulgibbonsadvisory.com
+      style: primary
+    secondary:
+      text: All AI Tools
+      url: /diagnostics
+      style: secondary
+  attribution:
+  - Original framework © Paul Gibbons · Leadership Delta™
+  - Layer 1 self-report · Not a validated psychometric · v0.1
+  supabase:
+    table: diagnostic_responses
+    notes: ''
+  source: Original — Gibbons 2026
+  epistemic:
+    level: 2
+    label: Original framework © Paul Gibbons · Leadership Delta™ · Layer 1 self-report · v0.1
+  card_display:
+    pillar_label: LEADERSHIP DELTA · SELF
+    time: 5 min
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools:
+  - slug: leadership-delta-team
+    relationship: complementary
+    label: Assess your team
+  - slug: leadership-delta-org
+    relationship: complementary
+    label: Assess your organisation
+  dates:
+    created: '2026-06-14'
+    last_updated: '2026-06-14'
+    built: '2026-06-14'
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 141
+  tags:
+  - leadership-delta
+  - in-development
+  - diagnostic
+- supabase_id: 90
+  slug: leadership-delta-team
+  name: Leadership Delta — Assess Your Team
+  aliases: []
+  type: diagnostic
+  status: in-development
+  version: '0.1'
+  short_description: Six brutally hard questions on how your team leads AI — where the obvious answer is wrong.
+  long_description: |-
+    Six questions on how your team leads AI, written so the obvious answer is wrong and the distractors are the defensible-but-wrong picks a capable team actually makes. It is not a knowledge quiz — it is a humility check. Answer honestly, hold the reveal to the end, and you will get a sharp read of where your team's AI-leadership judgement stands, plus a tailored recommendation in Paul's voice. Takes about 5 minutes.
+  framework_mapping:
+    domain: leadership-delta
+    pillar: null
+    pillar_num: 0
+    pillar_name: Leadership Delta
+  astro_url: /diagnostics/leadership-delta-team
+  hero_copy: How sharp is your team's judgement about leading AI — really?
+  cta:
+    primary:
+      text: Discuss your result with Paul
+      url: mailto:paul@paulgibbonsadvisory.com
+      style: primary
+    secondary:
+      text: All AI Tools
+      url: /diagnostics
+      style: secondary
+  attribution:
+  - Original framework © Paul Gibbons · Leadership Delta™
+  - Layer 1 self-report · Not a validated psychometric · v0.1
+  supabase:
+    table: diagnostic_responses
+    notes: ''
+  source: Original — Gibbons 2026
+  epistemic:
+    level: 2
+    label: Original framework © Paul Gibbons · Leadership Delta™ · Layer 1 self-report · v0.1
+  card_display:
+    pillar_label: LEADERSHIP DELTA · TEAM
+    time: 5 min
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools:
+  - slug: leadership-delta-self
+    relationship: complementary
+    label: Assess yourself
+  - slug: leadership-delta-org
+    relationship: complementary
+    label: Assess your organisation
+  dates:
+    created: '2026-06-14'
+    last_updated: '2026-06-14'
+    built: '2026-06-14'
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 142
+  tags:
+  - leadership-delta
+  - in-development
+  - diagnostic
+- supabase_id: 91
+  slug: leadership-delta-org
+  name: Leadership Delta — Assess Your Organisation
+  aliases: []
+  type: diagnostic
+  status: in-development
+  version: '0.1'
+  short_description: Six brutally hard questions on how your organisation leads AI — where the obvious answer is wrong.
+  long_description: |-
+    Six questions on how your organisation leads AI, written so the obvious answer is wrong and the distractors are the defensible-but-wrong picks a serious organisation actually makes. It is not a knowledge quiz — it is a humility check. Answer honestly, hold the reveal to the end, and you will get a sharp read of where your organisation's AI-leadership posture stands, plus a tailored recommendation in Paul's voice. Takes about 5 minutes.
+  framework_mapping:
+    domain: leadership-delta
+    pillar: null
+    pillar_num: 0
+    pillar_name: Leadership Delta
+  astro_url: /diagnostics/leadership-delta-org
+  hero_copy: How sharp is your organisation's judgement about leading AI — really?
+  cta:
+    primary:
+      text: Discuss your result with Paul
+      url: mailto:paul@paulgibbonsadvisory.com
+      style: primary
+    secondary:
+      text: All AI Tools
+      url: /diagnostics
+      style: secondary
+  attribution:
+  - Original framework © Paul Gibbons · Leadership Delta™
+  - Layer 1 self-report · Not a validated psychometric · v0.1
+  supabase:
+    table: diagnostic_responses
+    notes: ''
+  source: Original — Gibbons 2026
+  epistemic:
+    level: 2
+    label: Original framework © Paul Gibbons · Leadership Delta™ · Layer 1 self-report · v0.1
+  card_display:
+    pillar_label: LEADERSHIP DELTA · ORG
+    time: 5 min
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools:
+  - slug: leadership-delta-self
+    relationship: complementary
+    label: Assess yourself
+  - slug: leadership-delta-team
+    relationship: complementary
+    label: Assess your team
+  dates:
+    created: '2026-06-14'
+    last_updated: '2026-06-14'
+    built: '2026-06-14'
+    archived: null
+  archived_reason: null
+  aspirational_notes: null
+  sort_order: 143
+  tags:
+  - leadership-delta
+  - in-development
+  - diagnostic
