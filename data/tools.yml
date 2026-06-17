@@ -83,7 +83,7 @@ tools:
   cta:
     primary:
       text: Want this for your team?
-      url: mailto:paul@paulgibbonsadvisory.com
+      url: https://paulggibbons.github.io/adaptive_adoption/change-agility/pillars/01-master-the-craft/
       style: primary
   attribution:
   - Original framework — Gibbons (2026)
@@ -2151,7 +2151,7 @@ tools:
   cta:
     primary:
       text: Want this for your team?
-      url: mailto:paul@paulgibbonsadvisory.com
+      url: https://paulggibbons.github.io/adaptive_adoption/leadership-delta/pillars/03-creative-cultivation/
       style: primary
   attribution:
   - Based on Ekvall, G. (1996). Organizational climate for creativity and innovation. European Journal of Work and Organizational
@@ -2453,7 +2453,7 @@ tools:
   cta:
     primary:
       text: Want this for your team?
-      url: mailto:paul@paulgibbonsadvisory.com
+      url: https://paulggibbons.github.io/adaptive_adoption/leadership-delta/pillars/05-trust-calibration/
       style: primary
   attribution:
   - Gibbons, P. (2025). RIST Framework™, in Adopting AI.
