@@ -409,6 +409,88 @@ def transform_row(row: dict) -> dict:
 
 
 # ──────────────────────────────────────────────────────────────────────────────
+# Enrichment-preserving merge — added 2026-07-03.
+# Supabase owns identity/classification/card fields; the manifest carries
+# hand-enriched fields (hero images, CTAs, long descriptions, related tools…)
+# that Supabase has no columns for. A wholesale regeneration used to delete
+# them (~490 lines on 2026-07-03). Now: transform Supabase rows as before,
+# then merge each entry against the existing manifest so yml-only fields
+# survive, and preserve manifest-only entries the script doesn't know about.
+# ──────────────────────────────────────────────────────────────────────────────
+_EMPTY = (None, "", [], {})
+
+# yml-only fields Supabase cannot repopulate — keep the manifest's value
+# whenever the freshly transformed entry has nothing for it.
+ENRICH_FIELDS = [
+    "aliases", "version", "long_description", "hero_copy", "hero_image",
+    "hero_image_alt", "cta", "embed", "attribution", "related_tools",
+    "archived_reason", "aspirational_notes",
+]
+
+# Canonical key order (matches the committed manifest) so merged-in keys
+# don't churn the diff by landing at the end of each entry.
+KEY_ORDER = [
+    "supabase_id", "slug", "name", "aliases", "type", "status", "version",
+    "short_description", "long_description", "framework_mapping", "astro_url",
+    "hero_copy", "hero_image", "hero_image_alt", "cta", "embed", "attribution",
+    "supabase", "source", "epistemic", "card_display", "related_tools",
+    "dates", "archived_reason", "aspirational_notes", "sort_order", "tags",
+]
+
+
+def load_existing_manifest(path: Path):
+    """Existing manifest indexed by supabase_id and slug, plus the raw list."""
+    if not path.exists():
+        return {}, {}, [], None
+    try:
+        data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    except yaml.YAMLError as exc:
+        logger.error(f"Existing manifest unparseable ({exc}) — aborting rather than clobbering it.")
+        sys.exit(1)
+    tools = data.get("tools") or []
+    by_id = {t["supabase_id"]: t for t in tools if t.get("supabase_id") is not None}
+    by_slug = {t["slug"]: t for t in tools if t.get("slug")}
+    return by_id, by_slug, tools, data.get("schema_version")
+
+
+def merge_enrichment(new: dict, old: dict | None) -> dict:
+    """Fill yml-only fields from the existing entry; Supabase-owned fields win."""
+    if not old:
+        return new
+    if old.get("slug"):
+        new["slug"] = old["slug"]  # hand-set slugs are stable identifiers
+    for field in ENRICH_FIELDS:
+        if new.get(field) in _EMPTY and old.get(field) not in _EMPTY:
+            new[field] = old[field]
+    old_sb, new_sb = old.get("supabase") or {}, new.get("supabase") or {}
+    for k in ("table", "notes"):
+        if new_sb.get(k) in _EMPTY and old_sb.get(k) not in _EMPTY:
+            new_sb[k] = old_sb[k]
+    new["supabase"] = new_sb
+    old_dates, new_dates = old.get("dates") or {}, new.get("dates") or {}
+    if old_dates.get("created"):
+        new_dates["created"] = old_dates["created"]
+    if new_dates.get("built") in _EMPTY and old_dates.get("built") not in _EMPTY:
+        new_dates["built"] = old_dates["built"]
+    new["dates"] = new_dates
+    # Don't stamp last_updated on entries that didn't actually change.
+    if old_dates.get("last_updated"):
+        def _cmp(e):
+            c = {k: v for k, v in e.items() if k != "dates"}
+            c["dates"] = {k: v for k, v in (e.get("dates") or {}).items() if k != "last_updated"}
+            return c
+        if _cmp(new) == _cmp(old):
+            new_dates["last_updated"] = old_dates["last_updated"]
+    return new
+
+
+def order_keys(entry: dict) -> dict:
+    ordered = {k: entry[k] for k in KEY_ORDER if k in entry}
+    ordered.update({k: v for k, v in entry.items() if k not in KEY_ORDER})
+    return ordered
+
+
+# ──────────────────────────────────────────────────────────────────────────────
 # YAML output helpers — preserve insertion order, use literal block for multiline
 # ──────────────────────────────────────────────────────────────────────────────
 class _LiteralStr(str):
@@ -441,12 +523,18 @@ def main():
 
     rows = get_supabase_rows()
 
+    manifest_path = REPO_ROOT / "data" / "tools.yml"
+    old_by_id, old_by_slug, old_tools, old_schema_version = load_existing_manifest(manifest_path)
+    if old_tools:
+        logger.info(f"Merging against existing manifest ({len(old_tools)} entries) — enrichment fields preserved")
+
     entries = []
     slug_set: set[str] = set()
     pillar_unmapped: list[tuple] = []
 
     for row in rows:
         entry = transform_row(row)
+        entry = merge_enrichment(entry, old_by_id.get(row["id"]) or old_by_slug.get(entry["slug"]))
         slug = entry["slug"]
 
         if slug in slug_set:
@@ -464,17 +552,31 @@ def main():
 
     logger.info(f"Transformed {len(entries)} Supabase entries")
 
-    # Append aspirational entries
+    # Append aspirational entries (merged too — they may carry hand edits)
     asp_added = 0
     for asp in ASPIRATIONAL_ENTRIES:
         if asp["slug"] in slug_set:
             logger.warning(f"Aspirational slug {asp['slug']!r} conflicts with Supabase entry — skipping")
             continue
         slug_set.add(asp["slug"])
-        entries.append(asp)
+        entries.append(merge_enrichment(dict(asp), old_by_slug.get(asp["slug"])))
         asp_added += 1
 
     logger.info(f"Appended {asp_added} aspirational entries → {len(entries)} total")
+
+    # Preserve manifest-only entries the script doesn't know about
+    # (hand-added before their Supabase row exists, or removed rows kept for history).
+    preserved = 0
+    for t in old_tools:
+        if t.get("slug") and t["slug"] not in slug_set:
+            logger.warning(f"MANIFEST_ONLY entry preserved: slug={t['slug']!r} (no Supabase row, not in ASPIRATIONAL_ENTRIES)")
+            slug_set.add(t["slug"])
+            entries.append(t)
+            preserved += 1
+    if preserved:
+        logger.info(f"Preserved {preserved} manifest-only entries → {len(entries)} total")
+
+    entries = [order_keys(e) for e in entries]
 
     if pillar_unmapped:
         count = len(pillar_unmapped)
@@ -495,7 +597,7 @@ def main():
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     manifest = {
-        "schema_version": "1.1.0",
+        "schema_version": old_schema_version or "1.1.0",
         "last_updated": TODAY,
         "generator": "scripts/seed_tools.py",
         "tools": [_prep(e) for e in entries],

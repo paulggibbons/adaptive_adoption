@@ -4011,7 +4011,7 @@ tools:
   name: Leadership Delta — Assess Yourself
   aliases: []
   type: diagnostic
-  status: in-development
+  status: live
   version: '0.1'
   short_description: Six brutally hard questions on leading AI — where the obvious answer is wrong.
   long_description: |-
@@ -4023,6 +4023,8 @@ tools:
     pillar_name: Leadership Delta
   astro_url: /diagnostics/leadership-delta-self
   hero_copy: How sharp is your judgement about leading AI — really?
+  hero_image: /images/leadership-delta-diagram.png
+  hero_image_alt: Leadership Delta framework — seven dimensions of AI leadership posture
   cta:
     primary:
       text: Discuss your result with Paul
@@ -4065,14 +4067,14 @@ tools:
   sort_order: 141
   tags:
   - leadership-delta
-  - in-development
+  - live
   - diagnostic
 - supabase_id: 90
   slug: leadership-delta-team
   name: Leadership Delta — Assess Your Team
   aliases: []
   type: diagnostic
-  status: in-development
+  status: live
   version: '0.1'
   short_description: Six brutally hard questions on how your team leads AI — where the obvious answer is wrong.
   long_description: |-
@@ -4084,6 +4086,8 @@ tools:
     pillar_name: Leadership Delta
   astro_url: /diagnostics/leadership-delta-team
   hero_copy: How sharp is your team's judgement about leading AI — really?
+  hero_image: /images/leadership-delta-diagram.png
+  hero_image_alt: Leadership Delta framework — seven dimensions of AI leadership posture
   cta:
     primary:
       text: Discuss your result with Paul
@@ -4126,14 +4130,14 @@ tools:
   sort_order: 142
   tags:
   - leadership-delta
-  - in-development
+  - live
   - diagnostic
 - supabase_id: 91
   slug: leadership-delta-org
   name: Leadership Delta — Assess Your Organisation
   aliases: []
   type: diagnostic
-  status: in-development
+  status: live
   version: '0.1'
   short_description: Six brutally hard questions on how your organisation leads AI — where the obvious answer is wrong.
   long_description: |-
@@ -4145,6 +4149,8 @@ tools:
     pillar_name: Leadership Delta
   astro_url: /diagnostics/leadership-delta-org
   hero_copy: How sharp is your organisation's judgement about leading AI — really?
+  hero_image: /images/leadership-delta-diagram.png
+  hero_image_alt: Leadership Delta framework — seven dimensions of AI leadership posture
   cta:
     primary:
       text: Discuss your result with Paul
@@ -4187,5 +4193,58 @@ tools:
   sort_order: 143
   tags:
   - leadership-delta
-  - in-development
+  - live
   - diagnostic
+- supabase_id: 92
+  slug: leadership-delta-onboarding
+  name: Leadership Delta — Participant Onboarding (Setup Concierge)
+  aliases: []
+  type: interactive-tool
+  status: in-development
+  version: '0.1'
+  short_description: Cohort-one setup concierge — participants arrive at Session 1 ready to build, not configure.
+  long_description: |-
+    Participant onboarding app for the Leadership Delta live cohort. Four-pillar contract (intentions, method, what to expect, what is expected), tech-stack questionnaire with green/amber/red readiness triage into Attio, guided Obsidian + Codex/Cowork setup with short videos and "you are done when" checklists, and a client-side personal-context wizard that generates the participant's seven vault context files. Roughly 45 minutes; progress saves locally so participants can leave and resume.
+  framework_mapping:
+    domain: leadership-delta
+    pillar: null
+    pillar_num: 0
+    pillar_name: Leadership Delta
+  astro_url: null
+  hero_copy: Build your AI Chief of Staff dashboard.
+  cta:
+    primary:
+      text: Questions before Session 1? Email Paul
+      url: mailto:paul@paulgibbonsadvisory.com
+      style: primary
+  attribution:
+  - Original programme © Paul Gibbons · Leadership Delta™
+  supabase:
+    table: none — questionnaire enriches Attio via /api/onboarding; personal context never leaves the browser
+    notes: ''
+  source: Original — Gibbons 2026
+  epistemic:
+    level: 2
+    label: Original programme © Paul Gibbons · Leadership Delta™ · v0.1
+  card_display:
+    pillar_label: LEADERSHIP DELTA · ONBOARDING
+    time: 45 min
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
+  related_tools:
+  - slug: leadership-delta-self
+    relationship: complementary
+    label: The diagnostic participants take first
+  dates:
+    created: '2026-07-03'
+    last_updated: '2026-07-03'
+    built: '2026-07-03'
+    archived: null
+  archived_reason: null
+  aspirational_notes: UNLISTED participant-only app — ships at /leadership-delta/onboarding on the PGA site (noindex, out of sitemap and nav). Never surface on the public tools hub, even when live. astro_url deliberately null to keep it out of public manifest consumers.
+  sort_order: 144
+  tags:
+  - leadership-delta
+  - in-development
+  - interactive-tool
