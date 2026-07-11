@@ -14,6 +14,8 @@
 
 **→ [Visuals and Presentations](visuals-and-presentations/)** — Diagrams, decks, model card gallery
 
+**→ [Diagnostics System Documentation](docs/README.md)** — Master architecture, Supabase schema, tool-build protocol, operations, and decisions
+
 ---
 
 ## The Three Disciplines
