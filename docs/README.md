@@ -15,10 +15,11 @@ This directory is the operating documentation for the PGA diagnostics and AI-too
 1. **[SYSTEM-OVERVIEW.md](SYSTEM-OVERVIEW.md)** — the master map: system boundaries, systems of record, end-to-end flow, and where to make changes.
 2. **[ARCHITECTURE.md](ARCHITECTURE.md)** — detailed two-repository manifest and deployment architecture.
 3. **[SUPABASE-SCHEMA.md](SUPABASE-SCHEMA.md)** — current database tables, RLS policies, RPCs, and diagnostic data flow.
-4. **[TOOL-BUILD-PROTOCOL.md](TOOL-BUILD-PROTOCOL.md)** — practical protocol for adding scored diagnostics, self-scored assessments, interactive tools, canvases, and generators.
-5. **[OPERATIONS.md](OPERATIONS.md)** — publish, edit, deprecate, validate, rebuild, and roll back.
-6. **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)** — known failure modes and fixes.
-7. **[DECISIONS.md](DECISIONS.md)** — architectural decisions, their rationale, consequences, and revisit conditions.
+4. **[EVIDENCE-SCALES.md](EVIDENCE-SCALES.md)** — the five-level epistemic-strength scale for tools and the separate three-layer behavioral-evidence scale.
+5. **[TOOL-BUILD-PROTOCOL.md](TOOL-BUILD-PROTOCOL.md)** — practical protocol for adding scored diagnostics, self-scored assessments, interactive tools, canvases, and generators.
+6. **[OPERATIONS.md](OPERATIONS.md)** — publish, edit, deprecate, validate, rebuild, and roll back.
+7. **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)** — known failure modes and fixes.
+8. **[DECISIONS.md](DECISIONS.md)** — architectural decisions, their rationale, consequences, and revisit conditions.
 
 ## Authority rule
 
@@ -35,7 +36,8 @@ Any change to one of the following must update the relevant document in this dir
 - tool lifecycle/status rules
 - website diagnostic layout or renderer behavior
 - response collection, benchmark logic, or privacy policy
+- evidence-scale definitions
 - deployment and rollback process
 - source-of-truth responsibilities
 
-When documents disagree, treat the disagreement as a defect. Resolve it explicitly in the next pull request rather than choosing whichever file is convenient.
+When documents disagree, treat the disagreement as a defect and resolve it explicitly.
