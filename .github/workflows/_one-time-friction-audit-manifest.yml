@@ -1,0 +1,34 @@
+name: One-time friction audit manifest update
+
+on:
+  push:
+    branches:
+      - product/ai-adoption-friction-suite
+    paths:
+      - scripts/_one_time_add_friction_audit.py
+      - .github/workflows/_one-time-friction-audit-manifest.yml
+
+permissions:
+  contents: write
+
+jobs:
+  update-manifest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: product/ai-adoption-friction-suite
+          fetch-depth: 0
+      - name: Append Audit manifest entry
+        run: python scripts/_one_time_add_friction_audit.py
+      - name: Commit generated manifest
+        run: |
+          if git diff --quiet -- data/tools.yml; then
+            echo "Manifest already up to date"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/tools.yml
+          git commit -m "manifest: add AI Adoption Friction Audit"
+          git push origin HEAD:product/ai-adoption-friction-suite
