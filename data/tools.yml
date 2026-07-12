@@ -4254,7 +4254,7 @@ tools:
   aliases:
   - Adaptive Adoption Friction Audit
   type: diagnostic
-  status: in-development
+  status: live
   version: '0.1'
   short_description: Diagnose why one specific AI initiative is stuck and identify the friction that matters most.
   long_description: |-
@@ -4264,16 +4264,25 @@ tools:
     pillar: null
     pillar_num: 0
     pillar_name: AI Adoption Friction Suite
-  astro_url: null
+  astro_url: /diagnostics/ai-adoption-friction-audit
   hero_copy: Diagnose what is blocking one AI initiative from producing real organisational value.
   hero_image: /images/aa-triptych.png
   hero_image_alt: Adaptive Adoption framework spanning Change Agility, Leadership Delta, and Behavioral Governance
+  cta:
+    primary:
+      text: Take the Audit
+      url: /diagnostics/ai-adoption-friction-audit
+      style: primary
+    secondary:
+      text: Explore Adaptive Adoption
+      url: /adaptive-adoption
+      style: secondary
   attribution:
   - Original framework © Paul Gibbons · Adaptive Adoption™
   - Epistemic Level 1 conceptual tool · Behavioral evidence Layer 1 self-report · v0.1
   supabase:
-    table: diagnostic_responses
-    notes: Response capture disabled in the initial website release pending a versioned response schema and slug migration.
+    table: null
+    notes: Version 0.1 is local-only; answers remain in browser localStorage and are not transmitted.
   source: Original — Gibbons 2026
   epistemic:
     level: 1
@@ -4281,9 +4290,9 @@ tools:
   card_display:
     pillar_label: AI ADOPTION FRICTION SUITE
     time: 12–15 min
-    is_greyed: true
-    greyed_pillar_label: AI ADOPTION FRICTION SUITE
-    greyed_time: In development
+    is_greyed: false
+    greyed_pillar_label: null
+    greyed_time: null
   related_tools:
   - slug: adoption-friction-mapper
     relationship: successor
@@ -4291,14 +4300,14 @@ tools:
   dates:
     created: '2026-07-11'
     last_updated: '2026-07-11'
-    built: null
+    built: '2026-07-11'
     archived: null
   archived_reason: null
   aspirational_notes: First tool in the AI Adoption Friction Suite; Mapper and 90-Day Intervention Planner follow.
   sort_order: 2
   tags:
   - cross-cutting
-  - in-development
+  - live
   - diagnostic
   - ai-adoption
   - friction-suite
