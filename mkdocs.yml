@@ -50,7 +50,7 @@ nav:
   - Foundations:
     - Why This Framework: foundations/conditions-that-dont-hold.md
     - Six Unprecedented Conditions: foundations/six-unprecedented-conditions.md
-  - Change Agility — The Flywheel:
+  - Change Agility:
     - Overview: change-agility/index.md
     - Theory:
       - Philosophical Foundations: change-agility/theory/philosophical-foundations.md
@@ -66,7 +66,7 @@ nav:
       - AAMI Structure: change-agility/diagnostics/AA_MI_structure.md
     - Tools:
       - Tools Overview: change-agility/tools/index.md
-  - Leadership Delta — The Torque:
+  - Leadership Delta:
     - Overview: leadership-delta/index.md
     - Dimensions:
       - D1 — Strategic Imagination: leadership-delta/pillars/01-strategic-imagination.md
@@ -79,7 +79,7 @@ nav:
     - Tools:
       - Tools Overview: leadership-delta/tools/index.md
       - Conditions Audit: leadership-delta/tools/conditions-audit.md
-  - Behavioral Governance — The Guardrails:
+  - Governance:
     - Overview: behavioral-governance/index.md
     - Theory:
       - Governance Framework: behavioral-governance/theory/governance-framework.md

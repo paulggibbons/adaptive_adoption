@@ -36,6 +36,9 @@
 }
 
 .md-header {
+  --md-primary-bg-color: var(--aa-cream);
+  --md-primary-bg-color--light: var(--aa-cream-dim);
+  color: var(--aa-cream);
   background: var(--aa-chocolate-mid) !important;
   border-bottom: 1px solid rgba(224, 184, 74, 0.2);
 }
