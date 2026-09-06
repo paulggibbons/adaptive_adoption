@@ -1,3 +1,5 @@
+> **Earlier supporting draft.** For the current website-synchronized wording, read [06-ethical-stewardship](../06-ethical-stewardship.md).
+
 ---
 title: Ethical Stewardship
 discipline: Leadership Delta

@@ -1,3 +1,5 @@
+> **Earlier supporting draft.** For the current website-synchronized wording, read [01-strategic-imagination](../01-strategic-imagination.md).
+
 ---
 title: Strategic Imagination
 discipline: Leadership Delta

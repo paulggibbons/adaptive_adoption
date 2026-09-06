@@ -1,3 +1,5 @@
+> **Earlier supporting draft.** For the current website-synchronized wording, read [02-embrace-complexity](../02-embrace-complexity.md).
+
 ---
 title: Embrace Complexity
 discipline: Change Agility

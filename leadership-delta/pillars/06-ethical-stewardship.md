@@ -1,49 +1,41 @@
-!!! warning "v0.8 — Working Draft"
-    This page is under active development. Content is directionally accurate but subject to revision.
-    [Suggest an edit →](https://github.com/paulggibbons/adaptive_adoption/issues)
+# Dimension 6: Ethical Stewardship
 
-# Ethical Stewardship
+> Synchronized from the [canonical website](https://paulgibbonsadvisory.com/leadership-delta/) on 2026-09-06.
 
-**Practicing moral reasoning about AI, not delegating it to compliance.**
+Ethics isn't compliance and it isn't moralizing — it's phronesis: the practical wisdom to navigate novel moral waters where the rules don't exist yet.
 
-## The Argument
+THE HELMSMAN
 
-The dominant organizational response to AI ethics is procedural: appoint a responsible AI committee, write a set of principles, build a review checklist, and route decisions through compliance. This approach has two fundamental problems. First, it locates ethical reasoning in a specialist function rather than in the leaders making daily decisions about AI deployment. Second, it treats ethics as a constraint to be satisfied rather than a capability to be developed.
+← Ethical Volatility · Ethical Fading
 
-Ethical Stewardship is the practice of engaging in substantive moral reasoning about AI — not as philosophy, but as operational leadership. Every AI deployment decision involves ethical dimensions: whose labor is displaced, whose data is used, whose biases are encoded, whose interests are served, and who bears the costs of errors. These are not compliance questions. They are leadership questions.
+## LEAD SELF — HABITS & PRACTICES
 
-The inadequacy of the compliance approach becomes visible in novel situations — precisely the situations AI creates most frequently. Checklists work for known risks in stable environments. AI operates in neither. When a model produces outputs that are technically accurate but contextually harmful, when automation eliminates roles in ways that existing policies never anticipated, when AI-generated content blurs lines that were previously clear — these moments require moral reasoning, not policy lookup.
+### Phronesis — The Helmsman's Judgment
 
-This dimension draws on the distinction between ethical compliance (following rules) and ethical competence (reasoning well about novel moral situations). Leaders need both, but organizations overwhelmingly invest in the former while neglecting the latter.
+Episteme is knowing the charts and the weather systems — the ethical frameworks. Techne is sail handling and navigation — applying rules to cases. Phronesis is the practical wisdom that sits above both: Is this wind shift temporary or a front? Do I reef now or hold course? The leader with episteme and techne but no phronesis knows the compliance rules and can operate the technology but lacks the judgment to ask “just because we *can*, should we?”
 
-## Three Levels
+### Ethical Fading Awareness
 
-| Level | What This Looks Like | Red Flags |
-|-------|---------------------|-----------|
-| **Leading Self** | Engages personally with the ethical dimensions of AI decisions. Reads, reflects, and forms considered views on issues like displacement, bias, and data use. Does not treat ethics as someone else's domain. | Views AI ethics as a compliance or PR function. Has no personal position on key ethical questions. Delegates all ethical consideration to legal or the responsible AI team. |
-| **Leading Teams** | Creates space for ethical discussion in team decision-making. Ensures AI deployment decisions include explicit consideration of impact on affected parties. Models the practice of asking "Should we?" alongside "Can we?" | No ethical discussion in AI deployment decisions. Impact on affected parties (workers, customers, communities) is not considered. Ethical concerns raised by team members are treated as obstacles. |
-| **Leading Systems** | Builds organizational capacity for ethical reasoning — not just ethical compliance. Ensures governance structures include diverse perspectives, not just legal and technical ones. Creates feedback mechanisms for ethical concerns to surface and be addressed. | Ethical governance is purely procedural — checklists without deliberation. No mechanism for front-line ethical concerns to reach decision-makers. Affected parties (especially displaced workers) have no voice in AI deployment decisions. |
+The discipline of noticing when moral questions get reclassified as “just business decisions.” Ethical fading is the gradual, invisible process by which the ethical dimension disappears from view — the ROI model that strips out the displacement impact, the “alignment” initiative that's actually coercion with a friendly name. The practice: regularly asking “what are we not seeing because we've framed this as a business problem?”
 
-## Observable Behaviors
+## LEAD OTHERS — BEHAVIORS
 
-- Raises ethical considerations proactively in AI deployment discussions, rather than waiting for the compliance function to flag them.
-- Can articulate a considered position on at least three contested AI ethics questions (e.g., displacement, surveillance, data consent) that reflects genuine engagement, not talking points.
-- Ensures AI deployment decisions include explicit impact assessment for affected parties — employees, customers, communities — not just ROI analysis.
-- Creates forums where ethical concerns can be raised without career risk, and demonstrates that such concerns change decisions, not just documentation.
-- Invests in developing ethical reasoning capacity across the leadership team, not just in specialist functions.
+### Ethical Judgment Without Moralizing
 
-## Development Pathways
+The word “ethics” has almost no currency at board level. The actual skill: offering clear moral judgments — this is right, this is wrong, this creates harm — without rancor, without condescension, in the language of the room. The concrete move: knowing when this is a utility question (what outcome?), when it is a rights question (what lines?), when it is a character question (who are we becoming?) — and selecting the right lens for the room you are in.
 
-**Read substantively.** Engage with serious work on AI ethics — not corporate position papers, but genuine scholarship and informed journalism. Sources such as the Oxford Internet Institute, the AI Now Institute, and researchers like Timnit Gebru, Kate Crawford, and Luciano Floridi provide rigorous foundations.
+### Red Line Visibility
 
-**Practice ethical deliberation.** In your next AI deployment decision, add 30 minutes to the process for explicit ethical discussion. Use a simple framework: Who benefits? Who bears the costs? What could go wrong? What would a critic say? The quality of the discussion matters more than the framework.
+Publicly naming what you will not do — and accepting the cost. The leader who says “we won't ship this even though it's profitable” has done more for ethical culture than a hundred policy documents. The red line must be visible and costly to be credible. This is the behavioral opposite of ethical fading: making the moral dimension of decisions *more* visible, not less, especially under pressure.
 
-**Include affected voices.** Before deploying AI that affects a specific group — front-line workers, customers, a particular community — find a way to include their perspective in the decision process. Not as theater, but as genuine input that can alter the decision.
+## LEAD SYSTEM — ARCHITECTURE
 
-**Distinguish ethics from compliance.** Review your organization's responsible AI framework. Does it enable genuine moral reasoning, or does it reduce ethics to a checkbox? If the latter, advocate for governance that includes deliberation, not just documentation.
+### Anti-Fading Architecture
 
-**Build the muscle through cases.** Collect real examples of ethical dilemmas in AI deployment — from your organization or from published cases. Discuss them in leadership forums. Like any reasoning skill, ethical judgment improves with deliberate practice on concrete cases.
+Ethical fading isn't individual weakness — it's what systems produce when no one designs against it. The system-level response: decision templates that force the ethical dimension to remain visible — pre-mortems that include “who could this harm?” as a required field. The goal is not more ethics committees — it's making it structurally harder for the moral dimension to disappear from view.
 
----
+### Ethical “Stop Cord”
 
-← [Back to Leadership Delta Overview](../)
+Frontline veto power on AI deployment — anyone can pull the cord, and pulling it is celebrated, not punished. Distributed ethical authority rather than concentrated committees that move too slowly. The stop cord works because it assumes the people closest to the work see things the hierarchy cannot. It is the system-level expression of phronesis: practical wisdom distributed, not hoarded.
+
+[Back to Leadership Delta™](../readme.md) · [Live AI tools](https://paulgibbonsadvisory.com/diagnostics/)

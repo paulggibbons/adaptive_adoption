@@ -1,40 +1,37 @@
-!!! warning "v0.8 — Working Draft"
-    This page is under active development. Content is directionally accurate but subject to revision.
-    [Suggest an edit →](https://github.com/paulggibbons/adaptive_adoption/issues)
+# Dimension 4: Governance Intelligence
 
-# Governance Intelligence
+> Synchronized from the [canonical website](https://paulgibbonsadvisory.com/behavioral-governance/) on 2026-09-06.
 
-**Focus:** Board-level readout on AI governance maturity.
+“The measurement system that governs the governance. The Five Dials™. Meta-governance — are the guardrails themselves working?”
 
-## The Argument
+← The Five Dials™ · Three-Layer Assessment
 
-Boards of directors and executive committees face an acute information asymmetry regarding AI governance. They are accountable for AI risk and strategy but typically lack the instrumentation to assess governance quality. The result is either uninformed confidence ("our AI governance is strong because we have a policy") or uninformed anxiety ("we don't know what we don't know"). Neither serves the organization.
+## STANDARDS — ENACTED GOVERNANCE
 
-Governance Intelligence is the dimension that closes this gap. It provides a structured, evidence-based readout on the state of AI governance — not a compliance checklist, but a maturity assessment across all six Behavioral Governance dimensions, synthesized for senior decision-makers who need signal without noise.
+### The Five Dials™
 
-The concept draws on the governance effectiveness literature in corporate governance (Leblanc & Gillies, 2005) and on the principle that governance quality is itself measurable if the right indicators are defined. The analogy is financial reporting: no board would accept "we think our finances are fine" in lieu of audited statements. Yet most boards accept precisely this level of rigor for AI governance.
+**Utilization Depth** — integration into workflows, not adoption rate. **Capability Expansion Rate** — 1st-derivative: speed of new capability absorption. **Trust Stability** — RIST scores tracked over time. **Iteration Velocity** — governance response speed. **Leadership Delta** — gap between current leadership behavior and what AI demands.
 
-Governance Intelligence requires three components. First, a standardized assessment framework — the six dimensions of Behavioral Governance, each assessed at three layers (Self-Report, Evidence, Behavioral Observation). Second, a synthesis mechanism — traffic-light dashboards are useful starting points, but they must be backed by narrative interpretation that explains *why* a dimension is red, amber, or green. Third, a cadence — governance intelligence is not a one-time audit but a recurring readout, with trend data showing whether governance maturity is improving, stable, or degrading.
+### Three-Layer Assessment Protocol
 
-The behavioral test is whether governance intelligence actually reaches decision-makers in a form they can act on. Many organizations generate governance data that never surfaces above the operational level, rendering it organizationally inert. The question is not whether you measure governance but whether governance measurement changes governance behavior.
+Every governance metric assessed at three layers: self-report, evidence, behavioral observation. The gap between layers IS the diagnostic.
 
-This dimension also addresses the "governance of governance" problem: who assesses whether the governance apparatus itself is functioning? Governance Intelligence provides the reflexive loop that makes Behavioral Governance self-correcting rather than self-referential.
+### Governance Iteration Cadence
 
-## Three-Layer Assessment
+Governance review aligned to model release cadence. If technology changes every 6 weeks, governance that reviews every 6 months is governing a system that no longer exists.
 
-| Layer | Method | Example |
-|---|---|---|
-| **Self-Report** | Survey / interview | "The board receives quarterly updates on AI governance maturity." |
-| **Evidence** | Document review | Board pack from the most recent meeting containing a structured AI governance readout with dimension-level scores, trend indicators, and specific action items arising from the assessment. |
-| **Behavioral Observation** | Observed practice | Attend or review minutes of a board or executive committee meeting where the governance readout was discussed, and assess whether the readout prompted substantive questions, decisions, or resource allocation — versus perfunctory acknowledgment. |
+## MEASURES — META-GOVERNANCE
 
-## Key Questions
+### Self-Report
 
-1. Does your board or executive committee receive a structured AI governance readout, and if so, at what cadence?
-2. Can you demonstrate a specific instance where governance intelligence led to a change in AI strategy, resource allocation, or risk posture?
-3. How is the governance assessment itself validated — who audits the auditors?
-4. Is governance intelligence generated by the same team responsible for AI deployment, or is there structural independence?
+“Is the governance system itself measured — or assumed to be working?” “When did we last change a protocol based on evidence it wasn't working?” Never revised = either perfect or unmeasured.
 
----
+### Evidence Layer
 
-← [Back to Behavioral Governance Overview](../)
+Five Dials dashboard: all five metrics tracked, trended, reviewed at cadence. Governance change log: protocols modified in last 90 days based on measurement data. Empty log = measurement disconnected from action.
+
+### Behavioral Observation
+
+Does anyone reference Five Dials data in governance reviews — or is discussion anecdote-driven? “The data shows X, so we're changing Y” = governance intelligence enacted.
+
+[Back to Behavioral Governance™](../readme.md) · [Live AI tools](https://paulgibbonsadvisory.com/diagnostics/)

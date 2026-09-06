@@ -1,3 +1,5 @@
+> **Earlier supporting draft.** For the current website-synchronized wording, read [05-design-and-prototype](../05-design-and-prototype.md).
+
 ---
 title: Design and Prototype
 discipline: Change Agility

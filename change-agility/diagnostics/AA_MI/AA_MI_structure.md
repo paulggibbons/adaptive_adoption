@@ -6,7 +6,7 @@
 
 The Adaptive Adoption Maturity Index (AAMI) is a 20-pillar diagnostic instrument spanning all three disciplines of the Adaptive Adoption framework: Change Agility (7 pillars), Leadership Delta (7 dimensions), and Behavioral Governance (6 dimensions). This page describes the AAMI structure as it applies to **Change Agility** — the operational layer of the framework.
 
-For the full AAMI architecture across all 20 pillars, see the [Maturity Model](../../maturity-model/maturity-model-state/).
+For the full AAMI architecture across all 20 pillars, see the [Maturity Model](../../../maturity-model/maturity-model-state.md).
 
 ---
 
@@ -16,13 +16,13 @@ Each of the seven Change Agility pillars is independently assessed along two axe
 
 | # | Pillar | What the AAMI Measures |
 |---|--------|----------------------|
-| 1 | [Master the Craft](../pillars/01-master-the-craft/) | Depth and breadth of hands-on AI capability across the organization |
-| 2 | [Embrace Complexity](../pillars/02-embrace-complexity/) | Whether planning approaches match the actual complexity of the domain |
-| 3 | [Consciously Manage Trust](../pillars/03-consciously-manage-trust/) | Trust levels across technology, organizational, and process dimensions |
-| 4 | [Put People First™](../pillars/04-put-people-first/) | Whether augmentation-first sequencing is operative or merely espoused |
-| 5 | [Design and Prototype](../pillars/05-design-and-prototype/) | Quality of experimentation practice: genuine prototyping vs. pilot theater |
-| 6 | [Prioritize Behavior](../pillars/06-prioritize-behavior/) | Whether behavioral change strategies target environment or rely on persuasion |
-| 7 | [Manage Ethics Always](../pillars/07-manage-ethics-always/) | Presence of embedded ethical reasoning vs. siloed compliance |
+| 1 | [Master the Craft](../../pillars/01-master-the-craft.md) | Depth and breadth of hands-on AI capability across the organization |
+| 2 | [Embrace Complexity](../../pillars/02-embrace-complexity.md) | Whether planning approaches match the actual complexity of the domain |
+| 3 | [Consciously Manage Trust](../../pillars/03-consciously-manage-trust.md) | Trust levels across technology, organizational, and process dimensions |
+| 4 | [Put People First™](../../pillars/04-put-people-first.md) | Whether augmentation-first sequencing is operative or merely espoused |
+| 5 | [Design and Prototype](../../pillars/05-design-and-prototype.md) | Quality of experimentation practice: genuine prototyping vs. pilot theater |
+| 6 | [Prioritize Behavior](../../pillars/06-prioritize-behavior.md) | Whether behavioral change strategies target environment or rely on persuasion |
+| 7 | [Manage Ethics Always](../../pillars/07-manage-ethics-always.md) | Presence of embedded ethical reasoning vs. siloed compliance |
 
 ## Maturity Levels
 
@@ -70,4 +70,4 @@ The profile enables organizations to see where they are strong (and why), where 
 
 ---
 
-← [Back to Change Agility Overview](../)
+← [Back to Change Agility Overview](../../readme.md)

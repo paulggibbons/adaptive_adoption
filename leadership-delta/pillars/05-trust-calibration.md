@@ -1,49 +1,41 @@
-!!! warning "v0.8 — Working Draft"
-    This page is under active development. Content is directionally accurate but subject to revision.
-    [Suggest an edit →](https://github.com/paulggibbons/adaptive_adoption/issues)
+# Dimension 5: Trust Calibration
 
-# Trust Calibration
+> Synchronized from the [canonical website](https://paulgibbonsadvisory.com/leadership-delta/) on 2026-09-06.
 
-**Modeling both appropriate trust and appropriate skepticism.**
+Trust is not a feeling to manage — it is a four-dimensional dynamic to calibrate. Continuously.
 
-## The Argument
+THE EMPATH
 
-AI tools occupy an unusual position in organizational life: they are simultaneously more capable than most people expect and less reliable than most people assume. This creates a calibration problem. Leaders who over-trust AI outputs risk automation bias — accepting AI-generated analysis, text, or recommendations without adequate scrutiny. Leaders who under-trust AI create a different failure: paralysis, excessive human review of every output, and the effective negation of any productivity benefit.
+← Fear and Dissent · Simultaneous Under/Overtrust
 
-Trust Calibration is the capacity to model — personally and organizationally — the right level of trust for the right context. It is not a fixed setting. Appropriate trust in AI for a first-draft email differs fundamentally from appropriate trust in AI for a medical diagnosis or a financial forecast. The dimension requires leaders to develop and communicate nuanced, context-dependent trust frameworks rather than blanket endorsements or blanket skepticism.
+## LEAD SELF — HABITS & PRACTICES
 
-This draws on research in automation trust (Lee & See, 2004; Parasuraman & Riley, 1997), which demonstrates that both over-trust and under-trust produce systematic errors, and that calibration — matching trust to actual system reliability — is a learnable skill. The challenge for leaders is that AI reliability varies by task, domain, and model version, requiring continuous recalibration rather than a one-time assessment.
+### Self-Trust Audit — Adaptive Self-Efficacy
 
-The organizational stakes are significant. When leaders model uncritical enthusiasm, teams learn to accept AI outputs without verification. When leaders model blanket skepticism, teams learn that AI adoption is performative — officially encouraged but practically discouraged. Neither produces the disciplined, context-sensitive engagement that value creation requires.
+The S in RIST. The question isn't “Am I competent with AI?” — it's “Am I confident in my ability to *learn* AI?” **First-derivative talent**: your rate of learning matters more than your current knowledge. A bad experience with an early model that calcifies into “AI can't be trusted” was reasonable in 2022. If unchanged in 2026, it's career-ending. The practice: recalibrating confidence continuously — not in what you know, but in your capacity to close the gap.
 
-## Three Levels
+### Know Your Trust Defaults
 
-| Level | What This Looks Like | Red Flags |
-|-------|---------------------|-----------|
-| **Leading Self** | Maintains a calibrated personal stance — verifies AI outputs in high-stakes contexts, uses them more freely in low-stakes ones. Can articulate where AI is trustworthy in their domain and where it is not. | Either accepts all AI outputs uncritically or dismisses AI as fundamentally unreliable. No differentiation by context or stakes. |
-| **Leading Teams** | Establishes team norms for verification proportionate to risk. Creates shared frameworks for when AI outputs require human review and when they do not. | No team norms for AI output verification. Verification is either mandatory for everything (bottleneck) or absent for everything (risk). Trust decisions are ad hoc and individual. |
-| **Leading Systems** | Builds organizational trust frameworks — tiered verification protocols, AI output quality monitoring, feedback loops that update trust calibration as models improve or degrade. | Organization-wide "trust AI" or "don't trust AI" policies with no contextual differentiation. No monitoring of AI output quality over time. No mechanism for updating trust norms as capabilities change. |
+Every person arrives at trust decisions carrying priors — emotional, cultural, biographical. AI's language, tuned for helpfulness and warmth, triggers trust responses uncalibrated to actual capability. Skeptics undertrust despite strong performance. Deferrers overtrust despite significant limitations. **Neither response is calibrated. Both feel like judgment.** The practice: know which one you are.
 
-## Observable Behaviors
+## LEAD OTHERS — BEHAVIORS
 
-- Explicitly distinguishes between high-stakes and low-stakes AI use cases and applies different verification standards to each.
-- Shares examples of both justified trust and justified skepticism — demonstrating that calibration is a skill, not a disposition.
-- Asks "How would we know if this AI output is wrong?" as a standard question in decision-making contexts.
-- Updates trust calibration when new evidence arrives — a model upgrade, a discovered error pattern, a domain shift — rather than maintaining a fixed stance.
-- Creates team protocols that specify verification requirements by use-case tier, not by blanket policy.
+### Diagnose Before Prescribing — The RIST Diagnostic
 
-## Development Pathways
+Most trust interventions fail because organizations treat the symptom (low adoption) rather than the specific trust dimension that has broken. RIST identifies four: Relational, Institutional, Self-Trust, Task Trust — each requiring a different intervention. **Applying the wrong one wastes time and signals incompetence** — which makes trust worse. Diagnose which dimension has actually broken before prescribing.
 
-**Audit your own trust patterns.** Review your last ten interactions with AI outputs. In how many did you verify the output? In how many did you accept it without checking? Map these against the actual stakes involved. The pattern reveals your calibration — or lack of it.
+### Trust Is Behavioral, Not Communicative
 
-**Build a trust taxonomy.** For your domain, create a simple three-tier framework: tasks where AI outputs can be used directly, tasks requiring light human review, and tasks requiring full human verification. Share it with your team. Iterate based on experience.
+Stop treating trust as a communications problem. Words without deeds destroy trust faster than silence. The leader who announces “we're building trust” while running nine-month legal review cycles for AI tools is not building trust — they're performing it. Every tool in the RIST toolkit is behavioral: what you do, not what you say.
 
-**Institute red-teaming.** Periodically assign someone to challenge AI outputs in team settings. Not as theater, but as genuine quality assurance. The practice builds collective calibration and surfaces blind spots.
+## LEAD SYSTEM — ARCHITECTURE
 
-**Track error patterns.** When AI outputs prove wrong, document the failure mode. Over time, patterns emerge that refine calibration. Without systematic tracking, the same errors recur and trust remains miscalibrated.
+### Consequence-Based Trust Tiering
 
-**Communicate the meta-principle.** Help your team understand that trust calibration is the goal, not trust maximization. The most sophisticated AI users are neither believers nor skeptics — they are calibrators.
+The T in RIST — and the only dimension most organizations manage. Task trust calibrated by consequence, not by anxiety: low stakes, use freely; high stakes, expert review required, evidence trail documented. **Undertrust is the expensive failure** — productivity foregone. **Overtrust is the dangerous failure** — output laundering, where AI generates and a human signs off without meaningful review. Both are managed simultaneously, by design.
 
----
+### Assume Fallibility, Not Bad Intent
 
-← [Back to Leadership Delta Overview](../)
+Permission gates and approval cycles don't just slow AI adoption — they kill the experimentation that makes adoption valuable. The deeper cost is talent: people who feel unblocked build; people who feel untrusted comply — minimally, defensively, without the curiosity that makes AI adoption work. **Design systems where well-intentioned humans can succeed safely** — where errors are caught because the architecture makes catching errors easy, not because someone is watching.
+
+[Back to Leadership Delta™](../readme.md) · [Live AI tools](https://paulgibbonsadvisory.com/diagnostics/)

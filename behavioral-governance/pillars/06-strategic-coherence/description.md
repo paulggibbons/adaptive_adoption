@@ -1,3 +1,5 @@
+> **Earlier supporting draft.** For the current website-synchronized wording, read [06-strategic-coherence](../06-strategic-coherence.md).
+
 ---
 title: Strategic Coherence
 discipline: Behavioral Governance

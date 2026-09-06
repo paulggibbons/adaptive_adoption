@@ -1,3 +1,5 @@
+> **Earlier supporting draft.** For the current website-synchronized wording, read [05-trust-calibration](../05-trust-calibration.md).
+
 ---
 title: Trust Calibration
 discipline: Leadership Delta

@@ -1,3 +1,5 @@
+> **Earlier supporting draft.** For the current website-synchronized wording, read [01-decision-rights](../01-decision-rights.md).
+
 ---
 title: Decision Rights
 discipline: Behavioral Governance

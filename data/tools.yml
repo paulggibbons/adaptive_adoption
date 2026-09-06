@@ -1,11 +1,12 @@
 schema_version: 1.1.0
-last_updated: '2026-05-05'
+last_updated: '2026-09-06'
 generator: scripts/seed_tools.py
 tools:
 - supabase_id: 1
   slug: adaptive-adoption-behavioral-index
-  name: Adaptive Adoption Behavioral Index (AABI)
-  aliases: []
+  name: AI Workforce Readiness Assessment
+  aliases:
+  - Adaptive Adoption Behavioral Index (AABI)
   type: diagnostic
   status: live
   version: '0.1'
@@ -17,7 +18,7 @@ tools:
     pillar: null
     pillar_num: 0
     pillar_name: All 20 Pillars
-  astro_url: /diagnostics/aabi
+  astro_url: /ai-readiness-assessment
   hero_copy: How mature is your organisation's AI adoption — really?
   hero_image: /images/aa-triptych.png
   hero_image_alt: Adaptive Adoption triptych — Change Agility, Leadership Delta, and Behavioral Governance

@@ -1,3 +1,5 @@
+> **Earlier supporting draft.** For the current website-synchronized wording, read [03-creative-cultivation](../03-creative-cultivation.md).
+
 ---
 title: Creative Cultivation
 discipline: Leadership Delta

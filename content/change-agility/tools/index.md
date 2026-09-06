@@ -88,7 +88,7 @@ Active build, not yet visible on the live site.
 
 ## Long list
 
-Tools we intend to build (planned) or are evaluating (speculative). See the [full long list](/tools/long-list/) for cross-domain view.
+Tools we intend to build (planned) or are evaluating (speculative). See the [full long list](../../tools/long-list.md) for cross-domain view.
 
 - **Team Capability Heatmap** — Manager-facing. Map your team across User→Architect. *(planned · Master the Craft)*
 - **PKM Maturity Diagnostic** — 6 levels: Chaos → One Box → Linked Thinking → Working Memory → Augmented Intelligence → Institutional Brain. *(planned · Master the Craft)*

@@ -3,7 +3,7 @@
 
 Tools we want to build. Some are next-up (build-next), some have active work (in-development), some are intent without a date (planned), some are candidates we're evaluating (speculative).
 
-79 tools across the long list.
+80 tools across the long list.
 
 ## Build Next
 
@@ -161,6 +161,15 @@ How many approvals to pilot an AI tool?
 Who trusts the initiative? Heat-mapped.
 
 *Domain:* Leadership Delta · *Pillar:* Trust Calibration · *Type:* `interactive-tool`
+
+---
+### Leadership Delta — Participant Onboarding (Setup Concierge)
+
+Cohort-one setup concierge — participants arrive at Session 1 ready to build, not configure.
+
+*Domain:* Leadership Delta · *Pillar:* Leadership Delta · *Type:* `interactive-tool`
+
+> UNLISTED participant-only app — ships at /leadership-delta/onboarding on the PGA site (noindex, out of sitemap and nav). Never surface on the public tools hub, even when live. astro_url deliberately null to keep it out of public manifest consumers.
 
 ---
 ### Influence Network Heatmap
