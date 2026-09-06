@@ -36,7 +36,7 @@ theme:
     logo: material/book-open-variant
 
 extra_css:
-  - extra.css
+  - extra.css?v=20260906
 
 nav:
   - Home: index.md
