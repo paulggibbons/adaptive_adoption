@@ -1,38 +1,37 @@
-!!! warning "v0.8 — Working Draft"
-    This page is under active development. Content is directionally accurate but subject to revision.
-    [Suggest an edit →](https://github.com/paulggibbons/adaptive_adoption/issues)
+# Dimension 6: Strategic Coherence
 
-# Strategic Coherence
+> Synchronized from the [canonical website](https://paulgibbonsadvisory.com/behavioral-governance/) on 2026-09-06.
 
-**Focus:** Alignment between AI strategy, business strategy, and governance.
+“Strategic coherence is as important as strategic excellence.” — Paul Gibbons
 
-## The Argument
+← Complication · Stack Sprawl
 
-Strategic coherence is the degree to which an organization's AI initiatives, business strategy, and governance framework tell a consistent story — not in a slide deck, but in resource allocation, prioritization decisions, and operational trade-offs. Incoherence is the norm. Organizations frequently pursue AI strategies that are misaligned with their stated business priorities, governed by frameworks that were designed for a different risk profile, and resourced in ways that contradict both.
+## STANDARDS — ENACTED GOVERNANCE
 
-The sources of incoherence are structural. AI strategy is often set by technology leadership, business strategy by the executive committee, and governance by risk and compliance — three communities with different incentive structures, time horizons, and vocabularies. Coherence does not emerge from parallel planning processes; it requires deliberate integration mechanisms.
+### Whole-System Visibility
 
-This dimension draws on the strategy-as-practice literature (Whittington, 2006), which emphasizes that strategy is not a document but an ongoing organizational activity, and on Mintzberg's distinction between intended and realized strategy (Mintzberg & Waters, 1985). In the AI context, the gap between intended and realized strategy is often vast: organizations intend to pursue transformative AI but realize only incremental automation, because governance constraints, talent gaps, or cultural resistance redirect effort toward safe, low-ambition projects.
+Someone has sight of the full AI landscape: agents, models, risk exposure, talent pipeline, strategic alignment. The CAIO dashboard is the governance instrument — where CTO data governance, CHRO talent data, and risk-function exposure maps converge. The CAIO doesn't own data infrastructure (CTO/CIO does). But the CAIO owns the question: are we locked into SaaS data moats? Is data portable? Data governance is the CTO's job; data *strategy* as it constrains AI adoption is the CAIO's.
 
-Strategic coherence assessment examines four alignment vectors. First, vertical alignment: does the AI strategy connect logically to enterprise strategic objectives, with traceable linkages? Second, horizontal alignment: are AI initiatives across business units coordinated, or are they fragmented and duplicative? Third, temporal alignment: does the governance framework accommodate the pace at which AI strategy needs to evolve, or does it impose review cycles that lag behind strategic reality? Fourth, resource alignment: does budget allocation match stated strategic priorities, or do resources flow to legacy commitments while AI strategy is underfunded?
+### Organizational Integration
 
-The behavioral test is whether coherence is actively managed or merely assumed. Many organizations declare alignment in strategy documents while tolerating operational contradiction. Strategic coherence under Behavioral Governance requires evidence of integration mechanisms — cross-functional forums, shared metrics, joint review cycles — that function in practice, not merely in design.
+Is the agent marketing built talking to the agent ops built? Is there a learning loop where one team's discovery accelerates another's? The CAIO's unique problem: the connective tissue of adoption. Pockets of excellence that don't connect are not a strategy — they're a coincidence.
 
-## Three-Layer Assessment
+### Cross-Dimension Coherence
 
-| Layer | Method | Example |
-|---|---|---|
-| **Self-Report** | Survey / interview | "Our AI strategy is fully aligned with our business strategy and reviewed quarterly." |
-| **Evidence** | Document and data review | Strategy documents showing explicit linkages between AI initiatives and enterprise objectives, supported by budget allocation data confirming that resources follow stated priorities. |
-| **Behavioral Observation** | Observed practice | In a strategic review meeting, observe whether AI initiatives are evaluated against business strategy criteria, or whether AI and business strategy are discussed in separate conversations with separate stakeholders. |
+The five other dimensions must cohere. Decision rights contradicting agent authority = confusion. Talent strategy disconnected from risk intelligence = blind spots. Are six dimensions pulling together — or optimizing locally while the system fragments? Every governance decision traceable to a strategic objective; if it can't explain why it exists, it's bureaucratic accretion.
 
-## Key Questions
+## MEASURES — THREE-LAYER ASSESSMENT
 
-1. Can you trace each major AI initiative to a specific enterprise strategic objective — and demonstrate that the linkage informed prioritization?
-2. How many AI initiatives across the organization are redundant or contradictory, and is there a mechanism to detect and resolve duplication?
-3. Does your governance review cadence match the pace of AI strategy evolution, or is governance assessment a lagging indicator?
-4. When AI strategy and business strategy conflict — as they inevitably do — what is the resolution mechanism, and who arbitrates?
+### Self-Report
 
----
+“Can anyone describe the full AI governance picture?” “Do you know what other teams are building with AI?” If every team describes their initiatives but no one describes the system, coherence is absent.
 
-← [Back to Behavioral Governance Overview](../)
+### Evidence Layer
+
+CAIO dashboard: exists and integrates all six dimensions? Cross-team integration map. Organizational learning velocity: time from one team's discovery to another's adoption. Cross-dimension contradiction audit. Data portability score. Vendor lock-in assessment: SaaS moat exposure across AI estate.
+
+### Behavioral Observation
+
+Does AI governance review happen as an integrated whole — or does each dimension present separately with no synthesis? “But that contradicts what we decided in risk governance” = coherence working. No one notices the contradiction = coherence absent.
+
+[Back to Behavioral Governance™](../readme.md) · [Live AI tools](https://paulgibbonsadvisory.com/diagnostics/)

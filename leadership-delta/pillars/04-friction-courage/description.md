@@ -1,3 +1,5 @@
+> **Earlier supporting draft.** For the current website-synchronized wording, read [04-friction-courage](../04-friction-courage.md).
+
 ---
 title: Friction Courage
 discipline: Leadership Delta

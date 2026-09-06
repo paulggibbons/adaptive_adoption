@@ -1,3 +1,5 @@
+> **Earlier supporting draft.** For the current website-synchronized wording, read [02-active-modeling](../02-active-modeling.md).
+
 ---
 title: Active Modeling
 discipline: Leadership Delta

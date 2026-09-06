@@ -1,3 +1,5 @@
+> **Earlier supporting draft.** For the current website-synchronized wording, read [03-risk-intelligence](../03-risk-intelligence.md).
+
 ---
 title: Risk Intelligence
 discipline: Behavioral Governance

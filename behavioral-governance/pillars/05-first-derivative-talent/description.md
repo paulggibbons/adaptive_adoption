@@ -1,3 +1,5 @@
+> **Earlier supporting draft.** For the current website-synchronized wording, read [05-first-derivative-talent](../05-first-derivative-talent.md).
+
 ---
 title: 1st-Derivative Talent
 discipline: Behavioral Governance

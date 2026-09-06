@@ -1,0 +1,22 @@
+{
+  "sources": [
+    {
+      "url": "https://paulgibbonsadvisory.com/change-agility/",
+      "retrieved": "2026-09-06",
+      "sha256": "abc7b5a979065aa572f13f4aefd02e6c0a2400cb1948526b94b31b6be9b9b295",
+      "dimensions": 7
+    },
+    {
+      "url": "https://paulgibbonsadvisory.com/leadership-delta/",
+      "retrieved": "2026-09-06",
+      "sha256": "0cc390e4db1c7dc836a4567780a0a4295939332de1fa2a906e2f1308225e4a30",
+      "dimensions": 7
+    },
+    {
+      "url": "https://paulgibbonsadvisory.com/behavioral-governance/",
+      "retrieved": "2026-09-06",
+      "sha256": "7202bf41e8aeba91fbaeca2ae5fdc65485c6dae9c13f1238241458a7eca52041",
+      "dimensions": 6
+    }
+  ]
+}

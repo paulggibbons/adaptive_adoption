@@ -31,6 +31,30 @@ Portable, auditable AI context artifact. A guided interview produces downloadabl
 
 `diagnostic` · Research-grounded · Original operationalization · Construct validation planned · v0.3 · *Trust Calibration*
 ---
+### Leadership Delta — Assess Yourself
+
+Six brutally hard questions on leading AI — where the obvious answer is wrong.
+
+**[Take this tool →](https://paulgibbonsadvisory.com/diagnostics/leadership-delta-self)**
+
+`diagnostic` · Original framework © Paul Gibbons · Leadership Delta™ · Layer 1 self-report · v0.1 · *Leadership Delta*
+---
+### Leadership Delta — Assess Your Team
+
+Six brutally hard questions on how your team leads AI — where the obvious answer is wrong.
+
+**[Take this tool →](https://paulgibbonsadvisory.com/diagnostics/leadership-delta-team)**
+
+`diagnostic` · Original framework © Paul Gibbons · Leadership Delta™ · Layer 1 self-report · v0.1 · *Leadership Delta*
+---
+### Leadership Delta — Assess Your Organisation
+
+Six brutally hard questions on how your organisation leads AI — where the obvious answer is wrong.
+
+**[Take this tool →](https://paulgibbonsadvisory.com/diagnostics/leadership-delta-org)**
+
+`diagnostic` · Original framework © Paul Gibbons · Leadership Delta™ · Layer 1 self-report · v0.1 · *Leadership Delta*
+---
 ### Causal Loop Diagram Builder
 
 Map feedback loops. R and B loops auto-detected.
@@ -76,11 +100,12 @@ Active build, not yet visible on the live site.
 - **Scenario Planning Canvas** — 2×2 uncertainty matrix for AI futures. *(`canvas`, Strategic Imagination)*
 - **Bureaucracy Buster Scorecard** — How many approvals to pilot an AI tool? *(`assessment`, Friction Courage)*
 - **Stakeholder Trust Map** — Who trusts the initiative? Heat-mapped. *(`interactive-tool`, Trust Calibration)*
+- **Leadership Delta — Participant Onboarding (Setup Concierge)** — Cohort-one setup concierge — participants arrive at Session 1 ready to build, not configure. *(`interactive-tool`, Leadership Delta)*
 - **Influence Network Heatmap** — Formal vs informal power. Heat-mapped. *(`interactive-tool`, Systems Orchestration)*
 
 ## Long list
 
-Tools we intend to build (planned) or are evaluating (speculative). See the [full long list](/tools/long-list/) for cross-domain view.
+Tools we intend to build (planned) or are evaluating (speculative). See the [full long list](../../tools/long-list.md) for cross-domain view.
 
 - **Future-Back Strategy Template** — Start from 2028, work backward. *(planned · Strategic Imagination)*
 - **Modeling Behavior Gap Analysis** — Behaviors you want vs. behaviors you demonstrate. *(planned · Active Modeling)*

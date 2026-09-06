@@ -1,3 +1,5 @@
+> **Earlier supporting draft.** For the current website-synchronized wording, read [07-systems-orchestration](../07-systems-orchestration.md).
+
 ---
 title: Systems Orchestration
 discipline: Leadership Delta

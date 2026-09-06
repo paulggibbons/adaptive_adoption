@@ -1,47 +1,41 @@
-!!! warning "v0.8 — Working Draft"
-    This page is under active development. Content is directionally accurate but subject to revision.
-    [Suggest an edit →](https://github.com/paulggibbons/adaptive_adoption/issues)
+# Dimension 2: Active Modeling
 
-# Active Modeling
+> Synchronized from the [canonical website](https://paulgibbonsadvisory.com/leadership-delta/) on 2026-09-06.
 
-**An AI sponsor who doesn't use AI is a contradiction.**
+“An AI sponsor who doesn't use AI is a contradiction — not a sponsor.”
 
-## The Argument
+THE CARPENTER
 
-Leadership credibility in AI adoption is not conferred by title, budget authority, or executive sponsorship decks. It is earned through visible, personal use. When a senior leader delegates all AI interaction to their team — when they have never written a prompt, never struggled with a hallucination, never experienced the disorientation of a tool that is simultaneously impressive and unreliable — they lack the embodied understanding necessary to make sound decisions about adoption pace, risk tolerance, and resource allocation.
+← The Immersion Condition · Complexity
 
-Active Modeling is the practice of using AI tools personally, visibly, and reflectively. It is not about becoming a power user or a technical expert. It is about closing the experiential gap between those leading AI initiatives and those doing the actual work. Research on organizational change consistently shows that leader behavior is the strongest signal of what an organization actually values (Schein, 2010). Espoused support without personal practice produces cynicism.
+## LEAD SELF — HABITS & PRACTICES
 
-The concept extends beyond mere tool use. Active Modeling means sharing what you learned — including what failed. It means demonstrating the productive struggle that accompanies any new capability. It means being willing to look incompetent in public, which is precisely the vulnerability that most senior leaders have spent careers learning to avoid.
+### Build Week
 
-## Three Levels
+Structured immersion: dedicated time building with AI tools, not reading about them. Bill Gates had Think Week (information). AI-era leaders need Build Week (experience). The input is contact knowledge, not briefings.
 
-| Level | What This Looks Like | Red Flags |
-|-------|---------------------|-----------|
-| **Leading Self** | Uses AI tools weekly in actual work — drafting, analysis, research, decision support. Can describe specific instances where AI changed an output. | Has never personally used an AI tool. Delegates all interaction to an assistant or direct report. Cannot name the tools the organization has deployed. |
-| **Leading Teams** | Shares personal AI use cases in team settings. Demonstrates both successes and failures. Encourages team members to share their own experiments. | Talks about AI exclusively in abstract, strategic terms. Never demonstrates personal use. Frames AI as something "the team" does. |
-| **Leading Systems** | Creates organizational norms around visible AI use. Ensures leadership forums include AI-use sharing. Models the expectation that all leaders, not just technical ones, engage directly. | AI adoption is positioned as a technology initiative. No expectation that non-technical leaders engage personally. Executive communications about AI are ghost-written by the AI team. |
+### Tinker Time
 
-## Observable Behaviors
+Regular, hands-on building with AI embedded in real work. Not demos, not showcases — genuine making. Satya Nadella spending weekends with tools isn't about becoming a developer. It's about ensuring strategic judgment isn't epistemologically compromised. The leader who hasn't built with the technology hasn't earned their strong opinions about it.
 
-- References specific personal experiences with AI tools in meetings and communications — not hypothetical use cases or vendor demos.
-- Shares failed experiments and what they revealed, not just polished success stories.
-- Can articulate the difference between what AI does well and what it does poorly in their specific domain, based on firsthand experience.
-- Asks informed questions about AI tools that reflect actual use, not surface-level briefings.
-- Visibly iterates on their own AI practices — trying new tools, adjusting workflows, retiring approaches that don't work.
+## LEAD OTHERS — BEHAVIORS
 
-## Development Pathways
+### Public Learning
 
-**Start with your actual work.** Pick one recurring task — a weekly summary, a decision analysis, a communication draft — and use AI for it. Not as a demonstration, but as genuine work practice. The learning comes from real stakes.
+Visible, honest AI use — including public acknowledgment of failure. What leaders are *seen doing* is the policy that actually governs behavior, regardless of what the policy document says (Argyris & Schön, theory-in-use). Show the messy drafts, the failed prompts, the learning curve.
 
-**Keep a use journal.** For 30 days, log every AI interaction: what you tried, what worked, what surprised you, what failed. Review weekly. The patterns that emerge will inform how you lead adoption more effectively than any briefing.
+### Earned Opinion Standard
 
-**Share publicly.** In your next leadership meeting, spend five minutes showing something you tried with AI. Include the rough edges. The signal you send by being imperfect in public is more powerful than any mandate.
+Explicitly naming that strong opinions about AI require direct experience. The “fancy autocomplete” position, however intellectually elaborated, rests on armchair inference when held by people who haven't touched the technology. Modeling this standard publicly.
 
-**Pair with a practitioner.** Find someone on your team who uses AI fluently. Sit with them for an hour. Watch how they work. Ask questions. The gap between executive understanding and practitioner reality is often larger than leaders assume.
+## LEAD SYSTEM — ARCHITECTURE
 
-**Set a personal cadence.** Commit to trying one new AI capability per month. Not a major initiative — a single experiment. The compound effect of twelve experiments per year transforms understanding.
+### Immersion Infrastructure
 
----
+Organization-wide access to frontier tools, dedicated experimentation time (not “innovation Friday” theater), sandbox environments. If the system doesn't enable contact, the leader's modeling is performative.
 
-← [Back to Leadership Delta Overview](../)
+### Competence Visibility Systems
+
+Mechanisms that make AI adoption visible without surveillance: team showcases, workflow-sharing platforms, “how I used AI this week” rituals. The system makes modeling contagious, not mandated.
+
+[Back to Leadership Delta™](../readme.md) · [Live AI tools](https://paulgibbonsadvisory.com/diagnostics/)

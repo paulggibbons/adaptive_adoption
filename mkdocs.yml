@@ -34,13 +34,19 @@ theme:
   icon:
     repo: fontawesome/brands/github
     logo: material/book-open-variant
-  favicon: assets/favicon.ico
 
 extra_css:
   - extra.css
 
 nav:
   - Home: index.md
+  - Start Here:
+    - Framework Overview: what-is-adaptive-adoption.md
+    - How to Use This Repository: how-this-repo-works.md
+    - Contribute: CONTRIBUTING.md
+    - Canonical Sources: canonical-sources.md
+  - Publications: publications/index.md
+  - Diagrams: visuals-and-presentations/index.md
   - Foundations:
     - Why This Framework: foundations/conditions-that-dont-hold.md
     - Six Unprecedented Conditions: foundations/six-unprecedented-conditions.md
@@ -88,7 +94,8 @@ nav:
       - Tools Overview: behavioral-governance/tools/index.md
       - Governance Dashboard: behavioral-governance/tools/governance-dashboard.md
   - Tools:
-    - All Tools: tools/index.md
+    - Live Tools: tools/live.md
+    - Development Portfolio: tools/index.md
     - Long List: tools/long-list.md
     - Archive: tools/archive.md
   - Maturity Model:

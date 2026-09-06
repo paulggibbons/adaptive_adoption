@@ -1,73 +1,18 @@
----
-title: How This Repo Works
-author: Paul Gibbons
-status: scaffold
-date: 2026-04-21
----
+# How this repository works
 
-# How This Repo Works
+The [homepage](README.md) is the entry point for readers. Choose a discipline, a live tool, or a publication according to the task at hand.
 
-A navigation guide for practitioners, researchers, and contributors.
-
----
-
-## Structure
-
-```
-adaptive_adoption/
-├── what-is-adaptive-adoption.md     ← Start here: the framework overview
-├── why-adaptive-adoption-matters.md ← The argument: why this exists
-├── visuals-and-presentations/       ← Diagrams, decks, model card gallery
-│
-├── why-change-must-change/          ← Deep scholarly context
-│
-├── change-agility/                  ← DISCIPLINE 1: The Flywheel (7 pillars)
-│   ├── pillars/                        Each pillar: description + model card
-│   ├── processes/                      Rituals across all 7 pillars
-│   ├── tools/                          Practitioner tools across all 7
-│   ├── behaviors/                      Behavioral norms across all 7
-│   ├── change-skills/                  Capabilities across all 7
-│   └── diagnostics/                    Assessment instruments
-│
-├── leadership-delta/                ← DISCIPLINE 2: The Torque (7 dimensions)
-│   ├── pillars/                        Each dimension: description + model card
-│   ├── leading-self.md                 All 7 dimensions, self lens
-│   ├── leading-teams.md                All 7 dimensions, teams lens
-│   └── leading-systems.md              All 7 dimensions, systems lens
-│
-├── behavioral-governance/           ← DISCIPLINE 3: The Guardrails (6 dimensions)
-│   ├── pillars/                        Each dimension: description + model card
-│   ├── dashboard/                      Board-level governance readout
-│   ├── tools/                          Risk register, audit templates
-│   └── behaviors/                      Governance behavioral norms
-│
-├── maturity-model/                  ← Cross-cutting maturity assessment
-├── provenance/                      ← Intellectual lineage and acknowledgements
-└── industry-modules/                ← Industry-specific guidance (in development)
-```
-
----
-
-## Who Should Start Where
-
-| You are... | Start here |
+| Location | Contents and status |
 |---|---|
-| **Executive / CAIO** | [What Is AA](what-is-adaptive-adoption.md) → [Model Cards](change-agility/model-cards/) |
-| **Change practitioner** | [Pillars overview](change-agility/pillars/) → [Tools](change-agility/tools/) |
-| **Developer / FDE** | [How This Repo Works](#structure) → [Diagnostics](change-agility/diagnostics/) |
-| **Researcher / Academic** | [Why Change Must Change](why-change-must-change/) → [Provenance](provenance/) |
-| **Contributor** | Read the structure, then open an issue or PR |
+| `change-agility/`, `leadership-delta/`, `behavioral-governance/` | Current discipline guides; numbered Markdown pages carry the canonical website wording |
+| [Tools](tools/README.md) | Applications listed as live on the website |
+| [Publications](publications/README.md) | Published discussion documents, books, and Corpus links |
+| [Visuals](visuals-and-presentations/index.md) | Current website diagrams, plus clearly identified earlier presentation assets |
+| [Research foundations](why-change-must-change/README.md) and [provenance](provenance/intellectual-lineage.md) | Supporting arguments, lineage, and research history |
+| [System documentation](docs/README.md) | Diagnostics implementation and operational context |
+| `data/`, `schemas/`, `scripts/` | Versioned tool manifest, validation, and documentation build |
+| `archive-until-31-07/` | Historical working material; not the current framework |
 
----
+Older nested pillar descriptions, model cards, and research drafts remain available for provenance. Use the numbered Markdown pages linked from each discipline guide for the current edition.
 
-## Contributing
-
-The framework improves when it's contested. Open an issue, submit a PR, or email paul@paulgibbonsadvisory.com.
-
----
-
-## License
-
-Content is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
-
-Adaptive Adoption™, Leadership Delta™, Behavioral Governance™, People-first AI™, Accelerated Workforce™ are trademarks of Paul Gibbons.
+See [Contributing](CONTRIBUTING.md) and [canonical sources](docs/CANONICAL-SOURCES.md) before proposing changes.

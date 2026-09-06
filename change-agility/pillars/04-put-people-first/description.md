@@ -1,3 +1,5 @@
+> **Earlier supporting draft.** For the current website-synchronized wording, read [04-put-people-first](../04-put-people-first.md).
+
 ---
 title: Put People First
 discipline: Change Agility

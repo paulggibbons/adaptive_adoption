@@ -1,3 +1,5 @@
+> **Earlier supporting draft.** For the current website-synchronized wording, read [04-governance-intelligence](../04-governance-intelligence.md).
+
 ---
 title: Governance Intelligence
 discipline: Behavioral Governance

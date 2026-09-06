@@ -1,3 +1,3 @@
-# Model Cards — Behavioral Governance
+# Model cards — status
 
-*[Scaffold — visual model card gallery to be built]*
+The historical model-card material has not been reconciled with the current website edition. Use the [current behavioral governance guide](../readme.md) and [website diagrams](../../visuals-and-presentations/index.md) for presentation and sharing.

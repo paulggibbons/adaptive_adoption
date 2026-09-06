@@ -1,3 +1,5 @@
+> **Earlier supporting draft.** For the current website-synchronized wording, read [02-agent-authority](../02-agent-authority.md).
+
 ---
 title: Agent Authority
 discipline: Behavioral Governance

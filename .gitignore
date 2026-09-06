@@ -247,3 +247,7 @@ exports/
 output/
 tmp/
 *.log
+
+# Generated documentation (tracked tool indexes remain versioned)
+/_site/
+/content/

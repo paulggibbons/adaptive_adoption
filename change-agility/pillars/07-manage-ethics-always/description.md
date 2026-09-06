@@ -1,3 +1,5 @@
+> **Earlier supporting draft.** For the current website-synchronized wording, read [07-manage-ethics-always](../07-manage-ethics-always.md).
+
 ---
 title: Manage Ethics Always
 discipline: Change Agility

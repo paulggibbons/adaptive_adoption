@@ -73,7 +73,7 @@ Active build, not yet visible on the live site.
 
 ## Long list
 
-Tools we intend to build (planned) or are evaluating (speculative). See the [full long list](/tools/long-list/) for cross-domain view.
+Tools we intend to build (planned) or are evaluating (speculative). See the [full long list](../../tools/long-list.md) for cross-domain view.
 
 - **Initiative Coherence Scorecard** — Do your initiatives reinforce each other or compete? *(planned · Strategic Coherence)*
 - **Authority Escalation Matrix** — When does an AI decision need human sign-off? *(planned · Decision Rights)*

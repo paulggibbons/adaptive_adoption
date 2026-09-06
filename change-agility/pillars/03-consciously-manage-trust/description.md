@@ -1,3 +1,5 @@
+> **Earlier supporting draft.** For the current website-synchronized wording, read [03-consciously-manage-trust](../03-consciously-manage-trust.md).
+
 ---
 title: Consciously Manage Trust
 discipline: Change Agility

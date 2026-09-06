@@ -1,3 +1,5 @@
+> **Earlier supporting draft.** For the current website-synchronized wording, read [01-master-the-craft](../01-master-the-craft.md).
+
 # # Pillar 1: Master the Craft
 *Build capability through doing, not curriculum.*
 

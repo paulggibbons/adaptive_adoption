@@ -48,7 +48,7 @@ Active build, not yet visible on the live site.
 {% if tools_by_status.planned or tools_by_status.speculative %}
 ## Long list
 
-Tools we intend to build (planned) or are evaluating (speculative). See the [full long list](/tools/long-list/) for cross-domain view.
+Tools we intend to build (planned) or are evaluating (speculative). See the [full long list](../../tools/long-list.md) for cross-domain view.
 
 {% for tool in (tools_by_status.planned or []) %}
 - **{{ tool.name }}** — {{ (tool.short_description or "") | trim }} *(planned · {{ tool.framework_mapping.pillar_name or "cross-pillar" }})*

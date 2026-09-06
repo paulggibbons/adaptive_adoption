@@ -1,47 +1,37 @@
-!!! warning "v0.8 — Working Draft"
-    This page is under active development. Content is directionally accurate but subject to revision.
-    [Suggest an edit →](https://github.com/paulggibbons/adaptive_adoption/issues)
+# Dimension 1: Strategic Imagination
 
-# Strategic Imagination
+> Synchronized from the [canonical website](https://paulgibbonsadvisory.com/leadership-delta/) on 2026-09-06.
 
-**Replacing fixed "future state" vision with adaptive, directional narrative.**
+“When they talk about the next quarter, they mean the next quarter century.” Offense, not defense. Building, not renting.
 
-## The Argument
+THE PROPHET
 
-Traditional strategic planning assumes a predictable destination. Leaders craft five-year visions, cascade objectives downward, and measure progress against a fixed end-state. In an environment where AI capabilities shift quarterly — where a model release can obsolete an entire workflow overnight — this approach is not merely insufficient; it is actively harmful. Fixed visions create false certainty, discourage pivoting, and punish the exploratory behavior that AI adoption demands.
+← Temporal Shear · Immersion Condition
 
-Strategic Imagination is the capacity to hold multiple plausible futures simultaneously and to articulate a *direction* rather than a *destination*. It draws on scenario thinking (Schwartz, 1991; van der Heijden, 2005) but goes further: it requires leaders to narrate the journey in terms that motivate action without promising a specific outcome. This is cognitively demanding. It asks leaders to be simultaneously confident enough to mobilize resources and humble enough to admit they cannot see the endpoint.
+## LEAD SELF — HABITS & PRACTICES
 
-The delta here is measurable. Leaders stuck in fixed-vision mode produce rigid transformation roadmaps, resist mid-course corrections, and interpret deviation as failure. Leaders with developed Strategic Imagination produce adaptive narratives, build optionality into plans, and treat surprises as information rather than threats.
+### Frontier Time
 
-## Three Levels
+Protected, structured cognitive space where the question is: *what does this technology make possible that we haven't imagined?* Think Walks: 3-hour hikes, no operational talk, forced connection-making. The practice is making time. The constraint isn't vision — it's the quarterly clock that eliminates the space where strategic imagination happens.
 
-| Level | What This Looks Like | Red Flags |
-|-------|---------------------|-----------|
-| **Leading Self** | Maintains a personal scanning practice — reads broadly, revisits assumptions quarterly, holds contradictory possibilities without anxiety. | Hasn't updated their mental model of AI capability in 6+ months. Cites the same examples repeatedly. |
-| **Leading Teams** | Shares emerging signals with the team. Frames work as "directional bets" rather than fixed deliverables. Creates space for the team to challenge the current narrative. | Punishes teams that pivot. Treats the original plan as sacred. Uses language like "stay the course" when conditions have shifted. |
-| **Leading Systems** | Builds organizational sensing mechanisms — horizon-scanning functions, rapid portfolio review cycles, strategy processes that update continuously rather than annually. | Annual strategy cycle with no interim revision. No mechanism for surfacing weak signals from the front line. Investment decisions locked 12+ months out. |
+### Right Inputs Discipline
 
-## Observable Behaviors
+Having the right inputs before the protected time. Frontier developments, not exec summaries. Direct contact with what's shipping, not filtered briefings. Christensen's insight: incumbents don't fail because they can't see — they fail because the wrong inputs make the wrong strategy feel rational.
 
-- Regularly introduces new information that challenges the current strategic narrative, rather than filtering for confirmation.
-- Uses language of probability and optionality ("we're betting that...", "if X shifts, we'll...") rather than false certainty.
-- Maintains an explicit "assumptions register" — a living document of what must remain true for the current direction to hold.
-- Allocates discovery budget (time, money, attention) to explore adjacent possibilities, not just execute the current plan.
-- Can articulate, without notes, at least three plausible futures for their domain and what each would require.
+## LEAD OTHERS — BEHAVIORS
 
-## Development Pathways
+### Naming the Scared Money
 
-**Structured scanning.** Commit to a weekly practice of reading outside your domain. Not AI news — adjacent fields, geopolitics, economics, behavioral science. Strategic Imagination feeds on diverse inputs.
+Calling out incrementalism for what it is: fear disguised as prudence. Defending the existing position *felt* rational at RIM quarter by quarter — until it was fatal. The leader's behavioral job: say the uncomfortable thing in the room, then hold the arc when Q2 is soft and the board wants to flinch. Every earnings call is a test: collapse into the accountability clock or hold the generational narrative.
 
-**Scenario exercises.** Run quarterly scenario sessions with your leadership team. Not the theatrical kind — rigorous, assumption-challenging sessions that surface what you are taking for granted.
+## LEAD SYSTEM — ARCHITECTURE
 
-**Narrative iteration.** Write your strategic narrative down. Revisit it every 90 days. Track what changed and why. The discipline of rewriting forces the cognitive update that casual reflection does not.
+### AI-Enabled AI Strategy
 
-**Assumption stress-testing.** For every major AI initiative, list the five assumptions on which it depends. Assign someone to monitor each. When an assumption breaks, treat it as a trigger for narrative revision, not a crisis.
+The recursive loop: build AI systems that augment the organization's capacity to think strategically about AI. Research agents that surface frontier developments. AI-assisted scenario planning. The technology itself as the enabler of its own strategic adoption. If the leader is doing Frontier Time alone with a browser, the system has failed.
 
-**Exposure to disconfirmation.** Deliberately seek out people who disagree with your strategic direction. Not to be swayed by every objection, but to sharpen the narrative against real resistance.
+### Frontier Time for Everyone
 
----
+Structurally guaranteeing that protected strategic thinking time isn't a C-suite luxury. Time, permission, and tools — distributed. The team lead in operations needs Frontier Time as much as the CAIO. If only the top floor thinks expansively, the organization's strategic intelligence is a bottleneck, not a capability.
 
-← [Back to Leadership Delta Overview](../)
+[Back to Leadership Delta™](../readme.md) · [Live AI tools](https://paulgibbonsadvisory.com/diagnostics/)

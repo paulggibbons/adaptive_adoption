@@ -1,15 +1,15 @@
 ---
 title: What Is Adaptive Adoption™?
 author: Paul Gibbons
-status: scaffold
-date: 2026-04-21
+status: current-overview
+date: 2026-09-06
 ---
 
 # What Is Adaptive Adoption?
 
 **Three disciplines. Twenty pillars. A framework built for the permanent capability shift that AI represents.**
 
-Adaptive Adoption is the first organizational change framework designed from the ground up for enterprise AI adoption. It replaces the assumption that technology adoption has a beginning, middle, and end — with an architecture for continuous adaptation.
+Adaptive Adoption is an organizational change framework designed for enterprise AI adoption. It replaces the assumption that technology adoption has a beginning, middle, and end — with an architecture for continuous adaptation.
 
 ---
 
@@ -17,9 +17,9 @@ Adaptive Adoption is the first organizational change framework designed from the
 
 | Discipline | Metaphor | Function | Pillars |
 |---|---|---|---|
-| **[Change Agility](change-agility/index.md)** | The Flywheel | What the organization does — operational capability | 7 pillars |
-| **[Leadership Delta](leadership-delta/index.md)** | The Torque | What leaders do differently — the measurable gap | 7 dimensions |
-| **[Behavioral Governance](behavioral-governance/index.md)** | The Guardrails | How the organization governs AI use — enacted, not written | 6 dimensions |
+| **[Change Agility](change-agility/readme.md)** | The Flywheel | What the organization does — operational capability | 7 pillars |
+| **[Leadership Delta](leadership-delta/readme.md)** | The Torque | What leaders do differently — the measurable gap | 7 dimensions |
+| **[Behavioral Governance](behavioral-governance/readme.md)** | The Guardrails | How the organization governs AI use — enacted, not written | 6 dimensions |
 
 ---
 
@@ -66,11 +66,11 @@ Each dimension assessed via three layers: **Self-Report → Evidence → Behavio
 
 ## Where to Start
 
-**If you're an executive:** Start with [Change Agility](change-agility/index.md) — the operational flywheel for AI adoption.
+**If you're an executive:** Start with [Change Agility](change-agility/readme.md) — the operational flywheel for AI adoption.
 
-**If you're a practitioner:** Start with the [Conditions Audit](leadership-delta/tools/conditions-audit.md) — stress-test your current approach.
+**If you're a practitioner:** Start with the [Conditions Audit](leadership-delta/pillars/01-strategic-imagination/conditions-audit.md) — stress-test your current approach.
 
-**If you're a researcher or skeptic:** Start with [Why Change Must Change](foundations/conditions-that-dont-hold.md) — every claim mapped to its scholarly lineage.
+**If you're a researcher or skeptic:** Start with [Why Change Must Change](why-change-must-change/conditions-that-dont-hold.md) — the supporting argument and intellectual lineage.
 
 ---
 

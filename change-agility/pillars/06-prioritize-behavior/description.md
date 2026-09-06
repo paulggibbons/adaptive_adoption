@@ -1,3 +1,5 @@
+> **Earlier supporting draft.** For the current website-synchronized wording, read [06-prioritize-behavior](../06-prioritize-behavior.md).
+
 ---
 title: Prioritize Behavior
 discipline: Change Agility
