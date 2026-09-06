@@ -1,21 +1,22 @@
 /* ═══════════════════════════════════════════
    ADAPTIVE ADOPTION — MkDocs Material Theme
-   Option B: Café Bright + Brand Discipline Colors
+   Navy brand + orange / blue / green accents
+   Navy tokens match the website src/styles/theme-blue.css.
 ═══════════════════════════════════════════ */
 
 :root {
-  --aa-espresso:      #2a1e14;
-  --aa-chocolate:     #352618;
-  --aa-chocolate-mid: #4a3628;
-  --aa-cream:         #f5f0e8;
-  --aa-cream-dim:     rgba(245, 240, 232, 0.7);
-  --aa-cream-faint:   rgba(245, 240, 232, 0.4);
-  --aa-gold:          #e0b84a;
-  --aa-gold-light:    #f0d060;
+  --aa-navy-deep:      #021B36;
+  --aa-navy:     #042C53;
+  --aa-navy-mid: #0A3D6E;
+  --aa-cream:         #FAF8F2;
+  --aa-cream-dim:     rgba(250, 248, 242, 0.7);
+  --aa-cream-faint:   rgba(250, 248, 242, 0.4);
+  --aa-accent:          #E8944A;
+  --aa-accent-light:    #FFB875;
 
   --aa-green:         #3DCC80;   /* Change Agility */
   --aa-blue:          #5BA3D9;   /* Leadership Delta */
-  --aa-purple:        #B07DD6;   /* Behavioral Governance */
+  --aa-governance:        #E8944A;   /* Behavioral Governance — orange */
   --aa-orange:        #E8944A;   /* Challenge / Maturity / admonitions */
 
   --aa-green-cta:     #2A6B4A;
@@ -23,43 +24,43 @@
 }
 
 [data-md-color-scheme="slate"] {
-  --md-default-bg-color:           var(--aa-espresso);
+  --md-default-bg-color:           var(--aa-navy-deep);
   --md-default-fg-color:           var(--aa-cream);
   --md-default-fg-color--light:    var(--aa-cream-dim);
-  --md-primary-fg-color:           var(--aa-gold);
-  --md-primary-bg-color:           var(--aa-chocolate);
-  --md-accent-fg-color:            var(--aa-gold);
-  --md-typeset-a-color:            var(--aa-gold);
-  --md-code-bg-color:              var(--aa-chocolate);
-  --md-footer-bg-color:            #1a120b;
-  --md-footer-bg-color--dark:      #0f0a06;
+  --md-primary-fg-color:           var(--aa-accent);
+  --md-primary-bg-color:           var(--aa-navy);
+  --md-accent-fg-color:            var(--aa-accent);
+  --md-typeset-a-color:            var(--aa-accent);
+  --md-code-bg-color:              var(--aa-navy);
+  --md-footer-bg-color:            #021B36;
+  --md-footer-bg-color--dark:      #011426;
 }
 
 .md-header {
   --md-primary-bg-color: var(--aa-cream);
   --md-primary-bg-color--light: var(--aa-cream-dim);
   color: var(--aa-cream);
-  background: var(--aa-chocolate-mid) !important;
-  border-bottom: 1px solid rgba(224, 184, 74, 0.2);
+  background: var(--aa-navy-mid) !important;
+  border-bottom: 1px solid rgba(232, 148, 74, 0.2);
 }
 
 .md-sidebar {
-  background: var(--aa-espresso);
+  background: var(--aa-navy-deep);
 }
 .md-nav__link {
   color: var(--aa-cream-dim) !important;
 }
 .md-nav__link--active,
 .md-nav__link:hover {
-  color: var(--aa-gold) !important;
+  color: var(--aa-accent) !important;
 }
 .md-nav__item--active > .md-nav__link {
-  color: var(--aa-gold) !important;
+  color: var(--aa-accent) !important;
   font-weight: 500;
 }
 
 .md-tabs {
-  background: var(--aa-chocolate-mid) !important;
+  background: var(--aa-navy-mid) !important;
 }
 .md-tabs__link {
   color: var(--aa-cream-dim) !important;
@@ -82,7 +83,7 @@
 }
 .md-nav__link[href*="behavioral-governance"],
 .md-nav__item--active > .md-nav__link[href*="behavioral-governance"] {
-  color: var(--aa-purple) !important;
+  color: var(--aa-governance) !important;
 }
 .md-nav__link[href*="maturity-model"],
 .md-nav__item--active > .md-nav__link[href*="maturity-model"] {
@@ -97,11 +98,11 @@
 .md-typeset h1 {
   color: var(--aa-cream);
   font-weight: 600;
-  border-bottom: 2px solid rgba(224, 184, 74, 0.3);
+  border-bottom: 2px solid rgba(232, 148, 74, 0.3);
   padding-bottom: 0.4em;
 }
 .md-typeset h2 {
-  color: var(--aa-gold);
+  color: var(--aa-blue);
   font-weight: 500;
 }
 .md-typeset h3 {
@@ -110,43 +111,43 @@
 }
 
 .md-typeset a {
-  color: var(--aa-gold);
+  color: var(--aa-accent);
   text-decoration: none;
-  border-bottom: 1px solid rgba(224, 184, 74, 0.3);
+  border-bottom: 1px solid rgba(232, 148, 74, 0.3);
 }
 .md-typeset a:hover {
-  color: var(--aa-gold-light);
-  border-bottom-color: var(--aa-gold);
+  color: var(--aa-accent-light);
+  border-bottom-color: var(--aa-accent);
 }
 
 .md-typeset code {
-  background: var(--aa-chocolate);
-  color: var(--aa-gold-light);
+  background: var(--aa-navy);
+  color: var(--aa-accent-light);
   border-radius: 4px;
   padding: 2px 6px;
 }
 .md-typeset pre {
-  background: var(--aa-chocolate) !important;
-  border: 1px solid rgba(245, 240, 232, 0.06);
-  border-left: 3px solid var(--aa-gold);
+  background: var(--aa-navy) !important;
+  border: 1px solid rgba(250, 248, 242, 0.06);
+  border-left: 3px solid var(--aa-accent);
 }
 
 .md-typeset table:not([class]) {
-  border: 1px solid rgba(245, 240, 232, 0.1);
+  border: 1px solid rgba(250, 248, 242, 0.1);
 }
 .md-typeset table:not([class]) th {
-  background: var(--aa-chocolate);
-  color: var(--aa-gold);
+  background: var(--aa-navy);
+  color: var(--aa-accent);
   font-weight: 500;
   letter-spacing: 0.5px;
 }
 .md-typeset table:not([class]) td {
-  border-color: rgba(245, 240, 232, 0.06);
+  border-color: rgba(250, 248, 242, 0.06);
 }
 
 .md-typeset .admonition {
   border-left: 3px solid var(--aa-orange);
-  background: var(--aa-chocolate);
+  background: var(--aa-navy);
 }
 .md-typeset .admonition-title {
   color: var(--aa-orange);
@@ -177,46 +178,46 @@
 }
 
 .md-search__input {
-  background: var(--aa-chocolate-mid) !important;
+  background: var(--aa-navy-mid) !important;
   color: var(--aa-cream) !important;
 }
 
 .md-footer {
-  background: #1a120b;
+  background: #021B36;
 }
 .md-footer-meta {
-  background: #0f0a06;
+  background: #011426;
 }
 .md-copyright {
-  color: var(--aa-cream-faint);
+  color: var(--aa-cream-dim);
 }
 .md-copyright a {
-  color: var(--aa-gold) !important;
+  color: var(--aa-accent) !important;
 }
 
 .md-social__link svg {
   fill: var(--aa-cream-dim);
 }
 .md-social__link:hover svg {
-  fill: var(--aa-gold);
+  fill: var(--aa-accent);
 }
 
 ::-webkit-scrollbar {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--aa-espresso);
+  background: var(--aa-navy-deep);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--aa-chocolate-mid);
+  background: var(--aa-navy-mid);
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(224, 184, 74, 0.4);
+  background: rgba(232, 148, 74, 0.4);
 }
 
 .md-banner {
-  background: var(--aa-chocolate) !important;
+  background: var(--aa-navy) !important;
 }
 .md-banner a {
   color: var(--aa-green) !important;
@@ -227,8 +228,8 @@
    page back to paulgibbonsadvisory.com
 ─────────────────────────────────────── */
 .aa-backlink-bar {
-  background: var(--aa-chocolate);
-  border-bottom: 1px solid rgba(224, 184, 74, 0.15);
+  background: var(--aa-navy);
+  border-bottom: 1px solid rgba(232, 148, 74, 0.15);
   padding: 6px 16px;
   font-size: 0.78rem;
   font-family: 'DM Sans', sans-serif;
@@ -238,13 +239,31 @@
   gap: 12px;
 }
 .aa-backlink-bar a {
-  color: var(--aa-gold) !important;
+  color: var(--aa-accent) !important;
   text-decoration: none;
   border-bottom: none !important;
 }
 .aa-backlink-bar a:hover {
-  color: var(--aa-gold-light) !important;
+  color: var(--aa-accent-light) !important;
 }
 .aa-backlink-bar .aa-sep {
   color: var(--aa-cream-faint);
+}
+
+/* Carry discipline accents through tabs and the framework entry links. */
+.md-tabs__link[href*="change-agility"],
+.md-typeset a[href*="change-agility"] { color: var(--aa-green) !important; }
+.md-tabs__link[href*="leadership-delta"],
+.md-typeset a[href*="leadership-delta"] { color: var(--aa-blue) !important; }
+.md-tabs__link[href*="behavioral-governance"],
+.md-typeset a[href*="behavioral-governance"] { color: var(--aa-orange) !important; }
+.md-tabs__item--active { border-bottom: 3px solid var(--aa-accent); }
+.md-tabs__item:has(a[href*="change-agility"]) { --aa-accent: var(--aa-green); }
+.md-tabs__item:has(a[href*="leadership-delta"]) { --aa-accent: var(--aa-blue); }
+.md-tabs__item:has(a[href*="behavioral-governance"]) { --aa-accent: var(--aa-orange); }
+.md-typeset blockquote { border-left: 3px solid var(--aa-blue); color: var(--aa-cream-dim); }
+.aa-backlink-bar { flex-wrap: wrap; }
+a:focus-visible, button:focus-visible, input:focus-visible {
+  outline: 2px solid var(--aa-blue);
+  outline-offset: 3px;
 }
