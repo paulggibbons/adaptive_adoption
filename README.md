@@ -36,7 +36,7 @@ Browse and download without a GitHub account. To propose a correction, share evi
 
 ## Author and attribution
 
-**Paul Gibbons** — author, adviser, and keynote speaker on AI adoption, leadership, and organisational change.
+**Paul Gibbons** — author of 10 books, adviser, and keynote speaker on AI adoption, leadership, and organisational change.
 
 [Website](https://paulgibbonsadvisory.com/) · [Publications and Corpus](https://paulgibbonsadvisory.com/publications/) · [LinkedIn](https://www.linkedin.com/in/paulggibbons/) · [Substack](https://thinkbiggerthinkbetter.substack.com)
 

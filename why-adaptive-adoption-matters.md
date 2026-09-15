@@ -17,30 +17,30 @@ Adaptive Adoption starts from a different premise: **the problem is not resistan
 
 ## The Deep Argument
 
-→ **[Why Change Must Change](why-change-must-change/)** — the full scholarly case for why existing frameworks fail and what replaces them:
+→ **[Why Change Must Change](foundations/conditions-that-dont-hold.md)** — the full scholarly case for why existing frameworks fail and what replaces them:
 
-- [Conditions That Don't Hold](why-change-must-change/conditions-that-dont-hold.md) — Six assumptions traditional change management makes that fail for AI
-- [Six Unprecedented Conditions](why-change-must-change/six-unprecedented-conditions.md) — Six features of the AI leadership context that no existing model addresses
-- [Shifts in Human Sciences](why-change-must-change/human-sciences.md) — Ten paradigm shifts that rewrote the evidence base
-- [Shifts in Work Culture](why-change-must-change/work-culture.md) — How the enterprise context transformed
-- [Enterprise Structure](why-change-must-change/enterprise-structure.md) — The firm itself changed
-- [Markets and Medicine](why-change-must-change/markets-and-medicine.md) — Convergence across domains
+- [Conditions That Don't Hold](foundations/conditions-that-dont-hold.md) — Six assumptions traditional change management makes that fail for AI
+- [Six Unprecedented Conditions](foundations/six-unprecedented-conditions.md) — Six features of the AI leadership context that no existing model addresses
+- [Shifts in Human Sciences](foundations/human-sciences.md) — Ten paradigm shifts that rewrote the evidence base
+- [Shifts in Work Culture](foundations/work-culture.md) — How the enterprise context transformed
+- [Enterprise Structure](foundations/enterprise-structure.md) — The firm itself changed
+- [Markets and Medicine](foundations/markets-and-medicine.md) — Convergence across domains
 
 ---
 
 ## The Three Disciplines
 
-→ **[Change Agility](change-agility/)** — The Flywheel: why change agility is replacing change management
+→ **[Change Agility](change-agility/index.md)** — The Flywheel: why change agility is replacing change management
 
-→ **[Leadership Delta](leadership-delta/)** — The Torque: why leadership development must be baked into every adoption framework
+→ **[Leadership Delta](leadership-delta/index.md)** — The Torque: why leadership development must be baked into every adoption framework
 
-→ **[Behavioral Governance](behavioral-governance/)** — The Guardrails: the difference between behavioral governance and compliance models
+→ **[Behavioral Governance](behavioral-governance/index.md)** — The Guardrails: the difference between behavioral governance and compliance models
 
 ---
 
 ## Visuals and Presentations
 
-→ **[Visuals and Presentations](visuals-and-presentations/)** — Framework diagrams, model card gallery, slide decks, keynote assets
+→ **[Visuals and Presentations](visuals-and-presentations/index.md)** — Framework diagrams, model card gallery, slide decks, keynote assets
 
 ---
 
@@ -53,3 +53,4 @@ Adaptive Adoption is open, evolving, and forkable. The framework is free. Implem
 ---
 
 *See also: [What Is Adaptive Adoption](what-is-adaptive-adoption.md) · [How This Repo Works](how-this-repo-works.md)*
+
