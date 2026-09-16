@@ -3,6 +3,8 @@
 **Status:** as of 2026-05-12, post Phase 3 completion.
 **Audience:** future Claude sessions + Paul, when something breaks and we need to know how the pieces fit.
 
+> For the current master map (both repos + the Supabase scoring layer, systems of record, and security boundaries), see **[SYSTEM-OVERVIEW.md](./SYSTEM-OVERVIEW.md)**. This file covers the two-repo manifest + deployment mechanics.
+
 ## TL;DR
 
 Two repos. One manifest. One live site. The manifest is the OS.
@@ -11,7 +13,7 @@ Two repos. One manifest. One live site. The manifest is the OS.
 paulggibbons/adaptive_adoption       paulggibbons/pg-advisory-astro
 ─────────────────────────────────    ──────────────────────────────
 data/tools.yml (source of truth)     consumes manifest at build time
-schemas/tools.schema.json            renders 13 diagnostic pages
+schemas/tools.schema.json            renders 17 diagnostic pages
 scripts/ (validate, seed, etc.)      Vercel auto-deploys main branch
 .github/workflows/mkdocs.yml         paulgibbonsadvisory.com
 GitHub Pages docs site
@@ -27,7 +29,7 @@ Push to `adaptive_adoption/main` → GitHub webhook → Vercel deploy hook → `
 
 The framework + manifest source. Three things live here:
 
-1. **`data/tools.yml`** — the manifest. Schema v1.2 (see `schemas/tools.schema.json`). 92 tools, of which 13 are `status: live` and render on the public site.
+1. **`data/tools.yml`** — the manifest. Schema v1.2 (see `schemas/tools.schema.json`). 97 tools, of which 17 are `status: live` and render on the public site.
 2. **Open-source MkDocs site** at `paulggibbons.github.io/adaptive_adoption/` — long-form framework documentation. Built by `.github/workflows/mkdocs.yml` from markdown files in `change-agility/`, `leadership-delta/`, `behavioral-governance/`, `foundations/`. **Tool listing pages are auto-generated from `tools.yml`** by `scripts/generate_tool_pages.py` during the CI build.
 3. **Validation infrastructure** — `scripts/validate_manifests.py`, `scripts/check_live_urls.py`, `scripts/pressure_test_manifest.py`. Wired into the `validate-manifests` job that runs on every PR and every push to main.
 
@@ -90,7 +92,9 @@ Key files for the manifest integration:
 
 ---
 
-## The 13 live tools
+## The live tools
+
+> There are **17 live tools** as of 2026-09-16. The authoritative current list is `data/tools.yml` (filter `status: live`; `astro_url` is the route of record) and `tools/README.md`. The table below is the original 13 from Phase 3 and is no longer exhaustive.
 
 | Slug | URL | Widget | Domain |
 |---|---|---|---|
