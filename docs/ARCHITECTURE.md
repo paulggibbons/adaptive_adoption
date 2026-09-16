@@ -42,8 +42,8 @@ Key files for the manifest integration:
 - `src/lib/manifest.ts` — fetches `tools.yml` at build time. Primary source: raw GitHub URL. Fallback: committed snapshot at `src/data/tools.snapshot.yml`. Cached per-build.
 - `src/components/DiagnosticPageLayout.astro` — shared layout that renders chrome (breadcrumb, hero, CTAs, attribution) from a `tool` object.
 - `src/styles/diagnostic-chrome.css` — shared `.perspective-bar` / `.persp-*` / `.bm-*` styles imported by the layout.
-- `src/components/diagnostics/*.{tsx,jsx}` — 13 React widget components, one per diagnostic.
-- `src/pages/diagnostics/<slug>.astro` — 13 thin page shells, one per tool. Each: import widget, `getTool(slug)`, mount widget inside `<DiagnosticPageLayout>`. Plus tool-specific `<style is:global>` block for widget CSS.
+- `src/components/diagnostics/*.{tsx,jsx}` — the React widget components, one per interactive diagnostic (the Phase 3 set was 13; the current set tracks the live tools in `data/tools.yml` and lives in `pg-advisory-astro`).
+- `src/pages/diagnostics/<slug>.astro` — the thin page shells, one per rendered tool. Each: import widget, `getTool(slug)`, mount widget inside `<DiagnosticPageLayout>`. Plus tool-specific `<style is:global>` block for widget CSS.
 
 ---
 
