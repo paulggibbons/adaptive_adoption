@@ -118,6 +118,13 @@ class AttioClient:
 
         Matching is case-insensitive on the list's display ``name`` and also
         accepts a match on the derived ``api_slug`` so the lookup is stable.
+
+        When a name/slug match is found, its ``parent_object`` must match this
+        client's target object (``self.object_slug``). A list that happens to
+        share the name but belongs to a different object (e.g. a Deals or
+        Companies list) is *not* a valid sync target -- adding People records to
+        it would fail -- so an incompatible match raises :class:`AttioError`
+        rather than being returned silently.
         """
         result = self._request("GET", "/v2/lists")
         wanted_name = name.strip().lower()
@@ -126,6 +133,14 @@ class AttioClient:
             entry_name = (entry.get("name") or "").strip().lower()
             entry_slug = entry.get("api_slug") or ""
             if entry_name == wanted_name or entry_slug == wanted_slug:
+                parent = entry.get("parent_object") or ""
+                if parent != self.object_slug:
+                    raise AttioError(
+                        f"List {name!r} exists but its parent object is "
+                        f"{parent!r}, not {self.object_slug!r}. Refusing to sync "
+                        f"into an incompatible list. Choose a different "
+                        f"--list-name or remove/rename the conflicting list."
+                    )
                 return entry.get("id", {}).get("list_id")
         return None
 

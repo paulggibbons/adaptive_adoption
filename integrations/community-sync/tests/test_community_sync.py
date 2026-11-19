@@ -203,3 +203,110 @@ def test_sync_missing_attio_key_exits_cleanly(monkeypatch, capsys):
 
     assert rc == 1
     assert "ATTIO_API_KEY not set" in err
+
+
+# --------------------------------------------------------------------------- #
+# find_list validates parent_object
+# --------------------------------------------------------------------------- #
+def test_find_list_raises_on_incompatible_parent_object():
+    def handler(method, url, kwargs):
+        # A list whose name matches but which belongs to a different object.
+        return FakeResponse(200, {
+            "data": [
+                {"name": "Community", "api_slug": "community",
+                 "parent_object": "deals", "id": {"list_id": "list-1"}},
+            ]
+        })
+
+    session = FakeSession(handler)
+    client = attio_client.AttioClient("fake-key", session=session)
+    with pytest.raises(attio_client.AttioError) as excinfo:
+        client.find_list("Community")
+    msg = str(excinfo.value)
+    assert "parent object" in msg
+    assert "deals" in msg
+    assert "people" in msg
+
+
+def test_find_list_returns_id_on_matching_parent_object():
+    def handler(method, url, kwargs):
+        return FakeResponse(200, {
+            "data": [
+                {"name": "Community", "api_slug": "community",
+                 "parent_object": "people", "id": {"list_id": "list-1"}},
+            ]
+        })
+
+    session = FakeSession(handler)
+    client = attio_client.AttioClient("fake-key", session=session)
+    assert client.find_list("Community") == "list-1"
+
+
+# --------------------------------------------------------------------------- #
+# sync aborts before any upsert when the existing list is incompatible
+# --------------------------------------------------------------------------- #
+def test_sync_aborts_before_upsert_on_incompatible_list(monkeypatch, capsys):
+    monkeypatch.setenv("ATTIO_API_KEY", "fake-key")
+
+    def handler(method, url, kwargs):
+        if method == "GET" and url.endswith("/v2/lists"):
+            return FakeResponse(200, {
+                "data": [
+                    {"name": "Adaptive Adoption Community (Slack)",
+                     "api_slug": "adaptive_adoption_community_slack",
+                     "parent_object": "deals",
+                     "id": {"list_id": "list-x"}},
+                ]
+            })
+        return FakeResponse(200, {})
+
+    session = FakeSession(handler)
+    monkeypatch.setattr(
+        community_sync, "AttioClient",
+        lambda api_key, **kw: attio_client.AttioClient(api_key, session=session, **kw),
+    )
+
+    sample = os.path.join(PKG_DIR, "sample_roster.csv")
+    rc = community_sync.main(["sync", "--roster", sample])
+    err = capsys.readouterr().err
+
+    assert rc == 1
+    assert "parent object" in err
+    # No People record upsert may have been attempted before the abort.
+    assert not any("/v2/objects/" in url for _, url, _ in session.calls)
+
+
+# --------------------------------------------------------------------------- #
+# pull-slack default output filename is derived from --format
+# --------------------------------------------------------------------------- #
+def test_pull_slack_default_out_matches_format(monkeypatch):
+    monkeypatch.setenv("SLACK_BOT_TOKEN", "xoxb-fake")
+    monkeypatch.setattr(community_sync, "_roster_from_slack",
+                        lambda channel, token: [])
+
+    saved = {}
+    monkeypatch.setattr(
+        roster_mod, "save_roster",
+        lambda records, path, fmt="json": saved.update(path=path, fmt=fmt),
+    )
+
+    community_sync.main(["pull-slack", "--channel", "c", "--format", "json"])
+    assert saved["path"] == "roster.json"
+
+    community_sync.main(["pull-slack", "--channel", "c", "--format", "csv"])
+    assert saved["path"] == "roster.csv"
+
+
+def test_pull_slack_explicit_out_extension_mismatch_warns(monkeypatch, capsys, tmp_path):
+    monkeypatch.setenv("SLACK_BOT_TOKEN", "xoxb-fake")
+    monkeypatch.setattr(community_sync, "_roster_from_slack",
+                        lambda channel, token: [])
+    monkeypatch.setattr(roster_mod, "save_roster",
+                        lambda records, path, fmt="json": None)
+
+    out = str(tmp_path / "foo.json")
+    community_sync.main(["pull-slack", "--channel", "c", "--out", out, "--format", "csv"])
+    err = capsys.readouterr().err
+
+    assert "warning" in err.lower()
+    assert "csv" in err.lower()

@@ -105,7 +105,7 @@ the box.
 | Flag | Default | Meaning |
 | --- | --- | --- |
 | `--channel` | *(required)* | Channel name (`all-adaptiveadoptioncop`) or id (`C…`) |
-| `--out` | `roster.json` | Output path |
+| `--out` | `roster.<format>` | Output path. Defaults to match `--format` (`roster.json` or `roster.csv`). If you pass an explicit path whose extension conflicts with `--format`, a warning is printed (sync loads a roster by its file extension). |
 | `--format` | `json` | `json` or `csv` |
 
 ### `sync`

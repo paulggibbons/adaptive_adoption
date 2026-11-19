@@ -38,7 +38,6 @@ from attio_client import AttioClient, AttioError
 from slack_client import SlackClient, SlackError
 
 DEFAULT_LIST_NAME = "Adaptive Adoption Community (Slack)"
-DEFAULT_ROSTER_PATH = "roster.json"
 
 
 # --------------------------------------------------------------------------- #
@@ -97,9 +96,25 @@ def cmd_pull_slack(args: argparse.Namespace) -> int:
     except SlackError as exc:
         return _fail(str(exc))
 
-    roster_mod.save_roster(records, args.out, fmt=args.format)
+    # Default the output filename to match --format so the extension always
+    # agrees with the bytes written (sync's load_roster picks its parser by
+    # extension). When --out is given explicitly, warn -- but don't hard-fail --
+    # if its extension conflicts with the chosen format.
+    out = args.out or f"roster.{args.format}"
+    if args.out:
+        ext = os.path.splitext(args.out)[1].lower().lstrip(".")
+        if ext in ("json", "csv") and ext != args.format:
+            print(
+                f"warning: --out {args.out!r} has a .{ext} extension but "
+                f"--format is {args.format!r}; the file will contain "
+                f"{args.format} data. Note that `sync` loads a roster by its "
+                f"file extension, so this mismatch will likely break loading.",
+                file=sys.stderr,
+            )
+
+    roster_mod.save_roster(records, out, fmt=args.format)
     with_email = sum(1 for r in records if r["email"])
-    print(f"Wrote {len(records)} member(s) ({with_email} with email) to {args.out} "
+    print(f"Wrote {len(records)} member(s) ({with_email} with email) to {out} "
           f"as {args.format}.")
     return 0
 
@@ -179,7 +194,17 @@ def cmd_sync(args: argparse.Namespace) -> int:
 
     try:
         attio = AttioClient(api_key)
-        list_id, created = attio.find_or_create_list(list_name)
+
+        # Resolve and VALIDATE the target list BEFORE upserting any people.
+        # find_list raises if an existing list by this name belongs to a
+        # different object, so an incompatible list aborts the run cleanly with
+        # zero record writes. If the list doesn't exist yet it is created here,
+        # exactly as before.
+        existing_list_id = attio.find_list(list_name)
+        if existing_list_id:
+            list_id, created = existing_list_id, False
+        else:
+            list_id, created = attio.create_list(list_name), True
         print(f"List {list_name!r}: {'created' if created else 'found'} (id {list_id}).")
 
         # Fetch current membership once so adds are idempotent and cheap.
@@ -228,8 +253,10 @@ def build_parser() -> argparse.ArgumentParser:
     )
     p_pull.add_argument("--channel", required=True,
                         help="Channel name (e.g. all-adaptiveadoptioncop) or id (Cxxxx).")
-    p_pull.add_argument("--out", default=DEFAULT_ROSTER_PATH,
-                        help=f"Output roster path (default: {DEFAULT_ROSTER_PATH}).")
+    p_pull.add_argument("--out", default=None,
+                        help="Output roster path (default: roster.<format>, i.e. "
+                             "roster.json for --format json or roster.csv for "
+                             "--format csv).")
     p_pull.add_argument("--format", choices=["json", "csv"], default="json",
                         help="Roster output format (default: json).")
     p_pull.set_defaults(func=cmd_pull_slack)
