@@ -1,11 +1,11 @@
 ---
-title: Pillar 1 — Master the Craft: Research Notes & Supporting Material
+title: "Pillar 1 — Master the Craft: Research Notes & Supporting Material"
 date: 2026-02-19
 updated: 2026-02-25
 type: research-notes
 project: adaptive-adoption
 parent: "[[01-master-the-craft]]"
-tags: #adaptive-adoption, #pillar1, #craft, #deliberate-practice, #communities-of-practice, #measurement
+tags: [adaptive-adoption, pillar1, craft, deliberate-practice, communities-of-practice, measurement]
 ---
 
 # Pillar 1: Master the Craft
