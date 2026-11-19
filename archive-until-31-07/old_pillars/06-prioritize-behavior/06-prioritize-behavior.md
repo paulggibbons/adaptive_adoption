@@ -4,9 +4,9 @@ pillar: 6
 tags: behavioral-science, COM-B, intention-action-gap, nudge, habit, environmental-design
 version: 1.0-beta
 last_updated: 2026-03-01
+---
 
 ![Pillar 6 Model Card](assets/pillar-06-card.png)
----
 
 # Pillar 6: Prioritize Behavior
 
