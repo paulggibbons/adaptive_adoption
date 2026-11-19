@@ -1,0 +1,4 @@
+# community-sync runtime dependencies.
+# Intentionally dependency-light: only the HTTP client is third-party; everything
+# else is the Python 3.10+ standard library.
+requests>=2.31,<3
